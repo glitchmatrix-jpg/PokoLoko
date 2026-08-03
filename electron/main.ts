@@ -8,6 +8,7 @@ import {
   Tray,
   type MenuItemConstructorOptions,
 } from 'electron';
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { Store } from './store.js';
@@ -53,13 +54,21 @@ function rendererUrl(mode?: 'settings'): string {
   return `${pathToFileURL(path.join(app.getAppPath(), 'dist', 'index.html')).toString()}${query}`;
 }
 
-function iconPath(name: string): string {
+function rendererAssetPath(...segments: string[]): string {
   return path.join(
     app.getAppPath(),
     process.env.VITE_DEV_SERVER_URL ? 'public' : 'dist',
-    'icons',
-    name,
+    ...segments,
   );
+}
+
+function readAnimationManifest(): unknown {
+  const manifestPath = rendererAssetPath('assets', 'animations.json');
+  return JSON.parse(fs.readFileSync(manifestPath, 'utf8')) as unknown;
+}
+
+function iconPath(name: string): string {
+  return rendererAssetPath('icons', name);
 }
 
 function floorY(window: BrowserWindow): number {
@@ -333,6 +342,7 @@ function createSettingsWindow(): void {
     resizable: false,
     title: 'Poko Settings',
     autoHideMenuBar: true,
+    backgroundColor: '#17131a',
     webPreferences: {
       preload: path.join(__dirname, 'preload.cjs'),
       contextIsolation: true,
@@ -374,6 +384,7 @@ if (!hasSingleInstanceLock) {
 }
 
 ipcMain.handle('settings:get', () => store.get());
+ipcMain.handle('animations:get', () => readAnimationManifest());
 ipcMain.handle('settings:pet', (_event, pet: PetName) => setPet(pet));
 ipcMain.handle('settings:pause', () => togglePause());
 ipcMain.handle('settings:top', () => toggleAlwaysOnTop());
