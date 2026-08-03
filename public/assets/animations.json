@@ -1,0 +1,463 @@
+{
+  "poko": {
+    "idle": {
+      "fps": 5,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/idle/poko_idle_000.png",
+        "assets/poko/idle/poko_idle_001.png",
+        "assets/poko/idle/poko_idle_002.png",
+        "assets/poko/idle/poko_idle_003.png",
+        "assets/poko/idle/poko_idle_004.png",
+        "assets/poko/idle/poko_idle_005.png",
+        "assets/poko/idle/poko_idle_006.png"
+      ]
+    },
+    "walk_right": {
+      "fps": 10,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/walk_right/poko_walk_right_000.png",
+        "assets/poko/walk_right/poko_walk_right_001.png",
+        "assets/poko/walk_right/poko_walk_right_002.png",
+        "assets/poko/walk_right/poko_walk_right_003.png",
+        "assets/poko/walk_right/poko_walk_right_004.png",
+        "assets/poko/walk_right/poko_walk_right_005.png",
+        "assets/poko/walk_right/poko_walk_right_006.png",
+        "assets/poko/walk_right/poko_walk_right_007.png",
+        "assets/poko/walk_right/poko_walk_right_008.png",
+        "assets/poko/walk_right/poko_walk_right_009.png",
+        "assets/poko/walk_right/poko_walk_right_010.png",
+        "assets/poko/walk_right/poko_walk_right_011.png",
+        "assets/poko/walk_right/poko_walk_right_012.png"
+      ]
+    },
+    "walk_left": {
+      "fps": 10,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/walk_left/poko_walk_left_000.png",
+        "assets/poko/walk_left/poko_walk_left_001.png",
+        "assets/poko/walk_left/poko_walk_left_002.png",
+        "assets/poko/walk_left/poko_walk_left_003.png",
+        "assets/poko/walk_left/poko_walk_left_004.png",
+        "assets/poko/walk_left/poko_walk_left_005.png",
+        "assets/poko/walk_left/poko_walk_left_006.png",
+        "assets/poko/walk_left/poko_walk_left_007.png",
+        "assets/poko/walk_left/poko_walk_left_008.png",
+        "assets/poko/walk_left/poko_walk_left_009.png",
+        "assets/poko/walk_left/poko_walk_left_010.png",
+        "assets/poko/walk_left/poko_walk_left_011.png",
+        "assets/poko/walk_left/poko_walk_left_012.png"
+      ]
+    },
+    "sit": {
+      "fps": 6,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/sit/poko_sit_000.png",
+        "assets/poko/sit/poko_sit_001.png",
+        "assets/poko/sit/poko_sit_002.png",
+        "assets/poko/sit/poko_sit_003.png",
+        "assets/poko/sit/poko_sit_004.png",
+        "assets/poko/sit/poko_sit_005.png",
+        "assets/poko/sit/poko_sit_006.png",
+        "assets/poko/sit/poko_sit_007.png",
+        "assets/poko/sit/poko_sit_008.png",
+        "assets/poko/sit/poko_sit_009.png",
+        "assets/poko/sit/poko_sit_010.png",
+        "assets/poko/sit/poko_sit_011.png",
+        "assets/poko/sit/poko_sit_012.png"
+      ]
+    },
+    "sleep_transition": {
+      "fps": 6,
+      "loop": false,
+      "next": "sleep_loop",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/sleep_transition/poko_sleep_transition_000.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_001.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_002.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_003.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_004.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_005.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_006.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_007.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_008.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_009.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_010.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_011.png",
+        "assets/poko/sleep_transition/poko_sleep_transition_012.png"
+      ]
+    },
+    "sleep_loop": {
+      "fps": 3,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/sleep_loop/poko_sleep_loop_000.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_001.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_002.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_003.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_004.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_005.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_006.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_007.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_008.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_009.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_010.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_011.png",
+        "assets/poko/sleep_loop/poko_sleep_loop_012.png"
+      ]
+    },
+    "wake": {
+      "fps": 6,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/wake/poko_wake_000.png",
+        "assets/poko/wake/poko_wake_001.png",
+        "assets/poko/wake/poko_wake_002.png",
+        "assets/poko/wake/poko_wake_003.png",
+        "assets/poko/wake/poko_wake_004.png",
+        "assets/poko/wake/poko_wake_005.png",
+        "assets/poko/wake/poko_wake_006.png",
+        "assets/poko/wake/poko_wake_007.png",
+        "assets/poko/wake/poko_wake_008.png",
+        "assets/poko/wake/poko_wake_009.png",
+        "assets/poko/wake/poko_wake_010.png",
+        "assets/poko/wake/poko_wake_011.png",
+        "assets/poko/wake/poko_wake_012.png"
+      ]
+    },
+    "happy": {
+      "fps": 9,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/happy/poko_happy_000.png",
+        "assets/poko/happy/poko_happy_001.png",
+        "assets/poko/happy/poko_happy_002.png",
+        "assets/poko/happy/poko_happy_003.png",
+        "assets/poko/happy/poko_happy_004.png",
+        "assets/poko/happy/poko_happy_005.png",
+        "assets/poko/happy/poko_happy_006.png",
+        "assets/poko/happy/poko_happy_007.png",
+        "assets/poko/happy/poko_happy_008.png",
+        "assets/poko/happy/poko_happy_009.png",
+        "assets/poko/happy/poko_happy_010.png",
+        "assets/poko/happy/poko_happy_011.png",
+        "assets/poko/happy/poko_happy_012.png",
+        "assets/poko/happy/poko_happy_013.png",
+        "assets/poko/happy/poko_happy_014.png"
+      ]
+    },
+    "confused": {
+      "fps": 7,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/confused/poko_confused_000.png",
+        "assets/poko/confused/poko_confused_001.png",
+        "assets/poko/confused/poko_confused_002.png",
+        "assets/poko/confused/poko_confused_003.png",
+        "assets/poko/confused/poko_confused_004.png",
+        "assets/poko/confused/poko_confused_005.png",
+        "assets/poko/confused/poko_confused_006.png",
+        "assets/poko/confused/poko_confused_007.png",
+        "assets/poko/confused/poko_confused_008.png",
+        "assets/poko/confused/poko_confused_009.png",
+        "assets/poko/confused/poko_confused_010.png",
+        "assets/poko/confused/poko_confused_011.png",
+        "assets/poko/confused/poko_confused_012.png"
+      ]
+    },
+    "pet_reaction": {
+      "fps": 8,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/pet_reaction/poko_pet_reaction_000.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_001.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_002.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_003.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_004.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_005.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_006.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_007.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_008.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_009.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_010.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_011.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_012.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_013.png",
+        "assets/poko/pet_reaction/poko_pet_reaction_014.png"
+      ]
+    },
+    "dragged": {
+      "fps": 7,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/dragged/poko_dragged_000.png",
+        "assets/poko/dragged/poko_dragged_001.png",
+        "assets/poko/dragged/poko_dragged_002.png"
+      ]
+    },
+    "landing": {
+      "fps": 10,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/poko/landing/poko_landing_000.png",
+        "assets/poko/landing/poko_landing_001.png",
+        "assets/poko/landing/poko_landing_002.png",
+        "assets/poko/landing/poko_landing_003.png"
+      ]
+    }
+  },
+  "loko": {
+    "idle": {
+      "fps": 5,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/idle/loko_idle_000.png",
+        "assets/loko/idle/loko_idle_001.png",
+        "assets/loko/idle/loko_idle_002.png",
+        "assets/loko/idle/loko_idle_003.png",
+        "assets/loko/idle/loko_idle_004.png",
+        "assets/loko/idle/loko_idle_005.png",
+        "assets/loko/idle/loko_idle_006.png",
+        "assets/loko/idle/loko_idle_007.png",
+        "assets/loko/idle/loko_idle_008.png",
+        "assets/loko/idle/loko_idle_009.png",
+        "assets/loko/idle/loko_idle_010.png"
+      ]
+    },
+    "walk_right": {
+      "fps": 10,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/walk_right/loko_walk_right_000.png",
+        "assets/loko/walk_right/loko_walk_right_001.png",
+        "assets/loko/walk_right/loko_walk_right_002.png",
+        "assets/loko/walk_right/loko_walk_right_003.png",
+        "assets/loko/walk_right/loko_walk_right_004.png",
+        "assets/loko/walk_right/loko_walk_right_005.png",
+        "assets/loko/walk_right/loko_walk_right_006.png",
+        "assets/loko/walk_right/loko_walk_right_007.png",
+        "assets/loko/walk_right/loko_walk_right_008.png",
+        "assets/loko/walk_right/loko_walk_right_009.png",
+        "assets/loko/walk_right/loko_walk_right_010.png",
+        "assets/loko/walk_right/loko_walk_right_011.png",
+        "assets/loko/walk_right/loko_walk_right_012.png"
+      ]
+    },
+    "walk_left": {
+      "fps": 10,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/walk_left/loko_walk_left_000.png",
+        "assets/loko/walk_left/loko_walk_left_001.png",
+        "assets/loko/walk_left/loko_walk_left_002.png",
+        "assets/loko/walk_left/loko_walk_left_003.png",
+        "assets/loko/walk_left/loko_walk_left_004.png",
+        "assets/loko/walk_left/loko_walk_left_005.png",
+        "assets/loko/walk_left/loko_walk_left_006.png",
+        "assets/loko/walk_left/loko_walk_left_007.png",
+        "assets/loko/walk_left/loko_walk_left_008.png",
+        "assets/loko/walk_left/loko_walk_left_009.png",
+        "assets/loko/walk_left/loko_walk_left_010.png",
+        "assets/loko/walk_left/loko_walk_left_011.png",
+        "assets/loko/walk_left/loko_walk_left_012.png"
+      ]
+    },
+    "sit": {
+      "fps": 6,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/sit/loko_sit_000.png",
+        "assets/loko/sit/loko_sit_001.png",
+        "assets/loko/sit/loko_sit_002.png",
+        "assets/loko/sit/loko_sit_003.png",
+        "assets/loko/sit/loko_sit_004.png",
+        "assets/loko/sit/loko_sit_005.png",
+        "assets/loko/sit/loko_sit_006.png",
+        "assets/loko/sit/loko_sit_007.png",
+        "assets/loko/sit/loko_sit_008.png",
+        "assets/loko/sit/loko_sit_009.png",
+        "assets/loko/sit/loko_sit_010.png",
+        "assets/loko/sit/loko_sit_011.png"
+      ]
+    },
+    "sleep_transition": {
+      "fps": 6,
+      "loop": false,
+      "next": "sleep_loop",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/sleep_transition/loko_sleep_transition_000.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_001.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_002.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_003.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_004.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_005.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_006.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_007.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_008.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_009.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_010.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_011.png",
+        "assets/loko/sleep_transition/loko_sleep_transition_012.png"
+      ]
+    },
+    "sleep_loop": {
+      "fps": 3,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/sleep_loop/loko_sleep_loop_000.png",
+        "assets/loko/sleep_loop/loko_sleep_loop_001.png",
+        "assets/loko/sleep_loop/loko_sleep_loop_002.png",
+        "assets/loko/sleep_loop/loko_sleep_loop_003.png",
+        "assets/loko/sleep_loop/loko_sleep_loop_004.png",
+        "assets/loko/sleep_loop/loko_sleep_loop_005.png",
+        "assets/loko/sleep_loop/loko_sleep_loop_006.png",
+        "assets/loko/sleep_loop/loko_sleep_loop_007.png",
+        "assets/loko/sleep_loop/loko_sleep_loop_008.png"
+      ]
+    },
+    "wake": {
+      "fps": 6,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/wake/loko_wake_000.png",
+        "assets/loko/wake/loko_wake_001.png",
+        "assets/loko/wake/loko_wake_002.png",
+        "assets/loko/wake/loko_wake_003.png",
+        "assets/loko/wake/loko_wake_004.png",
+        "assets/loko/wake/loko_wake_005.png",
+        "assets/loko/wake/loko_wake_006.png",
+        "assets/loko/wake/loko_wake_007.png",
+        "assets/loko/wake/loko_wake_008.png",
+        "assets/loko/wake/loko_wake_009.png",
+        "assets/loko/wake/loko_wake_010.png",
+        "assets/loko/wake/loko_wake_011.png",
+        "assets/loko/wake/loko_wake_012.png"
+      ]
+    },
+    "happy": {
+      "fps": 9,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/happy/loko_happy_000.png",
+        "assets/loko/happy/loko_happy_001.png",
+        "assets/loko/happy/loko_happy_002.png",
+        "assets/loko/happy/loko_happy_003.png",
+        "assets/loko/happy/loko_happy_004.png",
+        "assets/loko/happy/loko_happy_005.png",
+        "assets/loko/happy/loko_happy_006.png",
+        "assets/loko/happy/loko_happy_007.png",
+        "assets/loko/happy/loko_happy_008.png",
+        "assets/loko/happy/loko_happy_009.png",
+        "assets/loko/happy/loko_happy_010.png",
+        "assets/loko/happy/loko_happy_011.png",
+        "assets/loko/happy/loko_happy_012.png"
+      ]
+    },
+    "confused": {
+      "fps": 7,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/confused/loko_confused_000.png",
+        "assets/loko/confused/loko_confused_001.png",
+        "assets/loko/confused/loko_confused_002.png",
+        "assets/loko/confused/loko_confused_003.png",
+        "assets/loko/confused/loko_confused_004.png",
+        "assets/loko/confused/loko_confused_005.png",
+        "assets/loko/confused/loko_confused_006.png",
+        "assets/loko/confused/loko_confused_007.png",
+        "assets/loko/confused/loko_confused_008.png",
+        "assets/loko/confused/loko_confused_009.png",
+        "assets/loko/confused/loko_confused_010.png",
+        "assets/loko/confused/loko_confused_011.png",
+        "assets/loko/confused/loko_confused_012.png"
+      ]
+    },
+    "pet_reaction": {
+      "fps": 8,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/pet_reaction/loko_pet_reaction_000.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_001.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_002.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_003.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_004.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_005.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_006.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_007.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_008.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_009.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_010.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_011.png",
+        "assets/loko/pet_reaction/loko_pet_reaction_012.png"
+      ]
+    },
+    "dragged": {
+      "fps": 7,
+      "loop": true,
+      "next": null,
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/dragged/loko_dragged_000.png",
+        "assets/loko/dragged/loko_dragged_001.png",
+        "assets/loko/dragged/loko_dragged_002.png"
+      ]
+    },
+    "landing": {
+      "fps": 10,
+      "loop": false,
+      "next": "idle",
+      "anchor": "bottom-center",
+      "frames": [
+        "assets/loko/landing/loko_landing_000.png",
+        "assets/loko/landing/loko_landing_001.png",
+        "assets/loko/landing/loko_landing_002.png",
+        "assets/loko/landing/loko_landing_003.png"
+      ]
+    }
+  }
+}

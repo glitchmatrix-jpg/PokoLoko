@@ -1,0 +1,12 @@
+import { spawn } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import http from 'node:http';
+const run=(cmd,args,env={})=>spawn(cmd,args,{stdio:'inherit',shell:true,env:{...process.env,...env}});
+const vite=run('npx',['vite','--host','127.0.0.1']);
+const tsc=run('npx',['tsc','-p','tsconfig.electron.json','--watch']);
+const waitHttp=()=>new Promise(resolve=>{const ping=()=>http.get('http://127.0.0.1:5173',()=>resolve()).on('error',()=>setTimeout(ping,200));ping();});
+const waitFile=()=>new Promise(resolve=>{const ping=()=>existsSync('dist-electron/main.js')?resolve():setTimeout(ping,200);ping();});
+await Promise.all([waitHttp(),waitFile()]);
+const electron=run('npx',['electron','.'],{VITE_DEV_SERVER_URL:'http://127.0.0.1:5173'});
+const stop=()=>{vite.kill();tsc.kill();electron.kill();process.exit();};
+process.on('SIGINT',stop);process.on('SIGTERM',stop);

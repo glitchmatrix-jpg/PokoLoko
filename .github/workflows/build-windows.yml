@@ -1,4 +1,4 @@
-name: Build Windows Installer
+name: Build Poko for Windows
 
 on:
   workflow_dispatch:
@@ -12,57 +12,55 @@ permissions:
   contents: read
 
 concurrency:
-  group: pokoloko-windows-${{ github.ref }}
+  group: poko-windows-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build PokoLoko for Windows
+  build-windows:
+    name: Validate and build Windows installer
     runs-on: windows-latest
     timeout-minutes: 30
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '22'
+          node-version: '24'
+          package-manager-cache: false
 
       - name: Install dependencies
         shell: pwsh
         run: npm install --no-audit --no-fund
 
-      - name: Verify source files
+      - name: Validate assets and type-check
         shell: pwsh
-        run: |
-          $required = @('main.cjs', 'preload.cjs', 'index.html', 'package.json')
-          foreach ($file in $required) {
-            if (-not (Test-Path $file)) {
-              throw "Missing required file: $file"
-            }
-          }
-          node --check main.cjs
-          node --check preload.cjs
+        run: npm run check
 
-      - name: Build unsigned Windows installer
+      - name: Build Windows installer
         shell: pwsh
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
         run: npm run dist:win
 
-      - name: Verify installer
+      - name: Verify installer exists
         shell: pwsh
         run: |
-          $installer = Get-ChildItem release -Filter 'PokoLoko-Setup-*.exe' -File | Select-Object -First 1
-          if (-not $installer) { throw 'Windows installer was not created.' }
-          Write-Host "Created $($installer.Name) — $([math]::Round($installer.Length / 1MB, 2)) MB"
+          $installers = Get-ChildItem -Path release -Filter "Poko-Setup-*.exe" -File
+          if (-not $installers) {
+            Write-Error "No Poko installer was produced in the release folder."
+            exit 1
+          }
+          $installers | ForEach-Object {
+            Write-Host "Built: $($_.FullName) ($([math]::Round($_.Length / 1MB, 2)) MB)"
+          }
 
-      - name: Upload installer
-        uses: actions/upload-artifact@v4
+      - name: Upload Windows installer
+        uses: actions/upload-artifact@v7
         with:
-          name: PokoLoko-Windows-${{ github.run_number }}
-          path: release/PokoLoko-Setup-*.exe
+          name: Poko-Windows-${{ github.run_number }}
+          path: release/Poko-Setup-*.exe
           if-no-files-found: error
           retention-days: 30
