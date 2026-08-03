@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
+import animationManifest from '../../public/assets/animations.json';
 import { Sprite } from './Sprite';
 import type {
   AnimationManifest,
@@ -6,6 +7,8 @@ import type {
   PetState,
   ReactionName,
 } from '../types/animation';
+
+const manifest = animationManifest as AnimationManifest;
 
 const stateAnimation: Partial<Record<PetState, string>> = {
   IDLE: 'idle',
@@ -27,7 +30,6 @@ interface PointerStart {
 }
 
 export function Pet() {
-  const [manifest, setManifest] = useState<AnimationManifest | null>(null);
   const [pet, setPet] = useState<PetName>('poko');
   const [behavior, setBehavior] = useState<PetState>('IDLE');
   const [animation, setAnimation] = useState('idle');
@@ -37,19 +39,6 @@ export function Pet() {
   const clickTimer = useRef<number | null>(null);
 
   useEffect(() => {
-    const controller = new AbortController();
-    const manifestUrl = new URL('assets/animations.json', document.baseURI);
-
-    fetch(manifestUrl, { signal: controller.signal })
-      .then((response) => {
-        if (!response.ok) throw new Error(`Animation manifest failed: ${response.status}`);
-        return response.json() as Promise<AnimationManifest>;
-      })
-      .then(setManifest)
-      .catch((error: unknown) => {
-        if ((error as DOMException).name !== 'AbortError') console.error(error);
-      });
-
     void window.pokoAPI.getSettings().then((settings) => setPet(settings.pet));
     const offPet = window.pokoAPI.onPetChanged(setPet);
     const offBehavior = window.pokoAPI.onBehavior(setBehavior);
@@ -58,7 +47,6 @@ export function Pet() {
     });
 
     return () => {
-      controller.abort();
       offPet();
       offBehavior();
       offReaction();
@@ -82,8 +70,8 @@ export function Pet() {
   }, [pet]);
 
   const definition = useMemo(
-    () => manifest?.[pet]?.[animation] ?? manifest?.[pet]?.idle,
-    [animation, manifest, pet],
+    () => manifest[pet]?.[animation] ?? manifest[pet]?.idle,
+    [animation, pet],
   );
 
   const animationDone = () => {
