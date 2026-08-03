@@ -1,0 +1,69 @@
+name: Build Windows Installer
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pokoloko-windows-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build PokoLoko for Windows
+    runs-on: windows-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        shell: pwsh
+        run: npm install --no-audit --no-fund
+
+      - name: Verify source files
+        shell: pwsh
+        run: |
+          $required = @('main.cjs', 'preload.cjs', 'index.html', 'package.json')
+          foreach ($file in $required) {
+            if (-not (Test-Path $file)) {
+              throw "Missing required file: $file"
+            }
+          }
+          node --check main.cjs
+          node --check preload.cjs
+
+      - name: Build unsigned Windows installer
+        shell: pwsh
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+        run: npm run dist:win
+
+      - name: Verify installer
+        shell: pwsh
+        run: |
+          $installer = Get-ChildItem release -Filter 'PokoLoko-Setup-*.exe' -File | Select-Object -First 1
+          if (-not $installer) { throw 'Windows installer was not created.' }
+          Write-Host "Created $($installer.Name) — $([math]::Round($installer.Length / 1MB, 2)) MB"
+
+      - name: Upload installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: PokoLoko-Windows-${{ github.run_number }}
+          path: release/PokoLoko-Setup-*.exe
+          if-no-files-found: error
+          retention-days: 30
