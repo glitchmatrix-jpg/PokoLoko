@@ -1,6 +1,6 @@
 {
   "name": "pokoloko",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Poko and Loko — transparent animated desktop pets for Windows.",
   "author": "Hasan Bukhari",
@@ -21,6 +21,8 @@
       "main.cjs",
       "preload.cjs",
       "index.html",
+      "sprites-poko-core.js",
+      "sprites-loko-mini.js",
       "package.json"
     ],
     "directories": {
