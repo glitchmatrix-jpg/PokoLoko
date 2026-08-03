@@ -1,0 +1,41 @@
+{
+  "name": "pokoloko",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Poko and Loko — transparent animated desktop pets for Windows.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.glitchmatrix.pokoloko",
+    "productName": "PokoLoko",
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "index.html",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": ["nsis"],
+      "artifactName": "PokoLoko-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
