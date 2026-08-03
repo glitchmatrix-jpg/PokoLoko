@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "description": "Poko and Loko — transparent animated desktop pets for Windows.",
+  "author": "Hasan Bukhari",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "dist:win": "electron-builder --win nsis"
+    "dist:win": "electron-builder --win nsis --publish never"
   },
   "devDependencies": {
     "electron": "^43.2.0",
@@ -15,6 +16,7 @@
   "build": {
     "appId": "com.glitchmatrix.pokoloko",
     "productName": "PokoLoko",
+    "publish": null,
     "files": [
       "main.cjs",
       "preload.cjs",
