@@ -1,178 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PokoLoko</title>
-  <style>
-    :root { color-scheme: dark; font-family: Inter, ui-rounded, system-ui, sans-serif; }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: transparent; user-select: none; }
-    button { font: inherit; }
-    #pet-view { width: 100%; height: 100%; display: grid; place-items: end center; padding-bottom: 2px; }
-    #pet { position: relative; width: 108px; height: 112px; cursor: grab; transform-origin: 50% 100%; image-rendering: pixelated; }
-    #pet.dragging { cursor: grabbing; animation: dangle .34s ease-in-out infinite alternate; }
-    #pet.walking { animation: bob .34s steps(2, end) infinite; }
-    #pet.idle { animation: breathe 2.1s ease-in-out infinite; }
-    #pet.sitting { transform: scaleY(.86) translateY(8px); }
-    #pet.sleeping { animation: sleep-breathe 2.8s ease-in-out infinite; transform: rotate(-8deg) scaleY(.74) translateY(17px); }
-    #pet.happy { animation: hop .46s cubic-bezier(.3,.8,.2,1); }
-    #pet.confused { animation: tilt .55s ease-in-out 2; }
-    #pet.landing { animation: land .4s ease-out; }
-    .ear { position: absolute; top: 8px; width: 35px; height: 47px; background: var(--body); border: 4px solid var(--line); z-index: 0; }
-    .poko .ear.left { left: 11px; clip-path: polygon(50% 0, 100% 100%, 0 82%); transform: rotate(-12deg); }
-    .poko .ear.right { right: 11px; clip-path: polygon(50% 0, 100% 82%, 0 100%); transform: rotate(12deg); }
-    .loko .ear { border-radius: 50% 50% 42% 42%; width: 29px; height: 52px; }
-    .loko .ear.left { left: 21px; transform: rotate(-8deg); }
-    .loko .ear.right { right: 21px; transform: rotate(8deg); }
-    .body { position: absolute; left: 10px; bottom: 5px; width: 88px; height: 86px; border-radius: 48% 48% 45% 45%; background: var(--body); border: 4px solid var(--line); box-shadow: inset -8px -8px 0 var(--shadow), inset 7px 7px 0 rgba(255,255,255,.35); z-index: 1; }
-    .eye { position: absolute; top: 35px; width: 8px; height: 14px; border-radius: 50%; background: var(--line); transition: .15s; }
-    .eye.left { left: 26px; } .eye.right { right: 26px; }
-    .mouth { position: absolute; left: 50%; top: 55px; width: 16px; height: 9px; transform: translateX(-50%); border-bottom: 3px solid var(--line); border-radius: 50%; }
-    .cheek { position: absolute; top: 53px; width: 13px; height: 7px; border-radius: 50%; background: rgba(235,108,137,.35); }
-    .cheek.left { left: 12px; } .cheek.right { right: 12px; }
-    .foot { position: absolute; bottom: -5px; width: 25px; height: 14px; border-radius: 50%; background: var(--body); border: 4px solid var(--line); z-index: -1; }
-    .foot.left { left: 8px; } .foot.right { right: 8px; }
-    .sleeping .eye { height: 3px; top: 43px; border-radius: 4px; }
-    .happy .mouth { height: 15px; border: 3px solid var(--line); border-top: 0; background: #f98ca8; }
-    .confused .mouth { width: 7px; height: 7px; border: 3px solid var(--line); border-radius: 50%; }
-    #bubble { position: absolute; top: 1px; right: -5px; min-width: 38px; padding: 5px 7px; border-radius: 12px; background: rgba(255,255,255,.94); color: #3e2933; font-weight: 900; text-align: center; box-shadow: 0 5px 18px rgba(0,0,0,.18); opacity: 0; transform: translateY(5px) scale(.9); transition: .18s; z-index: 5; }
-    #bubble.show { opacity: 1; transform: none; }
-    #settings-view { display: none; width: 100%; height: 100%; padding: 28px; background: radial-gradient(circle at 20% 0%, #4a2c45 0, #201820 40%, #131116 100%); color: #fff8fc; }
-    #settings-view h1 { margin: 0 0 5px; font-size: 30px; }
-    #settings-view p { margin: 0 0 24px; color: #cbbbc6; }
-    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .pet-card { border: 1px solid #684d60; background: rgba(255,255,255,.05); color: white; border-radius: 18px; padding: 18px; cursor: pointer; text-align: left; transition: .18s; }
-    .pet-card:hover { transform: translateY(-2px); border-color: #d99ab8; }
-    .pet-card.selected { background: #6e3b59; border-color: #ffb8d4; box-shadow: 0 0 0 2px rgba(255,184,212,.15); }
-    .pet-card strong { display:block; font-size: 20px; margin-bottom: 4px; }
-    .toggle-row { display:flex; align-items:center; justify-content:space-between; padding: 15px 2px; border-bottom:1px solid rgba(255,255,255,.09); }
-    .switch { width: 49px; height: 28px; border-radius: 20px; border: 0; background:#4a4148; padding:3px; cursor:pointer; }
-    .switch::after { content:''; display:block; width:22px; height:22px; border-radius:50%; background:white; transition:.2s; }
-    .switch.on { background:#e984ad; } .switch.on::after { transform:translateX(21px); }
-    .hint { margin-top:20px; font-size:12px; color:#a998a4; }
-    @keyframes breathe { 50% { transform: scaleY(1.025) translateY(-1px); } }
-    @keyframes bob { 50% { transform: translateY(-4px) rotate(1deg); } }
-    @keyframes dangle { to { transform: rotate(5deg) translateY(4px); } }
-    @keyframes hop { 45% { transform: translateY(-27px) scale(1.04,.96); } 75% { transform: translateY(2px) scale(1.08,.88); } }
-    @keyframes tilt { 33% { transform: rotate(-9deg); } 66% { transform: rotate(9deg); } }
-    @keyframes land { 0% { transform: translateY(-30px); } 60% { transform: scale(1.16,.75) translateY(8px); } }
-    @keyframes sleep-breathe { 50% { transform: rotate(-8deg) scaleY(.78) translateY(15px); } }
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PokoLoko</title>
+<style>
+:root{font-family:Inter,Segoe UI,system-ui,sans-serif;color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent;user-select:none}button{font:inherit}#pet-view{width:100%;height:100%;display:flex;align-items:flex-end;justify-content:center;padding-bottom:2px}#pet{position:relative;width:128px;height:128px;display:flex;align-items:flex-end;justify-content:center;cursor:grab;transform-origin:50% 100%}#pet.dragging{cursor:grabbing;animation:dangle .35s ease-in-out infinite alternate}#sprite{max-width:128px;max-height:128px;image-rendering:pixelated;image-rendering:crisp-edges;pointer-events:none;filter:drop-shadow(0 5px 3px #0004)}#bubble{position:absolute;right:0;top:2px;padding:5px 8px;border-radius:14px;background:#fff;color:#4a2b39;font-weight:900;opacity:0;transform:scale(.8);transition:.15s}#bubble.show{opacity:1;transform:none}@keyframes dangle{to{transform:rotate(5deg) translateY(4px)}}#settings-view{display:none;width:100%;height:100%;padding:28px;background:radial-gradient(circle at 20% 0,#4b2c45,#211820 42%,#121015);color:#fff8fc}h1{font-size:32px;margin:0 0 6px}p{margin:0 0 22px;color:#d6c3d0}.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pet-card{border:1px solid #684d60;background:#ffffff0a;color:#fff;border-radius:18px;padding:16px;text-align:left;cursor:pointer}.pet-card.selected{background:#75405f;border-color:#ffc2dc;box-shadow:0 0 0 2px #ffc2dc22}.pet-card strong{display:block;font-size:21px;margin-bottom:5px}.preview{height:72px;display:flex;align-items:center;justify-content:center}.preview img{height:68px;image-rendering:pixelated}.toggle-row{display:flex;align-items:center;justify-content:space-between;padding:16px 2px;border-bottom:1px solid #ffffff18}.switch{width:52px;height:30px;border:0;border-radius:20px;background:#4b4249;padding:3px}.switch:after{content:'';display:block;width:24px;height:24px;border-radius:50%;background:#fff;transition:.2s}.switch.on{background:#e984ad}.switch.on:after{transform:translateX(22px)}.hint{margin-top:18px;color:#aa98a5;font-size:12px}
+</style>
 </head>
 <body>
-  <main id="pet-view">
-    <div id="pet" class="poko idle" aria-label="Desktop pet">
-      <span class="ear left"></span><span class="ear right"></span>
-      <div class="body">
-        <span class="eye left"></span><span class="eye right"></span>
-        <span class="cheek left"></span><span class="cheek right"></span>
-        <span class="mouth"></span>
-        <span class="foot left"></span><span class="foot right"></span>
-      </div>
-      <div id="bubble">♥</div>
-    </div>
-  </main>
-  <main id="settings-view">
-    <h1>PokoLoko</h1><p>Choose who lives on your desktop.</p>
-    <div class="cards">
-      <button class="pet-card" data-pet="poko"><strong>Poko</strong><span>Playful, pink, and professionally chaotic.</span></button>
-      <button class="pet-card" data-pet="loko"><strong>Loko</strong><span>Calm, cozy, and suspiciously sleepy.</span></button>
-    </div>
-    <div class="toggle-row"><span>Pause autonomous movement</span><button id="paused-toggle" class="switch" aria-label="Pause pet"></button></div>
-    <div class="toggle-row"><span>Always on top</span><button id="top-toggle" class="switch" aria-label="Always on top"></button></div>
-    <div class="hint">Tip: click the pet for a reaction, drag it around, right-click for controls, or double-click to open this window.</div>
-  </main>
+<main id="pet-view"><div id="pet"><img id="sprite" alt="Desktop pet"><div id="bubble">♥</div></div></main>
+<main id="settings-view"><h1>PokoLoko</h1><p>Choose who lives on your desktop.</p><div class="cards"><button class="pet-card" data-pet="poko"><div class="preview"><img id="poko-preview"></div><strong>Poko</strong><span>Playful, pink, and professionally chaotic.</span></button><button class="pet-card" data-pet="loko"><div class="preview"><img id="loko-preview"></div><strong>Loko</strong><span>Calm, cozy, and suspiciously sleepy.</span></button></div><div class="toggle-row"><span>Pause autonomous movement</span><button id="paused-toggle" class="switch"></button></div><div class="toggle-row"><span>Always on top</span><button id="top-toggle" class="switch"></button></div><div class="hint">Click for a reaction · drag to move · right-click for controls · double-click for settings</div></main>
+<script src="sprites-poko-core.js"></script><script src="sprites-loko-mini.js"></script>
 <script>
-  const api = window.pokoAPI;
-  const mode = new URLSearchParams(location.search).get('mode') || 'pet';
-  const pet = document.getElementById('pet');
-  const bubble = document.getElementById('bubble');
-  let settings = { pet:'poko', paused:false, alwaysOnTop:true };
-  let state = 'idle';
-  let direction = 1;
-  let timer;
-  let walkingTimer;
-  let drag = null;
-  let clickTimer;
-  let clickCount = 0;
-
-  function applyPet() {
-    pet.classList.toggle('poko', settings.pet === 'poko');
-    pet.classList.toggle('loko', settings.pet === 'loko');
-    document.documentElement.style.setProperty('--body', settings.pet === 'poko' ? '#f3a3b8' : '#f0d4a7');
-    document.documentElement.style.setProperty('--shadow', settings.pet === 'poko' ? '#dc7f9c' : '#d5b37e');
-    document.documentElement.style.setProperty('--line', settings.pet === 'poko' ? '#5a3042' : '#594432');
-  }
-  function setState(next, duration=0) {
-    state = next;
-    pet.className = `${settings.pet} ${next}`;
-    applyPet();
-    clearTimeout(timer);
-    if (duration) timer = setTimeout(() => setState('idle'), duration);
-  }
-  function say(text, duration=900) {
-    bubble.textContent = text; bubble.classList.add('show');
-    setTimeout(() => bubble.classList.remove('show'), duration);
-  }
-  function chooseAction() {
-    clearTimeout(timer); clearInterval(walkingTimer);
-    if (settings.paused || drag) { setState('idle'); timer=setTimeout(chooseAction,1000); return; }
-    const roll = Math.random();
-    if (roll < .45) { setState('idle'); timer=setTimeout(chooseAction, random(2200, settings.pet==='poko'?4800:7500)); }
-    else if (roll < .75) startWalk();
-    else if (roll < .9) { setState('sitting'); timer=setTimeout(chooseAction, random(2200,5000)); }
-    else { setState('sleeping'); say('Z z',1600); timer=setTimeout(() => { setState('idle'); chooseAction(); }, random(5000,9000)); }
-  }
-  function startWalk() {
-    setState('walking'); direction = Math.random() > .5 ? 1 : -1;
-    const speed = settings.pet === 'poko' ? 75 : 48;
-    const started=performance.now(); const duration=random(1800,4200);
-    walkingTimer=setInterval(() => {
-      const x=window.screenX + direction * speed / 20;
-      api.moveTo(x);
-      pet.style.transform=`scaleX(${direction})`;
-      if(performance.now()-started>duration){ clearInterval(walkingTimer); pet.style.transform=''; chooseAction(); }
-    },50);
-  }
-  function random(a,b){ return Math.round(a+Math.random()*(b-a)); }
-  function reaction(confused=false){ clearInterval(walkingTimer); setState(confused?'confused':'happy', confused?1100:650); say(confused?'?':'♥'); setTimeout(chooseAction, confused?1200:750); }
-
-  function setupPet() {
-    document.getElementById('settings-view').remove();
-    pet.addEventListener('pointerdown', e => {
-      if(e.button!==0) return;
-      drag={ startX:e.screenX,startY:e.screenY,active:false };
-      pet.setPointerCapture(e.pointerId);
-    });
-    pet.addEventListener('pointermove', e => {
-      if(!drag) return;
-      if(!drag.active && Math.hypot(e.screenX-drag.startX,e.screenY-drag.startY)>5){ drag.active=true; clearTimeout(clickTimer); clearInterval(walkingTimer); setState('dragging'); api.beginDrag({x:e.screenX,y:e.screenY}); }
-      if(drag.active) api.dragTo({x:e.screenX,y:e.screenY});
-    });
-    pet.addEventListener('pointerup', e => {
-      if(!drag) return;
-      const wasDrag=drag.active; drag=null;
-      try{pet.releasePointerCapture(e.pointerId)}catch{}
-      if(wasDrag){ api.endDrag(); return; }
-      clickCount++; clearTimeout(clickTimer);
-      clickTimer=setTimeout(()=>{ reaction(clickCount>=3); clickCount=0; },220);
-    });
-    pet.addEventListener('dblclick', e => { e.preventDefault(); clearTimeout(clickTimer); clickCount=0; api.openSettings(); });
-    pet.addEventListener('contextmenu', e => { e.preventDefault(); api.showContextMenu(); });
-    api.onCommand(command => { if(command==='dragged') setState('dragging'); if(command==='landing'){setState('landing',500);setTimeout(chooseAction,550);} });
-    chooseAction();
-  }
-  function setupSettings() {
-    document.getElementById('pet-view').remove(); document.getElementById('settings-view').style.display='block';
-    document.querySelectorAll('[data-pet]').forEach(button=>button.onclick=()=>api.setPet(button.dataset.pet));
-    document.getElementById('paused-toggle').onclick=()=>api.setPaused(!settings.paused);
-    document.getElementById('top-toggle').onclick=()=>api.setAlwaysOnTop(!settings.alwaysOnTop);
-  }
-  function renderSettings(next){ settings=next; applyPet(); document.querySelectorAll('[data-pet]').forEach(b=>b.classList.toggle('selected',b.dataset.pet===settings.pet)); const p=document.getElementById('paused-toggle'); const t=document.getElementById('top-toggle'); if(p)p.classList.toggle('on',settings.paused); if(t)t.classList.toggle('on',settings.alwaysOnTop); if(mode==='pet'&&settings.paused){clearInterval(walkingTimer);setState('idle');} }
-  api.getSettings().then(renderSettings);
-  api.onSettings(renderSettings);
-  mode==='settings' ? setupSettings() : setupPet();
+const api=window.pokoAPI,mode=new URLSearchParams(location.search).get('mode')||'pet',pet=document.getElementById('pet'),sprite=document.getElementById('sprite'),bubble=document.getElementById('bubble');
+const manifests={poko:window.SPRITES_POKO||{},loko:window.SPRITES_LOKO||{}};let settings={pet:'poko',paused:false,alwaysOnTop:true},state='idle',frame=0,last=0,raf=0,timer=0,walkTimer=0,drag=null,clickTimer=0,clickCount=0,direction=1;
+const aliases={sitting:'sit',landing:'happy'};const fps={idle:4,walk_right:9,walk_left:9,sit:4,sleeping:3,happy:8,confused:6,dragging:5,landing:10};
+function framesFor(s=state){const m=manifests[settings.pet],key=aliases[s]||s;return m[key]&&m[key].length?m[key]:m.idle||[]}function play(next){state=next;frame=0;last=0;pet.classList.toggle('dragging',next==='dragging');cancelAnimationFrame(raf);const f=framesFor();if(f[0])sprite.src=f[0];raf=requestAnimationFrame(tick)}function tick(ts){const f=framesFor();if(!f.length)return;if(!last)last=ts;if(ts-last>=1000/(fps[state]||5)){frame=(frame+1)%f.length;sprite.src=f[frame];last=ts}raf=requestAnimationFrame(tick)}function say(t,d=850){bubble.textContent=t;bubble.classList.add('show');setTimeout(()=>bubble.classList.remove('show'),d)}function rand(a,b){return Math.round(a+Math.random()*(b-a))}function stop(){clearTimeout(timer);clearInterval(walkTimer)}
+function choose(){stop();if(settings.paused||drag){play('idle');timer=setTimeout(choose,1000);return}const r=Math.random();if(r<.45){play('idle');timer=setTimeout(choose,rand(2200,settings.pet==='poko'?4800:7600))}else if(r<.75)walk();else if(r<.9){play('sitting');timer=setTimeout(choose,rand(2200,5000))}else{play('sleeping');say('Z z',1400);timer=setTimeout(()=>{play('idle');choose()},rand(5000,9000))}}
+function walk(){direction=Math.random()>.5?1:-1;play(direction>0?'walk_right':'walk_left');const speed=settings.pet==='poko'?75:48,start=performance.now(),duration=rand(1800,4200);walkTimer=setInterval(()=>{api.moveTo(window.screenX+direction*speed/20);if(performance.now()-start>duration){clearInterval(walkTimer);choose()}},50)}function react(conf=false){stop();play(conf?'confused':'happy');say(conf?'?':'♥');setTimeout(()=>{play('idle');choose()},conf?1100:800)}
+function apply(next){settings=next;const f=framesFor();if(f[0])sprite.src=f[0];document.querySelectorAll('[data-pet]').forEach(b=>b.classList.toggle('selected',b.dataset.pet===settings.pet));document.getElementById('paused-toggle')?.classList.toggle('on',settings.paused);document.getElementById('top-toggle')?.classList.toggle('on',settings.alwaysOnTop);if(mode==='pet'&&settings.paused){stop();play('idle')}}
+function setupPet(){document.getElementById('settings-view').remove();pet.addEventListener('pointerdown',e=>{if(e.button!==0)return;drag={x:e.screenX,y:e.screenY,active:false};pet.setPointerCapture(e.pointerId)});pet.addEventListener('pointermove',e=>{if(!drag)return;if(!drag.active&&Math.hypot(e.screenX-drag.x,e.screenY-drag.y)>5){drag.active=true;stop();play('dragging');api.beginDrag({x:e.screenX,y:e.screenY})}if(drag.active)api.dragTo({x:e.screenX,y:e.screenY})});pet.addEventListener('pointerup',e=>{if(!drag)return;const was=drag.active;drag=null;try{pet.releasePointerCapture(e.pointerId)}catch{}if(was){api.endDrag();return}clickCount++;clearTimeout(clickTimer);clickTimer=setTimeout(()=>{react(clickCount>=3);clickCount=0},220)});pet.addEventListener('dblclick',e=>{e.preventDefault();clearTimeout(clickTimer);clickCount=0;api.openSettings()});pet.addEventListener('contextmenu',e=>{e.preventDefault();api.showContextMenu()});api.onCommand(c=>{if(c==='dragged')play('dragging');if(c==='landing'){play('landing');setTimeout(choose,650)}});play('idle');choose()}
+function setupSettings(){document.getElementById('pet-view').remove();document.getElementById('settings-view').style.display='block';document.getElementById('poko-preview').src=manifests.poko.idle[0];document.getElementById('loko-preview').src=manifests.loko.idle[0];document.querySelectorAll('[data-pet]').forEach(b=>b.onclick=()=>api.setPet(b.dataset.pet));document.getElementById('paused-toggle').onclick=()=>api.setPaused(!settings.paused);document.getElementById('top-toggle').onclick=()=>api.setAlwaysOnTop(!settings.alwaysOnTop)}
+api.getSettings().then(apply);api.onSettings(apply);mode==='settings'?setupSettings():setupPet();
 </script>
-</body>
-</html>
+</body></html>
