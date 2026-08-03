@@ -5,6 +5,7 @@ contextBridge.exposeInMainWorld('pokoAPI', {
   setPet: (pet) => ipcRenderer.invoke('settings:set-pet', pet),
   setPaused: (paused) => ipcRenderer.invoke('settings:set-paused', paused),
   setAlwaysOnTop: (value) => ipcRenderer.invoke('settings:set-always-on-top', value),
+  moveTo: (x) => ipcRenderer.send('pet:move', x),
   beginDrag: (point) => ipcRenderer.send('pet:drag-start', point),
   dragTo: (point) => ipcRenderer.send('pet:drag-move', point),
   endDrag: () => ipcRenderer.send('pet:drag-end'),
