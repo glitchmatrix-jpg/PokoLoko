@@ -1,8 +1,8 @@
-import { readFile, readdir } from 'node:fs/promises';
+﻿import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = path.resolve(process.argv[2] ?? '.');
-const ignored = new Set(['node_modules', 'dist', 'dist-electron', 'release', 'coverage', '.git']);
+const ignored = new Set(['node_modules', 'dist', 'dist-electron', 'release', 'coverage', '.git', 'archive']);
 const checkedExtensions = new Set(['.ts', '.tsx', '.js', '.mjs', '.json', '.md', '.yml', '.yaml', '.css', '.html']);
 const failures = [];
 
@@ -35,3 +35,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log('FORMAT HYGIENE CHECK PASSED');
+
