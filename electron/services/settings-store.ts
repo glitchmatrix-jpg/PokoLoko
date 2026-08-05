@@ -1,4 +1,4 @@
-import { app } from 'electron';
+﻿import { app } from 'electron';
 import fs from 'node:fs';
 import path from 'node:path';
 import { z } from 'zod';
@@ -33,7 +33,17 @@ export const settingsSchema = z.object({
   diagnosticsEnabled: z.boolean().default(false),
   onboardingComplete: z.boolean().default(false),
   splashEnabled: z.boolean().default(true),
-  contextAwareness: contextSchema.default({}),
+  contextAwareness: contextSchema.default({
+    enabled: false,
+    typingPresence: false,
+    mouseActivity: true,
+    systemIdle: true,
+    timeOfDay: true,
+    audioState: false,
+    fullscreenState: true,
+    lockAndResume: true,
+    recentPetInteraction: true,
+  }),
 });
 
 export type AppSettings = z.infer<typeof settingsSchema>;
@@ -103,3 +113,4 @@ export class SettingsStore {
     fs.renameSync(temporary, this.filePath);
   }
 }
+
