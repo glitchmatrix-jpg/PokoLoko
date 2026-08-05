@@ -70,8 +70,8 @@ jobs:
       - name: Verify installer exists
         shell: pwsh
         run: |
-          $installer = Get-ChildItem release -Filter '*Setup*.exe' -ErrorAction SilentlyContinue
-          $portable = Get-ChildItem release -Filter '*Portable*.exe' -ErrorAction SilentlyContinue
+          $installer = Get-ChildItem release -Filter 'PokoLoko-*-x64-win.exe' -ErrorAction SilentlyContinue
+          $portable = Get-ChildItem release -Filter 'PokoLoko-Portable-*-x64.exe' -ErrorAction SilentlyContinue
           if (-not $installer) { throw 'NSIS installer was not produced.' }
           if (-not $portable) { throw 'Portable executable was not produced.' }
       - name: Upload complete release candidate
