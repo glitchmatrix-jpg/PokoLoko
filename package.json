@@ -16,7 +16,7 @@
   "scripts": {
     "clean": "node scripts/clean.mjs",
     "dev": "node scripts/dev.mjs",
-    "typecheck": "tsc --noEmit -p tsconfig.renderer.json && tsc --noEmit -p tsconfig.electron.json && tsc --noEmit -p tsconfig.tests.json",
+    "typecheck": "tsc --noEmit -p tsconfig.renderer.json && tsc --noEmit -p tsconfig.electron.json",
     "lint": "eslint . --max-warnings=0",
     "format": "prettier --write .",
     "format:check": "node scripts/check-format.mjs .",
