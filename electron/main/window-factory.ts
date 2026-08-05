@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { rendererUrl, type Surface } from '../services/asset-paths.js';
 
 const currentDirectory = path.dirname(fileURLToPath(import.meta.url));
-const preloadPath = path.join(currentDirectory, '..', 'preload', 'preload.js');
+const preloadPath = path.join(currentDirectory, '..', 'preload', 'preload.cjs');
 
 function secureWebPreferences(): BrowserWindowConstructorOptions['webPreferences'] {
   return {

@@ -2,7 +2,7 @@
     "name":  "pokoloko-desktop",
     "version":  "1.0.0-rc.1",
     "private":  true,
-    "description":  "PokoLoko — a private, expressive Poko and Loko desktop companion for Windows.",
+    "description":  "PokoLoko â€” a private, expressive Poko and Loko desktop companion for Windows.",
     "author":  {
                    "name":  "Hasan Bukhari"
                },
@@ -23,7 +23,7 @@
                     "test":  "vitest run",
                     "test:watch":  "vitest",
                     "build:renderer":  "vite build",
-                    "build:electron":  "tsc -p tsconfig.electron.json",
+                    "build:electron":  "tsc -p tsconfig.electron.json \u0026\u0026 npm run build:preload",
                     "build":  "npm run clean \u0026\u0026 npm run build:renderer \u0026\u0026 npm run build:electron \u0026\u0026 node scripts/validate-build.mjs",
                     "start":  "electron .",
                     "package:dir":  "npm run build \u0026\u0026 electron-builder --dir --publish never",
@@ -91,7 +91,7 @@
     "build":  {
                   "appId":  "com.hasanbukhari.pokoloko",
                   "productName":  "PokoLoko",
-                  "copyright":  "Copyright © 2026 Hasan Bukhari",
+                  "copyright":  "Copyright Â© 2026 Hasan Bukhari",
                   "artifactName":  "PokoLoko-${version}-${arch}-${os}.${ext}",
                   "asar":  true,
                   "asarUnpack":  [
@@ -148,4 +148,3 @@
               },
     "homepage":  "https://github.com/hasanbukhari/PokoLoko"
 }
-
