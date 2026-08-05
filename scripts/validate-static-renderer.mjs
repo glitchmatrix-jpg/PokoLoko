@@ -34,7 +34,7 @@ const assertions = [
   [styles.includes('image-rendering: pixelated'), 'pixelated rendering missing'],
   [styles.includes('object-fit: fill'), 'fixed frame fill policy missing'],
   [factory.includes("backgroundColor: '#00000000'"), 'transparent native background missing'],
-  [factory.includes('setIgnoreMouseEvents(true, { forward: true })'), 'initial mouse pass-through missing'],
+  [factory.includes('setIgnoreMouseEvents(false)'), 'interactive pet window missing'],
   [controller.includes('computeStaticPetGeometry'), 'grounding geometry not used'],
   [controller.includes('loadStaticPetAsset'), 'authoritative manifest asset selection missing'],
   [contracts.includes('safeIntegerScaleSchema'), 'safe integer scale contract missing'],
