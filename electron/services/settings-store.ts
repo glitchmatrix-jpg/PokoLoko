@@ -1,4 +1,4 @@
-﻿import { app } from 'electron';
+import { app } from 'electron';
 import fs from 'node:fs';
 import path from 'node:path';
 import { z } from 'zod';

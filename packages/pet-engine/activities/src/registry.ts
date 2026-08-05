@@ -1,4 +1,4 @@
-﻿import type { ActivityDefinition, ActivityId, CharacterId, InterruptionLevel } from './types.js';
+import type { ActivityDefinition, ActivityId, CharacterId, InterruptionLevel } from './types.js';
 
 const interruption = (
   loop: InterruptionLevel,

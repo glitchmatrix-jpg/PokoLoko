@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import type { CharacterId, LocomotionActivityLevel } from '../../electron/preload/contracts';
 import { resolveRuntimeAssetUrl } from '../shared/assetUrl';
 

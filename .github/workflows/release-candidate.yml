@@ -1,4 +1,4 @@
-﻿name: PokoLoko Release Candidate
+name: PokoLoko Release Candidate
 
 on:
   workflow_dispatch:

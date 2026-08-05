@@ -1,4 +1,4 @@
-﻿import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import manifestJson from '../../../public/assets/runtime/runtime_manifest.json';
 import metricsJson from '../../../public/assets/diagnostics/animation_metrics.json';
 import { AnimationViewport } from './AnimationViewport';

@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import manifestJson from '../../../public/assets/runtime/runtime_manifest.json';
 import { frameAtElapsed } from './player';
 import type { RuntimeManifest } from './types';

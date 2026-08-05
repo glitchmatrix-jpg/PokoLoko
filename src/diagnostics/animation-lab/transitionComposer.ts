@@ -1,4 +1,4 @@
-﻿import type { ChainSegment, RuntimeAnimation } from './types';
+import type { ChainSegment, RuntimeAnimation } from './types';
 
 export type ChainReview = {
   valid: boolean;

@@ -1,4 +1,4 @@
-﻿import type { CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
 import type { AnimationMetrics, RuntimeAnimation } from './types';
 
 type Props = {
