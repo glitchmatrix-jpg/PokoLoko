@@ -1,151 +1,151 @@
 {
-  "name": "pokoloko-desktop",
-  "version": "1.0.0-rc.1",
-  "private": true,
-  "description": "PokoLoko \u2014 a private, expressive Poko and Loko desktop companion for Windows.",
-  "author": {
-    "name": "Hasan Bukhari"
-  },
-  "license": "SEE LICENSE IN LICENSE",
-  "type": "module",
-  "main": "dist-electron/electron/main/main.js",
-  "engines": {
-    "node": ">=22.12.0",
-    "npm": ">=10.0.0"
-  },
-  "scripts": {
-    "clean": "node scripts/clean.mjs",
-    "dev": "node scripts/dev.mjs",
-    "typecheck": "tsc --noEmit -p tsconfig.renderer.json && tsc --noEmit -p tsconfig.electron.json",
-    "lint": "eslint . --max-warnings=0",
-    "format": "prettier --write .",
-    "format:check": "node scripts/check-format.mjs .",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "build:renderer": "vite build",
-    "build:electron": "tsc -p tsconfig.electron.json",
-    "build": "npm run clean && npm run build:renderer && npm run build:electron && node scripts/validate-build.mjs",
-    "start": "electron .",
-    "package:dir": "npm run build && electron-builder --dir --publish never",
-    "package:win": "npm run build && electron-builder --win nsis portable --x64 --publish never",
-    "smoke:package": "node scripts/package-smoke.mjs",
-    "validate": "npm run validate:stages-01-09 && npm run validate:assets && npm run validate:lab && npm run validate:renderer && npm run validate:animation-runtime && npm run validate:locomotion && npm run validate:direction-turning && npm run validate:state-machine && npm run validate:dragging && npm run validate:behavior && npm run validate:sleep-wake && npm run validate:character-switching && npm run validate:context-sensing && npm run validate:activities && npm run validate:integrated-activities && npm run validate:reactions && npm run validate:living-runtime && npm run validate:settings && npm run validate:onboarding-tray && npm run validate:tuning-sound && npm run validate:diagnostics && npm run validate:automated-tests && npm run validate:manual-qa-readiness && npm run validate:release-candidate && npm run format:check && npm run typecheck && npm run lint && npm run test && npm run build && npm run smoke:package",
-    "ci": "npm ci && npm run validate",
-    "validate:assets": "node scripts/validate-runtime-assets.mjs .",
-    "validate:lab": "node scripts/validate-animation-lab.mjs .",
-    "validate:renderer": "node scripts/validate-static-renderer.mjs .",
-    "validate:animation-runtime": "node scripts/validate-animation-runtime.mjs .",
-    "validate:stages-01-09": "node scripts/validate-stages-01-09.mjs .",
-    "validate:locomotion": "node scripts/validate-locomotion.mjs .",
-    "validate:direction-turning": "node scripts/validate-direction-turning.mjs .",
-    "validate:state-machine": "node scripts/validate-state-machine.mjs .",
-    "validate:dragging": "node scripts/validate-dragging.mjs .",
-    "validate:behavior": "node scripts/validate-behavior-planner.mjs .",
-    "validate:sleep-wake": "node scripts/validate-sleep-wake.mjs .",
-    "validate:character-switching": "node scripts/validate-character-switching.mjs .",
-    "validate:context-sensing": "node scripts/validate-context-sensing.mjs .",
-    "validate:activities": "node scripts/validate-activity-framework.mjs .",
-    "validate:integrated-activities": "node scripts/validate-integrated-activities.mjs .",
-    "validate:reactions": "node scripts/validate-reactions.mjs .",
-    "validate:stages-01-20-audit": "node scripts/validate-stages-01-20-audit.mjs .",
-    "validate:living-runtime": "node scripts/validate-living-runtime.mjs .",
-    "validate:settings": "node scripts/validate-settings-experience.mjs .",
-    "validate:onboarding-tray": "node scripts/validate-onboarding-and-tray.mjs .",
-    "validate:tuning-sound": "node scripts/validate-tuning-and-sound.mjs .",
-    "validate:diagnostics": "node scripts/validate-diagnostics.mjs .",
-    "test:ci": "vitest run --reporter=default --reporter=json --outputFile=reports/tests/vitest.json --no-file-parallelism",
-    "validate:automated-tests": "node scripts/validate-automated-test-suite.mjs .",
-    "validate:manual-qa-readiness": "node scripts/validate-manual-qa-readiness.mjs .",
-    "package:installer": "npm run build && electron-builder --win nsis --x64 --publish never",
-    "package:portable": "npm run build && electron-builder --win portable --x64 --publish never",
-    "release:validate": "node scripts/validate-release-candidate.mjs .",
-    "release:hashes": "node scripts/generate-build-hashes.mjs .",
-    "release:source-archive": "node scripts/create-source-archive.mjs .",
-    "release:rollback": "node scripts/create-rollback-archive.mjs .",
-    "release:assemble": "npm run validate && npm run package:win && npm run release:validate && npm run release:hashes && npm run release:source-archive && npm run release:rollback && npm run release:hashes",
-    "validate:release-candidate": "node scripts/validate-release-candidate.mjs ."
-  },
-  "dependencies": {
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "zod": "4.1.12"
-  },
-  "devDependencies": {
-    "@eslint/js": "9.38.0",
-    "@types/node": "22.18.11",
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
-    "@vitejs/plugin-react": "5.0.4",
-    "electron": "39.0.0",
-    "electron-builder": "26.0.12",
-    "eslint": "9.38.0",
-    "eslint-plugin-react-hooks": "7.0.1",
-    "eslint-plugin-react-refresh": "0.4.24",
-    "globals": "16.5.0",
-    "prettier": "3.6.2",
-    "typescript": "5.9.3",
-    "typescript-eslint": "8.46.2",
-    "vite": "7.1.12",
-    "vitest": "3.2.4"
-  },
-  "build": {
-    "appId": "com.hasanbukhari.pokoloko",
-    "productName": "PokoLoko",
-    "copyright": "Copyright \u00a9 2026 Hasan Bukhari",
-    "artifactName": "PokoLoko-${version}-${arch}-${os}.${ext}",
-    "asar": true,
-    "asarUnpack": [
-      "dist/assets/runtime/**/*"
-    ],
-    "files": [
-      "dist/**/*",
-      "dist-electron/**/*",
-      "package.json",
-      "LICENSE",
-      "THIRD_PARTY_NOTICES.md"
-    ],
-    "directories": {
-      "buildResources": "build",
-      "output": "release"
-    },
-    "win": {
-      "icon": "build/pokoloko.ico",
-      "publisherName": "Hasan Bukhari",
-      "verifyUpdateCodeSignature": false,
-      "target": [
-        {
-          "target": "nsis",
-          "arch": [
-            "x64"
-          ]
-        },
-        {
-          "target": "portable",
-          "arch": [
-            "x64"
-          ]
-        }
-      ]
-    },
-    "nsis": {
-      "oneClick": false,
-      "perMachine": false,
-      "allowElevation": true,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
-      "shortcutName": "PokoLoko",
-      "uninstallDisplayName": "PokoLoko",
-      "deleteAppDataOnUninstall": false,
-      "installerIcon": "build/pokoloko.ico",
-      "uninstallerIcon": "build/pokoloko.ico",
-      "installerHeaderIcon": "build/pokoloko.ico",
-      "runAfterFinish": true
-    },
-    "portable": {
-      "artifactName": "PokoLoko-Portable-${version}-${arch}.${ext}"
-    },
-    "publish": null
-  },
-  "homepage": "https://github.com/hasanbukhari/PokoLoko"
+    "name":  "pokoloko-desktop",
+    "version":  "1.0.0-rc.1",
+    "private":  true,
+    "description":  "PokoLoko — a private, expressive Poko and Loko desktop companion for Windows.",
+    "author":  {
+                   "name":  "Hasan Bukhari"
+               },
+    "license":  "SEE LICENSE IN LICENSE",
+    "type":  "module",
+    "main":  "dist-electron/electron/main/main.js",
+    "engines":  {
+                    "node":  "\u003e=22.12.0",
+                    "npm":  "\u003e=10.0.0"
+                },
+    "scripts":  {
+                    "clean":  "node scripts/clean.mjs",
+                    "dev":  "node scripts/dev.mjs",
+                    "typecheck":  "tsc --noEmit -p tsconfig.renderer.json \u0026\u0026 tsc --noEmit -p tsconfig.electron.json",
+                    "lint":  "eslint . --max-warnings=0",
+                    "format":  "prettier --write .",
+                    "format:check":  "node scripts/check-format.mjs .",
+                    "test":  "vitest run",
+                    "test:watch":  "vitest",
+                    "build:renderer":  "vite build",
+                    "build:electron":  "tsc -p tsconfig.electron.json",
+                    "build":  "npm run clean \u0026\u0026 npm run build:renderer \u0026\u0026 npm run build:electron \u0026\u0026 node scripts/validate-build.mjs",
+                    "start":  "electron .",
+                    "package:dir":  "npm run build \u0026\u0026 electron-builder --dir --publish never",
+                    "package:win":  "npm run build \u0026\u0026 electron-builder --win nsis portable --x64 --publish never",
+                    "smoke:package":  "node scripts/package-smoke.mjs",
+                    "validate":  "npm run validate:stages-01-09 \u0026\u0026 npm run validate:assets \u0026\u0026 npm run validate:lab \u0026\u0026 npm run validate:renderer \u0026\u0026 npm run validate:animation-runtime \u0026\u0026 npm run validate:locomotion \u0026\u0026 npm run validate:direction-turning \u0026\u0026 npm run validate:state-machine \u0026\u0026 npm run validate:dragging \u0026\u0026 npm run validate:behavior \u0026\u0026 npm run validate:sleep-wake \u0026\u0026 npm run validate:character-switching \u0026\u0026 npm run validate:context-sensing \u0026\u0026 npm run validate:activities \u0026\u0026 npm run validate:integrated-activities \u0026\u0026 npm run validate:reactions \u0026\u0026 npm run validate:living-runtime \u0026\u0026 npm run validate:settings \u0026\u0026 npm run validate:onboarding-tray \u0026\u0026 npm run validate:tuning-sound \u0026\u0026 npm run validate:diagnostics \u0026\u0026 npm run validate:automated-tests \u0026\u0026 npm run validate:manual-qa-readiness \u0026\u0026 npm run validate:release-candidate \u0026\u0026 npm run format:check \u0026\u0026 npm run typecheck \u0026\u0026 npm run lint \u0026\u0026 npm run test \u0026\u0026 npm run build \u0026\u0026 npm run smoke:package",
+                    "ci":  "npm ci \u0026\u0026 npm run validate",
+                    "validate:assets":  "node scripts/validate-runtime-assets.mjs .",
+                    "validate:lab":  "node scripts/validate-animation-lab.mjs .",
+                    "validate:renderer":  "node scripts/validate-static-renderer.mjs .",
+                    "validate:animation-runtime":  "node scripts/validate-animation-runtime.mjs .",
+                    "validate:stages-01-09":  "node scripts/validate-stages-01-09.mjs .",
+                    "validate:locomotion":  "node scripts/validate-locomotion.mjs .",
+                    "validate:direction-turning":  "node scripts/validate-direction-turning.mjs .",
+                    "validate:state-machine":  "node scripts/validate-state-machine.mjs .",
+                    "validate:dragging":  "node scripts/validate-dragging.mjs .",
+                    "validate:behavior":  "node scripts/validate-behavior-planner.mjs .",
+                    "validate:sleep-wake":  "node scripts/validate-sleep-wake.mjs .",
+                    "validate:character-switching":  "node scripts/validate-character-switching.mjs .",
+                    "validate:context-sensing":  "node scripts/validate-context-sensing.mjs .",
+                    "validate:activities":  "node scripts/validate-activity-framework.mjs .",
+                    "validate:integrated-activities":  "node scripts/validate-integrated-activities.mjs .",
+                    "validate:reactions":  "node scripts/validate-reactions.mjs .",
+                    "validate:stages-01-20-audit":  "node scripts/validate-stages-01-20-audit.mjs .",
+                    "validate:living-runtime":  "node scripts/validate-living-runtime.mjs .",
+                    "validate:settings":  "node scripts/validate-settings-experience.mjs .",
+                    "validate:onboarding-tray":  "node scripts/validate-onboarding-and-tray.mjs .",
+                    "validate:tuning-sound":  "node scripts/validate-tuning-and-sound.mjs .",
+                    "validate:diagnostics":  "node scripts/validate-diagnostics.mjs .",
+                    "test:ci":  "vitest run --reporter=default --reporter=json --outputFile=reports/tests/vitest.json --no-file-parallelism",
+                    "validate:automated-tests":  "node scripts/validate-automated-test-suite.mjs .",
+                    "validate:manual-qa-readiness":  "node scripts/validate-manual-qa-readiness.mjs .",
+                    "package:installer":  "npm run build \u0026\u0026 electron-builder --win nsis --x64 --publish never",
+                    "package:portable":  "npm run build \u0026\u0026 electron-builder --win portable --x64 --publish never",
+                    "release:validate":  "node scripts/validate-release-candidate.mjs .",
+                    "release:hashes":  "node scripts/generate-build-hashes.mjs .",
+                    "release:source-archive":  "node scripts/create-source-archive.mjs .",
+                    "release:rollback":  "node scripts/create-rollback-archive.mjs .",
+                    "release:assemble":  "npm run validate \u0026\u0026 npm run package:win \u0026\u0026 npm run release:validate \u0026\u0026 npm run release:hashes \u0026\u0026 npm run release:source-archive \u0026\u0026 npm run release:rollback \u0026\u0026 npm run release:hashes",
+                    "validate:release-candidate":  "node scripts/validate-release-candidate.mjs ."
+                },
+    "dependencies":  {
+                         "react":  "19.2.0",
+                         "react-dom":  "19.2.0",
+                         "zod":  "4.1.12"
+                     },
+    "devDependencies":  {
+                            "@eslint/js":  "9.38.0",
+                            "@types/node":  "22.18.11",
+                            "@types/react":  "19.2.2",
+                            "@types/react-dom":  "19.2.2",
+                            "@vitejs/plugin-react":  "5.0.4",
+                            "electron":  "39.0.0",
+                            "electron-builder":  "26.0.12",
+                            "eslint":  "9.38.0",
+                            "eslint-plugin-react-hooks":  "7.0.1",
+                            "eslint-plugin-react-refresh":  "0.4.24",
+                            "globals":  "16.5.0",
+                            "prettier":  "3.6.2",
+                            "typescript":  "5.9.3",
+                            "typescript-eslint":  "8.46.2",
+                            "vite":  "7.1.12",
+                            "vitest":  "3.2.4"
+                        },
+    "build":  {
+                  "appId":  "com.hasanbukhari.pokoloko",
+                  "productName":  "PokoLoko",
+                  "copyright":  "Copyright © 2026 Hasan Bukhari",
+                  "artifactName":  "PokoLoko-${version}-${arch}-${os}.${ext}",
+                  "asar":  true,
+                  "asarUnpack":  [
+                                     "dist/assets/runtime/**/*"
+                                 ],
+                  "files":  [
+                                "dist/**/*",
+                                "dist-electron/**/*",
+                                "package.json",
+                                "LICENSE",
+                                "THIRD_PARTY_NOTICES.md"
+                            ],
+                  "directories":  {
+                                      "buildResources":  "build",
+                                      "output":  "release"
+                                  },
+                  "win":  {
+                              "icon":  "build/pokoloko.ico",
+                              "verifyUpdateCodeSignature":  false,
+                              "target":  [
+                                             {
+                                                 "target":  "nsis",
+                                                 "arch":  [
+                                                              "x64"
+                                                          ]
+                                             },
+                                             {
+                                                 "target":  "portable",
+                                                 "arch":  [
+                                                              "x64"
+                                                          ]
+                                             }
+                                         ]
+                          },
+                  "nsis":  {
+                               "oneClick":  false,
+                               "perMachine":  false,
+                               "allowElevation":  true,
+                               "allowToChangeInstallationDirectory":  true,
+                               "createDesktopShortcut":  true,
+                               "createStartMenuShortcut":  true,
+                               "shortcutName":  "PokoLoko",
+                               "uninstallDisplayName":  "PokoLoko",
+                               "deleteAppDataOnUninstall":  false,
+                               "installerIcon":  "build/pokoloko.ico",
+                               "uninstallerIcon":  "build/pokoloko.ico",
+                               "installerHeaderIcon":  "build/pokoloko.ico",
+                               "runAfterFinish":  true
+                           },
+                  "portable":  {
+                                   "artifactName":  "PokoLoko-Portable-${version}-${arch}.${ext}"
+                               },
+                  "publish":  null
+              },
+    "homepage":  "https://github.com/hasanbukhari/PokoLoko"
 }
+
