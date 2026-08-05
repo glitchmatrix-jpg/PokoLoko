@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import manifestJson from '../../../../public/assets/runtime/runtime_manifest.json';
-import metricsJson from '../../../../public/assets/diagnostics/animation_metrics.json';
+﻿import { useEffect, useMemo, useRef, useState } from 'react';
+import manifestJson from '../../../public/assets/runtime/runtime_manifest.json';
+import metricsJson from '../../../public/assets/diagnostics/animation_metrics.json';
 import { AnimationViewport } from './AnimationViewport';
 import { buildPlaybackOrder, frameAtElapsed } from './player';
 import { createDefaultChain, reviewChain } from './transitionComposer';
@@ -79,7 +79,7 @@ export function AnimationLab() {
   const addHold = () => setChain((current) => [...current, { id: crypto.randomUUID(), kind: 'hold', durationMs: 300, label: 'runtime hold' }]);
   const simulateInterruption = () => {
     const rule = animation.interruptionLevel === 'immediate' ? 'cancel now and route to neutral recovery' : animation.interruptionLevel === 'soft' ? 'exit at next phrase boundary' : animation.interruptionLevel === 'deferred' ? 'wait for prop/posture-safe marker' : 'finish locked micro-transition unless drag/system interruption';
-    setInterruptionResult(`Frame ${frameIndex + 1}: ${animation.interruptionLevel.toUpperCase()} — ${rule}. ${animation.interruptionRule}`);
+    setInterruptionResult(`Frame ${frameIndex + 1}: ${animation.interruptionLevel.toUpperCase()} â€” ${rule}. ${animation.interruptionRule}`);
   };
   const selectedMetrics = metrics[animation.id];
 
@@ -93,30 +93,31 @@ export function AnimationLab() {
       <label>Comparison<select value={compare.id} onChange={(event) => setCompareId(event.target.value)}>{options.map((item) => <option key={item.id} value={item.id}>{item.id}</option>)}</select></label>
       <div className="control-grid">
         <button onClick={togglePlaying}>{playing ? 'Pause' : 'Play'}</button>
-        <button onClick={resetClock}>Restart</button><button onClick={() => step(-1)}>← Frame</button><button onClick={() => step(1)}>Frame →</button>
+        <button onClick={resetClock}>Restart</button><button onClick={() => step(-1)}>â† Frame</button><button onClick={() => step(1)}>Frame â†’</button>
       </div>
       <button className="wide-button" onClick={() => void window.pokoloko.sendWindowCommand({ type: 'open_lab_preview', animationId: animation.id })}>Open transparent preview</button>
       <button className="wide-button" onClick={simulateInterruption}>Simulate interruption here</button>
       <p className="interrupt-result">{interruptionResult}</p>
       <label>FPS <output>{fps.toFixed(1)}</output><input type="range" min="1" max="20" step="0.5" value={fps} onChange={(event) => setFps(Number(event.target.value))} /></label>
-      <label>Integer scale<select value={scale} onChange={(event) => setScale(Number(event.target.value))}><option value="1">1×</option><option value="2">2×</option><option value="3">3×</option><option value="4">4×</option></select></label>
+      <label>Integer scale<select value={scale} onChange={(event) => setScale(Number(event.target.value))}><option value="1">1Ã—</option><option value="2">2Ã—</option><option value="3">3Ã—</option><option value="4">4Ã—</option></select></label>
       <label>Playback<select value={playback} onChange={(event) => setPlayback(event.target.value as PlaybackMode)}><option value="forward">Forward</option><option value="reverse">Reverse</option><option value="ping_pong">Ping-pong</option></select></label>
       <label className="check"><input type="checkbox" checked={loop} onChange={(event) => setLoop(event.target.checked)} /> Loop</label>
       {Object.entries(guides).map(([key, value]) => <label className="check" key={key}><input type="checkbox" checked={value} onChange={() => setGuides((current) => ({ ...current, [key]: !current[key as keyof typeof current] }))} /> {key}</label>)}
     </aside>
 
     <section className="lab-workspace">
-      <div className="lab-summary"><div><span>Action</span><strong>{animation.visibleAction}</strong></div><div><span>Verdict</span><strong className={`verdict ${selectedMetrics?.verdict}`}>{selectedMetrics?.verdict ?? 'unmeasured'}</strong></div><div><span>Loop seam</span><strong>{selectedMetrics?.loopSeamScore.toFixed(3) ?? '—'}</strong></div><div><span>Interrupt</span><strong>{animation.interruptionLevel}</strong></div></div>
+      <div className="lab-summary"><div><span>Action</span><strong>{animation.visibleAction}</strong></div><div><span>Verdict</span><strong className={`verdict ${selectedMetrics?.verdict}`}>{selectedMetrics?.verdict ?? 'unmeasured'}</strong></div><div><span>Loop seam</span><strong>{selectedMetrics?.loopSeamScore.toFixed(3) ?? 'â€”'}</strong></div><div><span>Interrupt</span><strong>{animation.interruptionLevel}</strong></div></div>
       <div className="viewport-grid">
         <AnimationViewport animation={animation} frameIndex={frameIndex} scale={scale} showCanvas={guides.canvas} showGround={guides.ground} showBodyCenter={guides.center} showBounds={guides.bounds} metrics={selectedMetrics} label="Primary" />
         <AnimationViewport animation={compare} frameIndex={Math.min(frameIndex, compare.frameCount - 1)} scale={scale} showCanvas={guides.canvas} showGround={guides.ground} showBodyCenter={guides.center} showBounds={guides.bounds} metrics={metrics[compare.id]} label={compare.generatedByMirroring ? 'Mirrored comparison' : 'Comparison'} />
       </div>
       <section className="chain-panel">
         <header><div><p className="eyebrow">TRANSITION COMPOSER</p><h2>Phrase before behavior.</h2></div><div className="chain-actions"><button onClick={addAnimation}>Add selected</button><button onClick={addHold}>Add hold</button><button onClick={() => setChain((current) => current.slice(0,-1))}>Remove last</button><button onClick={() => setChain(createDefaultChain(character))}>Reset</button></div></header>
-        <div className="chain-strip">{chain.map((segment, index) => <div className={`chain-node ${segment.kind}`} key={segment.id}><span>{index + 1}</span><strong>{segment.kind === 'animation' ? segment.animationId : segment.kind}</strong><small>{segment.kind === 'animation' ? `${segment.loops}×` : `${segment.durationMs} ms`}</small></div>)}</div>
+        <div className="chain-strip">{chain.map((segment, index) => <div className={`chain-node ${segment.kind}`} key={segment.id}><span>{index + 1}</span><strong>{segment.kind === 'animation' ? segment.animationId : segment.kind}</strong><small>{segment.kind === 'animation' ? `${segment.loops}Ã—` : `${segment.durationMs} ms`}</small></div>)}</div>
         <div className={`chain-review ${chainReview.valid ? 'pass' : 'warn'}`}><strong>{chainReview.valid ? 'Chain is structurally valid' : 'Chain requires choreography'}</strong><span>{(chainReview.totalDurationMs / 1000).toFixed(1)} s</span>{chainReview.warnings.length ? <ul>{chainReview.warnings.map((warning) => <li key={warning}>{warning}</li>)}</ul> : <p>No posture, prop or missing-asset warnings detected.</p>}</div>
       </section>
-      <section className="metrics-table"><h2>Frame stability</h2><table><thead><tr><th>Frame</th><th>Ground Δ</th><th>Centroid Δ</th><th>Area Δ</th><th>Bounds</th></tr></thead><tbody>{selectedMetrics?.frames.map((item) => <tr key={item.frame}><td>{item.frame + 1}</td><td>{item.groundDelta.toFixed(2)}</td><td>{item.centroidDelta.toFixed(2)}</td><td>{(item.visibleAreaDeltaRatio * 100).toFixed(1)}%</td><td>{item.bounds.width}×{item.bounds.height} @ {item.bounds.x},{item.bounds.y}</td></tr>)}</tbody></table></section>
+      <section className="metrics-table"><h2>Frame stability</h2><table><thead><tr><th>Frame</th><th>Ground Î”</th><th>Centroid Î”</th><th>Area Î”</th><th>Bounds</th></tr></thead><tbody>{selectedMetrics?.frames.map((item) => <tr key={item.frame}><td>{item.frame + 1}</td><td>{item.groundDelta.toFixed(2)}</td><td>{item.centroidDelta.toFixed(2)}</td><td>{(item.visibleAreaDeltaRatio * 100).toFixed(1)}%</td><td>{item.bounds.width}Ã—{item.bounds.height} @ {item.bounds.x},{item.bounds.y}</td></tr>)}</tbody></table></section>
     </section>
   </main>;
 }
+

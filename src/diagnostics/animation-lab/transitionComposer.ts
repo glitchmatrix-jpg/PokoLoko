@@ -1,4 +1,4 @@
-import type { ChainSegment, RuntimeAnimation } from './types';
+﻿import type { ChainSegment, RuntimeAnimation } from './types';
 
 export type ChainReview = {
   valid: boolean;
@@ -19,7 +19,7 @@ export function reviewChain(segments: ChainSegment[], animations: Map<string, Ru
       }
       totalDurationMs += (animation.frameCount / Math.max(0.1, animation.fps)) * 1000 * Math.max(1, segment.loops);
       if (previous && previous.posture.end !== animation.posture.start) {
-        warnings.push(`Posture bridge required: ${previous.id} (${previous.posture.end}) → ${animation.id} (${animation.posture.start}).`);
+        warnings.push(`Posture bridge required: ${previous.id} (${previous.posture.end}) â†’ ${animation.id} (${animation.posture.start}).`);
       }
       if (previous && previous.prop.state !== 'none' && animation.prop.state === 'none') {
         warnings.push(`Prop removal choreography required after ${previous.id} (${previous.prop.state}).`);
@@ -29,7 +29,7 @@ export function reviewChain(segments: ChainSegment[], animations: Map<string, Ru
       continue;
     }
     totalDurationMs += segment.durationMs;
-    if (segment.kind === 'direction' && previous?.direction !== 'none' && previous?.direction !== segment.direction) {
+    if (segment.kind === 'direction' && previous && previous.direction !== 'none' && previous.direction !== segment.direction) {
       warnings.push(`Direction change after ${previous.id} needs a neutral or turn hold.`);
     }
   }
@@ -53,3 +53,4 @@ export function createDefaultChain(character: 'poko' | 'loko'): ChainSegment[] {
     { id: `${prefix}-9`, kind: 'animation', animationId: idle, loops: 1 },
   ];
 }
+

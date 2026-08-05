@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import manifestJson from '../../../../public/assets/runtime/runtime_manifest.json';
+﻿import { useEffect, useState } from 'react';
+import manifestJson from '../../../public/assets/runtime/runtime_manifest.json';
 import { frameAtElapsed } from './player';
 import type { RuntimeManifest } from './types';
 
@@ -14,5 +14,6 @@ export function TransparentPreview() {
     const tick = (now:number) => { setFrame(frameAtElapsed(now-start, animation.frameCount, animation.fps, animation.playback, animation.loop).frameIndex); raf=requestAnimationFrame(tick); };
     raf=requestAnimationFrame(tick); return()=>cancelAnimationFrame(raf);
   }, [animation]);
-  return <main className="transparent-preview"><div className="preview-ground"/><div className="preview-sprite"><img src={animation.frames[frame]} alt="transparent animation preview" /></div><div className="preview-caption">{animation.id} · {frame+1}/{animation.frameCount}</div></main>;
+  return <main className="transparent-preview"><div className="preview-ground"/><div className="preview-sprite"><img src={animation.frames[frame]} alt="transparent animation preview" /></div><div className="preview-caption">{animation.id} Â· {frame+1}/{animation.frameCount}</div></main>;
 }
+

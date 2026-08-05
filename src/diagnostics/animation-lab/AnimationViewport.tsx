@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react';
+﻿import type { CSSProperties } from 'react';
 import type { AnimationMetrics, RuntimeAnimation } from './types';
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
   showBodyCenter: boolean;
   showBounds: boolean;
   mirroredPreview?: boolean;
-  metrics?: AnimationMetrics;
+  metrics?: AnimationMetrics | undefined;
   label?: string;
 };
 
@@ -31,11 +31,12 @@ export function AnimationViewport({ animation, frameIndex, scale, showCanvas, sh
         </div>
       </div>
       <dl className="frame-facts">
-        <dt>Source</dt><dd>{animation.sourceFrameIds[frameIndex] ?? '—'}</dd>
-        <dt>Posture</dt><dd>{animation.posture.start} → {animation.posture.end}</dd>
-        <dt>Prop</dt><dd>{animation.prop.state} · {animation.prop.ownership}</dd>
-        <dt>Anchor</dt><dd>{anchor?.ground ? `${anchor.ground.x}, ${anchor.ground.y}` : '—'}</dd>
+        <dt>Source</dt><dd>{animation.sourceFrameIds[frameIndex] ?? 'â€”'}</dd>
+        <dt>Posture</dt><dd>{animation.posture.start} â†’ {animation.posture.end}</dd>
+        <dt>Prop</dt><dd>{animation.prop.state} Â· {animation.prop.ownership}</dd>
+        <dt>Anchor</dt><dd>{anchor?.ground ? `${anchor.ground.x}, ${anchor.ground.y}` : 'â€”'}</dd>
       </dl>
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import type { CharacterId, LocomotionActivityLevel } from '../../electron/preload/contracts';
 import { resolveRuntimeAssetUrl } from '../shared/assetUrl';
 
@@ -12,6 +12,8 @@ export function OnboardingSurface() {
   const [contextEnabled, setContextEnabled] = useState(false);
   const [busy, setBusy] = useState(false);
   const index = steps.indexOf(step);
+  const previousStep = steps[index - 1];
+  const nextStep = steps[index + 1];
 
   async function finish(skipped = false) {
     if (busy) return;
@@ -48,9 +50,9 @@ export function OnboardingSurface() {
       {step === 'controls' && <>
         <p className="onboarding-kicker">The basics</p><h1>Small gestures. Clear meaning.</h1>
         <div className="onboarding-feature-grid">
-          <article><span>↔</span><h2>Drag to move</h2><p>Pick your companion up and place them anywhere along the desktop floor.</p></article>
-          <article><span>♡</span><h2>Click to interact</h2><p>They respond differently depending on mood, posture, and how much attention you give.</p></article>
-          <article><span>⋯</span><h2>Use the tray</h2><p>Pause, switch companions, adjust activity, open Settings, or quit.</p></article>
+          <article><span>â†”</span><h2>Drag to move</h2><p>Pick your companion up and place them anywhere along the desktop floor.</p></article>
+          <article><span>â™¡</span><h2>Click to interact</h2><p>They respond differently depending on mood, posture, and how much attention you give.</p></article>
+          <article><span>â‹¯</span><h2>Use the tray</h2><p>Pause, switch companions, adjust activity, open Settings, or quit.</p></article>
         </div>
       </>}
 
@@ -77,9 +79,10 @@ export function OnboardingSurface() {
     <footer className="onboarding-footer">
       <div className="onboarding-progress" aria-label={`Step ${index + 1} of ${steps.length}`}>{steps.map((item, i) => <span key={item} className={i <= index ? 'active' : ''} />)}</div>
       <div>
-        {index > 0 && <button type="button" className="secondary" onClick={() => setStep(steps[index-1])}>Back</button>}
-        {index < steps.length - 1 ? <button type="button" onClick={() => setStep(steps[index+1])}>Continue</button> : <button type="button" onClick={() => void finish(false)} disabled={busy}>{busy ? 'Opening…' : `Welcome ${character === 'poko' ? 'Poko' : 'Loko'}`}</button>}
+        {index > 0 && <button type="button" className="secondary" onClick={() => previousStep && setStep(previousStep)}>Back</button>}
+        {index < steps.length - 1 ? <button type="button" onClick={() => nextStep && setStep(nextStep)}>Continue</button> : <button type="button" onClick={() => void finish(false)} disabled={busy}>{busy ? 'Openingâ€¦' : `Welcome ${character === 'poko' ? 'Poko' : 'Loko'}`}</button>}
       </div>
     </footer>
   </main>;
 }
+
