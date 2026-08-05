@@ -1,81 +1,41 @@
-# Poko v0.1.1 — Alive on Desktop
+# PokoLoko
 
-A transparent Electron desktop pet for Windows featuring **Poko** and **Loko**.
+PokoLoko is a private Windows desktop-companion application starring **Poko** and **Loko**. It uses transparent Electron windows, deterministic sprite animation, grounded locomotion, legal state transitions, full activity choreography, social reactions, sleep/wake rhythm, optional privacy-safe context signals, polished settings, onboarding, tray controls, diagnostics, and deterministic testing.
 
-## What works
+## Build the Windows release on GitHub
 
-- Transparent, frameless, taskbar-free pet window
-- Always-on-top mode
-- Poko/Loko switching from the tray or settings
-- Persistent settings in Electron's user-data directory
-- Autonomous idle, walking, sitting, sleeping, waking, and reaction states
-- Bottom-of-work-area movement that avoids the Windows taskbar
-- Multi-monitor-aware dragging and movement bounds
-- Click reaction and repeated-click confused/annoyed reaction
-- Drag threshold, so ordinary clicks no longer accidentally drag the window
-- Drop-and-landing animation
-- Right-click context menu
-- Double-click settings window
-- Pause/resume behavior
-- Asset preloading, fixed bottom-center anchoring, and nearest-neighbor rendering
-- Packaged `file://` asset paths that work outside the Vite development server
-- Context-isolated, sandboxed renderer with a CommonJS preload bridge
+1. Create an empty GitHub repository named `PokoLoko`.
+2. Extract this ZIP and push **the contents of the `PokoLoko` folder** to the repository root.
+3. Open **Actions → PokoLoko Release Candidate → Run workflow**.
+4. Leave the version as `1.0.0-rc.1`, or enter the desired release version.
+5. Download the `PokoLoko-Release-Candidate-*` artifact when the workflow succeeds.
 
-## Requirements
+The artifact contains the NSIS installer, portable executable, unpacked QA build, source archive, rollback archive, test reports, release notes, notices, and SHA-256 hashes.
 
-- Windows 10 or 11
-- Node.js 22.12 or newer
-- npm
-
-## Run in development
-
-Open PowerShell in this folder:
+## Local development
 
 ```powershell
-npm install
-npm run validate:assets
+npm install --no-audit --no-fund
 npm run dev
 ```
 
-## Build the application
+## Local Windows release build
 
 ```powershell
-npm run check
-npm run dist:win
+npm install --no-audit --no-fund
+npm run release:assemble
 ```
 
-The installer will be created under:
+Outputs are written to `release/`.
 
-```text
-release\Poko-Setup-0.1.1.exe
-```
+## Important release gate
 
-## Controls
+The repository performs deterministic validation and packaging automatically. A release is not considered fully approved until the generated Windows build completes the manual QA matrix in `docs/qa/MANUAL_QA_MATRIX.md`, including clean installation, mixed-DPI/multi-monitor behavior, tray lifecycle, suspend/resume, and long-session review.
 
-- **Left-click:** happy reaction
-- **Repeated left-clicks:** confused/annoyed reaction
-- **Drag:** move the pet
-- **Release:** snap to the bottom of the current monitor and land
-- **Right-click:** tray-style controls
-- **Double-click:** open settings
-- **Tray icon:** switch pet, pause, toggle always-on-top, open settings, or quit
+## Privacy
 
-## Validation
+Context awareness is optional and disabled by default. PokoLoko does not read typed text, clipboard contents, screenshots, passwords, messages, browser history, URLs, window titles, or document contents. See `docs/privacy/PRIVACY_CONTROLS.md`.
 
-`npm run validate:assets` checks that:
+## Source assets
 
-- both characters have all 12 required animation groups;
-- every referenced frame exists;
-- frame paths are package-safe relative paths;
-- every frame is a valid PNG;
-- each animation uses a consistent canvas size.
-
-The included asset library currently validates **265 frames across 24 required animations**.
-
-## Important notes
-
-The source package has been statically audited and the asset suite has been validated. A final Windows runtime and installer test still needs to be run on a Windows machine after `npm install`, because this environment cannot download npm dependencies from its internal package mirror.
-
-## Build in GitHub Actions (no local npm required)
-
-The repository includes `.github/workflows/build-windows.yml`. Upload the project to GitHub, open **Actions → Build Poko for Windows → Run workflow**, then download the generated installer from the run's **Artifacts** section. See `GITHUB_ACTIONS_BUILD.md` for exact steps.
+The complete authoritative asset pack and original supplied source files are preserved under `archive/source-assets/`. Runtime assets are generated and validated under `public/assets/runtime/`.

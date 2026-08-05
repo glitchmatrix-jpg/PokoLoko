@@ -1,0 +1,37 @@
+{
+  "step": "19",
+  "title": "Integrate Laptop, Reading, Music, Play, Food, and Ambient Activities",
+  "status": "STATIC_PASS_NATIVE_REVIEW_DEFERRED",
+  "counts": {
+    "approved_character_activity_pairs": 12,
+    "approved_activity_animations": 13,
+    "ambient_routines": 5,
+    "runtime_animations_total": 31,
+    "runtime_frames_total": 223
+  },
+  "checks": {
+    "all_step18_activities_have_integration_policy": true,
+    "typing_is_weight_not_command": true,
+    "poko_laptop_not_fabricated": true,
+    "poko_reading_not_fabricated": true,
+    "poko_and_loko_weights_distinct": true,
+    "frequency_caps_present": true,
+    "ambient_routines_present": true,
+    "peeking_requires_real_edge": true,
+    "prop_continuity_inherited_and_preserved": true,
+    "arbitrary_crossfades_absent": true,
+    "planner_overlay_typechecks": true,
+    "compiled_runtime_scenarios_pass": true,
+    "steps_01_18_dependency_free_regressions_pass": true,
+    "native_electron_visual_review_complete": false
+  },
+  "deferred_native_checks": [
+    "Complete activity chains inside packaged Electron",
+    "Prop-safe marker timing and teardown visuals",
+    "Long-session frequency and annoyance review",
+    "Typing/audio context adapters on Windows",
+    "Fullscreen quiet interruption",
+    "Peeking alignment at real work-area edges",
+    "Mixed-DPI and multi-monitor activity recovery"
+  ]
+}

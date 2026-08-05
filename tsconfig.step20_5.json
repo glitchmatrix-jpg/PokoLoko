@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {"target":"ES2022","module":"NodeNext","moduleResolution":"NodeNext","strict":true,"skipLibCheck":true,"outDir":".tmp-step205","rootDir":".","lib":["ES2022","DOM"],"noEmitOnError":true},
+  "include":[
+    "packages/pet-engine/orchestration/src/**/*.ts",
+    "packages/pet-engine/behavior/src/**/*.ts",
+    "packages/pet-engine/activities/src/**/*.ts",
+    "packages/pet-engine/reactions/src/**/*.ts",
+    "packages/pet-engine/sleep/src/**/*.ts",
+    "packages/pet-engine/context/src/**/*.ts",
+    "tests/living-runtime/**/*.ts"
+  ]
+}

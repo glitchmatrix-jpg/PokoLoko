@@ -1,0 +1,1948 @@
+{
+  "durationTargetMs": 600000,
+  "runs": [
+    {
+      "character": "poko",
+      "level": "calm",
+      "seed": 2293760,
+      "simulatedMs": 604773,
+      "actionCount": 47,
+      "maxIdenticalStreak": 2,
+      "counts": {
+        "idle": 18,
+        "walk": 14,
+        "music": 3,
+        "playing_ball": 2,
+        "drink": 2,
+        "eat": 3,
+        "peeking": 2,
+        "reaction": 3
+      },
+      "actions": [
+        {
+          "atMs": 0,
+          "action": "idle",
+          "durationMs": 17621
+        },
+        {
+          "atMs": 17621,
+          "action": "walk",
+          "durationMs": 11783
+        },
+        {
+          "atMs": 29404,
+          "action": "drink",
+          "durationMs": 18328
+        },
+        {
+          "atMs": 47732,
+          "action": "music",
+          "durationMs": 17105
+        },
+        {
+          "atMs": 64837,
+          "action": "eat",
+          "durationMs": 12281
+        },
+        {
+          "atMs": 77118,
+          "action": "idle",
+          "durationMs": 15621
+        },
+        {
+          "atMs": 92739,
+          "action": "idle",
+          "durationMs": 16422
+        },
+        {
+          "atMs": 109161,
+          "action": "reaction",
+          "durationMs": 2352
+        },
+        {
+          "atMs": 111513,
+          "action": "idle",
+          "durationMs": 16910
+        },
+        {
+          "atMs": 128423,
+          "action": "idle",
+          "durationMs": 17585
+        },
+        {
+          "atMs": 146008,
+          "action": "playing_ball",
+          "durationMs": 15365
+        },
+        {
+          "atMs": 161373,
+          "action": "idle",
+          "durationMs": 14044
+        },
+        {
+          "atMs": 175417,
+          "action": "walk",
+          "durationMs": 8204
+        },
+        {
+          "atMs": 183621,
+          "action": "idle",
+          "durationMs": 14921
+        },
+        {
+          "atMs": 198542,
+          "action": "peeking",
+          "durationMs": 15319
+        },
+        {
+          "atMs": 213861,
+          "action": "idle",
+          "durationMs": 15673
+        },
+        {
+          "atMs": 229534,
+          "action": "walk",
+          "durationMs": 11449
+        },
+        {
+          "atMs": 240983,
+          "action": "walk",
+          "durationMs": 12197
+        },
+        {
+          "atMs": 253180,
+          "action": "music",
+          "durationMs": 18968
+        },
+        {
+          "atMs": 272148,
+          "action": "idle",
+          "durationMs": 11501
+        },
+        {
+          "atMs": 283649,
+          "action": "walk",
+          "durationMs": 9307
+        },
+        {
+          "atMs": 292956,
+          "action": "walk",
+          "durationMs": 11813
+        },
+        {
+          "atMs": 304769,
+          "action": "idle",
+          "durationMs": 16888
+        },
+        {
+          "atMs": 321657,
+          "action": "walk",
+          "durationMs": 10007
+        },
+        {
+          "atMs": 331664,
+          "action": "eat",
+          "durationMs": 18956
+        },
+        {
+          "atMs": 350620,
+          "action": "walk",
+          "durationMs": 6619
+        },
+        {
+          "atMs": 357239,
+          "action": "idle",
+          "durationMs": 16666
+        },
+        {
+          "atMs": 373905,
+          "action": "drink",
+          "durationMs": 19229
+        },
+        {
+          "atMs": 393134,
+          "action": "idle",
+          "durationMs": 9790
+        },
+        {
+          "atMs": 402924,
+          "action": "walk",
+          "durationMs": 9272
+        },
+        {
+          "atMs": 412196,
+          "action": "idle",
+          "durationMs": 15943
+        },
+        {
+          "atMs": 428139,
+          "action": "reaction",
+          "durationMs": 2190
+        },
+        {
+          "atMs": 430329,
+          "action": "walk",
+          "durationMs": 7972
+        },
+        {
+          "atMs": 438301,
+          "action": "playing_ball",
+          "durationMs": 19855
+        },
+        {
+          "atMs": 458156,
+          "action": "idle",
+          "durationMs": 12353
+        },
+        {
+          "atMs": 470509,
+          "action": "walk",
+          "durationMs": 6596
+        },
+        {
+          "atMs": 477105,
+          "action": "music",
+          "durationMs": 14893
+        },
+        {
+          "atMs": 491998,
+          "action": "peeking",
+          "durationMs": 15818
+        },
+        {
+          "atMs": 507816,
+          "action": "idle",
+          "durationMs": 10572
+        },
+        {
+          "atMs": 518388,
+          "action": "walk",
+          "durationMs": 11895
+        },
+        {
+          "atMs": 530283,
+          "action": "idle",
+          "durationMs": 15205
+        },
+        {
+          "atMs": 545488,
+          "action": "eat",
+          "durationMs": 15188
+        },
+        {
+          "atMs": 560676,
+          "action": "idle",
+          "durationMs": 15278
+        },
+        {
+          "atMs": 575954,
+          "action": "reaction",
+          "durationMs": 2728
+        },
+        {
+          "atMs": 578682,
+          "action": "walk",
+          "durationMs": 8729
+        },
+        {
+          "atMs": 587411,
+          "action": "idle",
+          "durationMs": 10729
+        },
+        {
+          "atMs": 598140,
+          "action": "walk",
+          "durationMs": 6633
+        }
+      ]
+    },
+    {
+      "character": "poko",
+      "level": "balanced",
+      "seed": 2293857,
+      "simulatedMs": 611946,
+      "actionCount": 69,
+      "maxIdenticalStreak": 2,
+      "counts": {
+        "idle": 21,
+        "walk": 30,
+        "music": 4,
+        "playing_ball": 3,
+        "drink": 3,
+        "eat": 3,
+        "peeking": 3,
+        "reaction": 2
+      },
+      "actions": [
+        {
+          "atMs": 0,
+          "action": "walk",
+          "durationMs": 7829
+        },
+        {
+          "atMs": 7829,
+          "action": "playing_ball",
+          "durationMs": 15141
+        },
+        {
+          "atMs": 22970,
+          "action": "walk",
+          "durationMs": 7458
+        },
+        {
+          "atMs": 30428,
+          "action": "music",
+          "durationMs": 12401
+        },
+        {
+          "atMs": 42829,
+          "action": "walk",
+          "durationMs": 6376
+        },
+        {
+          "atMs": 49205,
+          "action": "drink",
+          "durationMs": 10579
+        },
+        {
+          "atMs": 59784,
+          "action": "walk",
+          "durationMs": 8358
+        },
+        {
+          "atMs": 68142,
+          "action": "eat",
+          "durationMs": 10087
+        },
+        {
+          "atMs": 78229,
+          "action": "idle",
+          "durationMs": 9282
+        },
+        {
+          "atMs": 87511,
+          "action": "walk",
+          "durationMs": 7721
+        },
+        {
+          "atMs": 95232,
+          "action": "peeking",
+          "durationMs": 8593
+        },
+        {
+          "atMs": 103825,
+          "action": "walk",
+          "durationMs": 5987
+        },
+        {
+          "atMs": 109812,
+          "action": "reaction",
+          "durationMs": 1384
+        },
+        {
+          "atMs": 111196,
+          "action": "walk",
+          "durationMs": 8325
+        },
+        {
+          "atMs": 119521,
+          "action": "idle",
+          "durationMs": 8889
+        },
+        {
+          "atMs": 128410,
+          "action": "walk",
+          "durationMs": 5556
+        },
+        {
+          "atMs": 133966,
+          "action": "walk",
+          "durationMs": 8261
+        },
+        {
+          "atMs": 142227,
+          "action": "idle",
+          "durationMs": 11206
+        },
+        {
+          "atMs": 153433,
+          "action": "walk",
+          "durationMs": 5482
+        },
+        {
+          "atMs": 158915,
+          "action": "idle",
+          "durationMs": 8651
+        },
+        {
+          "atMs": 167566,
+          "action": "walk",
+          "durationMs": 7191
+        },
+        {
+          "atMs": 174757,
+          "action": "idle",
+          "durationMs": 12936
+        },
+        {
+          "atMs": 187693,
+          "action": "walk",
+          "durationMs": 5443
+        },
+        {
+          "atMs": 193136,
+          "action": "idle",
+          "durationMs": 11852
+        },
+        {
+          "atMs": 204988,
+          "action": "walk",
+          "durationMs": 8793
+        },
+        {
+          "atMs": 213781,
+          "action": "idle",
+          "durationMs": 12039
+        },
+        {
+          "atMs": 225820,
+          "action": "walk",
+          "durationMs": 7150
+        },
+        {
+          "atMs": 232970,
+          "action": "idle",
+          "durationMs": 11038
+        },
+        {
+          "atMs": 244008,
+          "action": "walk",
+          "durationMs": 5465
+        },
+        {
+          "atMs": 249473,
+          "action": "playing_ball",
+          "durationMs": 9078
+        },
+        {
+          "atMs": 258551,
+          "action": "peeking",
+          "durationMs": 12121
+        },
+        {
+          "atMs": 270672,
+          "action": "walk",
+          "durationMs": 7622
+        },
+        {
+          "atMs": 278294,
+          "action": "music",
+          "durationMs": 11877
+        },
+        {
+          "atMs": 290171,
+          "action": "idle",
+          "durationMs": 6925
+        },
+        {
+          "atMs": 297096,
+          "action": "drink",
+          "durationMs": 13375
+        },
+        {
+          "atMs": 310471,
+          "action": "walk",
+          "durationMs": 8019
+        },
+        {
+          "atMs": 318490,
+          "action": "idle",
+          "durationMs": 7181
+        },
+        {
+          "atMs": 325671,
+          "action": "walk",
+          "durationMs": 5442
+        },
+        {
+          "atMs": 331113,
+          "action": "eat",
+          "durationMs": 10023
+        },
+        {
+          "atMs": 341136,
+          "action": "idle",
+          "durationMs": 9515
+        },
+        {
+          "atMs": 350651,
+          "action": "walk",
+          "durationMs": 7279
+        },
+        {
+          "atMs": 357930,
+          "action": "reaction",
+          "durationMs": 1724
+        },
+        {
+          "atMs": 359654,
+          "action": "idle",
+          "durationMs": 7843
+        },
+        {
+          "atMs": 367497,
+          "action": "walk",
+          "durationMs": 8656
+        },
+        {
+          "atMs": 376153,
+          "action": "idle",
+          "durationMs": 10562
+        },
+        {
+          "atMs": 386715,
+          "action": "idle",
+          "durationMs": 9376
+        },
+        {
+          "atMs": 396091,
+          "action": "walk",
+          "durationMs": 6831
+        },
+        {
+          "atMs": 402922,
+          "action": "idle",
+          "durationMs": 7784
+        },
+        {
+          "atMs": 410706,
+          "action": "walk",
+          "durationMs": 8197
+        },
+        {
+          "atMs": 418903,
+          "action": "walk",
+          "durationMs": 5657
+        },
+        {
+          "atMs": 424560,
+          "action": "idle",
+          "durationMs": 10806
+        },
+        {
+          "atMs": 435366,
+          "action": "peeking",
+          "durationMs": 12739
+        },
+        {
+          "atMs": 448105,
+          "action": "walk",
+          "durationMs": 5846
+        },
+        {
+          "atMs": 453951,
+          "action": "music",
+          "durationMs": 10173
+        },
+        {
+          "atMs": 464124,
+          "action": "walk",
+          "durationMs": 8775
+        },
+        {
+          "atMs": 472899,
+          "action": "idle",
+          "durationMs": 11106
+        },
+        {
+          "atMs": 484005,
+          "action": "walk",
+          "durationMs": 7705
+        },
+        {
+          "atMs": 491710,
+          "action": "idle",
+          "durationMs": 9318
+        },
+        {
+          "atMs": 501028,
+          "action": "playing_ball",
+          "durationMs": 8811
+        },
+        {
+          "atMs": 509839,
+          "action": "walk",
+          "durationMs": 4998
+        },
+        {
+          "atMs": 514837,
+          "action": "idle",
+          "durationMs": 12027
+        },
+        {
+          "atMs": 526864,
+          "action": "walk",
+          "durationMs": 7868
+        },
+        {
+          "atMs": 534732,
+          "action": "drink",
+          "durationMs": 15234
+        },
+        {
+          "atMs": 549966,
+          "action": "walk",
+          "durationMs": 8717
+        },
+        {
+          "atMs": 558683,
+          "action": "eat",
+          "durationMs": 9814
+        },
+        {
+          "atMs": 568497,
+          "action": "idle",
+          "durationMs": 10468
+        },
+        {
+          "atMs": 578965,
+          "action": "walk",
+          "durationMs": 8395
+        },
+        {
+          "atMs": 587360,
+          "action": "idle",
+          "durationMs": 9306
+        },
+        {
+          "atMs": 596666,
+          "action": "music",
+          "durationMs": 15280
+        }
+      ]
+    },
+    {
+      "character": "poko",
+      "level": "lively",
+      "seed": 2293954,
+      "simulatedMs": 601314,
+      "actionCount": 87,
+      "maxIdenticalStreak": 2,
+      "counts": {
+        "idle": 29,
+        "walk": 37,
+        "music": 3,
+        "playing_ball": 4,
+        "drink": 4,
+        "eat": 3,
+        "peeking": 3,
+        "reaction": 4
+      },
+      "actions": [
+        {
+          "atMs": 0,
+          "action": "walk",
+          "durationMs": 5450
+        },
+        {
+          "atMs": 5450,
+          "action": "idle",
+          "durationMs": 7797
+        },
+        {
+          "atMs": 13247,
+          "action": "walk",
+          "durationMs": 6812
+        },
+        {
+          "atMs": 20059,
+          "action": "music",
+          "durationMs": 8754
+        },
+        {
+          "atMs": 28813,
+          "action": "drink",
+          "durationMs": 9755
+        },
+        {
+          "atMs": 38568,
+          "action": "walk",
+          "durationMs": 6059
+        },
+        {
+          "atMs": 44627,
+          "action": "peeking",
+          "durationMs": 9499
+        },
+        {
+          "atMs": 54126,
+          "action": "idle",
+          "durationMs": 9364
+        },
+        {
+          "atMs": 63490,
+          "action": "playing_ball",
+          "durationMs": 8088
+        },
+        {
+          "atMs": 71578,
+          "action": "walk",
+          "durationMs": 4816
+        },
+        {
+          "atMs": 76394,
+          "action": "reaction",
+          "durationMs": 1538
+        },
+        {
+          "atMs": 77932,
+          "action": "walk",
+          "durationMs": 3835
+        },
+        {
+          "atMs": 81767,
+          "action": "eat",
+          "durationMs": 8499
+        },
+        {
+          "atMs": 90266,
+          "action": "walk",
+          "durationMs": 6196
+        },
+        {
+          "atMs": 96462,
+          "action": "idle",
+          "durationMs": 8223
+        },
+        {
+          "atMs": 104685,
+          "action": "walk",
+          "durationMs": 5452
+        },
+        {
+          "atMs": 110137,
+          "action": "idle",
+          "durationMs": 9847
+        },
+        {
+          "atMs": 119984,
+          "action": "walk",
+          "durationMs": 5461
+        },
+        {
+          "atMs": 125445,
+          "action": "idle",
+          "durationMs": 7931
+        },
+        {
+          "atMs": 133376,
+          "action": "walk",
+          "durationMs": 5955
+        },
+        {
+          "atMs": 139331,
+          "action": "idle",
+          "durationMs": 7667
+        },
+        {
+          "atMs": 146998,
+          "action": "walk",
+          "durationMs": 6122
+        },
+        {
+          "atMs": 153120,
+          "action": "idle",
+          "durationMs": 5368
+        },
+        {
+          "atMs": 158488,
+          "action": "walk",
+          "durationMs": 3794
+        },
+        {
+          "atMs": 162282,
+          "action": "idle",
+          "durationMs": 8053
+        },
+        {
+          "atMs": 170335,
+          "action": "walk",
+          "durationMs": 3941
+        },
+        {
+          "atMs": 174276,
+          "action": "playing_ball",
+          "durationMs": 10215
+        },
+        {
+          "atMs": 184491,
+          "action": "walk",
+          "durationMs": 5162
+        },
+        {
+          "atMs": 189653,
+          "action": "idle",
+          "durationMs": 5792
+        },
+        {
+          "atMs": 195445,
+          "action": "drink",
+          "durationMs": 8123
+        },
+        {
+          "atMs": 203568,
+          "action": "idle",
+          "durationMs": 7075
+        },
+        {
+          "atMs": 210643,
+          "action": "peeking",
+          "durationMs": 8495
+        },
+        {
+          "atMs": 219138,
+          "action": "walk",
+          "durationMs": 5409
+        },
+        {
+          "atMs": 224547,
+          "action": "idle",
+          "durationMs": 7454
+        },
+        {
+          "atMs": 232001,
+          "action": "music",
+          "durationMs": 9536
+        },
+        {
+          "atMs": 241537,
+          "action": "walk",
+          "durationMs": 6130
+        },
+        {
+          "atMs": 247667,
+          "action": "idle",
+          "durationMs": 6522
+        },
+        {
+          "atMs": 254189,
+          "action": "walk",
+          "durationMs": 5280
+        },
+        {
+          "atMs": 259469,
+          "action": "reaction",
+          "durationMs": 1835
+        },
+        {
+          "atMs": 261304,
+          "action": "eat",
+          "durationMs": 10009
+        },
+        {
+          "atMs": 271313,
+          "action": "walk",
+          "durationMs": 5411
+        },
+        {
+          "atMs": 276724,
+          "action": "idle",
+          "durationMs": 6650
+        },
+        {
+          "atMs": 283374,
+          "action": "walk",
+          "durationMs": 6244
+        },
+        {
+          "atMs": 289618,
+          "action": "idle",
+          "durationMs": 9503
+        },
+        {
+          "atMs": 299121,
+          "action": "idle",
+          "durationMs": 9497
+        },
+        {
+          "atMs": 308618,
+          "action": "walk",
+          "durationMs": 6372
+        },
+        {
+          "atMs": 314990,
+          "action": "idle",
+          "durationMs": 9025
+        },
+        {
+          "atMs": 324015,
+          "action": "walk",
+          "durationMs": 5888
+        },
+        {
+          "atMs": 329903,
+          "action": "idle",
+          "durationMs": 8430
+        },
+        {
+          "atMs": 338333,
+          "action": "walk",
+          "durationMs": 6054
+        },
+        {
+          "atMs": 344387,
+          "action": "idle",
+          "durationMs": 7882
+        },
+        {
+          "atMs": 352269,
+          "action": "walk",
+          "durationMs": 3826
+        },
+        {
+          "atMs": 356095,
+          "action": "drink",
+          "durationMs": 8524
+        },
+        {
+          "atMs": 364619,
+          "action": "music",
+          "durationMs": 11726
+        },
+        {
+          "atMs": 376345,
+          "action": "idle",
+          "durationMs": 8353
+        },
+        {
+          "atMs": 384698,
+          "action": "eat",
+          "durationMs": 10661
+        },
+        {
+          "atMs": 395359,
+          "action": "walk",
+          "durationMs": 4066
+        },
+        {
+          "atMs": 399425,
+          "action": "playing_ball",
+          "durationMs": 9222
+        },
+        {
+          "atMs": 408647,
+          "action": "walk",
+          "durationMs": 6628
+        },
+        {
+          "atMs": 415275,
+          "action": "walk",
+          "durationMs": 6914
+        },
+        {
+          "atMs": 422189,
+          "action": "idle",
+          "durationMs": 8291
+        },
+        {
+          "atMs": 430480,
+          "action": "walk",
+          "durationMs": 6876
+        },
+        {
+          "atMs": 437356,
+          "action": "peeking",
+          "durationMs": 8639
+        },
+        {
+          "atMs": 445995,
+          "action": "idle",
+          "durationMs": 8751
+        },
+        {
+          "atMs": 454746,
+          "action": "walk",
+          "durationMs": 4778
+        },
+        {
+          "atMs": 459524,
+          "action": "walk",
+          "durationMs": 4292
+        },
+        {
+          "atMs": 463816,
+          "action": "idle",
+          "durationMs": 9030
+        },
+        {
+          "atMs": 472846,
+          "action": "idle",
+          "durationMs": 9593
+        },
+        {
+          "atMs": 482439,
+          "action": "walk",
+          "durationMs": 5172
+        },
+        {
+          "atMs": 487611,
+          "action": "idle",
+          "durationMs": 7932
+        },
+        {
+          "atMs": 495543,
+          "action": "walk",
+          "durationMs": 6034
+        },
+        {
+          "atMs": 501577,
+          "action": "reaction",
+          "durationMs": 1732
+        },
+        {
+          "atMs": 503309,
+          "action": "walk",
+          "durationMs": 4561
+        },
+        {
+          "atMs": 507870,
+          "action": "idle",
+          "durationMs": 8675
+        },
+        {
+          "atMs": 516545,
+          "action": "walk",
+          "durationMs": 5333
+        },
+        {
+          "atMs": 521878,
+          "action": "walk",
+          "durationMs": 5402
+        },
+        {
+          "atMs": 527280,
+          "action": "idle",
+          "durationMs": 8330
+        },
+        {
+          "atMs": 535610,
+          "action": "idle",
+          "durationMs": 6939
+        },
+        {
+          "atMs": 542549,
+          "action": "drink",
+          "durationMs": 11926
+        },
+        {
+          "atMs": 554475,
+          "action": "walk",
+          "durationMs": 4320
+        },
+        {
+          "atMs": 558795,
+          "action": "idle",
+          "durationMs": 5588
+        },
+        {
+          "atMs": 564383,
+          "action": "walk",
+          "durationMs": 6751
+        },
+        {
+          "atMs": 571134,
+          "action": "idle",
+          "durationMs": 7247
+        },
+        {
+          "atMs": 578381,
+          "action": "walk",
+          "durationMs": 6943
+        },
+        {
+          "atMs": 585324,
+          "action": "playing_ball",
+          "durationMs": 10326
+        },
+        {
+          "atMs": 595650,
+          "action": "walk",
+          "durationMs": 3839
+        },
+        {
+          "atMs": 599489,
+          "action": "reaction",
+          "durationMs": 1825
+        }
+      ]
+    },
+    {
+      "character": "loko",
+      "level": "calm",
+      "seed": 2294051,
+      "simulatedMs": 611568,
+      "actionCount": 38,
+      "maxIdenticalStreak": 2,
+      "counts": {
+        "idle": 15,
+        "walk": 7,
+        "laptop": 1,
+        "reading": 2,
+        "music": 2,
+        "drink": 3,
+        "eat": 3,
+        "peeking": 3,
+        "reaction": 2
+      },
+      "actions": [
+        {
+          "atMs": 0,
+          "action": "idle",
+          "durationMs": 19628
+        },
+        {
+          "atMs": 19628,
+          "action": "walk",
+          "durationMs": 7082
+        },
+        {
+          "atMs": 26710,
+          "action": "peeking",
+          "durationMs": 16527
+        },
+        {
+          "atMs": 43237,
+          "action": "idle",
+          "durationMs": 28112
+        },
+        {
+          "atMs": 71349,
+          "action": "eat",
+          "durationMs": 12675
+        },
+        {
+          "atMs": 84024,
+          "action": "idle",
+          "durationMs": 24886
+        },
+        {
+          "atMs": 108910,
+          "action": "drink",
+          "durationMs": 20431
+        },
+        {
+          "atMs": 129341,
+          "action": "walk",
+          "durationMs": 8716
+        },
+        {
+          "atMs": 138057,
+          "action": "idle",
+          "durationMs": 20038
+        },
+        {
+          "atMs": 158095,
+          "action": "walk",
+          "durationMs": 10079
+        },
+        {
+          "atMs": 168174,
+          "action": "reading",
+          "durationMs": 15085
+        },
+        {
+          "atMs": 183259,
+          "action": "idle",
+          "durationMs": 22982
+        },
+        {
+          "atMs": 206241,
+          "action": "idle",
+          "durationMs": 15402
+        },
+        {
+          "atMs": 221643,
+          "action": "peeking",
+          "durationMs": 19350
+        },
+        {
+          "atMs": 240993,
+          "action": "laptop",
+          "durationMs": 13648
+        },
+        {
+          "atMs": 254641,
+          "action": "idle",
+          "durationMs": 21235
+        },
+        {
+          "atMs": 275876,
+          "action": "eat",
+          "durationMs": 18193
+        },
+        {
+          "atMs": 294069,
+          "action": "music",
+          "durationMs": 17669
+        },
+        {
+          "atMs": 311738,
+          "action": "idle",
+          "durationMs": 18142
+        },
+        {
+          "atMs": 329880,
+          "action": "drink",
+          "durationMs": 16764
+        },
+        {
+          "atMs": 346644,
+          "action": "idle",
+          "durationMs": 25234
+        },
+        {
+          "atMs": 371878,
+          "action": "walk",
+          "durationMs": 10731
+        },
+        {
+          "atMs": 382609,
+          "action": "idle",
+          "durationMs": 16810
+        },
+        {
+          "atMs": 399419,
+          "action": "reaction",
+          "durationMs": 3419
+        },
+        {
+          "atMs": 402838,
+          "action": "reading",
+          "durationMs": 14186
+        },
+        {
+          "atMs": 417024,
+          "action": "walk",
+          "durationMs": 7801
+        },
+        {
+          "atMs": 424825,
+          "action": "music",
+          "durationMs": 13962
+        },
+        {
+          "atMs": 438787,
+          "action": "idle",
+          "durationMs": 21755
+        },
+        {
+          "atMs": 460542,
+          "action": "eat",
+          "durationMs": 19153
+        },
+        {
+          "atMs": 479695,
+          "action": "drink",
+          "durationMs": 12368
+        },
+        {
+          "atMs": 492063,
+          "action": "idle",
+          "durationMs": 20069
+        },
+        {
+          "atMs": 512132,
+          "action": "idle",
+          "durationMs": 16394
+        },
+        {
+          "atMs": 528526,
+          "action": "walk",
+          "durationMs": 7181
+        },
+        {
+          "atMs": 535707,
+          "action": "idle",
+          "durationMs": 26485
+        },
+        {
+          "atMs": 562192,
+          "action": "idle",
+          "durationMs": 23654
+        },
+        {
+          "atMs": 585846,
+          "action": "reaction",
+          "durationMs": 2530
+        },
+        {
+          "atMs": 588376,
+          "action": "walk",
+          "durationMs": 7942
+        },
+        {
+          "atMs": 596318,
+          "action": "peeking",
+          "durationMs": 15250
+        }
+      ]
+    },
+    {
+      "character": "loko",
+      "level": "balanced",
+      "seed": 2294148,
+      "simulatedMs": 600686,
+      "actionCount": 54,
+      "maxIdenticalStreak": 2,
+      "counts": {
+        "idle": 20,
+        "walk": 13,
+        "laptop": 3,
+        "reading": 3,
+        "music": 3,
+        "drink": 3,
+        "eat": 3,
+        "peeking": 3,
+        "reaction": 3
+      },
+      "actions": [
+        {
+          "atMs": 0,
+          "action": "idle",
+          "durationMs": 12165
+        },
+        {
+          "atMs": 12165,
+          "action": "eat",
+          "durationMs": 13435
+        },
+        {
+          "atMs": 25600,
+          "action": "idle",
+          "durationMs": 11670
+        },
+        {
+          "atMs": 37270,
+          "action": "reaction",
+          "durationMs": 1981
+        },
+        {
+          "atMs": 39251,
+          "action": "music",
+          "durationMs": 11124
+        },
+        {
+          "atMs": 50375,
+          "action": "drink",
+          "durationMs": 9308
+        },
+        {
+          "atMs": 59683,
+          "action": "laptop",
+          "durationMs": 14843
+        },
+        {
+          "atMs": 74526,
+          "action": "idle",
+          "durationMs": 14605
+        },
+        {
+          "atMs": 89131,
+          "action": "walk",
+          "durationMs": 8109
+        },
+        {
+          "atMs": 97240,
+          "action": "peeking",
+          "durationMs": 10843
+        },
+        {
+          "atMs": 108083,
+          "action": "walk",
+          "durationMs": 6410
+        },
+        {
+          "atMs": 114493,
+          "action": "idle",
+          "durationMs": 11435
+        },
+        {
+          "atMs": 125928,
+          "action": "reading",
+          "durationMs": 15518
+        },
+        {
+          "atMs": 141446,
+          "action": "idle",
+          "durationMs": 15545
+        },
+        {
+          "atMs": 156991,
+          "action": "walk",
+          "durationMs": 7180
+        },
+        {
+          "atMs": 164171,
+          "action": "idle",
+          "durationMs": 15474
+        },
+        {
+          "atMs": 179645,
+          "action": "walk",
+          "durationMs": 5915
+        },
+        {
+          "atMs": 185560,
+          "action": "idle",
+          "durationMs": 13231
+        },
+        {
+          "atMs": 198791,
+          "action": "walk",
+          "durationMs": 5728
+        },
+        {
+          "atMs": 204519,
+          "action": "idle",
+          "durationMs": 20154
+        },
+        {
+          "atMs": 224673,
+          "action": "reaction",
+          "durationMs": 1898
+        },
+        {
+          "atMs": 226571,
+          "action": "walk",
+          "durationMs": 5431
+        },
+        {
+          "atMs": 232002,
+          "action": "idle",
+          "durationMs": 13352
+        },
+        {
+          "atMs": 245354,
+          "action": "laptop",
+          "durationMs": 12577
+        },
+        {
+          "atMs": 257931,
+          "action": "music",
+          "durationMs": 11597
+        },
+        {
+          "atMs": 269528,
+          "action": "idle",
+          "durationMs": 18553
+        },
+        {
+          "atMs": 288081,
+          "action": "eat",
+          "durationMs": 14541
+        },
+        {
+          "atMs": 302622,
+          "action": "walk",
+          "durationMs": 8153
+        },
+        {
+          "atMs": 310775,
+          "action": "peeking",
+          "durationMs": 9473
+        },
+        {
+          "atMs": 320248,
+          "action": "idle",
+          "durationMs": 15750
+        },
+        {
+          "atMs": 335998,
+          "action": "idle",
+          "durationMs": 13873
+        },
+        {
+          "atMs": 349871,
+          "action": "walk",
+          "durationMs": 6814
+        },
+        {
+          "atMs": 356685,
+          "action": "drink",
+          "durationMs": 12270
+        },
+        {
+          "atMs": 368955,
+          "action": "walk",
+          "durationMs": 7556
+        },
+        {
+          "atMs": 376511,
+          "action": "reading",
+          "durationMs": 9779
+        },
+        {
+          "atMs": 386290,
+          "action": "idle",
+          "durationMs": 11014
+        },
+        {
+          "atMs": 397304,
+          "action": "reaction",
+          "durationMs": 2346
+        },
+        {
+          "atMs": 399650,
+          "action": "idle",
+          "durationMs": 11142
+        },
+        {
+          "atMs": 410792,
+          "action": "walk",
+          "durationMs": 5171
+        },
+        {
+          "atMs": 415963,
+          "action": "idle",
+          "durationMs": 19726
+        },
+        {
+          "atMs": 435689,
+          "action": "walk",
+          "durationMs": 5369
+        },
+        {
+          "atMs": 441058,
+          "action": "idle",
+          "durationMs": 10945
+        },
+        {
+          "atMs": 452003,
+          "action": "eat",
+          "durationMs": 11825
+        },
+        {
+          "atMs": 463828,
+          "action": "walk",
+          "durationMs": 7215
+        },
+        {
+          "atMs": 471043,
+          "action": "laptop",
+          "durationMs": 13119
+        },
+        {
+          "atMs": 484162,
+          "action": "walk",
+          "durationMs": 7274
+        },
+        {
+          "atMs": 491436,
+          "action": "idle",
+          "durationMs": 18078
+        },
+        {
+          "atMs": 509514,
+          "action": "music",
+          "durationMs": 11586
+        },
+        {
+          "atMs": 521100,
+          "action": "idle",
+          "durationMs": 11991
+        },
+        {
+          "atMs": 533091,
+          "action": "idle",
+          "durationMs": 17998
+        },
+        {
+          "atMs": 551089,
+          "action": "reading",
+          "durationMs": 12429
+        },
+        {
+          "atMs": 563518,
+          "action": "peeking",
+          "durationMs": 15558
+        },
+        {
+          "atMs": 579076,
+          "action": "idle",
+          "durationMs": 13275
+        },
+        {
+          "atMs": 592351,
+          "action": "drink",
+          "durationMs": 8335
+        }
+      ]
+    },
+    {
+      "character": "loko",
+      "level": "lively",
+      "seed": 2294245,
+      "simulatedMs": 603485,
+      "actionCount": 69,
+      "maxIdenticalStreak": 2,
+      "counts": {
+        "idle": 24,
+        "walk": 23,
+        "laptop": 4,
+        "reading": 3,
+        "music": 3,
+        "drink": 3,
+        "eat": 3,
+        "peeking": 3,
+        "reaction": 3
+      },
+      "actions": [
+        {
+          "atMs": 0,
+          "action": "walk",
+          "durationMs": 6753
+        },
+        {
+          "atMs": 6753,
+          "action": "reading",
+          "durationMs": 9623
+        },
+        {
+          "atMs": 16376,
+          "action": "reaction",
+          "durationMs": 1615
+        },
+        {
+          "atMs": 17991,
+          "action": "laptop",
+          "durationMs": 10171
+        },
+        {
+          "atMs": 28162,
+          "action": "music",
+          "durationMs": 8509
+        },
+        {
+          "atMs": 36671,
+          "action": "peeking",
+          "durationMs": 9683
+        },
+        {
+          "atMs": 46354,
+          "action": "drink",
+          "durationMs": 8709
+        },
+        {
+          "atMs": 55063,
+          "action": "idle",
+          "durationMs": 10103
+        },
+        {
+          "atMs": 65166,
+          "action": "eat",
+          "durationMs": 6486
+        },
+        {
+          "atMs": 71652,
+          "action": "idle",
+          "durationMs": 11031
+        },
+        {
+          "atMs": 82683,
+          "action": "walk",
+          "durationMs": 3902
+        },
+        {
+          "atMs": 86585,
+          "action": "idle",
+          "durationMs": 10389
+        },
+        {
+          "atMs": 96974,
+          "action": "walk",
+          "durationMs": 3778
+        },
+        {
+          "atMs": 100752,
+          "action": "idle",
+          "durationMs": 15257
+        },
+        {
+          "atMs": 116009,
+          "action": "walk",
+          "durationMs": 4228
+        },
+        {
+          "atMs": 120237,
+          "action": "idle",
+          "durationMs": 15958
+        },
+        {
+          "atMs": 136195,
+          "action": "walk",
+          "durationMs": 6641
+        },
+        {
+          "atMs": 142836,
+          "action": "idle",
+          "durationMs": 9535
+        },
+        {
+          "atMs": 152371,
+          "action": "walk",
+          "durationMs": 4990
+        },
+        {
+          "atMs": 157361,
+          "action": "idle",
+          "durationMs": 10524
+        },
+        {
+          "atMs": 167885,
+          "action": "walk",
+          "durationMs": 5531
+        },
+        {
+          "atMs": 173416,
+          "action": "idle",
+          "durationMs": 13723
+        },
+        {
+          "atMs": 187139,
+          "action": "reaction",
+          "durationMs": 1726
+        },
+        {
+          "atMs": 188865,
+          "action": "music",
+          "durationMs": 9544
+        },
+        {
+          "atMs": 198409,
+          "action": "idle",
+          "durationMs": 13082
+        },
+        {
+          "atMs": 211491,
+          "action": "walk",
+          "durationMs": 5237
+        },
+        {
+          "atMs": 216728,
+          "action": "laptop",
+          "durationMs": 9923
+        },
+        {
+          "atMs": 226651,
+          "action": "idle",
+          "durationMs": 11076
+        },
+        {
+          "atMs": 237727,
+          "action": "walk",
+          "durationMs": 5361
+        },
+        {
+          "atMs": 243088,
+          "action": "idle",
+          "durationMs": 10269
+        },
+        {
+          "atMs": 253357,
+          "action": "walk",
+          "durationMs": 3892
+        },
+        {
+          "atMs": 257249,
+          "action": "idle",
+          "durationMs": 15134
+        },
+        {
+          "atMs": 272383,
+          "action": "reading",
+          "durationMs": 10518
+        },
+        {
+          "atMs": 282901,
+          "action": "idle",
+          "durationMs": 10406
+        },
+        {
+          "atMs": 293307,
+          "action": "drink",
+          "durationMs": 8565
+        },
+        {
+          "atMs": 301872,
+          "action": "walk",
+          "durationMs": 4302
+        },
+        {
+          "atMs": 306174,
+          "action": "peeking",
+          "durationMs": 7143
+        },
+        {
+          "atMs": 313317,
+          "action": "walk",
+          "durationMs": 5693
+        },
+        {
+          "atMs": 319010,
+          "action": "eat",
+          "durationMs": 10583
+        },
+        {
+          "atMs": 329593,
+          "action": "idle",
+          "durationMs": 8650
+        },
+        {
+          "atMs": 338243,
+          "action": "walk",
+          "durationMs": 4466
+        },
+        {
+          "atMs": 342709,
+          "action": "idle",
+          "durationMs": 10865
+        },
+        {
+          "atMs": 353574,
+          "action": "walk",
+          "durationMs": 5150
+        },
+        {
+          "atMs": 358724,
+          "action": "laptop",
+          "durationMs": 11799
+        },
+        {
+          "atMs": 370523,
+          "action": "walk",
+          "durationMs": 4494
+        },
+        {
+          "atMs": 375017,
+          "action": "idle",
+          "durationMs": 15644
+        },
+        {
+          "atMs": 390661,
+          "action": "walk",
+          "durationMs": 5703
+        },
+        {
+          "atMs": 396364,
+          "action": "idle",
+          "durationMs": 11383
+        },
+        {
+          "atMs": 407747,
+          "action": "walk",
+          "durationMs": 4442
+        },
+        {
+          "atMs": 412189,
+          "action": "idle",
+          "durationMs": 16037
+        },
+        {
+          "atMs": 428226,
+          "action": "walk",
+          "durationMs": 4843
+        },
+        {
+          "atMs": 433069,
+          "action": "music",
+          "durationMs": 9917
+        },
+        {
+          "atMs": 442986,
+          "action": "eat",
+          "durationMs": 11138
+        },
+        {
+          "atMs": 454124,
+          "action": "idle",
+          "durationMs": 11285
+        },
+        {
+          "atMs": 465409,
+          "action": "idle",
+          "durationMs": 14837
+        },
+        {
+          "atMs": 480246,
+          "action": "reaction",
+          "durationMs": 1405
+        },
+        {
+          "atMs": 481651,
+          "action": "idle",
+          "durationMs": 9845
+        },
+        {
+          "atMs": 491496,
+          "action": "walk",
+          "durationMs": 6679
+        },
+        {
+          "atMs": 498175,
+          "action": "reading",
+          "durationMs": 11959
+        },
+        {
+          "atMs": 510134,
+          "action": "walk",
+          "durationMs": 5443
+        },
+        {
+          "atMs": 515577,
+          "action": "idle",
+          "durationMs": 12360
+        },
+        {
+          "atMs": 527937,
+          "action": "laptop",
+          "durationMs": 11623
+        },
+        {
+          "atMs": 539560,
+          "action": "walk",
+          "durationMs": 5115
+        },
+        {
+          "atMs": 544675,
+          "action": "idle",
+          "durationMs": 11258
+        },
+        {
+          "atMs": 555933,
+          "action": "drink",
+          "durationMs": 10415
+        },
+        {
+          "atMs": 566348,
+          "action": "walk",
+          "durationMs": 5525
+        },
+        {
+          "atMs": 571873,
+          "action": "peeking",
+          "durationMs": 10698
+        },
+        {
+          "atMs": 582571,
+          "action": "walk",
+          "durationMs": 6499
+        },
+        {
+          "atMs": 589070,
+          "action": "idle",
+          "durationMs": 14415
+        }
+      ]
+    }
+  ]
+}

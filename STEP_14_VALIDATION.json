@@ -1,0 +1,23 @@
+{
+  "step": 14,
+  "title": "Pet Mind, Behavior Planner, and Session Memory",
+  "status": "PASS_STATIC_AND_DETERMINISTIC",
+  "checks": {
+    "strict_standalone_typescript": true,
+    "seed_determinism": true,
+    "poko_loko_profile_distinction": true,
+    "legal_activity_filtering": true,
+    "bounded_session_memory": true,
+    "repetition_and_cooldowns": true,
+    "post_wake_sleep_guard": true,
+    "duration_ranges": true,
+    "calm_balanced_lively": true,
+    "pause_mode": true,
+    "quiet_mode": true,
+    "diagnostic_reasoning": true,
+    "planner_does_not_control_frames": true,
+    "private_content_not_accepted": true,
+    "prior_step_regressions": true
+  },
+  "native_windows_observation": "Deferred to GitHub Actions EXE after Step 27 by user decision."
+}

@@ -1,0 +1,119 @@
+{
+  "step": "24",
+  "title": "Developer Diagnostic Mode and Reproduction Tools",
+  "status": "PASS_STATIC",
+  "checks": {
+    "every_runtime_state_inspectable": true,
+    "planner_scoring_visible": true,
+    "transition_rejections_recorded": true,
+    "force_state_animation_context_mind_activity_destination_sleep_wake_drag_display_character": true,
+    "pause_and_seed_controls": true,
+    "event_trace_export_and_replay": true,
+    "bounded_trace_no_private_content": true,
+    "production_default_disabled": true,
+    "hidden_diagnostics_ui_overhead": "none; 4 Hz polling exists only while diagnostics surface is mounted",
+    "native_windows_validation_pending": true
+  },
+  "validators": {
+    "validate-runtime-assets.mjs": {
+      "pass": true,
+      "stdout": "Runtime asset validation passed: 31 animations, 223 RGBA frames, 2 mirrored sequences.",
+      "stderr": ""
+    },
+    "validate-animation-runtime.mjs": {
+      "pass": true,
+      "stdout": "STEP 09 ANIMATION RUNTIME VALIDATION PASSED\nForward, reverse, ping-pong, looping, one-shot, pause/suspend, catch-up cap, and renderer integration verified statically.",
+      "stderr": ""
+    },
+    "validate-locomotion.mjs": {
+      "pass": true,
+      "stdout": "STEP 10 LOCOMOTION VALIDATION PASSED\n4 directional walk assets verified\nregular arrival ticks: 692\nirregular arrival ticks: 472",
+      "stderr": ""
+    },
+    "validate-direction-turning.mjs": {
+      "pass": true,
+      "stdout": "STEP 11 DIRECTION VALIDATION PASSED\nGait-boundary stop, neutral turn, Loko preparation, continuous retarget, and anchor parity verified.",
+      "stderr": ""
+    },
+    "validate-state-machine.mjs": {
+      "pass": true,
+      "stdout": "STEP 12 STATE MACHINE VALIDATION PASSED\n9 implementation/test/document files verified",
+      "stderr": ""
+    },
+    "validate-dragging.mjs": {
+      "pass": true,
+      "stdout": "STEP 13 DRAGGING VALIDATION PASSED\nAlpha-aware pointer capture, threshold classification, native drag, settlement, and recovery verified statically.",
+      "stderr": ""
+    },
+    "validate-behavior-planner.mjs": {
+      "pass": true,
+      "stdout": "Step 14 behavior planner validation passed\nHidden mind, profiles, memory, cooldowns, quiet/pause and seeded diagnostics verified",
+      "stderr": ""
+    },
+    "validate-sleep-wake.mjs": {
+      "pass": true,
+      "stdout": "Step 15 sleep/wake validation passed\n5 authoritative sleep assets verified\nentry completion, wake recovery, drag, and suspend paths present",
+      "stderr": ""
+    },
+    "validate-character-switching.mjs": {
+      "pass": true,
+      "stdout": "STEP 16 CHARACTER SWITCHING VALIDATION PASSED\nAtomic preload/commit, stale generation rejection, profile isolation, and persistence gating verified.",
+      "stderr": ""
+    },
+    "validate-context-sensing.mjs": {
+      "pass": true,
+      "stdout": "STEP 17 CONTEXT VALIDATION PASSED\nLocal optional content-blind context model verified",
+      "stderr": ""
+    },
+    "validate-activity-framework.mjs": {
+      "pass": true,
+      "stdout": "STEP 18 ACTIVITY VALIDATION PASSED\n12 character-specific activity definitions cover 13 approved activity animations.\nEntry/setup/loop/variation/exit/recovery, props, interruptions, cooldowns, and diagnostics verified.",
+      "stderr": ""
+    },
+    "validate-integrated-activities.mjs": {
+      "pass": true,
+      "stdout": "STEP 19 INTEGRATED ACTIVITY VALIDATION PASSED\n12 approved character/activity pairs and 13 activity animations integrated.\n5 ambient routines integrated without promoting unsupported archival poses.\nContext weighting, frequency caps, planner overlay, prop continuity, and strict typecheck verified.",
+      "stderr": ""
+    },
+    "validate-reactions.mjs": {
+      "pass": true,
+      "stdout": "STEP 20 REACTION VALIDATION PASSED\n9 reaction definitions across Poko and Loko verified.\nSleep routing, locked-state deferral, prop-safe activity exit, spam collapse, contextual sadness gating, and strict typecheck verified.",
+      "stderr": ""
+    },
+    "validate-living-runtime.mjs": {
+      "pass": true,
+      "stdout": "Step 20.5 living-runtime structural validation passed",
+      "stderr": ""
+    },
+    "validate-settings-experience.mjs": {
+      "pass": true,
+      "stdout": "STEP 21 SETTINGS VALIDATION PASSED\n10 required settings artifacts verified",
+      "stderr": ""
+    },
+    "validate-onboarding-and-tray.mjs": {
+      "pass": true,
+      "stdout": "STEP 22 VALIDATION PASSED\nSplash, onboarding, tray identity, persistence, privacy, and lifecycle contracts verified",
+      "stderr": ""
+    },
+    "validate-tuning-and-sound.mjs": {
+      "pass": true,
+      "stdout": "Long-session simulation passed: 6 ten-minute scenarios\nStep 23 tuning and sound-policy validation passed",
+      "stderr": ""
+    },
+    "validate-diagnostics.mjs": {
+      "pass": true,
+      "stdout": "Step 24 diagnostic mode validation passed",
+      "stderr": ""
+    },
+    "tsc-diagnostics-core": {
+      "pass": true,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "excluded_environment_checks": [
+    "validate-build.mjs requires generated dist output",
+    "legacy validators that assume old file markers",
+    "native Electron/DWM review deferred to final Windows EXE"
+  ]
+}

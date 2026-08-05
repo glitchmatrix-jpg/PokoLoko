@@ -1,0 +1,665 @@
+{
+  "status": "formula_verified_pending_native",
+  "cases": [
+    {
+      "case": "primary_100_bottom",
+      "character": "poko",
+      "scale": 1,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 880,
+        "y": 910,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": 960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "primary_100_bottom",
+      "character": "poko",
+      "scale": 2,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 801,
+        "y": 782,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": 960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "primary_100_bottom",
+      "character": "poko",
+      "scale": 3,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 722,
+        "y": 654,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": 960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "primary_100_bottom",
+      "character": "loko",
+      "scale": 1,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 880,
+        "y": 910,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": 960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "primary_100_bottom",
+      "character": "loko",
+      "scale": 2,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 800,
+        "y": 782,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": 960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "primary_100_bottom",
+      "character": "loko",
+      "scale": 3,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 720,
+        "y": 654,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": 960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "primary_125_bottom",
+      "character": "poko",
+      "scale": 1,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 832,
+        "scaleFactor": 1.25
+      },
+      "windowBounds": {
+        "x": 688,
+        "y": 702,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": 768.0,
+        "y": 830
+      }
+    },
+    {
+      "case": "primary_125_bottom",
+      "character": "poko",
+      "scale": 2,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 832,
+        "scaleFactor": 1.25
+      },
+      "windowBounds": {
+        "x": 609,
+        "y": 574,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": 768.0,
+        "y": 830
+      }
+    },
+    {
+      "case": "primary_125_bottom",
+      "character": "poko",
+      "scale": 3,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 832,
+        "scaleFactor": 1.25
+      },
+      "windowBounds": {
+        "x": 530,
+        "y": 446,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": 768.0,
+        "y": 830
+      }
+    },
+    {
+      "case": "primary_125_bottom",
+      "character": "loko",
+      "scale": 1,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 832,
+        "scaleFactor": 1.25
+      },
+      "windowBounds": {
+        "x": 688,
+        "y": 702,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": 768.0,
+        "y": 830
+      }
+    },
+    {
+      "case": "primary_125_bottom",
+      "character": "loko",
+      "scale": 2,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 832,
+        "scaleFactor": 1.25
+      },
+      "windowBounds": {
+        "x": 608,
+        "y": 574,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": 768.0,
+        "y": 830
+      }
+    },
+    {
+      "case": "primary_125_bottom",
+      "character": "loko",
+      "scale": 3,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 832,
+        "scaleFactor": 1.25
+      },
+      "windowBounds": {
+        "x": 528,
+        "y": 446,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": 768.0,
+        "y": 830
+      }
+    },
+    {
+      "case": "primary_150_bottom",
+      "character": "poko",
+      "scale": 1,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 693,
+        "scaleFactor": 1.5
+      },
+      "windowBounds": {
+        "x": 560,
+        "y": 563,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": 640.0,
+        "y": 691
+      }
+    },
+    {
+      "case": "primary_150_bottom",
+      "character": "poko",
+      "scale": 2,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 693,
+        "scaleFactor": 1.5
+      },
+      "windowBounds": {
+        "x": 481,
+        "y": 435,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": 640.0,
+        "y": 691
+      }
+    },
+    {
+      "case": "primary_150_bottom",
+      "character": "poko",
+      "scale": 3,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 693,
+        "scaleFactor": 1.5
+      },
+      "windowBounds": {
+        "x": 402,
+        "y": 307,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": 640.0,
+        "y": 691
+      }
+    },
+    {
+      "case": "primary_150_bottom",
+      "character": "loko",
+      "scale": 1,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 693,
+        "scaleFactor": 1.5
+      },
+      "windowBounds": {
+        "x": 560,
+        "y": 563,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": 640.0,
+        "y": 691
+      }
+    },
+    {
+      "case": "primary_150_bottom",
+      "character": "loko",
+      "scale": 2,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 693,
+        "scaleFactor": 1.5
+      },
+      "windowBounds": {
+        "x": 480,
+        "y": 435,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": 640.0,
+        "y": 691
+      }
+    },
+    {
+      "case": "primary_150_bottom",
+      "character": "loko",
+      "scale": 3,
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 693,
+        "scaleFactor": 1.5
+      },
+      "windowBounds": {
+        "x": 400,
+        "y": 307,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": 640.0,
+        "y": 691
+      }
+    },
+    {
+      "case": "negative_secondary",
+      "character": "poko",
+      "scale": 1,
+      "workArea": {
+        "x": -1920,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": -1040,
+        "y": 910,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": -960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "negative_secondary",
+      "character": "poko",
+      "scale": 2,
+      "workArea": {
+        "x": -1920,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": -1119,
+        "y": 782,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": -960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "negative_secondary",
+      "character": "poko",
+      "scale": 3,
+      "workArea": {
+        "x": -1920,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": -1198,
+        "y": 654,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": -960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "negative_secondary",
+      "character": "loko",
+      "scale": 1,
+      "workArea": {
+        "x": -1920,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": -1040,
+        "y": 910,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": -960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "negative_secondary",
+      "character": "loko",
+      "scale": 2,
+      "workArea": {
+        "x": -1920,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": -1120,
+        "y": 782,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": -960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "negative_secondary",
+      "character": "loko",
+      "scale": 3,
+      "workArea": {
+        "x": -1920,
+        "y": 0,
+        "width": 1920,
+        "height": 1040,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": -1200,
+        "y": 654,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": -960.0,
+        "y": 1038
+      }
+    },
+    {
+      "case": "side_taskbar",
+      "character": "poko",
+      "scale": 1,
+      "workArea": {
+        "x": 80,
+        "y": 0,
+        "width": 1840,
+        "height": 1080,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 920,
+        "y": 950,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": 1000.0,
+        "y": 1078
+      }
+    },
+    {
+      "case": "side_taskbar",
+      "character": "poko",
+      "scale": 2,
+      "workArea": {
+        "x": 80,
+        "y": 0,
+        "width": 1840,
+        "height": 1080,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 841,
+        "y": 822,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": 1000.0,
+        "y": 1078
+      }
+    },
+    {
+      "case": "side_taskbar",
+      "character": "poko",
+      "scale": 3,
+      "workArea": {
+        "x": 80,
+        "y": 0,
+        "width": 1840,
+        "height": 1080,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 762,
+        "y": 694,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": 1000.0,
+        "y": 1078
+      }
+    },
+    {
+      "case": "side_taskbar",
+      "character": "loko",
+      "scale": 1,
+      "workArea": {
+        "x": 80,
+        "y": 0,
+        "width": 1840,
+        "height": 1080,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 920,
+        "y": 950,
+        "width": 160,
+        "height": 160
+      },
+      "groundPoint": {
+        "x": 1000.0,
+        "y": 1078
+      }
+    },
+    {
+      "case": "side_taskbar",
+      "character": "loko",
+      "scale": 2,
+      "workArea": {
+        "x": 80,
+        "y": 0,
+        "width": 1840,
+        "height": 1080,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 840,
+        "y": 822,
+        "width": 320,
+        "height": 320
+      },
+      "groundPoint": {
+        "x": 1000.0,
+        "y": 1078
+      }
+    },
+    {
+      "case": "side_taskbar",
+      "character": "loko",
+      "scale": 3,
+      "workArea": {
+        "x": 80,
+        "y": 0,
+        "width": 1840,
+        "height": 1080,
+        "scaleFactor": 1
+      },
+      "windowBounds": {
+        "x": 760,
+        "y": 694,
+        "width": 480,
+        "height": 480
+      },
+      "groundPoint": {
+        "x": 1000.0,
+        "y": 1078
+      }
+    }
+  ]
+}

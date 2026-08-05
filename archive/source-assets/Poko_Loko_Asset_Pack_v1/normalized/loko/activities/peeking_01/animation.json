@@ -1,0 +1,225 @@
+{
+  "id": "loko_peeking_01",
+  "character": "loko",
+  "category": "activities",
+  "state": "peeking",
+  "direction": "none",
+  "source_frame_ids": [
+    "L-R14-C10",
+    "L-R14-C11",
+    "L-R14-C12"
+  ],
+  "frames": [
+    "frame_000.png",
+    "frame_001.png",
+    "frame_002.png"
+  ],
+  "frame_count": 3,
+  "canvas_width": 128,
+  "canvas_height": 128,
+  "fps": 6,
+  "recommended_fps_range": [
+    5,
+    8
+  ],
+  "loop": false,
+  "playback": "forward",
+  "loop_validation": {
+    "final_to_first_distance": 2.145,
+    "median_internal_distance": 1.713,
+    "acceptable_for_forward_loop": null,
+    "assessment": "not_applicable_one_shot"
+  },
+  "anchor": {
+    "ground_x": 64.0,
+    "ground_y": 112.0,
+    "body_center_x": 64.0,
+    "body_center_y": 92.0
+  },
+  "movement": {
+    "moves_character": false,
+    "recommended_speed_css_px_per_second": 0,
+    "signed_speed_css_px_per_second": 0
+  },
+  "transition_from": [
+    "idle_front"
+  ],
+  "transition_to": [
+    "idle_front"
+  ],
+  "recommended_next_state": "idle_front",
+  "generated_by_mirroring": false,
+  "mirrored_from": null,
+  "confidence": "high",
+  "known_issues": [
+    "No fabricated or interpolated frames were inserted."
+  ],
+  "runtime_asset_format": "png_frames",
+  "preview_assets": {
+    "png": "preview.png",
+    "gif": "preview.gif",
+    "gif_runtime_asset": false,
+    "alignment_gif": "preview_alignment.gif",
+    "alignment_gif_runtime_asset": false,
+    "alignment_guides": {
+      "checkerboard": "documentation_only",
+      "body_center_x": 64,
+      "ground_y": 112
+    }
+  },
+  "technical_details": {
+    "normalization": {
+      "uniform_scale_factor": 1.0,
+      "resampling": "none",
+      "alignment_strategy": "body-proxy horizontal center + anatomical ground contact",
+      "full_visible_bbox_used_for_centering": false,
+      "effects_and_props_ignored_for_body_centering": true,
+      "safety_shift_policy": "minimal translation only when full composite would exceed canvas"
+    },
+    "scale_normalization": null,
+    "per_frame_anchors": [
+      {
+        "frame_id": "L-R14-C10",
+        "file": "frame_000.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 92.5
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 40,
+          "y": 70
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "L-R14-C11",
+        "file": "frame_001.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 92.0
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 40,
+          "y": 69
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "L-R14-C12",
+        "file": "frame_002.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 92.0
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 40,
+          "y": 69
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      }
+    ],
+    "exact_duplicates": [],
+    "near_duplicates": [],
+    "abrupt_transitions": [],
+    "source_order_preserved": true,
+    "reordered": false,
+    "direction_audit": null,
+    "naming": {
+      "directory_style": "lowercase_snake_case",
+      "frame_pattern": "frame_%03d.png",
+      "zero_padded": true
+    }
+  },
+  "transition_graph": {
+    "allowed": [
+      {
+        "from": "loko_peeking_01",
+        "to": "loko_idle_front",
+        "safety": "conditional",
+        "bridge_strategy": "prop_removal_hold",
+        "recommended_hold_ms": 220,
+        "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+      }
+    ],
+    "forbidden": [
+      {
+        "from": "loko_peeking_01",
+        "to": "loko_locomotion_side_01",
+        "reason": "Activity prop would disappear abruptly. Return to idle first."
+      },
+      {
+        "from": "loko_peeking_01",
+        "to": "loko_locomotion_side_02",
+        "reason": "Activity prop would disappear abruptly. Return to idle first."
+      },
+      {
+        "from": "loko_peeking_01",
+        "to": "loko_walk_left",
+        "reason": "Activity prop would disappear abruptly. Return to idle first."
+      },
+      {
+        "from": "loko_peeking_01",
+        "to": "loko_walk_right",
+        "reason": "Activity prop would disappear abruptly. Return to idle first."
+      }
+    ],
+    "fallback_strategy": "Hold final frame, route through a neutral idle or explicit transition animation, then start the requested target state."
+  }
+}

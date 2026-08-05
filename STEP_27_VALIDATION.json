@@ -1,0 +1,22 @@
+{
+  "step": 27,
+  "version": "1.0.0-rc.1",
+  "status": "STATIC_RELEASE_ASSEMBLY_PASS_NATIVE_QA_PENDING",
+  "checks": {
+    "all_cumulative_source_present": true,
+    "authoritative_asset_pack_archived": true,
+    "authoritative_icon_verified": true,
+    "nsis_and_portable_configured": true,
+    "github_release_workflow_present": true,
+    "source_archive_automation_present": true,
+    "rollback_archive_automation_present": true,
+    "hash_generation_present": true,
+    "source_maps_disabled": true,
+    "runtime_assets_expected": {
+      "animations": 31,
+      "frames": 223
+    },
+    "clean_machine_install": "PENDING_GITHUB_WINDOWS_BUILD",
+    "long_session_native_review": "PENDING_QA_26_001"
+  }
+}

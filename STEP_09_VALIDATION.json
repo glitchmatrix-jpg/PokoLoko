@@ -1,0 +1,33 @@
+{
+  "step": "09",
+  "title": "Deterministic Animation Runtime",
+  "implementation_status": "IMPLEMENTED",
+  "stop_condition": "BLOCKED_PENDING_NATIVE_TOOLCHAIN_AND_WINDOWS_VALIDATION",
+  "checks": {
+    "runtime_package_present": true,
+    "forward_playback": true,
+    "reverse_playback": true,
+    "ping_pong_playback": true,
+    "loop_playback": true,
+    "one_shot_exactly_once_guard": true,
+    "identical_presentation_idempotence": true,
+    "pause_resume": true,
+    "suspend_resume": true,
+    "long_gap_catch_up_cap": true,
+    "character_generation_reset": true,
+    "renderer_integration": true,
+    "typed_completion_ipc": true,
+    "dependency_free_validators_passed": true,
+    "npm_ci_passed": false,
+    "typescript_passed": false,
+    "vitest_passed": false,
+    "electron_windows_visual_test_passed": false,
+    "packaged_launch_passed": false
+  },
+  "counts": {
+    "runtime_animations": 31,
+    "runtime_frames": 223,
+    "animation_runtime_tests": 13
+  },
+  "blocker": "Configured npm registry/mirror cannot resolve required development dependencies; native Electron and full toolchain tests must run on Windows before Step 10."
+}

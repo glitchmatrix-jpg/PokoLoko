@@ -1,0 +1,32 @@
+{
+  "step": "10",
+  "title": "Locomotion Engine and Destination Movement",
+  "status": "IMPLEMENTED_STATIC_PASS_NATIVE_PENDING",
+  "checks": {
+    "continuous_floating_point_position": true,
+    "delta_time_independent_from_sprite_fps": true,
+    "character_activity_profiles": true,
+    "arrival_without_oscillation": true,
+    "long_gap_catchup_capped": true,
+    "work_area_and_taskbar_grounding_shared": true,
+    "destination_reached_event": true,
+    "screen_edge_reached_event": true,
+    "movement_interrupted_event": true,
+    "high_frequency_updates_outside_react": true,
+    "walk_cadence_calibration": true,
+    "stale_destination_guard": true,
+    "locomotion_unit_tests_authored": true,
+    "dependency_free_reference_validation": true,
+    "locomotion_package_strict_typecheck": true,
+    "native_windows_visual_test": false,
+    "native_cpu_measurement": false,
+    "packaged_exe_test": false
+  },
+  "native_test_strategy": "Build and run the Windows EXE through GitHub Actions after Step 27, then execute the cumulative native QA matrix.",
+  "known_limitations": [
+    "Step 10 destinations remain within the active display work area; autonomous cross-display destination selection is not introduced.",
+    "Turning and start/stop choreography belong to Step 11.",
+    "The temporary tray movement controls are diagnostic scaffolding.",
+    "Cadence values require human video approval in the Windows EXE."
+  ]
+}

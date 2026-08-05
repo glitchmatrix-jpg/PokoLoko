@@ -1,0 +1,186 @@
+{
+  ".env.example": {
+    "bytes": 51,
+    "sha256": "b5f3eef586e5eda3ec5141765884fc7a66676ecd012224ab2f434ebba0a05010"
+  },
+  ".github/workflows/ci.yml": {
+    "bytes": 622,
+    "sha256": "63410f894e7dd8636f199669ed9fa9edc20ebec9ab356c6f61b760ff0d6701d8"
+  },
+  ".gitignore": {
+    "bytes": 106,
+    "sha256": "af6a08a968ef6a3e7208d5a9da308a1863376dbf7f24e5dab3f8f8b060711662"
+  },
+  ".prettierignore": {
+    "bytes": 54,
+    "sha256": "750cf0777128e116109c704dfeac3fb1f72957e6eff0208904a599c5198f61ca"
+  },
+  ".prettierrc.json": {
+    "bytes": 89,
+    "sha256": "94699af1850daa277e8e21635ef353179ed6a40989038a0b8da1bf397f673e5b"
+  },
+  "README.md": {
+    "bytes": 563,
+    "sha256": "a0fb584482af8f8809b1d0e470352530e22609b1bfc677f675128575ebf91091"
+  },
+  "STEP_05_CHANGE_REPORT.md": {
+    "bytes": 2242,
+    "sha256": "2ea211a7469e0887258176cbd1420d67822428597a83738d212eec113246c351"
+  },
+  "STEP_05_VALIDATION.json": {
+    "bytes": 838,
+    "sha256": "b1c2a6193faaeca6a4bb562a9a8c5ec2d5d1d2df7ebbabd809d0d68ab130142f"
+  },
+  "build/pokoloko.ico": {
+    "bytes": 370070,
+    "sha256": "17e14ca9737c6e81ff2eadacb65c9306ccfce422b7140ef392c2d0a3b2a5f971"
+  },
+  "docs/setup/BUILD_AND_PACKAGE.md": {
+    "bytes": 1124,
+    "sha256": "602b1d4e25edfa0d9870ba4a2ac4b3173987a2e6f0ae6e48c5b6e1c305149043"
+  },
+  "docs/setup/DEVELOPMENT_SETUP.md": {
+    "bytes": 1704,
+    "sha256": "a8945fd43c5a15e15abe03c1dc0a6073890755e75104bbc9e28858b95f51b147"
+  },
+  "docs/setup/INSTALL_AND_RUNTIME_BLOCKERS.md": {
+    "bytes": 1110,
+    "sha256": "a5460297a63a7c7edaecb22b9ca3e00875ba62bca9980c0c60a8129987cee842"
+  },
+  "docs/setup/NATIVE_WINDOW_FLAGS.md": {
+    "bytes": 1146,
+    "sha256": "914c0627e66456cdb93881312b1e7496d2851b09c1653a9a7676e5cdd180f2a5"
+  },
+  "electron/main/main.ts": {
+    "bytes": 3204,
+    "sha256": "2b19ed74caab65e48f1fe288c699d2aee1ab91972fe48a6e2aa3d2b34048defd"
+  },
+  "electron/main/window-factory.ts": {
+    "bytes": 2211,
+    "sha256": "c594d92db83afe9b513162fb080b3e337f17caf0eaca90edb54db11b69f61633"
+  },
+  "electron/preload/contracts.ts": {
+    "bytes": 610,
+    "sha256": "247355dfeddf7e464194471458bd77f6d07fc11e45d7bcaa2feec6591650b782"
+  },
+  "electron/preload/preload.ts": {
+    "bytes": 609,
+    "sha256": "93d974c5fa7b728b4c4225c28277da8e62531e3944a0ee08e1566fbc2879c6e2"
+  },
+  "electron/services/asset-paths.ts": {
+    "bytes": 759,
+    "sha256": "9343e6a1932246d51657345258535989832e793d58513e944d4d5aa6936a012c"
+  },
+  "electron/services/logger.ts": {
+    "bytes": 1463,
+    "sha256": "acb40929e042dffac17a8f950ab29c0267c941612f940968da2ef38e874e4d8c"
+  },
+  "electron/services/settings-store.ts": {
+    "bytes": 1414,
+    "sha256": "431aa0380df8d21ccc2befccf7019738e697f7fd4f73a29e0431d51580f22500"
+  },
+  "eslint.config.js": {
+    "bytes": 1000,
+    "sha256": "51ed57980a94962e7c56407328b694db294c080bf009206f2fc73ea6ecb368f4"
+  },
+  "index.html": {
+    "bytes": 343,
+    "sha256": "095de7b3a5da4679f29c916b56084b6b9aa2f145ee09bce0033917e57caa1c33"
+  },
+  "package.json": {
+    "bytes": 2621,
+    "sha256": "63790b5e17afa97949657cbe43ee8bd1be5456ab7d9183f53d312927ad2e25fa"
+  },
+  "public/brand/pokoloko.ico": {
+    "bytes": 370070,
+    "sha256": "17e14ca9737c6e81ff2eadacb65c9306ccfce422b7140ef392c2d0a3b2a5f971"
+  },
+  "scripts/clean.mjs": {
+    "bytes": 133,
+    "sha256": "43a799c3e892115b007aed24a2f5800ef4a61c6b88886748a61d0650df2814b2"
+  },
+  "scripts/dev.mjs": {
+    "bytes": 890,
+    "sha256": "504b143826ae1ad6846e4f81e9ba99d2a0512fc8967938b140e61955e0d2723e"
+  },
+  "scripts/package-smoke.mjs": {
+    "bytes": 746,
+    "sha256": "9c5a80c01a5c39a6eb4d4fe2839933af320c0a6c9319ed71b98bee9e0f2ca7f1"
+  },
+  "scripts/validate-build.mjs": {
+    "bytes": 598,
+    "sha256": "554dd6798720b0a8dfd9aa978298d21d21da7250a08a3640da7c1ce4a1640db4"
+  },
+  "scripts/validate-foundation.mjs": {
+    "bytes": 2736,
+    "sha256": "d9f7c2958028f620770646af40ed1f6eda0800cf3ae4c9c4b23f9fc29c294a8d"
+  },
+  "src/App.tsx": {
+    "bytes": 437,
+    "sha256": "27fae9fbe99d0951282ca5d1ea92ce135a0ca8fdecbd8ba179da007821fc800d"
+  },
+  "src/app/ErrorBoundary.tsx": {
+    "bytes": 729,
+    "sha256": "3b2d4c620ddaf4338d2c0fd929ba62002854e93d749e99949960dea94b0e9ff8"
+  },
+  "src/main.tsx": {
+    "bytes": 391,
+    "sha256": "5903e1ed91beab7b0549d0f6ffb8e5b6beb59eaad56c8a37d06b756989b5eb2b"
+  },
+  "src/shared/global.d.ts": {
+    "bytes": 151,
+    "sha256": "9dfad8ad2eb70fbe6b855c4a00b08bbba02fc80dda0ad5fc1aac2ffce9de4391"
+  },
+  "src/shared/surface.ts": {
+    "bytes": 267,
+    "sha256": "fcee43f1f2a2131af8e5b215b2708051f669795c1a40d8f665c038b4c9b3f2e7"
+  },
+  "src/styles.css": {
+    "bytes": 1105,
+    "sha256": "9a8368c15230ca9621b8b1de83eaeeb25ea71dae7c3c557f4955a73df960314a"
+  },
+  "src/surfaces/DiagnosticsSurface.tsx": {
+    "bytes": 239,
+    "sha256": "5113ba8294b7e57253ed2fe7ec41a63cdf0e682fe65172245fcd3920b7aa9c8e"
+  },
+  "src/surfaces/PetSurface.tsx": {
+    "bytes": 222,
+    "sha256": "9865b2f65e9478080d6abcc8ead7b73d812e541888184c3317598e6271f477e3"
+  },
+  "src/surfaces/SettingsSurface.tsx": {
+    "bytes": 515,
+    "sha256": "cd105ed27b53ad7c5ae92b646062f6a1fcbe8669d8d72834de7745a75469f2dd"
+  },
+  "tests/integration/foundation.test.ts": {
+    "bytes": 447,
+    "sha256": "4a2319111a55f985cc15789ee3d85cf02aab3d73c685493deaeed3291c13a42b"
+  },
+  "tests/unit/settings-schema.test.ts": {
+    "bytes": 412,
+    "sha256": "ca66b9dd3dc1555c0dbed7d2c34fbbccadef60de24aa9e01c2b48b7b128e208f"
+  },
+  "tests/unit/surface.test.ts": {
+    "bytes": 479,
+    "sha256": "964df2c98a7d75f07cf84830f0b4ce44d282d8ff3315b37bfc03d89c0a30b394"
+  },
+  "tsconfig.base.json": {
+    "bytes": 461,
+    "sha256": "415af75a63657b1b9216c5f857dab3d0a6edff5c6ca89155a0a6ad49f5e32c00"
+  },
+  "tsconfig.electron.json": {
+    "bytes": 352,
+    "sha256": "a429f8e0d4c18b5b8decf6032f642b0450507b9d59f55bf2fe1a5f25ce680717"
+  },
+  "tsconfig.renderer.json": {
+    "bytes": 310,
+    "sha256": "104645792888a7269fab1808320623dfb263e613df90014e797a6ba9304521b2"
+  },
+  "tsconfig.tests.json": {
+    "bytes": 324,
+    "sha256": "c3bce86d97d54520bc6a25164ea3d219dc807cddaa868d927a466134add53310"
+  },
+  "vite.config.ts": {
+    "bytes": 230,
+    "sha256": "d43a64d7507f89fb70ff362e9960a4b78e406595a5911dc405f2b6b8f7cab1fc"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "version": "1.0",
+  "postures": {
+    "standing_front": {
+      "compatible": [
+        "ambient_front",
+        "front_reaction",
+        "sleep_transition",
+        "front_activity_setup"
+      ],
+      "incompatible": [
+        "lying_sleep",
+        "edge_hidden",
+        "prop_held_without_setup"
+      ],
+      "notes": "Default neutral hub; front-to-side bridge is missing for Poko and incomplete for Loko."
+    },
+    "standing_side": {
+      "compatible": [
+        "walk_left",
+        "walk_right",
+        "ball_setup",
+        "side_idle_hold"
+      ],
+      "incompatible": [
+        "front_reaction_without_orientation",
+        "lying_sleep"
+      ],
+      "notes": "Use direction-specific anchors. Stop at a foot-contact frame before changing state."
+    },
+    "standing_three_quarter": {
+      "compatible": [
+        "orientation_bridge",
+        "walk_preparation",
+        "front_idle"
+      ],
+      "incompatible": [
+        "sleep_loop"
+      ],
+      "notes": "Loko has candidate three-quarter bridge material; Poko lacks a dedicated equivalent."
+    },
+    "sitting_or_low_front": {
+      "compatible": [
+        "drink",
+        "eat",
+        "reading",
+        "laptop",
+        "music_low",
+        "sleep_entry"
+      ],
+      "incompatible": [
+        "walk_direct"
+      ],
+      "notes": "Most prop activities visually assume a low/seated body even when no dedicated sit transition exists."
+    },
+    "crouching": {
+      "compatible": [
+        "ball_play",
+        "peeking",
+        "low_reaction"
+      ],
+      "incompatible": [
+        "front_walk_direct"
+      ],
+      "notes": "Intentional body-height changes must not be rescaled."
+    },
+    "lying_sleep": {
+      "compatible": [
+        "sleep_loop",
+        "wake_or_reverse_sleep_transition",
+        "drag_pickup"
+      ],
+      "incompatible": [
+        "walk",
+        "standing_activity",
+        "front_reaction"
+      ],
+      "notes": "Must recover through wake/neutral routing."
+    },
+    "prop_held": {
+      "compatible": [
+        "same_prop_loop",
+        "safe_prop_exit"
+      ],
+      "incompatible": [
+        "walk",
+        "different_prop_activity",
+        "character_switch_without_cleanup"
+      ],
+      "notes": "Prop ownership is part of state, not decoration."
+    },
+    "edge_peeking": {
+      "compatible": [
+        "peek_hold",
+        "peek_withdraw",
+        "edge_reaction"
+      ],
+      "incompatible": [
+        "free_walk_without_leaving_edge"
+      ],
+      "notes": "Requires screen-edge/ledge positioning and a dedicated exit."
+    }
+  }
+}

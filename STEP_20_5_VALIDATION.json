@@ -1,0 +1,24 @@
+{
+  "step": "20.5",
+  "title": "Living Runtime Orchestration Integration",
+  "status": "PASS_WITH_NATIVE_WINDOWS_PENDING",
+  "checks": {
+    "behavior_planner_connected": true,
+    "pet_mind_connected": true,
+    "session_memory_connected": true,
+    "context_influences_planner": true,
+    "sleep_lifecycle_connected": true,
+    "activity_controller_connected": true,
+    "social_reactions_connected": true,
+    "animation_events_connected": true,
+    "locomotion_completion_connected": true,
+    "drag_interruption_connected": true,
+    "character_switch_isolated": true,
+    "pause_and_quiet_controls": true,
+    "live_diagnostics": true,
+    "strict_orchestration_typecheck": true,
+    "compiled_integration_scenarios": true,
+    "native_windows_validation": false
+  },
+  "remaining_gate": "GitHub Actions Windows EXE plus human native QA after Step 27."
+}

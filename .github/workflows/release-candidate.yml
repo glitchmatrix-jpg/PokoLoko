@@ -1,0 +1,105 @@
+name: PokoLoko Release Candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release version (without v prefix)
+        required: true
+        default: 1.0.0-rc.1
+      create_github_release:
+        description: Create a draft GitHub release
+        type: boolean
+        required: true
+        default: false
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pokoloko-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release-windows:
+    runs-on: windows-2022
+    timeout-minutes: 45
+    env:
+      CI: 'true'
+      NODE_ENV: production
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.12.0
+      - name: Resolve release version
+        shell: pwsh
+        run: |
+          $version = '${{ inputs.version }}'
+          if ('${{ github.ref_type }}' -eq 'tag') { $version = '${{ github.ref_name }}'.TrimStart('v') }
+          if ($version -notmatch '^\d+\.\d+\.\d+([-.][0-9A-Za-z.-]+)?$') { throw "Invalid version: $version" }
+          npm pkg set version=$version
+          "RELEASE_VERSION=$version" | Out-File -FilePath $env:GITHUB_ENV -Append
+      - name: Install pinned dependencies
+        run: npm install --no-audit --no-fund
+      - name: Preserve generated dependency lock
+        shell: pwsh
+        run: Copy-Item package-lock.json package-lock.release.json
+      - name: Full deterministic validation
+        run: npm run validate
+      - name: Build NSIS installer and portable EXE
+        run: npm run package:win
+      - name: Collect dependency licenses
+        run: node scripts/collect-third-party-licenses.mjs .
+      - name: Validate packaged release
+        run: npm run release:validate
+      - name: Generate preliminary SHA-256 hashes
+        run: npm run release:hashes
+      - name: Create source and rollback archives
+        run: |
+          npm run release:source-archive
+          npm run release:rollback
+      - name: Generate final SHA-256 hashes
+        run: npm run release:hashes
+      - name: Verify installer exists
+        shell: pwsh
+        run: |
+          $installer = Get-ChildItem release -Filter '*Setup*.exe' -ErrorAction SilentlyContinue
+          $portable = Get-ChildItem release -Filter '*Portable*.exe' -ErrorAction SilentlyContinue
+          if (-not $installer) { throw 'NSIS installer was not produced.' }
+          if (-not $portable) { throw 'Portable executable was not produced.' }
+      - name: Upload complete release candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: PokoLoko-Release-Candidate-${{ env.RELEASE_VERSION }}
+          path: |
+            release/*.exe
+            release/*.zip
+            release/*.txt
+            release/*.json
+            release/win-unpacked/**
+            RELEASE_NOTES.md
+            THIRD_PARTY_NOTICES.md
+            docs/qa/**
+            reports/tests/**
+            package-lock.release.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Create draft GitHub release
+        if: ${{ github.event_name == 'push' || inputs.create_github_release }}
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          prerelease: true
+          name: PokoLoko ${{ env.RELEASE_VERSION }}
+          body_path: RELEASE_NOTES.md
+          files: |
+            release/*.exe
+            release/*.zip
+            release/BUILD_HASHES.txt

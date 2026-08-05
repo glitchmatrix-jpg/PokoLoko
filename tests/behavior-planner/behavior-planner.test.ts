@@ -1,0 +1,11 @@
+import { describe, expect, it } from 'vitest';
+import { BehaviorPlanner, createInitialMind, createSessionMemory, updateMind } from '../../packages/pet-engine/behavior/src/index.js';
+const base=(character:'poko'|'loko'='poko')=>({character,state:'stable.idle_front' as const,currentRegion:'center' as const,mind:createInitialMind(character),context:{typingActivity:'none' as const,pointerActivity:'none' as const,systemIdle:false,audioActive:false,fullscreenActive:false,screenLocked:false,localTimeBand:'day' as const,recentUserInteraction:'none' as const,enabled:true},memory:createSessionMemory(0),settings:{activityLevel:'balanced' as const,quietMode:false,paused:false,contextualAwareness:true},nowMs:600000,legalActivities:['drink','eat','laptop','music','peeking','playing_ball','reading'] as const});
+describe('BehaviorPlanner',()=>{
+ it('is deterministic for equal seeds and input',()=>{const a=new BehaviorPlanner(42).decide(base());const b=new BehaviorPlanner(42).decide(base());expect(a).toEqual(b);});
+ it('never acts while paused',()=>{const i={...base(),settings:{...base().settings,paused:true}};expect(new BehaviorPlanner(1).decide(i).intention).toBeNull();});
+ it('only chooses from legal activities',()=>{const i={...base('loko'),legalActivities:['reading'] as const};const d=new BehaviorPlanner(9).decide(i);const activity=d.candidates.filter(x=>x.key.startsWith('activity:'));expect(activity.map(x=>x.key)).toEqual(['activity:reading']);});
+ it('suppresses sleep shortly after waking',()=>{const i={...base(),nowMs:100000,memory:createSessionMemory(0)};expect(new BehaviorPlanner(3).decide(i).candidates.some(x=>x.key==='sleep')).toBe(false);});
+ it('quiet mode suppresses noisy activities and walking',()=>{const i={...base(),settings:{...base().settings,quietMode:true}};const keys=new BehaviorPlanner(2).decide(i).candidates.map(x=>x.key);expect(keys).not.toContain('walk');expect(keys).not.toContain('activity:playing_ball');});
+ it('updates hidden mind without exposing health mechanics',()=>{const m=updateMind(createInitialMind('poko'),{type:'tick',elapsedMs:60000,context:base().context,activeKind:'remain_idle'});expect(m.boredom).toBeGreaterThan(createInitialMind('poko').boredom);expect(m.energy).toBeLessThan(createInitialMind('poko').energy);});
+});

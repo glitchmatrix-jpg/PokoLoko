@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["ES2022", "DOM"],
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  },
+  "files": [
+    "packages/pet-engine/reactions/src/types.ts",
+    "packages/pet-engine/reactions/src/registry.ts",
+    "packages/pet-engine/reactions/src/SocialInteractionController.ts",
+    "packages/pet-engine/reactions/src/index.ts"
+  ]
+}

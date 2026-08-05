@@ -1,0 +1,28 @@
+{
+  "step": "05",
+  "title": "Clean Project Foundation",
+  "implementation_status": "COMPLETE",
+  "stop_condition_status": "BLOCKED_PENDING_RUNTIME_VERIFICATION",
+  "static_checks": {
+    "required_files_present": true,
+    "secure_window_flags_present": true,
+    "typed_preload_present": true,
+    "legacy_behavior_absent": true,
+    "old_asset_pipeline_absent": true,
+    "final_icon_present": true,
+    "node_script_syntax_passed": true
+  },
+  "runtime_checks": {
+    "clean_install": false,
+    "typecheck": false,
+    "lint": false,
+    "unit_tests": false,
+    "production_build": false,
+    "electron_launch": false,
+    "transparent_window_visual_qa": false,
+    "tray_visual_qa": false,
+    "packaged_app_launch": false,
+    "nsis_installer": false
+  },
+  "blocker": "Configured npm mirror returned 404 for @eslint/js@9.38.0."
+}

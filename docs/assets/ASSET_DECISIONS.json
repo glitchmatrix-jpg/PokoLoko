@@ -1,0 +1,1502 @@
+{
+  "step": "01",
+  "status": "complete",
+  "source_package": "Poko_Loko_Asset_Pack_v1",
+  "canvas": [
+    128,
+    128
+  ],
+  "counts": {
+    "animations": 31,
+    "animation_frames": 223,
+    "isolated_poses": 218,
+    "source_candidates": 406,
+    "manual_flags": 14
+  },
+  "animations": [
+    {
+      "animation_id": "loko_drink_02",
+      "character": "loko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Loko drinks while holding a leafy/green container or mug.",
+      "decision": "USE",
+      "start_posture": "seated_front_with_drink",
+      "end_posture": "seated_front_with_drink",
+      "prop_state": "green_drink_container",
+      "interruption_safety": "deferred_until_prop_down",
+      "loop_policy": "Bounded sip loop.",
+      "human_notes": "Stable and readable.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 89.5
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 7,
+      "source_frame_ids": [
+        "L-R10-C01",
+        "L-R10-C02",
+        "L-R10-C03",
+        "L-R10-C04",
+        "L-R10-C05",
+        "L-R10-C06",
+        "L-R10-C07"
+      ],
+      "transition_from": [
+        "idle_front",
+        "sit_idle"
+      ],
+      "transition_to": [
+        "idle_front",
+        "sit_idle"
+      ]
+    },
+    {
+      "animation_id": "loko_eat",
+      "character": "loko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Loko eats food, reacts, then drinks from a blue container.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "seated_front_with_food",
+      "end_posture": "seated_front_with_drink",
+      "prop_state": "food_and_blue_container",
+      "interruption_safety": "deferred_until_prop_safe",
+      "loop_policy": "Ping-pong metadata is not semantically ideal for a meal; use one-shot sub-scenes.",
+      "human_notes": "Split food and drink phases in runtime choreography.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 89.0
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 9,
+      "source_frame_ids": [
+        "L-R09-C04",
+        "L-R09-C05",
+        "L-R09-C06",
+        "L-R09-C07",
+        "L-R09-C08",
+        "L-R09-C09",
+        "L-R09-C10",
+        "L-R09-C11",
+        "L-R09-C12"
+      ],
+      "transition_from": [
+        "idle_front",
+        "sit_idle"
+      ],
+      "transition_to": [
+        "idle_front",
+        "sit_idle"
+      ]
+    },
+    {
+      "animation_id": "loko_laptop",
+      "character": "loko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Loko works at a dark laptop with typing, looking, and pause variations.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "seated_front_with_laptop",
+      "end_posture": "seated_front_with_laptop",
+      "prop_state": "laptop",
+      "interruption_safety": "deferred_until_laptop_close",
+      "loop_policy": "Use selected sub-loop rather than blindly looping all 12 frames.",
+      "human_notes": "One abrupt adjacent pair is plausible as a posture/attention change but must be split into setup, work loop, and exit in the animation lab.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 90.5
+      },
+      "fps": 4,
+      "recommended_fps_range": [
+        3,
+        6
+      ],
+      "frame_count": 12,
+      "source_frame_ids": [
+        "L-R12-C02",
+        "L-R12-C03",
+        "L-R12-C04",
+        "L-R12-C05",
+        "L-R12-C06",
+        "L-R12-C07",
+        "L-R12-C08",
+        "L-R12-C09",
+        "L-R12-C10",
+        "L-R12-C11",
+        "L-R12-C12",
+        "L-R12-C13"
+      ],
+      "transition_from": [
+        "idle_front",
+        "sit_idle"
+      ],
+      "transition_to": [
+        "idle_front",
+        "sit_idle"
+      ]
+    },
+    {
+      "animation_id": "loko_music",
+      "character": "loko",
+      "category": "activities",
+      "life_role": "SPONTANEOUS",
+      "visible_action": "Loko listens or bobs to music with note effects and a glowing orb-like prop at the end.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_front",
+      "end_posture": "standing_front_with_orb",
+      "prop_state": "music_notes_and_orb",
+      "interruption_safety": "soft_at_phrase_boundary",
+      "loop_policy": "Use bounded phrases; final orb frames require controlled exit.",
+      "human_notes": "Quieter than Poko music; prop continuity at the final frames must be explicit.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 88.0
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        6,
+        9
+      ],
+      "frame_count": 11,
+      "source_frame_ids": [
+        "L-R11-C02",
+        "L-R11-C03",
+        "L-R11-C04",
+        "L-R11-C05",
+        "L-R11-C06",
+        "L-R11-C07",
+        "L-R11-C08",
+        "L-R11-C09",
+        "L-R11-C10",
+        "L-R11-C11",
+        "L-R11-C12"
+      ],
+      "transition_from": [
+        "idle_front",
+        "sit_idle"
+      ],
+      "transition_to": [
+        "idle_front",
+        "sit_idle"
+      ]
+    },
+    {
+      "animation_id": "loko_peeking_01",
+      "character": "loko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Loko performs a low floor/edge peek with eyes closed/open and a small rise.",
+      "decision": "USE",
+      "start_posture": "low_hidden",
+      "end_posture": "low_visible",
+      "prop_state": "edge_or_floor_line",
+      "interruption_safety": "deferred_until_safe_frame",
+      "loop_policy": "One-shot or ping-pong.",
+      "human_notes": "Good subtle curiosity action.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 92.0
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 3,
+      "source_frame_ids": [
+        "L-R14-C10",
+        "L-R14-C11",
+        "L-R14-C12"
+      ],
+      "transition_from": [
+        "idle_front"
+      ],
+      "transition_to": [
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "loko_peeking_02",
+      "character": "loko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Loko peeks over a horizontal ledge, gradually lowering or withdrawing.",
+      "decision": "USE",
+      "start_posture": "edge_visible",
+      "end_posture": "edge_low",
+      "prop_state": "ledge",
+      "interruption_safety": "deferred_until_safe_frame",
+      "loop_policy": "One-shot or reversible peek cycle.",
+      "human_notes": "Can pair with peeking_01 as alternate edge choreography after lab validation.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.5,
+        "ground_y": 112.0,
+        "body_center_x": 64.5,
+        "body_center_y": 92.5
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 5,
+      "source_frame_ids": [
+        "L-R15-C01",
+        "L-R15-C02",
+        "L-R15-C03",
+        "L-R15-C04",
+        "L-R15-C05"
+      ],
+      "transition_from": [
+        "idle_front"
+      ],
+      "transition_to": [
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "loko_playing_ball_01",
+      "character": "loko",
+      "category": "activities",
+      "life_role": "SPONTANEOUS",
+      "visible_action": "Loko rolls, nudges, and circles an orange ball with measured side poses.",
+      "decision": "USE",
+      "start_posture": "standing_side_near_ball",
+      "end_posture": "standing_side_near_ball",
+      "prop_state": "orange_ball",
+      "interruption_safety": "deferred_except_drag",
+      "loop_policy": "One-shot play phrase; repeat only after reset.",
+      "human_notes": "Useful surprise activity that keeps Loko from feeling one-note.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 88.5
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        6,
+        9
+      ],
+      "frame_count": 7,
+      "source_frame_ids": [
+        "L-R13-C07",
+        "L-R13-C08",
+        "L-R13-C09",
+        "L-R13-C10",
+        "L-R13-C11",
+        "L-R13-C12",
+        "L-R13-C13"
+      ],
+      "transition_from": [
+        "idle_front"
+      ],
+      "transition_to": [
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "loko_reading_01",
+      "character": "loko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Loko reads a green book with small attentive page/pose variations.",
+      "decision": "USE",
+      "start_posture": "seated_front_with_book",
+      "end_posture": "seated_front_with_book",
+      "prop_state": "green_book",
+      "interruption_safety": "deferred_until_book_close",
+      "loop_policy": "Good bounded loop with occasional long holds.",
+      "human_notes": "Core personality activity; excellent response to sustained low-intensity typing/reading context.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 89.5
+      },
+      "fps": 4,
+      "recommended_fps_range": [
+        3,
+        6
+      ],
+      "frame_count": 5,
+      "source_frame_ids": [
+        "L-R10-C08",
+        "L-R10-C09",
+        "L-R10-C10",
+        "L-R10-C11",
+        "L-R10-C12"
+      ],
+      "transition_from": [
+        "idle_front",
+        "sit_idle"
+      ],
+      "transition_to": [
+        "idle_front",
+        "sit_idle"
+      ]
+    },
+    {
+      "animation_id": "loko_love_reaction",
+      "character": "loko",
+      "category": "emotions",
+      "life_role": "SOCIAL",
+      "visible_action": "Loko blushes/leans through affectionate poses with hearts, then returns toward neutral.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_front",
+      "end_posture": "standing_front",
+      "prop_state": "hearts",
+      "interruption_safety": "soft_except_drag",
+      "loop_policy": "One-shot only.",
+      "human_notes": "At least one adjacent jump is expressive squash/lean. Trigger sparingly after positive interaction, never continuously.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 92.0
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 8,
+      "source_frame_ids": [
+        "L-R06-C03",
+        "L-R06-C04",
+        "L-R06-C05",
+        "L-R06-C06",
+        "L-R06-C07",
+        "L-R06-C08",
+        "L-R06-C09",
+        "L-R06-C10"
+      ],
+      "transition_from": [
+        "idle_front"
+      ],
+      "transition_to": [
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "loko_idle_front",
+      "character": "loko",
+      "category": "idle",
+      "life_role": "AMBIENT",
+      "visible_action": "Front idle sequence with glances, eye changes, side turns, and return.",
+      "decision": "USE",
+      "start_posture": "standing_front",
+      "end_posture": "standing_front",
+      "prop_state": "none",
+      "interruption_safety": "safe_any_frame",
+      "loop_policy": "Forward loop acceptable but should be broken into sparse micro-actions.",
+      "human_notes": "Strong calm baseline; do not play continuously or it becomes robotic.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 89.5
+      },
+      "fps": 3,
+      "recommended_fps_range": [
+        2,
+        4
+      ],
+      "frame_count": 8,
+      "source_frame_ids": [
+        "L-R01-C01",
+        "L-R01-C02",
+        "L-R01-C03",
+        "L-R01-C04",
+        "L-R01-C05",
+        "L-R01-C06",
+        "L-R01-C07",
+        "L-R01-C08"
+      ],
+      "transition_from": [
+        "*"
+      ],
+      "transition_to": [
+        "walking",
+        "sit_idle",
+        "sleep_transition",
+        "reaction"
+      ]
+    },
+    {
+      "animation_id": "loko_locomotion_side_01",
+      "character": "loko",
+      "category": "locomotion",
+      "life_role": "TRANSITION",
+      "visible_action": "Three mostly front/three-quarter locomotion preparation or orientation poses.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_front",
+      "end_posture": "standing_three_quarter",
+      "prop_state": "none",
+      "interruption_safety": "safe",
+      "loop_policy": "Do not loop continuously.",
+      "human_notes": "Use as orientation bridge only after transition-lab validation; not a complete walk cycle.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 89.5
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        7,
+        10
+      ],
+      "frame_count": 3,
+      "source_frame_ids": [
+        "L-R01-C09",
+        "L-R01-C10",
+        "L-R01-C11"
+      ],
+      "transition_from": [
+        "idle_side",
+        "walk_preparation"
+      ],
+      "transition_to": [
+        "idle_side",
+        "turn"
+      ]
+    },
+    {
+      "animation_id": "loko_locomotion_side_02",
+      "character": "loko",
+      "category": "locomotion",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Seven-frame side-facing Loko walk cycle with rounded deliberate steps.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_side",
+      "end_posture": "standing_side",
+      "prop_state": "none",
+      "interruption_safety": "safe_at_foot_contact",
+      "loop_policy": "Forward loop candidate.",
+      "human_notes": "Primary Loko locomotion; slower cadence than Poko.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 90.0
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        7,
+        10
+      ],
+      "frame_count": 7,
+      "source_frame_ids": [
+        "L-R02-C01",
+        "L-R02-C02",
+        "L-R02-C03",
+        "L-R02-C04",
+        "L-R02-C05",
+        "L-R02-C06",
+        "L-R02-C07"
+      ],
+      "transition_from": [
+        "idle_side",
+        "walk_preparation"
+      ],
+      "transition_to": [
+        "idle_side",
+        "turn"
+      ]
+    },
+    {
+      "animation_id": "loko_walk_left",
+      "character": "loko",
+      "category": "locomotion",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Mirrored left-facing derivative of Loko seven-frame side walk.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_side_left",
+      "end_posture": "standing_side_left",
+      "prop_state": "none",
+      "interruption_safety": "safe_at_foot_contact",
+      "loop_policy": "Same cadence as source.",
+      "human_notes": "Mirroring is safe; no asymmetric semantic prop.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": true,
+      "anchor": {
+        "ground_x": 63.0,
+        "ground_y": 112.0,
+        "body_center_x": 63.0,
+        "body_center_y": 90.0
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        7,
+        10
+      ],
+      "frame_count": 7,
+      "source_frame_ids": [
+        "L-R02-C01",
+        "L-R02-C02",
+        "L-R02-C03",
+        "L-R02-C04",
+        "L-R02-C05",
+        "L-R02-C06",
+        "L-R02-C07"
+      ],
+      "transition_from": [
+        "idle_side",
+        "walk_preparation"
+      ],
+      "transition_to": [
+        "idle_side",
+        "turn"
+      ]
+    },
+    {
+      "animation_id": "loko_walk_preparation",
+      "character": "loko",
+      "category": "locomotion",
+      "life_role": "TRANSITION",
+      "visible_action": "Three front-facing frames suggesting readiness/weight shift before movement.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_front",
+      "end_posture": "standing_front_ready",
+      "prop_state": "none",
+      "interruption_safety": "safe",
+      "loop_policy": "One-shot only.",
+      "human_notes": "Not a directional turn by itself; use as anticipation before side transition if visually compatible.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 89.5
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        7,
+        10
+      ],
+      "frame_count": 3,
+      "source_frame_ids": [
+        "L-R01-C09",
+        "L-R01-C10",
+        "L-R01-C11"
+      ],
+      "transition_from": [
+        "idle_front",
+        "idle_side"
+      ],
+      "transition_to": [
+        "walking",
+        "idle_side"
+      ]
+    },
+    {
+      "animation_id": "loko_walk_right",
+      "character": "loko",
+      "category": "locomotion",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Right-facing Loko seven-frame side walk.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_side_right",
+      "end_posture": "standing_side_right",
+      "prop_state": "none",
+      "interruption_safety": "safe_at_foot_contact",
+      "loop_policy": "Same cadence as source.",
+      "human_notes": "Requires physical X movement.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 90.0
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        7,
+        10
+      ],
+      "frame_count": 7,
+      "source_frame_ids": [
+        "L-R02-C01",
+        "L-R02-C02",
+        "L-R02-C03",
+        "L-R02-C04",
+        "L-R02-C05",
+        "L-R02-C06",
+        "L-R02-C07"
+      ],
+      "transition_from": [
+        "idle_side",
+        "walk_preparation"
+      ],
+      "transition_to": [
+        "idle_side",
+        "turn"
+      ]
+    },
+    {
+      "animation_id": "loko_sleep_loop",
+      "character": "loko",
+      "category": "sleeping",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Loko lies asleep with changing Z symbols and subtle body states.",
+      "decision": "USE",
+      "start_posture": "lying_sleep",
+      "end_posture": "lying_sleep",
+      "prop_state": "sleep_symbols",
+      "interruption_safety": "soft_interrupt_to_wake",
+      "loop_policy": "Acceptable short loop with randomized holds.",
+      "human_notes": "Good calm sleep identity.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 98.0
+      },
+      "fps": 3,
+      "recommended_fps_range": [
+        2,
+        4
+      ],
+      "frame_count": 3,
+      "source_frame_ids": [
+        "L-R04-C11",
+        "L-R04-C12",
+        "L-R04-C13"
+      ],
+      "transition_from": [
+        "sleep_transition"
+      ],
+      "transition_to": [
+        "wake_up",
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "loko_sleep_transition",
+      "character": "loko",
+      "category": "sleeping",
+      "life_role": "TRANSITION",
+      "visible_action": "Loko lowers from upright/drowsy posture into a compact lying sleep pose.",
+      "decision": "USE",
+      "start_posture": "standing_or_low_front",
+      "end_posture": "lying_sleep",
+      "prop_state": "sleep_symbols_mid",
+      "interruption_safety": "locked_except_drag_shutdown",
+      "loop_policy": "One-shot only.",
+      "human_notes": "Reverse playback may not read as a natural wake; validate in transition lab.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.25,
+        "ground_y": 112.0,
+        "body_center_x": 64.25,
+        "body_center_y": 96.0
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 6,
+      "source_frame_ids": [
+        "L-R17-C04",
+        "L-R17-C05",
+        "L-R17-C06",
+        "L-R17-C07",
+        "L-R17-C08",
+        "L-R17-C09"
+      ],
+      "transition_from": [
+        "sit_idle",
+        "idle_front"
+      ],
+      "transition_to": [
+        "sleep_loop"
+      ]
+    },
+    {
+      "animation_id": "poko_drink",
+      "character": "poko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Poko handles and drinks from a blue cup/bottle-like prop.",
+      "decision": "USE",
+      "start_posture": "seated_or_low_front",
+      "end_posture": "seated_or_low_front",
+      "prop_state": "drink_container",
+      "interruption_safety": "deferred_until_prop_down",
+      "loop_policy": "Loop only as bounded sips; do not repeat indefinitely.",
+      "human_notes": "Needs entry/exit via compatible low posture or a short prop setup hold.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 90.0
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 8,
+      "source_frame_ids": [
+        "P-R09-C07",
+        "P-R09-C08",
+        "P-R09-C09",
+        "P-R09-C10",
+        "P-R09-C11",
+        "P-R09-C12",
+        "P-R09-C13",
+        "P-R09-C14"
+      ],
+      "transition_from": [
+        "idle_front",
+        "sit_idle"
+      ],
+      "transition_to": [
+        "idle_front",
+        "sit_idle"
+      ]
+    },
+    {
+      "animation_id": "poko_eat",
+      "character": "poko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Poko eats through several food/utensil states and ends with drink/container frames.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "seated_front_with_food",
+      "end_posture": "seated_front_with_container",
+      "prop_state": "food_and_container",
+      "interruption_safety": "deferred_until_prop_safe",
+      "loop_policy": "Use as a bounded one-shot meal montage, not a loop.",
+      "human_notes": "Medium confidence because multiple food moments are concatenated. Break into sub-actions at runtime only after frame-level lab review.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 63.5,
+        "ground_y": 112.0,
+        "body_center_x": 63.5,
+        "body_center_y": 89.5
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 11,
+      "source_frame_ids": [
+        "P-R10-C01",
+        "P-R10-C02",
+        "P-R10-C03",
+        "P-R10-C04",
+        "P-R10-C05",
+        "P-R10-C06",
+        "P-R10-C07",
+        "P-R10-C08",
+        "P-R10-C09",
+        "P-R10-C10",
+        "P-R10-C11"
+      ],
+      "transition_from": [
+        "idle_front",
+        "sit_idle"
+      ],
+      "transition_to": [
+        "idle_front",
+        "sit_idle"
+      ]
+    },
+    {
+      "animation_id": "poko_music",
+      "character": "poko",
+      "category": "activities",
+      "life_role": "SPONTANEOUS",
+      "visible_action": "Poko listens/dances through musical-note expressions and rhythmic poses.",
+      "decision": "USE",
+      "start_posture": "standing_front",
+      "end_posture": "standing_front",
+      "prop_state": "music_notes",
+      "interruption_safety": "soft_interrupt_at_phrase_boundary",
+      "loop_policy": "Forward loop acceptable; vary duration by complete phrases.",
+      "human_notes": "Excellent personality-defining activity.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 88.25
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        6,
+        9
+      ],
+      "frame_count": 12,
+      "source_frame_ids": [
+        "P-R11-C01",
+        "P-R11-C02",
+        "P-R11-C03",
+        "P-R11-C04",
+        "P-R11-C05",
+        "P-R11-C06",
+        "P-R11-C07",
+        "P-R11-C08",
+        "P-R11-C09",
+        "P-R11-C10",
+        "P-R11-C11",
+        "P-R11-C12"
+      ],
+      "transition_from": [
+        "idle_front",
+        "sit_idle"
+      ],
+      "transition_to": [
+        "idle_front",
+        "sit_idle"
+      ]
+    },
+    {
+      "animation_id": "poko_peeking",
+      "character": "poko",
+      "category": "activities",
+      "life_role": "CONTEXTUAL",
+      "visible_action": "Poko rises from below/behind an edge, peeks, then becomes more animated above the ledge.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "edge_hidden",
+      "end_posture": "edge_visible_excited",
+      "prop_state": "ledge",
+      "interruption_safety": "deferred_until_safe_frame",
+      "loop_policy": "One-shot; not a loop.",
+      "human_notes": "Frames 4\u21925 intentionally change body width/centroid as Poko climbs onto the ledge. Treat as physical repositioning, not scale jitter. Requires a real screen-edge/ledge context.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 87.75
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 12,
+      "source_frame_ids": [
+        "P-R14-C01",
+        "P-R14-C02",
+        "P-R14-C03",
+        "P-R14-C04",
+        "P-R14-C05",
+        "P-R14-C06",
+        "P-R14-C07",
+        "P-R14-C08",
+        "P-R14-C09",
+        "P-R14-C10",
+        "P-R14-C11",
+        "P-R14-C12"
+      ],
+      "transition_from": [
+        "idle_front"
+      ],
+      "transition_to": [
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "poko_playing_ball",
+      "character": "poko",
+      "category": "activities",
+      "life_role": "SPONTANEOUS",
+      "visible_action": "Poko approaches, pushes, hugs, rolls around, and celebrates with a blue ball.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_side_near_ball",
+      "end_posture": "low_side_near_ball",
+      "prop_state": "blue_ball_and_hearts",
+      "interruption_safety": "deferred_except_drag",
+      "loop_policy": "One choreographed activity; not a seamless loop.",
+      "human_notes": "All 12? QA metrics are intentional pose/ball interactions: crouching, leaning, rolling, lying, and celebration. Preserve sequence; do not normalize body bounds further. Needs explicit setup and cleanup so the ball does not pop in/out.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 63.5,
+        "ground_y": 112.0,
+        "body_center_x": 63.5,
+        "body_center_y": 89.0
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        6,
+        9
+      ],
+      "frame_count": 11,
+      "source_frame_ids": [
+        "P-R13-C01",
+        "P-R13-C02",
+        "P-R13-C03",
+        "P-R13-C04",
+        "P-R13-C05",
+        "P-R13-C06",
+        "P-R13-C07",
+        "P-R13-C08",
+        "P-R13-C09",
+        "P-R13-C10",
+        "P-R13-C11"
+      ],
+      "transition_from": [
+        "idle_front"
+      ],
+      "transition_to": [
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "poko_sad_to_crying",
+      "character": "poko",
+      "category": "emotions",
+      "life_role": "SOCIAL",
+      "visible_action": "Poko shifts from subdued/sad expression into visible crying and settles.",
+      "decision": "USE_WITH_CONTEXT",
+      "start_posture": "standing_front_sad",
+      "end_posture": "standing_front_crying",
+      "prop_state": "tears",
+      "interruption_safety": "soft_except_drag",
+      "loop_policy": "One-shot only.",
+      "human_notes": "Do not trigger randomly. Reserve for contextual annoyance/disappointment or rare narrative moments; never guilt the user.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 90.0
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 8,
+      "source_frame_ids": [
+        "P-R07-C01",
+        "P-R07-C02",
+        "P-R07-C03",
+        "P-R07-C04",
+        "P-R07-C05",
+        "P-R07-C06",
+        "P-R07-C07",
+        "P-R07-C08"
+      ],
+      "transition_from": [
+        "idle_front"
+      ],
+      "transition_to": [
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "poko_idle_blink",
+      "character": "poko",
+      "category": "idle",
+      "life_role": "AMBIENT",
+      "visible_action": "Eyes close and reopen while remaining front-facing.",
+      "decision": "USE",
+      "start_posture": "standing_front",
+      "end_posture": "standing_front",
+      "prop_state": "none",
+      "interruption_safety": "safe_any_frame",
+      "loop_policy": "Good two-frame blink when timed asymmetrically.",
+      "human_notes": "Never run at a fixed metronomic interval.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 63.5,
+        "ground_y": 112.0,
+        "body_center_x": 63.5,
+        "body_center_y": 88.25
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        4,
+        7
+      ],
+      "frame_count": 2,
+      "source_frame_ids": [
+        "P-R01-C04",
+        "P-R01-C05"
+      ],
+      "transition_from": [
+        "*"
+      ],
+      "transition_to": [
+        "walking",
+        "sit_idle",
+        "sleep_transition",
+        "reaction"
+      ]
+    },
+    {
+      "animation_id": "poko_idle_look_01",
+      "character": "poko",
+      "category": "idle",
+      "life_role": "AMBIENT",
+      "visible_action": "Front-facing glance/attention shift between two neutral poses.",
+      "decision": "USE",
+      "start_posture": "standing_front",
+      "end_posture": "standing_front",
+      "prop_state": "none",
+      "interruption_safety": "safe_any_frame",
+      "loop_policy": "Good as a sparse micro-loop; insert long holds rather than continuous playback.",
+      "human_notes": "Subtle and readable; should be scheduled as a micro-expression, not a permanent idle loop.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 63.75,
+        "ground_y": 112.0,
+        "body_center_x": 63.75,
+        "body_center_y": 88.5
+      },
+      "fps": 4,
+      "recommended_fps_range": [
+        3,
+        5
+      ],
+      "frame_count": 2,
+      "source_frame_ids": [
+        "P-R01-C06",
+        "P-R01-C07"
+      ],
+      "transition_from": [
+        "*"
+      ],
+      "transition_to": [
+        "walking",
+        "sit_idle",
+        "sleep_transition",
+        "reaction"
+      ]
+    },
+    {
+      "animation_id": "poko_locomotion_side",
+      "character": "poko",
+      "category": "locomotion",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Nine-frame side-facing stepping/walking cycle.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_side",
+      "end_posture": "standing_side",
+      "prop_state": "none",
+      "interruption_safety": "safe_at_foot_contact",
+      "loop_policy": "Forward loop candidate; synchronize speed to foot contacts.",
+      "human_notes": "Original right-facing source; mirrored left derivative exists. Must be tested for foot sliding and cadence.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 88.0
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        7,
+        10
+      ],
+      "frame_count": 9,
+      "source_frame_ids": [
+        "P-R02-C02",
+        "P-R02-C03",
+        "P-R02-C04",
+        "P-R02-C05",
+        "P-R02-C06",
+        "P-R02-C07",
+        "P-R02-C08",
+        "P-R02-C09",
+        "P-R02-C10"
+      ],
+      "transition_from": [
+        "idle_side",
+        "walk_preparation"
+      ],
+      "transition_to": [
+        "idle_side",
+        "turn"
+      ]
+    },
+    {
+      "animation_id": "poko_walk_left",
+      "character": "poko",
+      "category": "locomotion",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Mirrored left-facing derivative of Poko side locomotion.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_side_left",
+      "end_posture": "standing_side_left",
+      "prop_state": "none",
+      "interruption_safety": "safe_at_foot_contact",
+      "loop_policy": "Same cadence as source.",
+      "human_notes": "Mirroring is visually safe because no directional prop/text exists. Anchor inversion metadata must be honored.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": true,
+      "anchor": {
+        "ground_x": 63.0,
+        "ground_y": 112.0,
+        "body_center_x": 63.0,
+        "body_center_y": 88.0
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        7,
+        10
+      ],
+      "frame_count": 9,
+      "source_frame_ids": [
+        "P-R02-C02",
+        "P-R02-C03",
+        "P-R02-C04",
+        "P-R02-C05",
+        "P-R02-C06",
+        "P-R02-C07",
+        "P-R02-C08",
+        "P-R02-C09",
+        "P-R02-C10"
+      ],
+      "transition_from": [
+        "idle_side",
+        "walk_preparation"
+      ],
+      "transition_to": [
+        "idle_side",
+        "turn"
+      ]
+    },
+    {
+      "animation_id": "poko_walk_right",
+      "character": "poko",
+      "category": "locomotion",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Right-facing Poko side locomotion runtime derivative.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "standing_side_right",
+      "end_posture": "standing_side_right",
+      "prop_state": "none",
+      "interruption_safety": "safe_at_foot_contact",
+      "loop_policy": "Same cadence as source.",
+      "human_notes": "Use as physical locomotion only when X position changes.",
+      "source_confidence": "medium",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 88.0
+      },
+      "fps": 8,
+      "recommended_fps_range": [
+        7,
+        10
+      ],
+      "frame_count": 9,
+      "source_frame_ids": [
+        "P-R02-C02",
+        "P-R02-C03",
+        "P-R02-C04",
+        "P-R02-C05",
+        "P-R02-C06",
+        "P-R02-C07",
+        "P-R02-C08",
+        "P-R02-C09",
+        "P-R02-C10"
+      ],
+      "transition_from": [
+        "idle_side",
+        "walk_preparation"
+      ],
+      "transition_to": [
+        "idle_side",
+        "turn"
+      ]
+    },
+    {
+      "animation_id": "poko_sleep_loop_01",
+      "character": "poko",
+      "category": "sleeping",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Lying sleep sequence with changing Z symbols and body settling.",
+      "decision": "USE_WITH_RULE",
+      "start_posture": "lying_sleep",
+      "end_posture": "lying_sleep",
+      "prop_state": "sleep_symbols",
+      "interruption_safety": "soft_interrupt_to_wake",
+      "loop_policy": "Use ping-pong as manifest recommends; forward seam is too harsh.",
+      "human_notes": "Use as an occasional expressive sleep variation, not the only sleep loop.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "Forward loop seam is visibly/quantitatively harsher than internal motion; ping-pong recommended.",
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 97.0
+      },
+      "fps": 3,
+      "recommended_fps_range": [
+        2,
+        4
+      ],
+      "frame_count": 7,
+      "source_frame_ids": [
+        "P-R04-C07",
+        "P-R04-C08",
+        "P-R04-C09",
+        "P-R04-C10",
+        "P-R04-C11",
+        "P-R04-C12",
+        "P-R04-C13"
+      ],
+      "transition_from": [
+        "sleep_transition"
+      ],
+      "transition_to": [
+        "wake_up",
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "poko_sleep_loop_02",
+      "character": "poko",
+      "category": "sleeping",
+      "life_role": "FOUNDATIONAL",
+      "visible_action": "Lying sleep breathing/rest variation without large symbols.",
+      "decision": "USE",
+      "start_posture": "lying_sleep",
+      "end_posture": "lying_sleep",
+      "prop_state": "none",
+      "interruption_safety": "soft_interrupt_to_wake",
+      "loop_policy": "Acceptable forward loop.",
+      "human_notes": "Best primary quiet sleep loop.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.0,
+        "ground_y": 112.0,
+        "body_center_x": 64.0,
+        "body_center_y": 97.0
+      },
+      "fps": 3,
+      "recommended_fps_range": [
+        2,
+        4
+      ],
+      "frame_count": 4,
+      "source_frame_ids": [
+        "P-R16-C10",
+        "P-R16-C11",
+        "P-R16-C12",
+        "P-R16-C13"
+      ],
+      "transition_from": [
+        "sleep_transition"
+      ],
+      "transition_to": [
+        "wake_up",
+        "idle_front"
+      ]
+    },
+    {
+      "animation_id": "poko_sleep_transition",
+      "character": "poko",
+      "category": "sleeping",
+      "life_role": "TRANSITION",
+      "visible_action": "Front upright posture gradually droops and lowers into a lying sleeping pose.",
+      "decision": "USE",
+      "start_posture": "standing_front",
+      "end_posture": "lying_sleep",
+      "prop_state": "sleep_symbols_late",
+      "interruption_safety": "locked_except_drag_shutdown",
+      "loop_policy": "One-shot only.",
+      "human_notes": "Strong entry sequence; waking needs reverse playback validation or neutral recovery because no dedicated wake sequence exists.",
+      "source_confidence": "high",
+      "source_known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "generated_by_mirroring": false,
+      "anchor": {
+        "ground_x": 64.25,
+        "ground_y": 112.0,
+        "body_center_x": 64.25,
+        "body_center_y": 92.0
+      },
+      "fps": 6,
+      "recommended_fps_range": [
+        5,
+        8
+      ],
+      "frame_count": 8,
+      "source_frame_ids": [
+        "P-R16-C02",
+        "P-R16-C03",
+        "P-R16-C04",
+        "P-R16-C05",
+        "P-R16-C06",
+        "P-R16-C07",
+        "P-R16-C08",
+        "P-R16-C09"
+      ],
+      "transition_from": [
+        "sit_idle",
+        "idle_front"
+      ],
+      "transition_to": [
+        "sleep_loop"
+      ]
+    }
+  ],
+  "isolated_pose_policy": "See ISOLATED_POSE_CATALOG.md; no isolated group is automatically an animation."
+}

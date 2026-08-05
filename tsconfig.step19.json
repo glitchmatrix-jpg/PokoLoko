@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["ES2022", "DOM"],
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  },
+  "files": [
+    "packages/pet-engine/activities/src/types.ts",
+    "packages/pet-engine/activities/src/registry.ts",
+    "packages/pet-engine/activities/src/integration.ts",
+    "packages/pet-engine/behavior/src/types.ts",
+    "packages/pet-engine/behavior/src/profiles.ts",
+    "packages/pet-engine/behavior/src/random.ts",
+    "packages/pet-engine/behavior/src/planner.ts"
+  ]
+}

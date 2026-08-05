@@ -2,5 +2,12 @@ node_modules/
 dist/
 dist-electron/
 release/
+coverage/
+.tmp-*/
 *.log
+.env
+.env.*
+!.env.example
 .DS_Store
+Thumbs.db
+package-lock.release.json

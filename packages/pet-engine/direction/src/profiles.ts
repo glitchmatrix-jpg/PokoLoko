@@ -1,0 +1,1 @@
+import { tuningFor } from '../../tuning/src/index.js'; import type { DirectionTurnProfile } from './types.js'; export type DirectionCharacter='poko'|'loko'; export function createDirectionTurnProfile(character:DirectionCharacter):DirectionTurnProfile{return{neutralHoldMs:tuningFor(character).movement.turnHoldMs,hasPreparation:character==='loko'};}

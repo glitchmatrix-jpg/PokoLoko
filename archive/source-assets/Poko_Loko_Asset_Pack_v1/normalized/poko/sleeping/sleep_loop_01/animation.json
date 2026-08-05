@@ -1,0 +1,411 @@
+{
+  "id": "poko_sleep_loop_01",
+  "character": "poko",
+  "category": "sleeping",
+  "state": "sleeping",
+  "direction": "none",
+  "source_frame_ids": [
+    "P-R04-C07",
+    "P-R04-C08",
+    "P-R04-C09",
+    "P-R04-C10",
+    "P-R04-C11",
+    "P-R04-C12",
+    "P-R04-C13"
+  ],
+  "frames": [
+    "frame_000.png",
+    "frame_001.png",
+    "frame_002.png",
+    "frame_003.png",
+    "frame_004.png",
+    "frame_005.png",
+    "frame_006.png"
+  ],
+  "frame_count": 7,
+  "canvas_width": 128,
+  "canvas_height": 128,
+  "fps": 3,
+  "recommended_fps_range": [
+    2,
+    4
+  ],
+  "loop": true,
+  "playback": "ping_pong",
+  "loop_validation": {
+    "final_to_first_distance": 7.278,
+    "median_internal_distance": 3.588,
+    "acceptable_for_forward_loop": false,
+    "assessment": "imperfect"
+  },
+  "anchor": {
+    "ground_x": 64.0,
+    "ground_y": 112.0,
+    "body_center_x": 64.0,
+    "body_center_y": 97.0
+  },
+  "movement": {
+    "moves_character": false,
+    "recommended_speed_css_px_per_second": 0,
+    "signed_speed_css_px_per_second": 0
+  },
+  "transition_from": [
+    "sleep_transition"
+  ],
+  "transition_to": [
+    "wake_up",
+    "idle_front"
+  ],
+  "recommended_next_state": null,
+  "generated_by_mirroring": false,
+  "mirrored_from": null,
+  "confidence": "high",
+  "known_issues": [
+    "Forward loop seam is visibly/quantitatively harsher than internal motion; ping-pong recommended.",
+    "No fabricated or interpolated frames were inserted."
+  ],
+  "runtime_asset_format": "png_frames",
+  "preview_assets": {
+    "png": "preview.png",
+    "gif": "preview.gif",
+    "gif_runtime_asset": false,
+    "alignment_gif": "preview_alignment.gif",
+    "alignment_gif_runtime_asset": false,
+    "alignment_guides": {
+      "checkerboard": "documentation_only",
+      "body_center_x": 64,
+      "ground_y": 112
+    }
+  },
+  "technical_details": {
+    "normalization": {
+      "uniform_scale_factor": 1.0,
+      "resampling": "none",
+      "alignment_strategy": "body-proxy horizontal center + anatomical ground contact",
+      "full_visible_bbox_used_for_centering": false,
+      "effects_and_props_ignored_for_body_centering": true,
+      "safety_shift_policy": "minimal translation only when full composite would exceed canvas"
+    },
+    "scale_normalization": null,
+    "per_frame_anchors": [
+      {
+        "frame_id": "P-R04-C07",
+        "file": "frame_000.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 96.5
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 32,
+          "y": 78
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "P-R04-C08",
+        "file": "frame_001.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 96.5
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 34,
+          "y": 78
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "P-R04-C09",
+        "file": "frame_002.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 97.0
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 35,
+          "y": 79
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "P-R04-C10",
+        "file": "frame_003.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.5,
+          "y": 97.5
+        },
+        "ground": {
+          "x": 64.5,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.5,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 36,
+          "y": 67
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": {
+          "x": 42.06,
+          "y": 74.86,
+          "source_component_area": 90,
+          "confidence": "heuristic"
+        },
+        "prop": {
+          "x": 42.06,
+          "y": 74.86,
+          "source_component_area": 90,
+          "confidence": "heuristic"
+        }
+      },
+      {
+        "frame_id": "P-R04-C11",
+        "file": "frame_004.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 97.5
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 34,
+          "y": 67
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": {
+          "x": 41.04,
+          "y": 74.76,
+          "source_component_area": 102,
+          "confidence": "heuristic"
+        },
+        "prop": {
+          "x": 41.04,
+          "y": 74.76,
+          "source_component_area": 102,
+          "confidence": "heuristic"
+        }
+      },
+      {
+        "frame_id": "P-R04-C12",
+        "file": "frame_005.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 97.5
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 35,
+          "y": 64
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": {
+          "x": 43.13,
+          "y": 74.08,
+          "source_component_area": 158,
+          "confidence": "heuristic"
+        },
+        "prop": {
+          "x": 43.13,
+          "y": 74.08,
+          "source_component_area": 158,
+          "confidence": "heuristic"
+        }
+      },
+      {
+        "frame_id": "P-R04-C13",
+        "file": "frame_006.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.5,
+          "y": 95.5
+        },
+        "ground": {
+          "x": 64.5,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.5,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 38,
+          "y": 64
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": {
+          "x": 45.5,
+          "y": 72.79,
+          "source_component_area": 139,
+          "confidence": "heuristic"
+        },
+        "prop": {
+          "x": 45.5,
+          "y": 72.79,
+          "source_component_area": 139,
+          "confidence": "heuristic"
+        }
+      }
+    ],
+    "exact_duplicates": [],
+    "near_duplicates": [],
+    "abrupt_transitions": [],
+    "source_order_preserved": true,
+    "reordered": false,
+    "direction_audit": null,
+    "naming": {
+      "directory_style": "lowercase_snake_case",
+      "frame_pattern": "frame_%03d.png",
+      "zero_padded": true
+    }
+  },
+  "transition_graph": {
+    "allowed": [
+      {
+        "from": "poko_sleep_loop_01",
+        "to": "poko_idle_blink",
+        "safety": "conditional",
+        "bridge_strategy": "wake_hold_then_idle",
+        "recommended_hold_ms": 300,
+        "notes": "No dedicated wake-up sequence exists; hold the final sleep frame, then return to idle."
+      },
+      {
+        "from": "poko_sleep_loop_01",
+        "to": "poko_idle_look_01",
+        "safety": "conditional",
+        "bridge_strategy": "wake_hold_then_idle",
+        "recommended_hold_ms": 300,
+        "notes": "No dedicated wake-up sequence exists; hold the final sleep frame, then return to idle."
+      }
+    ],
+    "forbidden": [
+      {
+        "from": "poko_sleep_loop_01",
+        "to": "poko_locomotion_side",
+        "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+      },
+      {
+        "from": "poko_sleep_loop_01",
+        "to": "poko_walk_left",
+        "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+      },
+      {
+        "from": "poko_sleep_loop_01",
+        "to": "poko_walk_right",
+        "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+      },
+      {
+        "from": "poko_sleep_loop_01",
+        "to": "poko_sad_to_crying",
+        "reason": "Lying/sleep pose must wake and return to idle before standing reaction."
+      }
+    ],
+    "fallback_strategy": "Hold final frame, route through a neutral idle or explicit transition animation, then start the requested target state."
+  }
+}

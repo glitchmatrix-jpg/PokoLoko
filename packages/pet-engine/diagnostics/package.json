@@ -1,0 +1,6 @@
+{
+  "name": "@pokoloko/diagnostics",
+  "version": "0.24.0",
+  "private": true,
+  "type": "module"
+}

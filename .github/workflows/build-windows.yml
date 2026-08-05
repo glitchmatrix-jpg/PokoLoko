@@ -1,66 +1,29 @@
-name: Build Poko for Windows
-
+name: Build Windows EXE
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    tags: ['v*']
-  pull_request:
-    branches: [main]
-
-permissions:
-  contents: read
-
-concurrency:
-  group: poko-windows-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
-  build-windows:
-    name: Validate and build Windows installer
-    runs-on: windows-latest
-    timeout-minutes: 30
-
+  build:
+    runs-on: windows-2022
+    timeout-minutes: 45
+    env:
+      CI: 'true'
+      NODE_ENV: production
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v6
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '24'
-          package-manager-cache: false
-
-      - name: Install dependencies
-        shell: pwsh
-        run: npm install --no-audit --no-fund
-
-      - name: Validate assets and type-check
-        shell: pwsh
-        run: npm run check
-
-      - name: Build Windows installer
-        shell: pwsh
-        env:
-          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
-        run: npm run dist:win
-
-      - name: Verify installer exists
-        shell: pwsh
-        run: |
-          $installers = Get-ChildItem -Path release -Filter "Poko-Setup-*.exe" -File
-          if (-not $installers) {
-            Write-Error "No Poko installer was produced in the release folder."
-            exit 1
-          }
-          $installers | ForEach-Object {
-            Write-Host "Built: $($_.FullName) ($([math]::Round($_.Length / 1MB, 2)) MB)"
-          }
-
-      - name: Upload Windows installer
-        uses: actions/upload-artifact@v7
+          node-version: 22.12.0
+      - run: npm install --no-audit --no-fund
+      - run: npm run validate
+      - run: npm run package:win
+      - run: npm run release:validate
+      - run: npm run release:hashes
+      - uses: actions/upload-artifact@v4
         with:
-          name: Poko-Windows-${{ github.run_number }}
-          path: release/Poko-Setup-*.exe
+          name: PokoLoko-Windows
+          path: |
+            release/*.exe
+            release/BUILD_HASHES.txt
+            release/win-unpacked/**
           if-no-files-found: error
-          retention-days: 30

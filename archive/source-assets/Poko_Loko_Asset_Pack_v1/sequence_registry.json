@@ -1,0 +1,1405 @@
+[
+  {
+    "path": "characters/loko/animations/activities/drink_02",
+    "manifest": {
+      "id": "loko_drink_02",
+      "character": "loko",
+      "category": "activities",
+      "name": "drink_02",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R10-C01",
+        "L-R10-C02",
+        "L-R10-C03",
+        "L-R10-C04",
+        "L-R10-C05",
+        "L-R10-C06",
+        "L-R10-C07"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png"
+      ],
+      "frame_count": 7,
+      "canvas_width": 57,
+      "canvas_height": 60,
+      "anchor": {
+        "x": 28,
+        "y": 56
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/activities/eat",
+    "manifest": {
+      "id": "loko_eat",
+      "character": "loko",
+      "category": "activities",
+      "name": "eat",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R09-C04",
+        "L-R09-C05",
+        "L-R09-C06",
+        "L-R09-C07",
+        "L-R09-C08",
+        "L-R09-C09",
+        "L-R09-C10",
+        "L-R09-C11",
+        "L-R09-C12"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png",
+        "frame_008.png"
+      ],
+      "frame_count": 9,
+      "canvas_width": 61,
+      "canvas_height": 61,
+      "anchor": {
+        "x": 30,
+        "y": 57
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/idle/idle_front",
+    "manifest": {
+      "id": "loko_idle_front",
+      "character": "loko",
+      "category": "idle",
+      "name": "idle_front",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R01-C01",
+        "L-R01-C02",
+        "L-R01-C03",
+        "L-R01-C04",
+        "L-R01-C05",
+        "L-R01-C06",
+        "L-R01-C07",
+        "L-R01-C08"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png"
+      ],
+      "frame_count": 8,
+      "canvas_width": 58,
+      "canvas_height": 59,
+      "anchor": {
+        "x": 29,
+        "y": 55
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        2,
+        4
+      ],
+      "recommended_fps": 3,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/activities/laptop",
+    "manifest": {
+      "id": "loko_laptop",
+      "character": "loko",
+      "category": "activities",
+      "name": "laptop",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R12-C02",
+        "L-R12-C03",
+        "L-R12-C04",
+        "L-R12-C05",
+        "L-R12-C06",
+        "L-R12-C07",
+        "L-R12-C08",
+        "L-R12-C09",
+        "L-R12-C10",
+        "L-R12-C11",
+        "L-R12-C12",
+        "L-R12-C13"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png",
+        "frame_008.png",
+        "frame_009.png",
+        "frame_010.png",
+        "frame_011.png"
+      ],
+      "frame_count": 12,
+      "canvas_width": 65,
+      "canvas_height": 58,
+      "anchor": {
+        "x": 32,
+        "y": 54
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        3,
+        6
+      ],
+      "recommended_fps": 4,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [
+        {
+          "frame_a": "L-R12-C06",
+          "frame_b": "L-R12-C07",
+          "distance": 53.021
+        },
+        {
+          "frame_a": "L-R12-C07",
+          "frame_b": "L-R12-C08",
+          "distance": 50.313
+        }
+      ],
+      "missing_transition_suspected": true,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ],
+      "confidence": "medium"
+    }
+  },
+  {
+    "path": "characters/loko/animations/locomotion/locomotion_side_01",
+    "manifest": {
+      "id": "loko_locomotion_side_01",
+      "character": "loko",
+      "category": "locomotion",
+      "name": "locomotion_side_01",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R01-C09",
+        "L-R01-C10",
+        "L-R01-C11"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png"
+      ],
+      "frame_count": 3,
+      "canvas_width": 56,
+      "canvas_height": 59,
+      "anchor": {
+        "x": 28,
+        "y": 55
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        7,
+        10
+      ],
+      "recommended_fps": 8,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "medium"
+    }
+  },
+  {
+    "path": "characters/loko/animations/locomotion/locomotion_side_02",
+    "manifest": {
+      "id": "loko_locomotion_side_02",
+      "character": "loko",
+      "category": "locomotion",
+      "name": "locomotion_side_02",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R02-C01",
+        "L-R02-C02",
+        "L-R02-C03",
+        "L-R02-C04",
+        "L-R02-C05",
+        "L-R02-C06",
+        "L-R02-C07"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png"
+      ],
+      "frame_count": 7,
+      "canvas_width": 61,
+      "canvas_height": 59,
+      "anchor": {
+        "x": 30,
+        "y": 55
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        7,
+        10
+      ],
+      "recommended_fps": 8,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "medium"
+    }
+  },
+  {
+    "path": "characters/loko/animations/emotions/love_reaction",
+    "manifest": {
+      "id": "loko_love_reaction",
+      "character": "loko",
+      "category": "emotions",
+      "name": "love_reaction",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R06-C03",
+        "L-R06-C04",
+        "L-R06-C05",
+        "L-R06-C06",
+        "L-R06-C07",
+        "L-R06-C08",
+        "L-R06-C09",
+        "L-R06-C10"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png"
+      ],
+      "frame_count": 8,
+      "canvas_width": 72,
+      "canvas_height": 60,
+      "anchor": {
+        "x": 36,
+        "y": 56
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [
+        {
+          "frame_a": "L-R06-C09",
+          "frame_b": "L-R06-C10",
+          "distance": 14.25
+        }
+      ],
+      "abrupt_transitions": [
+        {
+          "frame_a": "L-R06-C07",
+          "frame_b": "L-R06-C08",
+          "distance": 82.983
+        }
+      ],
+      "missing_transition_suspected": true,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ],
+      "confidence": "medium"
+    }
+  },
+  {
+    "path": "characters/loko/animations/activities/music",
+    "manifest": {
+      "id": "loko_music",
+      "character": "loko",
+      "category": "activities",
+      "name": "music",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R11-C02",
+        "L-R11-C03",
+        "L-R11-C04",
+        "L-R11-C05",
+        "L-R11-C06",
+        "L-R11-C07",
+        "L-R11-C08",
+        "L-R11-C09",
+        "L-R11-C10",
+        "L-R11-C11",
+        "L-R11-C12"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png",
+        "frame_008.png",
+        "frame_009.png",
+        "frame_010.png"
+      ],
+      "frame_count": 11,
+      "canvas_width": 80,
+      "canvas_height": 77,
+      "anchor": {
+        "x": 40,
+        "y": 73
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        6,
+        9
+      ],
+      "recommended_fps": 8,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/activities/peeking_01",
+    "manifest": {
+      "id": "loko_peeking_01",
+      "character": "loko",
+      "category": "activities",
+      "name": "peeking_01",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R14-C10",
+        "L-R14-C11",
+        "L-R14-C12"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png"
+      ],
+      "frame_count": 3,
+      "canvas_width": 56,
+      "canvas_height": 54,
+      "anchor": {
+        "x": 28,
+        "y": 50
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/activities/peeking_02",
+    "manifest": {
+      "id": "loko_peeking_02",
+      "character": "loko",
+      "category": "activities",
+      "name": "peeking_02",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R15-C01",
+        "L-R15-C02",
+        "L-R15-C03",
+        "L-R15-C04",
+        "L-R15-C05"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png"
+      ],
+      "frame_count": 5,
+      "canvas_width": 63,
+      "canvas_height": 58,
+      "anchor": {
+        "x": 31,
+        "y": 54
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/activities/playing_ball_01",
+    "manifest": {
+      "id": "loko_playing_ball_01",
+      "character": "loko",
+      "category": "activities",
+      "name": "playing_ball_01",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R13-C07",
+        "L-R13-C08",
+        "L-R13-C09",
+        "L-R13-C10",
+        "L-R13-C11",
+        "L-R13-C12",
+        "L-R13-C13"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png"
+      ],
+      "frame_count": 7,
+      "canvas_width": 72,
+      "canvas_height": 65,
+      "anchor": {
+        "x": 36,
+        "y": 61
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        6,
+        9
+      ],
+      "recommended_fps": 8,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/activities/reading_01",
+    "manifest": {
+      "id": "loko_reading_01",
+      "character": "loko",
+      "category": "activities",
+      "name": "reading_01",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R10-C08",
+        "L-R10-C09",
+        "L-R10-C10",
+        "L-R10-C11",
+        "L-R10-C12"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png"
+      ],
+      "frame_count": 5,
+      "canvas_width": 62,
+      "canvas_height": 61,
+      "anchor": {
+        "x": 31,
+        "y": 57
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        3,
+        6
+      ],
+      "recommended_fps": 4,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/sleeping/sleep_loop",
+    "manifest": {
+      "id": "loko_sleep_loop",
+      "character": "loko",
+      "category": "sleeping",
+      "name": "sleep_loop",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R04-C11",
+        "L-R04-C12",
+        "L-R04-C13"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png"
+      ],
+      "frame_count": 3,
+      "canvas_width": 70,
+      "canvas_height": 65,
+      "anchor": {
+        "x": 35,
+        "y": 61
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "ping_pong",
+      "fps_range": [
+        2,
+        4
+      ],
+      "recommended_fps": 3,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/loko/animations/sleeping/sleep_transition",
+    "manifest": {
+      "id": "loko_sleep_transition",
+      "character": "loko",
+      "category": "sleeping",
+      "name": "sleep_transition",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "L-R17-C04",
+        "L-R17-C05",
+        "L-R17-C06",
+        "L-R17-C07",
+        "L-R17-C08",
+        "L-R17-C09"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png"
+      ],
+      "frame_count": 6,
+      "canvas_width": 68,
+      "canvas_height": 56,
+      "anchor": {
+        "x": 34,
+        "y": 52
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/activities/drink",
+    "manifest": {
+      "id": "poko_drink",
+      "character": "poko",
+      "category": "activities",
+      "name": "drink",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R09-C07",
+        "P-R09-C08",
+        "P-R09-C09",
+        "P-R09-C10",
+        "P-R09-C11",
+        "P-R09-C12",
+        "P-R09-C13",
+        "P-R09-C14"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png"
+      ],
+      "frame_count": 8,
+      "canvas_width": 63,
+      "canvas_height": 59,
+      "anchor": {
+        "x": 31,
+        "y": 55
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/activities/eat",
+    "manifest": {
+      "id": "poko_eat",
+      "character": "poko",
+      "category": "activities",
+      "name": "eat",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R10-C01",
+        "P-R10-C02",
+        "P-R10-C03",
+        "P-R10-C04",
+        "P-R10-C05",
+        "P-R10-C06",
+        "P-R10-C07",
+        "P-R10-C08",
+        "P-R10-C09",
+        "P-R10-C10",
+        "P-R10-C11"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png",
+        "frame_008.png",
+        "frame_009.png",
+        "frame_010.png"
+      ],
+      "frame_count": 11,
+      "canvas_width": 72,
+      "canvas_height": 60,
+      "anchor": {
+        "x": 36,
+        "y": 56
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [
+        {
+          "frame_a": "P-R10-C03",
+          "frame_b": "P-R10-C04",
+          "distance": 48.45
+        }
+      ],
+      "missing_transition_suspected": true,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ],
+      "confidence": "medium"
+    }
+  },
+  {
+    "path": "characters/poko/animations/idle/idle_blink",
+    "manifest": {
+      "id": "poko_idle_blink",
+      "character": "poko",
+      "category": "idle",
+      "name": "idle_blink",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R01-C04",
+        "P-R01-C05"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png"
+      ],
+      "frame_count": 2,
+      "canvas_width": 55,
+      "canvas_height": 62,
+      "anchor": {
+        "x": 27,
+        "y": 58
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "ping_pong",
+      "fps_range": [
+        4,
+        7
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/idle/idle_look_01",
+    "manifest": {
+      "id": "poko_idle_look_01",
+      "character": "poko",
+      "category": "idle",
+      "name": "idle_look_01",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R01-C06",
+        "P-R01-C07"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png"
+      ],
+      "frame_count": 2,
+      "canvas_width": 56,
+      "canvas_height": 61,
+      "anchor": {
+        "x": 28,
+        "y": 57
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "ping_pong",
+      "fps_range": [
+        3,
+        5
+      ],
+      "recommended_fps": 4,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/locomotion/locomotion_side",
+    "manifest": {
+      "id": "poko_locomotion_side",
+      "character": "poko",
+      "category": "locomotion",
+      "name": "locomotion_side",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R02-C02",
+        "P-R02-C03",
+        "P-R02-C04",
+        "P-R02-C05",
+        "P-R02-C06",
+        "P-R02-C07",
+        "P-R02-C08",
+        "P-R02-C09",
+        "P-R02-C10"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png",
+        "frame_008.png"
+      ],
+      "frame_count": 9,
+      "canvas_width": 60,
+      "canvas_height": 64,
+      "anchor": {
+        "x": 30,
+        "y": 60
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        7,
+        10
+      ],
+      "recommended_fps": 8,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "medium"
+    }
+  },
+  {
+    "path": "characters/poko/animations/activities/music",
+    "manifest": {
+      "id": "poko_music",
+      "character": "poko",
+      "category": "activities",
+      "name": "music",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R11-C01",
+        "P-R11-C02",
+        "P-R11-C03",
+        "P-R11-C04",
+        "P-R11-C05",
+        "P-R11-C06",
+        "P-R11-C07",
+        "P-R11-C08",
+        "P-R11-C09",
+        "P-R11-C10",
+        "P-R11-C11",
+        "P-R11-C12"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png",
+        "frame_008.png",
+        "frame_009.png",
+        "frame_010.png",
+        "frame_011.png"
+      ],
+      "frame_count": 12,
+      "canvas_width": 75,
+      "canvas_height": 65,
+      "anchor": {
+        "x": 37,
+        "y": 61
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "loop",
+      "fps_range": [
+        6,
+        9
+      ],
+      "recommended_fps": 8,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/activities/peeking",
+    "manifest": {
+      "id": "poko_peeking",
+      "character": "poko",
+      "category": "activities",
+      "name": "peeking",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R14-C01",
+        "P-R14-C02",
+        "P-R14-C03",
+        "P-R14-C04",
+        "P-R14-C05",
+        "P-R14-C06",
+        "P-R14-C07",
+        "P-R14-C08",
+        "P-R14-C09",
+        "P-R14-C10",
+        "P-R14-C11",
+        "P-R14-C12"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png",
+        "frame_008.png",
+        "frame_009.png",
+        "frame_010.png",
+        "frame_011.png"
+      ],
+      "frame_count": 12,
+      "canvas_width": 69,
+      "canvas_height": 73,
+      "anchor": {
+        "x": 34,
+        "y": 69
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [
+        {
+          "frame_a": "P-R14-C05",
+          "frame_b": "P-R14-C06",
+          "distance": 65.721
+        }
+      ],
+      "missing_transition_suspected": true,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ],
+      "confidence": "medium"
+    }
+  },
+  {
+    "path": "characters/poko/animations/activities/playing_ball",
+    "manifest": {
+      "id": "poko_playing_ball",
+      "character": "poko",
+      "category": "activities",
+      "name": "playing_ball",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R13-C01",
+        "P-R13-C02",
+        "P-R13-C03",
+        "P-R13-C04",
+        "P-R13-C05",
+        "P-R13-C06",
+        "P-R13-C07",
+        "P-R13-C08",
+        "P-R13-C09",
+        "P-R13-C10",
+        "P-R13-C11"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png",
+        "frame_008.png",
+        "frame_009.png",
+        "frame_010.png"
+      ],
+      "frame_count": 11,
+      "canvas_width": 83,
+      "canvas_height": 80,
+      "anchor": {
+        "x": 41,
+        "y": 76
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        6,
+        9
+      ],
+      "recommended_fps": 8,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/emotions/sad_to_crying",
+    "manifest": {
+      "id": "poko_sad_to_crying",
+      "character": "poko",
+      "category": "emotions",
+      "name": "sad_to_crying",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R07-C01",
+        "P-R07-C02",
+        "P-R07-C03",
+        "P-R07-C04",
+        "P-R07-C05",
+        "P-R07-C06",
+        "P-R07-C07",
+        "P-R07-C08"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png"
+      ],
+      "frame_count": 8,
+      "canvas_width": 60,
+      "canvas_height": 59,
+      "anchor": {
+        "x": 30,
+        "y": 55
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/sleeping/sleep_loop_01",
+    "manifest": {
+      "id": "poko_sleep_loop_01",
+      "character": "poko",
+      "category": "sleeping",
+      "name": "sleep_loop_01",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R04-C07",
+        "P-R04-C08",
+        "P-R04-C09",
+        "P-R04-C10",
+        "P-R04-C11",
+        "P-R04-C12",
+        "P-R04-C13"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png"
+      ],
+      "frame_count": 7,
+      "canvas_width": 72,
+      "canvas_height": 59,
+      "anchor": {
+        "x": 36,
+        "y": 55
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "ping_pong",
+      "fps_range": [
+        2,
+        4
+      ],
+      "recommended_fps": 3,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/sleeping/sleep_loop_02",
+    "manifest": {
+      "id": "poko_sleep_loop_02",
+      "character": "poko",
+      "category": "sleeping",
+      "name": "sleep_loop_02",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R16-C10",
+        "P-R16-C11",
+        "P-R16-C12",
+        "P-R16-C13"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png"
+      ],
+      "frame_count": 4,
+      "canvas_width": 72,
+      "canvas_height": 44,
+      "anchor": {
+        "x": 36,
+        "y": 40
+      },
+      "alignment": "bottom_center",
+      "loop": true,
+      "playback": "ping_pong",
+      "fps_range": [
+        2,
+        4
+      ],
+      "recommended_fps": 3,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  },
+  {
+    "path": "characters/poko/animations/sleeping/sleep_transition",
+    "manifest": {
+      "id": "poko_sleep_transition",
+      "character": "poko",
+      "category": "sleeping",
+      "name": "sleep_transition",
+      "source_order_preserved": true,
+      "reordered": false,
+      "frame_ids": [
+        "P-R16-C02",
+        "P-R16-C03",
+        "P-R16-C04",
+        "P-R16-C05",
+        "P-R16-C06",
+        "P-R16-C07",
+        "P-R16-C08",
+        "P-R16-C09"
+      ],
+      "frame_files": [
+        "frame_000.png",
+        "frame_001.png",
+        "frame_002.png",
+        "frame_003.png",
+        "frame_004.png",
+        "frame_005.png",
+        "frame_006.png",
+        "frame_007.png"
+      ],
+      "frame_count": 8,
+      "canvas_width": 62,
+      "canvas_height": 64,
+      "anchor": {
+        "x": 31,
+        "y": 60
+      },
+      "alignment": "bottom_center",
+      "loop": false,
+      "playback": "once",
+      "fps_range": [
+        5,
+        8
+      ],
+      "recommended_fps": 6,
+      "exact_duplicates": [],
+      "near_duplicates": [],
+      "abrupt_transitions": [],
+      "missing_transition_suspected": false,
+      "limitations": [
+        "No fabricated or interpolated frames were inserted."
+      ],
+      "confidence": "high"
+    }
+  }
+]

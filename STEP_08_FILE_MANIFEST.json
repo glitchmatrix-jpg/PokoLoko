@@ -1,0 +1,1262 @@
+{
+  ".env.example": {
+    "bytes": 51,
+    "sha256": "b5f3eef586e5eda3ec5141765884fc7a66676ecd012224ab2f434ebba0a05010"
+  },
+  ".github/workflows/ci.yml": {
+    "bytes": 622,
+    "sha256": "63410f894e7dd8636f199669ed9fa9edc20ebec9ab356c6f61b760ff0d6701d8"
+  },
+  ".gitignore": {
+    "bytes": 106,
+    "sha256": "af6a08a968ef6a3e7208d5a9da308a1863376dbf7f24e5dab3f8f8b060711662"
+  },
+  ".prettierignore": {
+    "bytes": 54,
+    "sha256": "750cf0777128e116109c704dfeac3fb1f72957e6eff0208904a599c5198f61ca"
+  },
+  ".prettierrc.json": {
+    "bytes": 89,
+    "sha256": "94699af1850daa277e8e21635ef353179ed6a40989038a0b8da1bf397f673e5b"
+  },
+  "README.md": {
+    "bytes": 563,
+    "sha256": "a0fb584482af8f8809b1d0e470352530e22609b1bfc677f675128575ebf91091"
+  },
+  "STEP_05_CHANGE_REPORT.md": {
+    "bytes": 2242,
+    "sha256": "2ea211a7469e0887258176cbd1420d67822428597a83738d212eec113246c351"
+  },
+  "STEP_05_FILE_MANIFEST.json": {
+    "bytes": 6227,
+    "sha256": "62e70e7501efbab7bacf905a813e1c10441da0ca88035aeaa35906bf3db12404"
+  },
+  "STEP_05_VALIDATION.json": {
+    "bytes": 838,
+    "sha256": "b1c2a6193faaeca6a4bb562a9a8c5ec2d5d1d2df7ebbabd809d0d68ab130142f"
+  },
+  "STEP_06_CHANGE_REPORT.md": {
+    "bytes": 1608,
+    "sha256": "f70c38f5281d9855739890cc04b6cabfa27850e633474d6dc0d89258e054909f"
+  },
+  "STEP_06_FILE_MANIFEST.json": {
+    "bytes": 47791,
+    "sha256": "3f27091e7e97c7abcd3fa7240f3dbb917f291872a2c76e9e9c4434cd2e641845"
+  },
+  "STEP_06_VALIDATION.json": {
+    "bytes": 926,
+    "sha256": "22ac21fddfe072b3210e12492888159db246be2151e5dbf76cfd69607b20073b"
+  },
+  "STEP_07_CHANGE_REPORT.md": {
+    "bytes": 2252,
+    "sha256": "5cca1f3f55f522eadbc1e2f9ae9d5ee6b721713cc4adf11eb7e51dcec028d2a2"
+  },
+  "STEP_07_FILE_MANIFEST.json": {
+    "bytes": 50677,
+    "sha256": "f9c1a7106b528e2241fb7f3bb241e36d5d5f5b97540e53957fd4e96223546013"
+  },
+  "STEP_07_VALIDATION.json": {
+    "bytes": 913,
+    "sha256": "b5b3b8c7d2d9c4bced03a5ec2712b767084d6a051d3e24c209b4a40da0e0d136"
+  },
+  "STEP_08_CHANGE_REPORT.md": {
+    "bytes": 2588,
+    "sha256": "f30ed968115d60036a6c92d398961f6061e4cdfb6e5df9cf7716f618009b58f7"
+  },
+  "STEP_08_VALIDATION.json": {
+    "bytes": 1299,
+    "sha256": "bb04e1577ea1a6207c78778a37f4da59499d3b04705d7ae485057b8ee925c2b5"
+  },
+  "build/pokoloko.ico": {
+    "bytes": 370070,
+    "sha256": "17e14ca9737c6e81ff2eadacb65c9306ccfce422b7140ef392c2d0a3b2a5f971"
+  },
+  "docs/assets/RUNTIME_ASSET_POLICY.md": {
+    "bytes": 3314,
+    "sha256": "546166baf980b0d5ad76d26011b1d048f7e379d80700d656966d87acb637d4e5"
+  },
+  "docs/rendering/DISPLAY_GROUNDING_TESTS.md": {
+    "bytes": 2221,
+    "sha256": "2e31cf3a07d744860c59e17401c1a9d97cd7b80f46493be11aafd5586e00cfa7"
+  },
+  "docs/rendering/HIT_TESTING.md": {
+    "bytes": 1711,
+    "sha256": "0225ee6fa730173758e8525cf52bb61afbc10bd10c0116729676adeb27e45944"
+  },
+  "docs/rendering/RENDERING_AND_SCALING.md": {
+    "bytes": 2364,
+    "sha256": "cfa3a99e5cfcb18e3a2aa03114b9c4e8cd72fdb1a9b0b2ceb63322770b0158e6"
+  },
+  "docs/rendering/display_grounding_matrix.json": {
+    "bytes": 12360,
+    "sha256": "174466ee693ed0db39a0de3f091d15284859470f2d161687eba68bc8f3f95a17"
+  },
+  "docs/rendering/static_renderer_scale_review.png": {
+    "bytes": 58783,
+    "sha256": "56991865eda75afb7eea1d449ec37da52666a16aaeb25ac8eda76a03f6d52829"
+  },
+  "docs/setup/BUILD_AND_PACKAGE.md": {
+    "bytes": 1124,
+    "sha256": "602b1d4e25edfa0d9870ba4a2ac4b3173987a2e6f0ae6e48c5b6e1c305149043"
+  },
+  "docs/setup/DEVELOPMENT_SETUP.md": {
+    "bytes": 1704,
+    "sha256": "a8945fd43c5a15e15abe03c1dc0a6073890755e75104bbc9e28858b95f51b147"
+  },
+  "docs/setup/INSTALL_AND_RUNTIME_BLOCKERS.md": {
+    "bytes": 1110,
+    "sha256": "a5460297a63a7c7edaecb22b9ca3e00875ba62bca9980c0c60a8129987cee842"
+  },
+  "docs/setup/NATIVE_WINDOW_FLAGS.md": {
+    "bytes": 1146,
+    "sha256": "914c0627e66456cdb93881312b1e7496d2851b09c1653a9a7676e5cdd180f2a5"
+  },
+  "docs/visual/ANIMATION_LAB_GUIDE.md": {
+    "bytes": 2231,
+    "sha256": "66975bfdf3674466d87312a1ced579c27eaa8540bd6fc03d9bfd6ed9a6332b47"
+  },
+  "docs/visual/ANIMATION_METRICS_REPORT.md": {
+    "bytes": 2709,
+    "sha256": "77035cd085e1b76731aca9a8cb7db36679976c71bf40d0b2ecb365e07716bfcf"
+  },
+  "docs/visual/REJECTED_RUNTIME_SEQUENCES.md": {
+    "bytes": 541,
+    "sha256": "8d845d263ebb16534dc23fdc43c1384fc51fb5e37b9d8ce408ba8825c219e170"
+  },
+  "docs/visual/TRANSITION_CHAIN_REVIEWS.md": {
+    "bytes": 1947,
+    "sha256": "71ad7b1048be1aea0320c590b7e1f638fc55f1bbc1c8e2ecde57bdc179467ca2"
+  },
+  "docs/visual/animation_lab_contact_sheet.png": {
+    "bytes": 399660,
+    "sha256": "08bb63bf3661facc8bee8938f6238da029bfe30b1c4d4aa1942bcfd3d60b3caf"
+  },
+  "docs/visual/mirrored_walk_review.png": {
+    "bytes": 26046,
+    "sha256": "b750482e2d9dbc5a8e9f0f48a894442ce58ff440b78ef82287b8fd43f2dc6b4b"
+  },
+  "electron/main/main.ts": {
+    "bytes": 6162,
+    "sha256": "4cdc97298e6196573cfffe3ff54e31320e62148faca52b01eb63ee489812e93b"
+  },
+  "electron/main/static-pet-controller.ts": {
+    "bytes": 4067,
+    "sha256": "e5723cd5104ddcb74d853233a4a83ec502a11c16191d84dc839438b65d3f8d6e"
+  },
+  "electron/main/window-factory.ts": {
+    "bytes": 2647,
+    "sha256": "5faf3f173189486af191e6ceb91d8c4394e9529f41da4ac78e240ce5a189118a"
+  },
+  "electron/preload/contracts.ts": {
+    "bytes": 1944,
+    "sha256": "cc4dfc90aa799d8c8c72ae7f623972fe6f9b422c162348079203b933c86dfb56"
+  },
+  "electron/preload/preload.ts": {
+    "bytes": 1285,
+    "sha256": "76a7eb32231cbbc5bf4c988f3781d4820fb551efa27b07db0b883c64ba45ccef"
+  },
+  "electron/services/asset-paths.ts": {
+    "bytes": 775,
+    "sha256": "1586477184c3517057f8f67b927b4853ffa4a2bceaa0d43082e4bd90124ecade"
+  },
+  "electron/services/display-grounding.ts": {
+    "bytes": 2251,
+    "sha256": "e570bfbd18516a1a8eaf4c42ed770a7c24187ac9c0cd4125bfcadd2d282eb137"
+  },
+  "electron/services/logger.ts": {
+    "bytes": 1463,
+    "sha256": "acb40929e042dffac17a8f950ab29c0267c941612f940968da2ef38e874e4d8c"
+  },
+  "electron/services/runtime-assets.ts": {
+    "bytes": 1406,
+    "sha256": "b6d52c7e601dcad596fbdec29f6258348aa0d7292db6c7d3bd060951226e42e7"
+  },
+  "electron/services/settings-store.ts": {
+    "bytes": 1491,
+    "sha256": "b179f8d83074815482b85d474c213c8902a32aba2d6e247c791670affd1c73c3"
+  },
+  "electron/services/static-pet-assets.ts": {
+    "bytes": 2046,
+    "sha256": "0f715b178a16996c17495c45362628587095d93516be16c6d6762d186fba26fd"
+  },
+  "eslint.config.js": {
+    "bytes": 1000,
+    "sha256": "51ed57980a94962e7c56407328b694db294c080bf009206f2fc73ea6ecb368f4"
+  },
+  "index.html": {
+    "bytes": 343,
+    "sha256": "095de7b3a5da4679f29c916b56084b6b9aa2f145ee09bce0033917e57caa1c33"
+  },
+  "package.json": {
+    "bytes": 2977,
+    "sha256": "7aca2d0ab44fdc1179bd76c789fa2150107c93d606a8299d4cf393818abf5807"
+  },
+  "public/assets/diagnostics/animation_metrics.json": {
+    "bytes": 98418,
+    "sha256": "905ced2241a82fb73bf63076b71fa6fa3854853b5f72f060241137392155131a"
+  },
+  "public/assets/runtime/loko/activities/loko_drink_02/frame_000.png": {
+    "bytes": 5314,
+    "sha256": "94a330cf206da2e613ce38e77b527fd49f1af841f3780799d3f21f301f0c6e8f"
+  },
+  "public/assets/runtime/loko/activities/loko_drink_02/frame_001.png": {
+    "bytes": 5114,
+    "sha256": "23c98df6123cf27899dd1a7c92ae8a9f964884055b3609bb6123fec15d63c133"
+  },
+  "public/assets/runtime/loko/activities/loko_drink_02/frame_002.png": {
+    "bytes": 5210,
+    "sha256": "7c5999851d7ea0e7adcbc140de46ef24f0c18bd245fff216ffbb996b040fd678"
+  },
+  "public/assets/runtime/loko/activities/loko_drink_02/frame_003.png": {
+    "bytes": 5252,
+    "sha256": "10ac263040d004a0c25ddb3accffa60f9fc7b98315fb62762217ba6af93786ec"
+  },
+  "public/assets/runtime/loko/activities/loko_drink_02/frame_004.png": {
+    "bytes": 5328,
+    "sha256": "b2e23922a392694ad18cce2afc2ae74f95a2cb439d1a74bb29094e038c6c604a"
+  },
+  "public/assets/runtime/loko/activities/loko_drink_02/frame_005.png": {
+    "bytes": 5460,
+    "sha256": "e00a1cfa49038b26abeb1ed9fcba4d85262653ba8b011c988dbc529fc9941ed5"
+  },
+  "public/assets/runtime/loko/activities/loko_drink_02/frame_006.png": {
+    "bytes": 5372,
+    "sha256": "6e22cf49165ea1cb722d26fff7509a00ac6e85ca29d5537b9e528e5f560bb270"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_000.png": {
+    "bytes": 5609,
+    "sha256": "75417135726020e7aed6d236ba92e7c39d29151c78035da45ef67a7ba8020fe0"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_001.png": {
+    "bytes": 5599,
+    "sha256": "6fb1901032b1abaffd1eb35eeddb3a1315fb2ad87ffae5519b02b7bd4394b9ad"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_002.png": {
+    "bytes": 5640,
+    "sha256": "818a7045cf7de78b86e70d8bcd000e70b87b2dec53d124f5e2b016414110549d"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_003.png": {
+    "bytes": 5552,
+    "sha256": "0acbaccf0e0691d90495476c55f3d9b23a1072446ad3891a72b5d5e83baca198"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_004.png": {
+    "bytes": 5334,
+    "sha256": "91a018eb8e1a38a2d58ea1b8566d75120bcabd8391f8410b08de7ac96f0bb38c"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_005.png": {
+    "bytes": 5041,
+    "sha256": "b533dad4874f2faff82e030c6eca31d4fa44ac2b642d700233a35e50ec6b3f11"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_006.png": {
+    "bytes": 5053,
+    "sha256": "04a5633886985b73a8da80e4b18a8cf1422f7dc82a1184685dc36004ae99377b"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_007.png": {
+    "bytes": 4990,
+    "sha256": "f81a5a4d3ae688d665e840ef2779559874d1fdca1df23cae14c35c1165cdbbe5"
+  },
+  "public/assets/runtime/loko/activities/loko_eat/frame_008.png": {
+    "bytes": 5081,
+    "sha256": "f823108412a843aa4126ae96685a8426e1560e693c4c86bc218e4edd6cc9c155"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_000.png": {
+    "bytes": 5232,
+    "sha256": "c957a94e54d8c4799b9de007dda418ea245e76e0437d1a695b32580798a5fa58"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_001.png": {
+    "bytes": 5368,
+    "sha256": "4319e724d05e12b8b1255a2dbbdb88f31acf453a18582532efeb110cb71fbbe7"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_002.png": {
+    "bytes": 5433,
+    "sha256": "5aa592d079a034afb9f60c89cd2a72e595d2c181ba85857c4378f791e443c2fb"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_003.png": {
+    "bytes": 5378,
+    "sha256": "e7e1c6645b8a70112c57d2622ab89abc4df4c93e37833f853b47ce8f10a9e4e4"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_004.png": {
+    "bytes": 5346,
+    "sha256": "b4a65a15c31b54875094b4e7e8bf723f4f19d194cd7cb356ae8e168ae759f819"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_005.png": {
+    "bytes": 4732,
+    "sha256": "e182eb071b1b692638bf371503eca839d33a09f7af8942a92a9c441d735b1208"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_006.png": {
+    "bytes": 5276,
+    "sha256": "ba7c34d59eb6e1ef63f3c861de225832dca9a3002d00f779558ef60520d5e7b2"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_007.png": {
+    "bytes": 5262,
+    "sha256": "160f1736824c05b208157f0526bf5f00f59d486c894cfe171315e519f02aa844"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_008.png": {
+    "bytes": 5191,
+    "sha256": "3b08ddc5355eff004b8c6f79196c2f77d618baa345357177bd5689c9cdbefdfe"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_009.png": {
+    "bytes": 5288,
+    "sha256": "dec62e684a2cee8034cc6395b88414d7071354866211ce989950d4c6836666da"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_010.png": {
+    "bytes": 5158,
+    "sha256": "41d96247720fed9e7289aa292f3056628d4ffaecf3aaa60dff5500e1b396cd82"
+  },
+  "public/assets/runtime/loko/activities/loko_laptop/frame_011.png": {
+    "bytes": 5080,
+    "sha256": "cab028d04795159c40c0f50f95d9d33649b033eefad65b147dcf412f81f7231d"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_000.png": {
+    "bytes": 6159,
+    "sha256": "ea682e12aefc3380229ccc6387a9b87b9de6c31f68bab39d98108066a975676c"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_001.png": {
+    "bytes": 6042,
+    "sha256": "f1e4442ee0eca404fa13a6d4c5c7abdf203efeaa4d5de1be25574c647c9634d3"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_002.png": {
+    "bytes": 6046,
+    "sha256": "11cd53987dafdf67bd7f7c5a454d31dce9268aae5dd94e9fe82939b653351768"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_003.png": {
+    "bytes": 5551,
+    "sha256": "17fbf5078dc4f349ee65293d4e70216ac1bcf77198008a1d987a7b09a96bbca5"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_004.png": {
+    "bytes": 6306,
+    "sha256": "25bfd5dcdce7f052208c73c320e1b9e13aa3bad0a2cc0eb249cba6c4519a7af6"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_005.png": {
+    "bytes": 6812,
+    "sha256": "9d5f427326380ffce05b06cdd6b5315a1a60d6d819777baf5b1c2f985937398a"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_006.png": {
+    "bytes": 5200,
+    "sha256": "e70150f5cc7fc823bb782257cfbce1cea3878347d89a28304589f9090164ddf7"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_007.png": {
+    "bytes": 5505,
+    "sha256": "1f1d591de75c967b1a342a1baf9daacd8e0d346c86c70f9b9bf1823b60f3717d"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_008.png": {
+    "bytes": 5788,
+    "sha256": "76810e57da82fb0cd0891d14b7804f9a7fe00632405d57d47a65bc55ca574a03"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_009.png": {
+    "bytes": 5586,
+    "sha256": "32197f114d1bd880d0e9cb915df435ba3824be993ff28c7238818e7f2e55c924"
+  },
+  "public/assets/runtime/loko/activities/loko_music/frame_010.png": {
+    "bytes": 5565,
+    "sha256": "45c08c0609ccbef279a708b056ab577cf5f1920fe79ad71b4635ffbebf0c4fc7"
+  },
+  "public/assets/runtime/loko/activities/loko_peeking_01/frame_000.png": {
+    "bytes": 4434,
+    "sha256": "b02293e3450ee356edf3f8f1485eeea0d6815632a7b8752d1733e99071dd6f45"
+  },
+  "public/assets/runtime/loko/activities/loko_peeking_01/frame_001.png": {
+    "bytes": 4597,
+    "sha256": "101dc099b94061d522bf8e8eb25b4bf609b4c3157aacc4bb6006e85c2ea10b2c"
+  },
+  "public/assets/runtime/loko/activities/loko_peeking_01/frame_002.png": {
+    "bytes": 4632,
+    "sha256": "855687dcb9df1b7e8f53704dba15cee92dad3939d5a572769feed57ac4c166a1"
+  },
+  "public/assets/runtime/loko/activities/loko_peeking_02/frame_000.png": {
+    "bytes": 5078,
+    "sha256": "a306685a2e0353c2d4cc95c6c0f72b059ac0c1c234d095b9b6dabd9a05121d55"
+  },
+  "public/assets/runtime/loko/activities/loko_peeking_02/frame_001.png": {
+    "bytes": 4989,
+    "sha256": "fbc0699814a0a7e21a1684fabbad320ba2907bf75f21cc81425e450f31b849bf"
+  },
+  "public/assets/runtime/loko/activities/loko_peeking_02/frame_002.png": {
+    "bytes": 4607,
+    "sha256": "874540f15aff6c1ce89d97e0e9e752c3adc2e1ee6b4871c2d5d26a27d44cffc5"
+  },
+  "public/assets/runtime/loko/activities/loko_peeking_02/frame_003.png": {
+    "bytes": 4648,
+    "sha256": "87728065849fb0a6562cfa714efa29d5e9add191ac16fc4546684ee53a8887d5"
+  },
+  "public/assets/runtime/loko/activities/loko_peeking_02/frame_004.png": {
+    "bytes": 4530,
+    "sha256": "36df37e90c77473fe677258eabe117c5e021284cb055f6a16bd1294330f0331d"
+  },
+  "public/assets/runtime/loko/activities/loko_playing_ball_01/frame_000.png": {
+    "bytes": 5517,
+    "sha256": "5407710b6c05d8dc92e2dcd14895f4007241311156581001f60ad5ac12cc11cd"
+  },
+  "public/assets/runtime/loko/activities/loko_playing_ball_01/frame_001.png": {
+    "bytes": 5842,
+    "sha256": "7a3cc19ef0e4e12d16d36a62bad5ba7d06459bed266aad6de56016b8a13b5de9"
+  },
+  "public/assets/runtime/loko/activities/loko_playing_ball_01/frame_002.png": {
+    "bytes": 5835,
+    "sha256": "20f7e586d3aaaa12d017edf60d92b93d09fb72802de9b5f047aa763df4c49f7a"
+  },
+  "public/assets/runtime/loko/activities/loko_playing_ball_01/frame_003.png": {
+    "bytes": 5211,
+    "sha256": "ee5c4951bc5f4d131df74df7e0b9107dceef1e659d990ac838a7313844c1d3b4"
+  },
+  "public/assets/runtime/loko/activities/loko_playing_ball_01/frame_004.png": {
+    "bytes": 6068,
+    "sha256": "4f4bbb318d026133d16b3e6609f3a1924b7ea81de4b2c8720981678d47349f05"
+  },
+  "public/assets/runtime/loko/activities/loko_playing_ball_01/frame_005.png": {
+    "bytes": 5112,
+    "sha256": "885323551280a62f4bd2976990a6a7facfb11041a0ad3895bcae11ba99abca60"
+  },
+  "public/assets/runtime/loko/activities/loko_playing_ball_01/frame_006.png": {
+    "bytes": 5522,
+    "sha256": "3dca6db2af6048b1347f73acddbd53664ac0f9cdc21cb404eeed4f845cd262b7"
+  },
+  "public/assets/runtime/loko/activities/loko_reading_01/frame_000.png": {
+    "bytes": 5402,
+    "sha256": "921ffeb2b92f6ca7cad467fe5c069f8de151db72b06abaa329b9809ff290138e"
+  },
+  "public/assets/runtime/loko/activities/loko_reading_01/frame_001.png": {
+    "bytes": 5588,
+    "sha256": "80c67c58877bf38bf9cfc4c305de4581104d4f897823065c3fe20ce1942db85f"
+  },
+  "public/assets/runtime/loko/activities/loko_reading_01/frame_002.png": {
+    "bytes": 5374,
+    "sha256": "f1b290013f91164a47866f5c64dba4f5a08046b60cb64e90c2ccd2a6bb2b976a"
+  },
+  "public/assets/runtime/loko/activities/loko_reading_01/frame_003.png": {
+    "bytes": 5345,
+    "sha256": "61d651de1d17c0310747cd5d4838cf1bf896f87fccdbd360d96ff6b61d4aa5f4"
+  },
+  "public/assets/runtime/loko/activities/loko_reading_01/frame_004.png": {
+    "bytes": 5427,
+    "sha256": "6d2aa92d0f4f77fee574c3ba5f17ef24f9d7135dd68c1c511b6170f47f7a9e4b"
+  },
+  "public/assets/runtime/loko/emotions/loko_love_reaction/frame_000.png": {
+    "bytes": 5049,
+    "sha256": "0489da6df9fdc6cf59c7b42ef2bc82e31720fd0a2b54103e046bba8a118af619"
+  },
+  "public/assets/runtime/loko/emotions/loko_love_reaction/frame_001.png": {
+    "bytes": 5397,
+    "sha256": "e465bb79af7b2329a2e011c58f7ea2724b80df83ad568ffc372304aa5697a247"
+  },
+  "public/assets/runtime/loko/emotions/loko_love_reaction/frame_002.png": {
+    "bytes": 5285,
+    "sha256": "996e210a5afad4b254b374a31d3b8c47de7d89bfec0b6ad5ce44b6c6ea9161b2"
+  },
+  "public/assets/runtime/loko/emotions/loko_love_reaction/frame_003.png": {
+    "bytes": 5422,
+    "sha256": "a454b16f8b48028c4e13a2398c9151e4daedfeb35d1135969da3f7aa3f27c55e"
+  },
+  "public/assets/runtime/loko/emotions/loko_love_reaction/frame_004.png": {
+    "bytes": 5476,
+    "sha256": "c52671ca5372620712fe0245037617a7ed35adc70ad49f57329df67df5ba600a"
+  },
+  "public/assets/runtime/loko/emotions/loko_love_reaction/frame_005.png": {
+    "bytes": 5385,
+    "sha256": "53c69dbef9a7099c851cd2d02d6246b80d378b909ddb82a7e63ab6839cc4593c"
+  },
+  "public/assets/runtime/loko/emotions/loko_love_reaction/frame_006.png": {
+    "bytes": 4515,
+    "sha256": "9238d85e864c73b29f8fcd5c12ddc115d556f720f6a30817ab75a7560e0a62ec"
+  },
+  "public/assets/runtime/loko/emotions/loko_love_reaction/frame_007.png": {
+    "bytes": 4611,
+    "sha256": "65b8f4602e5ee6aa36606ba1ee4c49fcabb90c3beeb4e7a16431c214135aba57"
+  },
+  "public/assets/runtime/loko/idle/loko_idle_front/frame_000.png": {
+    "bytes": 4969,
+    "sha256": "dfcf96232c962100991b32694a086cb6e369ae0bcff4d13055e639bf21a7833e"
+  },
+  "public/assets/runtime/loko/idle/loko_idle_front/frame_001.png": {
+    "bytes": 4905,
+    "sha256": "ff4d9876b922b32cfca67e4e9c35651c6a8a40a5589d0fead1efd1f566461c3e"
+  },
+  "public/assets/runtime/loko/idle/loko_idle_front/frame_002.png": {
+    "bytes": 4893,
+    "sha256": "4d880dcad77586471760cf596c77aa4c9be1e86db5851e332738dcc996fe5ea9"
+  },
+  "public/assets/runtime/loko/idle/loko_idle_front/frame_003.png": {
+    "bytes": 5103,
+    "sha256": "aee3d0b94bef532a1268e5bddeb99eadf405247f2eaee19f1931544cf3a3e83d"
+  },
+  "public/assets/runtime/loko/idle/loko_idle_front/frame_004.png": {
+    "bytes": 5082,
+    "sha256": "86baf14e48c9bd42a0d97cd0a16ef5a58e70c4c85f49b3c904eda4a0e73e5f14"
+  },
+  "public/assets/runtime/loko/idle/loko_idle_front/frame_005.png": {
+    "bytes": 4864,
+    "sha256": "40b4a9e7ce335fa3b7af3440c57d84d0b079aace4961d57235da38a5d3b49733"
+  },
+  "public/assets/runtime/loko/idle/loko_idle_front/frame_006.png": {
+    "bytes": 4844,
+    "sha256": "b16186458d06c1258b1164adc9deb6ad1685cf92e44d2142f0fcbe91562a957f"
+  },
+  "public/assets/runtime/loko/idle/loko_idle_front/frame_007.png": {
+    "bytes": 4894,
+    "sha256": "32217a1ecf2a6dc22791ea08ccb12bd3601aa32f896df3b4cf7d3d464c5b578c"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_01/frame_000.png": {
+    "bytes": 4908,
+    "sha256": "710672aa2da6c7d7a09c95c451bca3d6ed6d0f21cc4c47ee641bb033b83750f8"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_01/frame_001.png": {
+    "bytes": 4967,
+    "sha256": "1bcbd3131b312aa8efd2482715b604bef90e8d0c4b6ff4ed85e9fbdacfab891b"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_01/frame_002.png": {
+    "bytes": 4919,
+    "sha256": "656a003487a9af10cde5c5c3a86c414785c621d6d2641cbd8854a2d00b414456"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_02/frame_000.png": {
+    "bytes": 4947,
+    "sha256": "e0e269e29a882cad7ebf035dcf0abe21a63545e5b2a1cf13cb85f6b084649610"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_02/frame_001.png": {
+    "bytes": 4950,
+    "sha256": "0c43209d7a2360625243972fc18c2832a211a4da1481df8df26bfd4d111d619e"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_02/frame_002.png": {
+    "bytes": 5268,
+    "sha256": "de7f82ca6a6408ea99df6f52b50901912aca131fe910cd476dc747a5ca0e81b3"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_02/frame_003.png": {
+    "bytes": 5247,
+    "sha256": "ad26531923027d0ae40e0f4389330301ca8703a307297f52e62af3a4bf9d65ac"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_02/frame_004.png": {
+    "bytes": 5296,
+    "sha256": "72953efe463fef8a37204ffe75d044db931601ce8fb968d680deb9ef810db366"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_02/frame_005.png": {
+    "bytes": 5220,
+    "sha256": "f36515126067015480455b39d1f00bd1ebeb91da67c30c13f2bf2039e27d5ab4"
+  },
+  "public/assets/runtime/loko/locomotion/loko_locomotion_side_02/frame_006.png": {
+    "bytes": 5177,
+    "sha256": "a1a5dc29069837988223d824284525b446f567371fc70842ac3a0cf9cfaacea7"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_left/frame_000.png": {
+    "bytes": 4964,
+    "sha256": "b182495335dc442e4734f41e7d157886b56e416cc411dfe9be791da2676b10ff"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_left/frame_001.png": {
+    "bytes": 4928,
+    "sha256": "4877312a54ae9002d019b0d81271739fce81ad93b553e5ddbb1d818fd702d5a2"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_left/frame_002.png": {
+    "bytes": 5322,
+    "sha256": "01c54121bb72a8d13309d5dc16ed5f34c8a3b7f92a183a243433fdcd17ca9223"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_left/frame_003.png": {
+    "bytes": 5270,
+    "sha256": "88160bac607e08b11eb9accd48f58bf983f3cebe16e943fc8e3e051e7120476c"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_left/frame_004.png": {
+    "bytes": 5305,
+    "sha256": "5558d2a743e72b9795de522c9cb1be5e122e75820722aa72d049c56c1910bd40"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_left/frame_005.png": {
+    "bytes": 5248,
+    "sha256": "19200a91d2f2b001af319bc7880b34d5501477fd313305fc1c800c8d958cc447"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_left/frame_006.png": {
+    "bytes": 5164,
+    "sha256": "c8e93aafe8bef61af9dbeec7fd9b134c616831252b96a6ee0d09437d0769f2f5"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_preparation/frame_000.png": {
+    "bytes": 4908,
+    "sha256": "710672aa2da6c7d7a09c95c451bca3d6ed6d0f21cc4c47ee641bb033b83750f8"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_preparation/frame_001.png": {
+    "bytes": 4967,
+    "sha256": "1bcbd3131b312aa8efd2482715b604bef90e8d0c4b6ff4ed85e9fbdacfab891b"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_preparation/frame_002.png": {
+    "bytes": 4919,
+    "sha256": "656a003487a9af10cde5c5c3a86c414785c621d6d2641cbd8854a2d00b414456"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_right/frame_000.png": {
+    "bytes": 4947,
+    "sha256": "e0e269e29a882cad7ebf035dcf0abe21a63545e5b2a1cf13cb85f6b084649610"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_right/frame_001.png": {
+    "bytes": 4950,
+    "sha256": "0c43209d7a2360625243972fc18c2832a211a4da1481df8df26bfd4d111d619e"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_right/frame_002.png": {
+    "bytes": 5268,
+    "sha256": "de7f82ca6a6408ea99df6f52b50901912aca131fe910cd476dc747a5ca0e81b3"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_right/frame_003.png": {
+    "bytes": 5247,
+    "sha256": "ad26531923027d0ae40e0f4389330301ca8703a307297f52e62af3a4bf9d65ac"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_right/frame_004.png": {
+    "bytes": 5296,
+    "sha256": "72953efe463fef8a37204ffe75d044db931601ce8fb968d680deb9ef810db366"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_right/frame_005.png": {
+    "bytes": 5220,
+    "sha256": "f36515126067015480455b39d1f00bd1ebeb91da67c30c13f2bf2039e27d5ab4"
+  },
+  "public/assets/runtime/loko/locomotion/loko_walk_right/frame_006.png": {
+    "bytes": 5177,
+    "sha256": "a1a5dc29069837988223d824284525b446f567371fc70842ac3a0cf9cfaacea7"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_loop/frame_000.png": {
+    "bytes": 5027,
+    "sha256": "dba0807545899de6d6050e451a136b62218f316c679d880a2e7fe1964f39db96"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_loop/frame_001.png": {
+    "bytes": 5009,
+    "sha256": "67b4f38231660de8902f04f5b3a7eea5ce8fba36f8a60c0673f949aa4c8df46c"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_loop/frame_002.png": {
+    "bytes": 4559,
+    "sha256": "ca8babbc8777536f9083348326cdb784a1ba5097b132f87ca9a3d13892efbffe"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_transition/frame_000.png": {
+    "bytes": 4451,
+    "sha256": "6d7c4f55ff6273f07ab5cd9a5940798c9cce34bc955b3e749629395ec900aa6f"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_transition/frame_001.png": {
+    "bytes": 4911,
+    "sha256": "2ccd0fce3d4875892d5b1f9db4065459dd18cf306409d979a69d0c453392979d"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_transition/frame_002.png": {
+    "bytes": 4893,
+    "sha256": "fb80ba294f84f6c02f9fd7af690654604fc638716e80249eb222976cdb0cfa20"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_transition/frame_003.png": {
+    "bytes": 4192,
+    "sha256": "57b9e08c355178c2ef6454ed0118a1ce8b8cc927d6e7b6841a263249ca1f4c72"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_transition/frame_004.png": {
+    "bytes": 3699,
+    "sha256": "110913f67246a5d3c490141b6a5620816ff323d4422de41b7221aefc4f76a389"
+  },
+  "public/assets/runtime/loko/sleeping/loko_sleep_transition/frame_005.png": {
+    "bytes": 3373,
+    "sha256": "dec42f75d8d7f6d7a59456ec4cb5a7c8d272d3a10f2e460ed5c375d9bf943eeb"
+  },
+  "public/assets/runtime/poko/activities/poko_drink/frame_000.png": {
+    "bytes": 5450,
+    "sha256": "ef1671d1d23b945d7a21f19013ec3457b1a8749ac32fb35ca679f3f9d0e4495f"
+  },
+  "public/assets/runtime/poko/activities/poko_drink/frame_001.png": {
+    "bytes": 5285,
+    "sha256": "5128f5fb9db87f797730a7d1eb2dddfea501983f10a4307fd60465c8d34215cf"
+  },
+  "public/assets/runtime/poko/activities/poko_drink/frame_002.png": {
+    "bytes": 4917,
+    "sha256": "bb65f19783b83d9016dc5b165ef39381e8a5be25fbc667d1c6454fbb4dbc83bf"
+  },
+  "public/assets/runtime/poko/activities/poko_drink/frame_003.png": {
+    "bytes": 4865,
+    "sha256": "6df4288dead6079e96dd2823a05272c4516446251bf0fa05f932efb5acd2ad75"
+  },
+  "public/assets/runtime/poko/activities/poko_drink/frame_004.png": {
+    "bytes": 5064,
+    "sha256": "901910d8b4f1e12b9a8ccc5d9231db2f01d58a4673b2d9feffc8dff03aeaab7d"
+  },
+  "public/assets/runtime/poko/activities/poko_drink/frame_005.png": {
+    "bytes": 4894,
+    "sha256": "483f16bef2e27d155781373d93da2bb7bd083f606c570f48d96a31b83cd08cc4"
+  },
+  "public/assets/runtime/poko/activities/poko_drink/frame_006.png": {
+    "bytes": 4905,
+    "sha256": "48fa632511f78ed3e7c062ff1ee1ecb884f9f16b1470cdf31535910f4348263e"
+  },
+  "public/assets/runtime/poko/activities/poko_drink/frame_007.png": {
+    "bytes": 4961,
+    "sha256": "0ee133b2ad77eea12757c164bf8283aac0960c1e291ed3c699e3ea5002eccb63"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_000.png": {
+    "bytes": 5366,
+    "sha256": "4582974728d69057b2b9f52de3f3959be4707d3ef8f5e724785d37f69d6141dc"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_001.png": {
+    "bytes": 5619,
+    "sha256": "60be9c6068876bf9791118f5749b3afc3ae19da96064c7300aee5a6a1b2cdcb6"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_002.png": {
+    "bytes": 5820,
+    "sha256": "764b78a2057286ffe9ca2ee0b04e7a06ebc91fd2c40be9dbcaef801d6a402a37"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_003.png": {
+    "bytes": 5041,
+    "sha256": "d9d211dde1652e948e145e905ee9d97bdb64413ae83ee72bfa71f1ea5a589f39"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_004.png": {
+    "bytes": 5097,
+    "sha256": "977fefc52482c5612ab07504548d2bd7b6a8084cdc59591fb67daef034344fef"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_005.png": {
+    "bytes": 5116,
+    "sha256": "528854b2d59dab0b1e65863613f2fc92029fb2b7005184911170053a33e0a157"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_006.png": {
+    "bytes": 5154,
+    "sha256": "64e63b7c565e5233da969e706d8f3f7d023149afda7cdec295a0f5461886161a"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_007.png": {
+    "bytes": 5341,
+    "sha256": "aee0c866eebe3d6ceebe17138b2bef1c5f4a796aa68454114a8704a7da8776fd"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_008.png": {
+    "bytes": 5543,
+    "sha256": "ce08a4c86db7db0d1ca51ead028408e337890d8c3443d84df30173bf114a0300"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_009.png": {
+    "bytes": 5480,
+    "sha256": "7e88c10fcbfc13954a548f0d8b1352bea482b002b4d5a591b1592a1318ce675c"
+  },
+  "public/assets/runtime/poko/activities/poko_eat/frame_010.png": {
+    "bytes": 5499,
+    "sha256": "fd6ddb968561d8a492b45e9ebcaf2eda8b8f96bd09ea769593dbbe842871dba0"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_000.png": {
+    "bytes": 5840,
+    "sha256": "3750cbb02878f517c0fcd93c6820bec6b50ac59f9de1d3aa989002a1ce25c235"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_001.png": {
+    "bytes": 5566,
+    "sha256": "2d9284b034480b5105eda993812901cf96c944a2662d14c91da8b191a028cab3"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_002.png": {
+    "bytes": 6000,
+    "sha256": "8f9ec212600c096270da565f4825f16f0254b38a2f606b2ac0bab9cfadb44ff2"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_003.png": {
+    "bytes": 6221,
+    "sha256": "e53b4e1e9c956ed102b36740d77b231e5e4f138f3e97817838fb0b741d389848"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_004.png": {
+    "bytes": 5498,
+    "sha256": "614a3a03b7a43dda71175c03920ea6871f9399420b48b04ac47362ad57d73eba"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_005.png": {
+    "bytes": 5792,
+    "sha256": "f4865b757f972bd85224be656d6ad03b5fdaf6992fd9b7de7257f92a065f7882"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_006.png": {
+    "bytes": 5738,
+    "sha256": "675bbf60eace553331557dbbc87202a22358744340ec409858d4ba2fdb50c3ab"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_007.png": {
+    "bytes": 5396,
+    "sha256": "e2041266b3f6cc6129c30da374fc0432b448db22c032a040fcda68ed191108c4"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_008.png": {
+    "bytes": 6013,
+    "sha256": "94bd2bd9b5c39e12ef3fc60a11d26db6ad4f7169ce954c018b56c1a406827c0a"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_009.png": {
+    "bytes": 4967,
+    "sha256": "c021fde3968b94c8cf644b890a1f1d710081456de9aadb86f25233330ac5f9b7"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_010.png": {
+    "bytes": 5733,
+    "sha256": "471ffff6affa56dda291a60cc03e9922600d5b934b2a30f82429c621f55f65a7"
+  },
+  "public/assets/runtime/poko/activities/poko_music/frame_011.png": {
+    "bytes": 5722,
+    "sha256": "a12a9a37f70e778c563d93c5b09a8fb427a0af25b2bdc3d910a569b4ddcd2dce"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_000.png": {
+    "bytes": 4893,
+    "sha256": "f34af6969cfafe127b7f5fbd9e9d5f958494a2b7000f34d904606c356c1a4df3"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_001.png": {
+    "bytes": 4768,
+    "sha256": "1c6e585712bb2f80542ade27c4a75d4b7e2bdcfaae1269a3142c2489f947f948"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_002.png": {
+    "bytes": 4764,
+    "sha256": "bc37f105352634c7e80e823f9a4d054fc25ba0087b13897cb5e82df984c7d7df"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_003.png": {
+    "bytes": 4715,
+    "sha256": "571d3cb53cca1f9c6b6b4c6fb98e43347109df7b187d936df8ea0e58dbb29767"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_004.png": {
+    "bytes": 4661,
+    "sha256": "02249cb77b579c575ba716760d0fa424ecf0313ca4ff56a06429b856cd7088cf"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_005.png": {
+    "bytes": 4748,
+    "sha256": "e7894b3f0f1e894fa71e1f7effb6666e830aecece25e5b8680fd668637c5d333"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_006.png": {
+    "bytes": 5111,
+    "sha256": "772c399af67fec92fb03502262ffa69b0458a197cb7b808f92af5ab06d183648"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_007.png": {
+    "bytes": 5718,
+    "sha256": "dfe9c96ca977e633ac096178b74e965c55d289e5c2330ab8e31fe8289436bf35"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_008.png": {
+    "bytes": 5785,
+    "sha256": "0ba6e6c7a223265d024e23682f09aca69989ee675e2539f7cde153fd7f8f4dca"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_009.png": {
+    "bytes": 5674,
+    "sha256": "929d5535e43aa670ad053c4be7e20eb9abf17e779f840bac0b85d5cb5059e4f6"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_010.png": {
+    "bytes": 4742,
+    "sha256": "3872685cf9daf098472fc71e95d4089a3e3adb3fe95dc8cb66bd8237389b1a53"
+  },
+  "public/assets/runtime/poko/activities/poko_peeking/frame_011.png": {
+    "bytes": 5642,
+    "sha256": "fdda377181177c2d5c0b214ae6879e3740e4ed48785f78ddd7f8c48a4bd7069d"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_000.png": {
+    "bytes": 6393,
+    "sha256": "d7e20e777e72ba12a8761f3d4feb76644d1eb3fb2f83fa35a04d35870e5389cb"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_001.png": {
+    "bytes": 5162,
+    "sha256": "c0fce3213bd721719a8bb4a85833384036b68e669759c09a4ef11c8c409812ca"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_002.png": {
+    "bytes": 5897,
+    "sha256": "9be28c394783e050cb8ff09b9cf7d4ac6f577c613bd5fd235bf4b26ea879ab3d"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_003.png": {
+    "bytes": 5578,
+    "sha256": "f0867b2f2a5e31830c7c48ad28cfa8b5013c4ca520fae993108483045aed54ff"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_004.png": {
+    "bytes": 5110,
+    "sha256": "4ed46373c48553a4e5e6d49325bfb4ea2d365aaf79cb6024006211f6a7afea9c"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_005.png": {
+    "bytes": 6776,
+    "sha256": "d8a2b8d3a268fcefba2b40270324d2a8e977233bea084e7f3d04780a242c9f69"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_006.png": {
+    "bytes": 5623,
+    "sha256": "e7707eeb76617db132f3035ca0e1049b21dbc6845442a8b6e64930242f1e49d0"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_007.png": {
+    "bytes": 6678,
+    "sha256": "f606640c22dc43c722e136e5248497ffdd5841e737400875787e29021cf718b4"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_008.png": {
+    "bytes": 4037,
+    "sha256": "e8ed7e3c663a3c34fbe70a181d38d9e6c38d63a996a233827705c28d914db898"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_009.png": {
+    "bytes": 7514,
+    "sha256": "9cda60a0e778dd445d849e9f5ff5ec10d36fcf72932f98196eb0cde5c438d11b"
+  },
+  "public/assets/runtime/poko/activities/poko_playing_ball/frame_010.png": {
+    "bytes": 6561,
+    "sha256": "375acc9a64c935addaf85a1f22d534afdae7a05a217a8e2d0858babcfb3d671c"
+  },
+  "public/assets/runtime/poko/emotions/poko_sad_to_crying/frame_000.png": {
+    "bytes": 4836,
+    "sha256": "9c590d487ae2b271fbd232d27da919f291aa73ee92d230d52448e486682a3bfb"
+  },
+  "public/assets/runtime/poko/emotions/poko_sad_to_crying/frame_001.png": {
+    "bytes": 4860,
+    "sha256": "1aa0a1daecf1de1e9a723b7532d29915a79ccac4a95746dc3ced81718cf54beb"
+  },
+  "public/assets/runtime/poko/emotions/poko_sad_to_crying/frame_002.png": {
+    "bytes": 4894,
+    "sha256": "83c941f448b772cccc3d6f1ae010e4a86b0206818739f711f33020215e7fe9c7"
+  },
+  "public/assets/runtime/poko/emotions/poko_sad_to_crying/frame_003.png": {
+    "bytes": 4863,
+    "sha256": "3b17ad84cb89b4a55f0645542e72578ba2115f28483872cd3f0564f9e23b4787"
+  },
+  "public/assets/runtime/poko/emotions/poko_sad_to_crying/frame_004.png": {
+    "bytes": 5083,
+    "sha256": "747a3de34db3cbf41eb26ce226b1b03b52b4e7a90db0a5ee2c7d2c532e0a0862"
+  },
+  "public/assets/runtime/poko/emotions/poko_sad_to_crying/frame_005.png": {
+    "bytes": 4878,
+    "sha256": "1de7a0d83562289b2d9f9a273678925e0ca9baf2cf43ad640478b19e791866a3"
+  },
+  "public/assets/runtime/poko/emotions/poko_sad_to_crying/frame_006.png": {
+    "bytes": 5369,
+    "sha256": "88d2d8a01ba611f94218971abf84c1303e580f34e84c2a37bb8122e91197047e"
+  },
+  "public/assets/runtime/poko/emotions/poko_sad_to_crying/frame_007.png": {
+    "bytes": 5144,
+    "sha256": "eec034d76cb8a4f44a7dad3ba943dbd9325f4b08819f91a061811352ed98caf7"
+  },
+  "public/assets/runtime/poko/idle/poko_idle_blink/frame_000.png": {
+    "bytes": 5177,
+    "sha256": "bde995a806223dba39fe360aabf6d0a1a71d1abd1b13330e81711656b5614d91"
+  },
+  "public/assets/runtime/poko/idle/poko_idle_blink/frame_001.png": {
+    "bytes": 5295,
+    "sha256": "927490e4eec27dc3b41a8022bad850a219101f83f0befa7006b7883ac4fe8d9d"
+  },
+  "public/assets/runtime/poko/idle/poko_idle_look_01/frame_000.png": {
+    "bytes": 5453,
+    "sha256": "2a021fc888868ac0ae0926e4a8c9505b758ebba2aed111debabf3561311fa1b0"
+  },
+  "public/assets/runtime/poko/idle/poko_idle_look_01/frame_001.png": {
+    "bytes": 5260,
+    "sha256": "6fb36b09285247d5bb7966a678e1f47033294b296daccc05c2a9f1491a636b62"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_000.png": {
+    "bytes": 5160,
+    "sha256": "1ef98ab3ac004583d1095b9cd3055502dbd7f4dc1f768256e1616274b480e20d"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_001.png": {
+    "bytes": 5514,
+    "sha256": "fc985e496901bd8a0aa4131af92c7b15736a8d45a839ab7ab6db83ec62c7c7e1"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_002.png": {
+    "bytes": 5330,
+    "sha256": "2a1dcaedc3f5e7eb5dfae2747ac03a7078f193eeb37a1ffa6c6ffcde2f238972"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_003.png": {
+    "bytes": 5514,
+    "sha256": "d0b5324b78d2c87aeb6d32e9105676e7599e0b4b27f4f3cb42e2a255c887ac53"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_004.png": {
+    "bytes": 5385,
+    "sha256": "cc4e7e4ad8090fdb197bebd49aa3d9a360d6da4fbf8e3eddd6e53bfbfb075521"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_005.png": {
+    "bytes": 5466,
+    "sha256": "67e380743eb54dfc6e4c57ab995a3d0f1d35b92eefd02cbbea5ed6ae742083f0"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_006.png": {
+    "bytes": 5549,
+    "sha256": "73bb829835b59b9d394a03ed6a1943c6208d293c0b77e3de3f4ec50ebfc5c358"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_007.png": {
+    "bytes": 5375,
+    "sha256": "3d962b78088beb8ed107540864fafb684f891c28a8f9f3f0b98fb02ff8b1da84"
+  },
+  "public/assets/runtime/poko/locomotion/poko_locomotion_side/frame_008.png": {
+    "bytes": 5726,
+    "sha256": "3342a2bad75ea4372c1d0f8c86c878d80e9db512ae6c59b4223f02d438c55c0e"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_000.png": {
+    "bytes": 5181,
+    "sha256": "84f4345942496f0a31d2e604fa387621fc261e765973249ffb86fa6524e49d37"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_001.png": {
+    "bytes": 5496,
+    "sha256": "769ff3c5f289b82ba0f0affb924bf5434a3bf87de8fee6402c1a35965b2fbaa7"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_002.png": {
+    "bytes": 5332,
+    "sha256": "1267fe677dca9c6ca13a3402c7db9d02ad64e5eb2862750bf9bbb0a2c9b4951d"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_003.png": {
+    "bytes": 5508,
+    "sha256": "d3da2ba13f64eec86d3fcdede70580328a71688cd1a2b0c3bcd3b5362e6ecbc5"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_004.png": {
+    "bytes": 5364,
+    "sha256": "097aa75d2aaba3ebf232b2d58ebc1f19aae8b9c445347e28991202f53195af76"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_005.png": {
+    "bytes": 5431,
+    "sha256": "7d37c38a09349dfc4aab99661207e3021040868eadc8c0214d37351a4997f5cc"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_006.png": {
+    "bytes": 5558,
+    "sha256": "84ece1055a968908037432fa4f6f878f2d0487719d3bcd97e0761d820f075f47"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_007.png": {
+    "bytes": 5370,
+    "sha256": "a4bb0cee154411c471339c86939bf84612da731f803bdffc8a39c01895595b5b"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_left/frame_008.png": {
+    "bytes": 5728,
+    "sha256": "2cd9ceef674565f93094ca4161a681fadd6eccc22ed8f3072cf562eb211ec607"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_000.png": {
+    "bytes": 5160,
+    "sha256": "1ef98ab3ac004583d1095b9cd3055502dbd7f4dc1f768256e1616274b480e20d"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_001.png": {
+    "bytes": 5514,
+    "sha256": "fc985e496901bd8a0aa4131af92c7b15736a8d45a839ab7ab6db83ec62c7c7e1"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_002.png": {
+    "bytes": 5330,
+    "sha256": "2a1dcaedc3f5e7eb5dfae2747ac03a7078f193eeb37a1ffa6c6ffcde2f238972"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_003.png": {
+    "bytes": 5514,
+    "sha256": "d0b5324b78d2c87aeb6d32e9105676e7599e0b4b27f4f3cb42e2a255c887ac53"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_004.png": {
+    "bytes": 5385,
+    "sha256": "cc4e7e4ad8090fdb197bebd49aa3d9a360d6da4fbf8e3eddd6e53bfbfb075521"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_005.png": {
+    "bytes": 5466,
+    "sha256": "67e380743eb54dfc6e4c57ab995a3d0f1d35b92eefd02cbbea5ed6ae742083f0"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_006.png": {
+    "bytes": 5549,
+    "sha256": "73bb829835b59b9d394a03ed6a1943c6208d293c0b77e3de3f4ec50ebfc5c358"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_007.png": {
+    "bytes": 5375,
+    "sha256": "3d962b78088beb8ed107540864fafb684f891c28a8f9f3f0b98fb02ff8b1da84"
+  },
+  "public/assets/runtime/poko/locomotion/poko_walk_right/frame_008.png": {
+    "bytes": 5726,
+    "sha256": "3342a2bad75ea4372c1d0f8c86c878d80e9db512ae6c59b4223f02d438c55c0e"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_01/frame_000.png": {
+    "bytes": 4944,
+    "sha256": "db119223aecbb83af5a9240c4dc242a5552be00b1a1a86b2b2399f8bc164373f"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_01/frame_001.png": {
+    "bytes": 4676,
+    "sha256": "cd94a62410d2170097b2e4c76f141c11aef1292a34e54f424cf3d79c9e723a4e"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_01/frame_002.png": {
+    "bytes": 4353,
+    "sha256": "b038f33a2e4a63a36121d54f4a4679124495b6d2297ee823551951ccf7ed7f30"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_01/frame_003.png": {
+    "bytes": 4551,
+    "sha256": "a0b5a0ccda9387d394ef26df3e112f7e8b58bf0b8458a3825d3714e2496e6588"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_01/frame_004.png": {
+    "bytes": 4649,
+    "sha256": "8188bde2620bb49507a081f4f5f01dd02bfadbeffa31db92a552b8aa1c3cbd8e"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_01/frame_005.png": {
+    "bytes": 4733,
+    "sha256": "26d4d64321d643c24a21919af47155c5b03162535012f18ce6e03dc888b03161"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_01/frame_006.png": {
+    "bytes": 4528,
+    "sha256": "2684f5f4338396c6b1f42029a617b67ea8b8ef41ee30b54a7ffe48f55ae6044d"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_02/frame_000.png": {
+    "bytes": 4481,
+    "sha256": "c8febcc4805ec0e0af397bff7dfd59295c2a5ba792699cb57b78a04185d4ebab"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_02/frame_001.png": {
+    "bytes": 4523,
+    "sha256": "9425278382c6b2f5b7319f9758f79930e6d1a09f2f0e105dc49ff47581b7e5cb"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_02/frame_002.png": {
+    "bytes": 4484,
+    "sha256": "55413812501ca356157c8a027dc0b08a11bcfbac04b607ab7fa8beb04fe407be"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_loop_02/frame_003.png": {
+    "bytes": 4684,
+    "sha256": "fef6db768a069e758ca7ee5076264f45aa05da71c75a1d79f9c4e98da3701402"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_transition/frame_000.png": {
+    "bytes": 5174,
+    "sha256": "e30e3e1b76cbf7857ccb7c8a3640a0151abbef21af11a300d03abed4e4d82ac2"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_transition/frame_001.png": {
+    "bytes": 5106,
+    "sha256": "22e33028b002363f613c59c1591137617caf086adf205af4b78988fc1d9e5144"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_transition/frame_002.png": {
+    "bytes": 4555,
+    "sha256": "43efa01efeb08c2545e7a5cd9c9c129451878c8582b6fdd8383c5d4b24130b90"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_transition/frame_003.png": {
+    "bytes": 4839,
+    "sha256": "23b98733c150bc4e460b593d4c11fc577fe864f9ba05c76b1891b523e7cd40bc"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_transition/frame_004.png": {
+    "bytes": 4968,
+    "sha256": "2e528547b501622f731a555afa54c64ce9dcd65b4178c1d92b57d48988079f5c"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_transition/frame_005.png": {
+    "bytes": 4295,
+    "sha256": "20e6f28974daf86fca3ba7f53e0a16ab0a642560a656d90497f91a12b25ef1e8"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_transition/frame_006.png": {
+    "bytes": 4473,
+    "sha256": "e566d6532b7873b3764f7609eab6b28d52ded686ca1f0290428f6592d863c545"
+  },
+  "public/assets/runtime/poko/sleeping/poko_sleep_transition/frame_007.png": {
+    "bytes": 3931,
+    "sha256": "c41a1b48503738547695a167ac67fdfb2094abe7262109c555926c5e4b10ee43"
+  },
+  "public/assets/runtime/runtime_manifest.json": {
+    "bytes": 347819,
+    "sha256": "cc0ec123040f327f590dfa2b040d668f41e72c18ffca1af100f3aa7936b590bd"
+  },
+  "public/assets/runtime/runtime_manifest.schema.json": {
+    "bytes": 1724,
+    "sha256": "1bb18fc63c723e437e8c70f86da82b84d7fa27c7a3a2ca7b738b93e0af5c9cf1"
+  },
+  "public/assets/runtime/runtime_registry.ts": {
+    "bytes": 348915,
+    "sha256": "441579da63e438e1f90a04b6e48ee4bcac4c4ddfe5d17d475aff05261c5970db"
+  },
+  "public/brand/pokoloko.ico": {
+    "bytes": 370070,
+    "sha256": "17e14ca9737c6e81ff2eadacb65c9306ccfce422b7140ef392c2d0a3b2a5f971"
+  },
+  "scripts/clean.mjs": {
+    "bytes": 133,
+    "sha256": "43a799c3e892115b007aed24a2f5800ef4a61c6b88886748a61d0650df2814b2"
+  },
+  "scripts/dev.mjs": {
+    "bytes": 890,
+    "sha256": "504b143826ae1ad6846e4f81e9ba99d2a0512fc8967938b140e61955e0d2723e"
+  },
+  "scripts/package-smoke.mjs": {
+    "bytes": 746,
+    "sha256": "9c5a80c01a5c39a6eb4d4fe2839933af320c0a6c9319ed71b98bee9e0f2ca7f1"
+  },
+  "scripts/validate-animation-lab.mjs": {
+    "bytes": 1824,
+    "sha256": "1719ffacf1f76f859052af42206e7c982b849b49952cfbff169e6a50134d4976"
+  },
+  "scripts/validate-build.mjs": {
+    "bytes": 598,
+    "sha256": "554dd6798720b0a8dfd9aa978298d21d21da7250a08a3640da7c1ce4a1640db4"
+  },
+  "scripts/validate-foundation.mjs": {
+    "bytes": 2736,
+    "sha256": "d9f7c2958028f620770646af40ed1f6eda0800cf3ae4c9c4b23f9fc29c294a8d"
+  },
+  "scripts/validate-runtime-assets.mjs": {
+    "bytes": 3691,
+    "sha256": "11f6da227d7a067e66ae5016728dadf0c1af0714728b0177d1cf09d7f25e9c34"
+  },
+  "scripts/validate-runtime-assets.ts": {
+    "bytes": 4853,
+    "sha256": "6e4f30ead4cb1403d1e92b79e07ba80f612a4e5a9d2bb970c180a4142629f1cb"
+  },
+  "scripts/validate-static-renderer.mjs": {
+    "bytes": 3010,
+    "sha256": "8fbd1e0ce87f81d994f3fe325201b3a3e6df95ac0e7a2d34ef4d0bcc812aa92b"
+  },
+  "scripts/validate-step08.mjs": {
+    "bytes": 473,
+    "sha256": "c684a2268f65b44719982beb21b915842ae60e38d6a0d49b5ad9fb67b70839fc"
+  },
+  "src/App.tsx": {
+    "bytes": 586,
+    "sha256": "e8b86644b104ed5b7065fc71cf74574ee34bdd4e8b1eb3c845a79ec503ce6b53"
+  },
+  "src/app/ErrorBoundary.tsx": {
+    "bytes": 729,
+    "sha256": "3b2d4c620ddaf4338d2c0fd929ba62002854e93d749e99949960dea94b0e9ff8"
+  },
+  "src/diagnostics/animation-lab/AnimationLab.tsx": {
+    "bytes": 9656,
+    "sha256": "730886453fe0bf2e1cbbf6f9f2e7f04344a6676ec9507cf03ae571aebaaa11bc"
+  },
+  "src/diagnostics/animation-lab/AnimationViewport.tsx": {
+    "bytes": 2175,
+    "sha256": "562daf3eec4070ca0f67d8019ae59e44e4c587495c34c276688613b5a9bcca37"
+  },
+  "src/diagnostics/animation-lab/TransparentPreview.tsx": {
+    "bytes": 1217,
+    "sha256": "6050d3d62867cb7e93212ae669506a523cff28de95176615c811b6e3444c6bcf"
+  },
+  "src/diagnostics/animation-lab/player.ts": {
+    "bytes": 1052,
+    "sha256": "6cefe35440d8ff2583e52a2f5b0acb2fb37f568d75228686f943e2efc1a56266"
+  },
+  "src/diagnostics/animation-lab/transitionComposer.ts": {
+    "bytes": 2869,
+    "sha256": "7c7f8ded132d82403d1ec1d1ced358b50fe2d49d918072cfcd11bcd9f5e70abe"
+  },
+  "src/diagnostics/animation-lab/types.ts": {
+    "bytes": 2386,
+    "sha256": "a4fb345536e34313e08e61a326f8d528748fde2b33445d0b6ac37911e1cce854"
+  },
+  "src/main.tsx": {
+    "bytes": 391,
+    "sha256": "5903e1ed91beab7b0549d0f6ffb8e5b6beb59eaad56c8a37d06b756989b5eb2b"
+  },
+  "src/shared/assetUrl.ts": {
+    "bytes": 185,
+    "sha256": "ae61c0c5a767af2c4b25322174fac6b6f7d28c92e8d2d974a66ad76d5b8a6a11"
+  },
+  "src/shared/global.d.ts": {
+    "bytes": 151,
+    "sha256": "9dfad8ad2eb70fbe6b855c4a00b08bbba02fc80dda0ad5fc1aac2ffce9de4391"
+  },
+  "src/shared/surface.ts": {
+    "bytes": 310,
+    "sha256": "a12ed83cf90ffb298d24971429a41fd44b88a174d9ddc044d67761bef4fbd96a"
+  },
+  "src/styles.css": {
+    "bytes": 7665,
+    "sha256": "929dbb402c5e5bc8dbc071ae1731587ed2d5a2ddda1f90852cc78762ce60e1e3"
+  },
+  "src/surfaces/DiagnosticsSurface.tsx": {
+    "bytes": 140,
+    "sha256": "2eb5245cef93cc206623619139243c58d723ab02f60e772843195dca815cef67"
+  },
+  "src/surfaces/PetSurface.tsx": {
+    "bytes": 3766,
+    "sha256": "f9ec335eee933d8834d04316fba9ccff701099ddd19bff1dd440c29dd803ee4b"
+  },
+  "src/surfaces/SettingsSurface.tsx": {
+    "bytes": 515,
+    "sha256": "cd105ed27b53ad7c5ae92b646062f6a1fcbe8669d8d72834de7745a75469f2dd"
+  },
+  "tests/integration/foundation.test.ts": {
+    "bytes": 447,
+    "sha256": "4a2319111a55f985cc15789ee3d85cf02aab3d73c685493deaeed3291c13a42b"
+  },
+  "tests/unit/animation-player.test.ts": {
+    "bytes": 626,
+    "sha256": "d2de743d8f722e995ddab22f539901d9202e03606cd8b9f0e005e8b59fa8299c"
+  },
+  "tests/unit/asset-url.test.ts": {
+    "bytes": 761,
+    "sha256": "78e02631325d56595222e36ad590e064a3e29d4e13d6e1c29a26861f196e2e9a"
+  },
+  "tests/unit/display-grounding.test.ts": {
+    "bytes": 1397,
+    "sha256": "14f7af362abbce5db41b28f5967ce065d1457bc0af715ae39163bb1c6958263d"
+  },
+  "tests/unit/runtime-assets.test.ts": {
+    "bytes": 880,
+    "sha256": "59e8745307a8c2663ca6ec90d4facaa5f8325bd9b6870d3a67b5d0e126c9b16e"
+  },
+  "tests/unit/settings-schema.test.ts": {
+    "bytes": 412,
+    "sha256": "ca66b9dd3dc1555c0dbed7d2c34fbbccadef60de24aa9e01c2b48b7b128e208f"
+  },
+  "tests/unit/surface.test.ts": {
+    "bytes": 548,
+    "sha256": "abd53c85d1b31bb21240c53c8acc9376f5b1ddd65b8b19c02f6bd7172639883c"
+  },
+  "tests/unit/transition-composer.test.ts": {
+    "bytes": 902,
+    "sha256": "05689254646772d452c25f91c473af7f914e35c2b5dd001b4c89f053f5f1e14c"
+  },
+  "tsconfig.base.json": {
+    "bytes": 461,
+    "sha256": "415af75a63657b1b9216c5f857dab3d0a6edff5c6ca89155a0a6ad49f5e32c00"
+  },
+  "tsconfig.electron.json": {
+    "bytes": 352,
+    "sha256": "a429f8e0d4c18b5b8decf6032f642b0450507b9d59f55bf2fe1a5f25ce680717"
+  },
+  "tsconfig.renderer.json": {
+    "bytes": 310,
+    "sha256": "104645792888a7269fab1808320623dfb263e613df90014e797a6ba9304521b2"
+  },
+  "tsconfig.tests.json": {
+    "bytes": 324,
+    "sha256": "c3bce86d97d54520bc6a25164ea3d219dc807cddaa868d927a466134add53310"
+  },
+  "vite.config.ts": {
+    "bytes": 230,
+    "sha256": "d43a64d7507f89fb70ff362e9960a4b78e406595a5911dc405f2b6b8f7cab1fc"
+  }
+}

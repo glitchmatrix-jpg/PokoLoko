@@ -1,0 +1,53 @@
+{
+  "format": "pokoloko-diagnostic-trace",
+  "version": 1,
+  "exportedAtIso": "1970-01-01T00:00:00.000Z",
+  "seed": 2604,
+  "evidenceClass": "template",
+  "events": [
+    {
+      "sequence": 1,
+      "monotonicMs": 0,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:force_activity",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "activity-prop-interruption"
+      },
+      "replayCommand": {
+        "type": "force_activity",
+        "activityId": "reading",
+        "durationMs": 8000
+      }
+    },
+    {
+      "sequence": 2,
+      "monotonicMs": 1000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:complete_drag",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "activity-prop-interruption"
+      },
+      "replayCommand": {
+        "type": "complete_drag"
+      }
+    },
+    {
+      "sequence": 3,
+      "monotonicMs": 2000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:force_idle",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "activity-prop-interruption"
+      },
+      "replayCommand": {
+        "type": "force_idle"
+      }
+    }
+  ]
+}

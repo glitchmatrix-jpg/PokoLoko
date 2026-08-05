@@ -1,0 +1,27 @@
+{
+  "step": "22",
+  "title": "Tray, Onboarding, Splash, and Native-Shell Identity",
+  "status": "PASS_STATIC_NATIVE_PENDING",
+  "checks": {
+    "approved_brand_assets_present": true,
+    "brief_skippable_splash_implemented": true,
+    "onboarding_under_one_minute": true,
+    "onboarding_persistence_migration": true,
+    "tray_single_instance_design": true,
+    "tray_authoritative_state_sync": true,
+    "move_to_current_screen": true,
+    "restart_and_quit_lifecycle": true,
+    "privacy_safe_context_opt_in": true,
+    "keyboard_and_reduced_motion_contracts": true,
+    "dependency_free_regressions_passed": true,
+    "native_windows_human_validation": false
+  },
+  "native_pending": [
+    "real Windows tray micro-mark readability",
+    "splash DWM transparency and timing",
+    "packaged first-run migration",
+    "startup and restart behavior",
+    "shutdown orphan-process check",
+    "high-DPI onboarding visual review"
+  ]
+}

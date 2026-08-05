@@ -1,0 +1,1569 @@
+{
+  "version": "step12",
+  "characters": {
+    "poko": {
+      "character": "poko",
+      "nodes": [
+        {
+          "id": "poko_drink",
+          "state": "drinking",
+          "category": "activities",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_eat",
+          "state": "eating",
+          "category": "activities",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_music",
+          "state": "music",
+          "category": "activities",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_peeking",
+          "state": "peeking",
+          "category": "activities",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_playing_ball",
+          "state": "playing_ball",
+          "category": "activities",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_sad_to_crying",
+          "state": "sad_reaction",
+          "category": "emotions",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_idle_blink",
+          "state": "idle",
+          "category": "idle",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_idle_look_01",
+          "state": "idle",
+          "category": "idle",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_locomotion_side",
+          "state": "walking",
+          "category": "locomotion",
+          "direction": "right",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_walk_left",
+          "state": "walking",
+          "category": "locomotion",
+          "direction": "left",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_walk_right",
+          "state": "walking",
+          "category": "locomotion",
+          "direction": "right",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_sleep_loop_01",
+          "state": "sleeping",
+          "category": "sleeping",
+          "direction": "none",
+          "loop": true,
+          "playback": "ping_pong"
+        },
+        {
+          "id": "poko_sleep_loop_02",
+          "state": "sleeping",
+          "category": "sleeping",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "poko_sleep_transition",
+          "state": "sleep_transition",
+          "category": "sleeping",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        }
+      ],
+      "allowed_transitions": [
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_idle_look_01",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 80,
+          "notes": "Related idle-state transition. A brief hold avoids a snap between pose variants."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_idle_blink",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 80,
+          "notes": "Related idle-state transition. A brief hold avoids a snap between pose variants."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_sad_to_crying",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 100,
+          "notes": "One-shot reaction may begin from an idle pose."
+        },
+        {
+          "from": "poko_sad_to_crying",
+          "to": "poko_idle_blink",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 120,
+          "notes": "Return to idle after the one-shot reaction completes."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_sad_to_crying",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 100,
+          "notes": "One-shot reaction may begin from an idle pose."
+        },
+        {
+          "from": "poko_sad_to_crying",
+          "to": "poko_idle_look_01",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 120,
+          "notes": "Return to idle after the one-shot reaction completes."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_drink",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_drink",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_eat",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_eat",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_music",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_music",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_playing_ball",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_playing_ball",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_peeking",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_peeking",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_drink",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_drink",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_eat",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_eat",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_music",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_music",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_playing_ball",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_playing_ball",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_peeking",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "poko_peeking",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_locomotion_side",
+          "safety": "conditional",
+          "bridge_strategy": "intermediate_idle_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated walk-preparation animation exists; hold the side idle before starting movement."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_walk_left",
+          "safety": "conditional",
+          "bridge_strategy": "intermediate_idle_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated walk-preparation animation exists; hold the side idle before starting movement."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_walk_right",
+          "safety": "conditional",
+          "bridge_strategy": "intermediate_idle_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated walk-preparation animation exists; hold the side idle before starting movement."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_locomotion_side",
+          "safety": "conditional",
+          "bridge_strategy": "intermediate_idle_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated walk-preparation animation exists; hold the side idle before starting movement."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_walk_left",
+          "safety": "conditional",
+          "bridge_strategy": "intermediate_idle_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated walk-preparation animation exists; hold the side idle before starting movement."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_walk_right",
+          "safety": "conditional",
+          "bridge_strategy": "intermediate_idle_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated walk-preparation animation exists; hold the side idle before starting movement."
+        },
+        {
+          "from": "poko_locomotion_side",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "poko_locomotion_side",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "poko_walk_left",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "poko_walk_left",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "poko_walk_right",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "poko_walk_right",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "poko_locomotion_side",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_stop",
+          "recommended_hold_ms": 120,
+          "notes": "Stop through idle before reversing direction; do not flip directly mid-cycle."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_walk_left",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_start",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the opposite walk only after the neutral idle hold."
+        },
+        {
+          "from": "poko_walk_left",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_stop",
+          "recommended_hold_ms": 120,
+          "notes": "Stop through idle before reversing direction; do not flip directly mid-cycle."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_locomotion_side",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_start",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the opposite walk only after the neutral idle hold."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_walk_right",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_start",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the opposite walk only after the neutral idle hold."
+        },
+        {
+          "from": "poko_walk_right",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_stop",
+          "recommended_hold_ms": 120,
+          "notes": "Stop through idle before reversing direction; do not flip directly mid-cycle."
+        },
+        {
+          "from": "poko_idle_blink",
+          "to": "poko_sleep_transition",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the available drowsy/sleep transition from idle."
+        },
+        {
+          "from": "poko_idle_look_01",
+          "to": "poko_sleep_transition",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the available drowsy/sleep transition from idle."
+        },
+        {
+          "from": "poko_sleep_transition",
+          "to": "poko_sleep_loop_01",
+          "safety": "safe",
+          "bridge_strategy": "none",
+          "recommended_hold_ms": 0,
+          "notes": "Sleep transition resolves into the sleep loop."
+        },
+        {
+          "from": "poko_sleep_transition",
+          "to": "poko_sleep_loop_02",
+          "safety": "safe",
+          "bridge_strategy": "none",
+          "recommended_hold_ms": 0,
+          "notes": "Sleep transition resolves into the sleep loop."
+        },
+        {
+          "from": "poko_sleep_loop_01",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "wake_hold_then_idle",
+          "recommended_hold_ms": 300,
+          "notes": "No dedicated wake-up sequence exists; hold the final sleep frame, then return to idle."
+        },
+        {
+          "from": "poko_sleep_loop_01",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "wake_hold_then_idle",
+          "recommended_hold_ms": 300,
+          "notes": "No dedicated wake-up sequence exists; hold the final sleep frame, then return to idle."
+        },
+        {
+          "from": "poko_sleep_loop_02",
+          "to": "poko_idle_blink",
+          "safety": "conditional",
+          "bridge_strategy": "wake_hold_then_idle",
+          "recommended_hold_ms": 300,
+          "notes": "No dedicated wake-up sequence exists; hold the final sleep frame, then return to idle."
+        },
+        {
+          "from": "poko_sleep_loop_02",
+          "to": "poko_idle_look_01",
+          "safety": "conditional",
+          "bridge_strategy": "wake_hold_then_idle",
+          "recommended_hold_ms": 300,
+          "notes": "No dedicated wake-up sequence exists; hold the final sleep frame, then return to idle."
+        }
+      ],
+      "forbidden_transitions": [
+        {
+          "from": "poko_sleep_loop_01",
+          "to": "poko_locomotion_side",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "poko_sleep_loop_01",
+          "to": "poko_walk_left",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "poko_sleep_loop_01",
+          "to": "poko_walk_right",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "poko_sleep_loop_02",
+          "to": "poko_locomotion_side",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "poko_sleep_loop_02",
+          "to": "poko_walk_left",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "poko_sleep_loop_02",
+          "to": "poko_walk_right",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "poko_drink",
+          "to": "poko_locomotion_side",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_drink",
+          "to": "poko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_drink",
+          "to": "poko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_eat",
+          "to": "poko_locomotion_side",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_eat",
+          "to": "poko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_eat",
+          "to": "poko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_music",
+          "to": "poko_locomotion_side",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_music",
+          "to": "poko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_music",
+          "to": "poko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_playing_ball",
+          "to": "poko_locomotion_side",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_playing_ball",
+          "to": "poko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_playing_ball",
+          "to": "poko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_peeking",
+          "to": "poko_locomotion_side",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_peeking",
+          "to": "poko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_peeking",
+          "to": "poko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "poko_locomotion_side",
+          "to": "poko_drink",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_locomotion_side",
+          "to": "poko_eat",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_locomotion_side",
+          "to": "poko_music",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_locomotion_side",
+          "to": "poko_playing_ball",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_locomotion_side",
+          "to": "poko_peeking",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_left",
+          "to": "poko_drink",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_left",
+          "to": "poko_eat",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_left",
+          "to": "poko_music",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_left",
+          "to": "poko_playing_ball",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_left",
+          "to": "poko_peeking",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_right",
+          "to": "poko_drink",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_right",
+          "to": "poko_eat",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_right",
+          "to": "poko_music",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_right",
+          "to": "poko_playing_ball",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_walk_right",
+          "to": "poko_peeking",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "poko_sleep_loop_01",
+          "to": "poko_sad_to_crying",
+          "reason": "Lying/sleep pose must wake and return to idle before standing reaction."
+        },
+        {
+          "from": "poko_sleep_loop_02",
+          "to": "poko_sad_to_crying",
+          "reason": "Lying/sleep pose must wake and return to idle before standing reaction."
+        }
+      ],
+      "runtime_policy": {
+        "default_hold_ms": 120,
+        "prop_state_hold_ms": 200,
+        "sleep_wake_hold_ms": 300,
+        "complete_current_loop_before_exit": true,
+        "do_not_crossfade_pixel_art": true,
+        "do_not_fabricate_bridge_frames": true,
+        "preferred_route_order": [
+          "complete current one-shot or loop boundary",
+          "hold current frame if required",
+          "enter neutral idle or explicit transition animation",
+          "start target state"
+        ]
+      }
+    },
+    "loko": {
+      "character": "loko",
+      "nodes": [
+        {
+          "id": "loko_drink_02",
+          "state": "drinking",
+          "category": "activities",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_eat",
+          "state": "eating",
+          "category": "activities",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_laptop",
+          "state": "laptop",
+          "category": "activities",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_music",
+          "state": "music",
+          "category": "activities",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_peeking_01",
+          "state": "peeking",
+          "category": "activities",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_peeking_02",
+          "state": "peeking",
+          "category": "activities",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_playing_ball_01",
+          "state": "playing_ball",
+          "category": "activities",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_reading_01",
+          "state": "reading",
+          "category": "activities",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_love_reaction",
+          "state": "love_reaction",
+          "category": "emotions",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_idle_front",
+          "state": "idle",
+          "category": "idle",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_locomotion_side_01",
+          "state": "walking",
+          "category": "locomotion",
+          "direction": "right",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_locomotion_side_02",
+          "state": "walking",
+          "category": "locomotion",
+          "direction": "right",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_walk_left",
+          "state": "walking",
+          "category": "locomotion",
+          "direction": "left",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_walk_preparation",
+          "state": "walk_preparation",
+          "category": "locomotion",
+          "direction": "neutral_transition",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_walk_right",
+          "state": "walking",
+          "category": "locomotion",
+          "direction": "right",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_sleep_loop",
+          "state": "sleeping",
+          "category": "sleeping",
+          "direction": "none",
+          "loop": true,
+          "playback": "forward"
+        },
+        {
+          "id": "loko_sleep_transition",
+          "state": "sleep_transition",
+          "category": "sleeping",
+          "direction": "none",
+          "loop": false,
+          "playback": "forward"
+        }
+      ],
+      "allowed_transitions": [
+        {
+          "from": "loko_idle_front",
+          "to": "loko_love_reaction",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 100,
+          "notes": "One-shot reaction may begin from an idle pose."
+        },
+        {
+          "from": "loko_love_reaction",
+          "to": "loko_idle_front",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 120,
+          "notes": "Return to idle after the one-shot reaction completes."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_drink_02",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "loko_drink_02",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_eat",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "loko_eat",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_music",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "loko_music",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_laptop",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "loko_laptop",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_reading_01",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "loko_reading_01",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_playing_ball_01",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "loko_playing_ball_01",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_peeking_01",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "loko_peeking_01",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_peeking_02",
+          "safety": "conditional",
+          "bridge_strategy": "prop_introduction_hold",
+          "recommended_hold_ms": 180,
+          "notes": "Pause before activity so the prop appears intentionally rather than popping in mid-motion."
+        },
+        {
+          "from": "loko_peeking_02",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "prop_removal_hold",
+          "recommended_hold_ms": 220,
+          "notes": "Hold the final activity frame briefly before returning to idle so the prop does not vanish abruptly."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_walk_preparation",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 80,
+          "notes": "Use walk preparation when available before locomotion."
+        },
+        {
+          "from": "loko_walk_preparation",
+          "to": "loko_idle_front",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 80,
+          "notes": "Walk preparation may safely cancel back to idle."
+        },
+        {
+          "from": "loko_walk_preparation",
+          "to": "loko_locomotion_side_01",
+          "safety": "safe",
+          "bridge_strategy": "none",
+          "recommended_hold_ms": 0,
+          "notes": "Preparation resolves into the directional walk cycle."
+        },
+        {
+          "from": "loko_walk_preparation",
+          "to": "loko_locomotion_side_02",
+          "safety": "safe",
+          "bridge_strategy": "none",
+          "recommended_hold_ms": 0,
+          "notes": "Preparation resolves into the directional walk cycle."
+        },
+        {
+          "from": "loko_walk_preparation",
+          "to": "loko_walk_left",
+          "safety": "safe",
+          "bridge_strategy": "none",
+          "recommended_hold_ms": 0,
+          "notes": "Preparation resolves into the directional walk cycle."
+        },
+        {
+          "from": "loko_walk_preparation",
+          "to": "loko_walk_right",
+          "safety": "safe",
+          "bridge_strategy": "none",
+          "recommended_hold_ms": 0,
+          "notes": "Preparation resolves into the directional walk cycle."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "stop_hold",
+          "recommended_hold_ms": 120,
+          "notes": "No dedicated stopping animation exists; complete the gait cycle, then hold before switching to idle."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_stop",
+          "recommended_hold_ms": 120,
+          "notes": "Stop through idle before reversing direction; do not flip directly mid-cycle."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_walk_left",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_start",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the opposite walk only after the neutral idle hold."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_stop",
+          "recommended_hold_ms": 120,
+          "notes": "Stop through idle before reversing direction; do not flip directly mid-cycle."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_stop",
+          "recommended_hold_ms": 120,
+          "notes": "Stop through idle before reversing direction; do not flip directly mid-cycle."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_locomotion_side_01",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_start",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the opposite walk only after the neutral idle hold."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_locomotion_side_02",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_start",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the opposite walk only after the neutral idle hold."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_walk_right",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_start",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the opposite walk only after the neutral idle hold."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "direction_change_stop",
+          "recommended_hold_ms": 120,
+          "notes": "Stop through idle before reversing direction; do not flip directly mid-cycle."
+        },
+        {
+          "from": "loko_idle_front",
+          "to": "loko_sleep_transition",
+          "safety": "safe",
+          "bridge_strategy": "short_hold",
+          "recommended_hold_ms": 120,
+          "notes": "Begin the available drowsy/sleep transition from idle."
+        },
+        {
+          "from": "loko_sleep_transition",
+          "to": "loko_sleep_loop",
+          "safety": "safe",
+          "bridge_strategy": "none",
+          "recommended_hold_ms": 0,
+          "notes": "Sleep transition resolves into the sleep loop."
+        },
+        {
+          "from": "loko_sleep_loop",
+          "to": "loko_idle_front",
+          "safety": "conditional",
+          "bridge_strategy": "wake_hold_then_idle",
+          "recommended_hold_ms": 300,
+          "notes": "No dedicated wake-up sequence exists; hold the final sleep frame, then return to idle."
+        }
+      ],
+      "forbidden_transitions": [
+        {
+          "from": "loko_sleep_loop",
+          "to": "loko_locomotion_side_01",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "loko_sleep_loop",
+          "to": "loko_locomotion_side_02",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "loko_sleep_loop",
+          "to": "loko_walk_left",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "loko_sleep_loop",
+          "to": "loko_walk_right",
+          "reason": "Abrupt sleep-to-walk transition. Route through wake-up and idle."
+        },
+        {
+          "from": "loko_drink_02",
+          "to": "loko_locomotion_side_01",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_drink_02",
+          "to": "loko_locomotion_side_02",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_drink_02",
+          "to": "loko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_drink_02",
+          "to": "loko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_eat",
+          "to": "loko_locomotion_side_01",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_eat",
+          "to": "loko_locomotion_side_02",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_eat",
+          "to": "loko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_eat",
+          "to": "loko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_music",
+          "to": "loko_locomotion_side_01",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_music",
+          "to": "loko_locomotion_side_02",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_music",
+          "to": "loko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_music",
+          "to": "loko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_laptop",
+          "to": "loko_locomotion_side_01",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_laptop",
+          "to": "loko_locomotion_side_02",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_laptop",
+          "to": "loko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_laptop",
+          "to": "loko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_reading_01",
+          "to": "loko_locomotion_side_01",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_reading_01",
+          "to": "loko_locomotion_side_02",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_reading_01",
+          "to": "loko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_reading_01",
+          "to": "loko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_playing_ball_01",
+          "to": "loko_locomotion_side_01",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_playing_ball_01",
+          "to": "loko_locomotion_side_02",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_playing_ball_01",
+          "to": "loko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_playing_ball_01",
+          "to": "loko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_peeking_01",
+          "to": "loko_locomotion_side_01",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_peeking_01",
+          "to": "loko_locomotion_side_02",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_peeking_01",
+          "to": "loko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_peeking_01",
+          "to": "loko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_peeking_02",
+          "to": "loko_locomotion_side_01",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_peeking_02",
+          "to": "loko_locomotion_side_02",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_peeking_02",
+          "to": "loko_walk_left",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_peeking_02",
+          "to": "loko_walk_right",
+          "reason": "Activity prop would disappear abruptly. Return to idle first."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_drink_02",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_eat",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_music",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_laptop",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_reading_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_playing_ball_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_peeking_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_01",
+          "to": "loko_peeking_02",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_drink_02",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_eat",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_music",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_laptop",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_reading_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_playing_ball_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_peeking_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_locomotion_side_02",
+          "to": "loko_peeking_02",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_drink_02",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_eat",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_music",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_laptop",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_reading_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_playing_ball_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_peeking_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_left",
+          "to": "loko_peeking_02",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_drink_02",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_eat",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_music",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_laptop",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_reading_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_playing_ball_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_peeking_01",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_walk_right",
+          "to": "loko_peeking_02",
+          "reason": "Character should stop before introducing a prop-based activity."
+        },
+        {
+          "from": "loko_sleep_loop",
+          "to": "loko_love_reaction",
+          "reason": "Lying/sleep pose must wake and return to idle before standing reaction."
+        }
+      ],
+      "runtime_policy": {
+        "default_hold_ms": 120,
+        "prop_state_hold_ms": 200,
+        "sleep_wake_hold_ms": 300,
+        "complete_current_loop_before_exit": true,
+        "do_not_crossfade_pixel_art": true,
+        "do_not_fabricate_bridge_frames": true,
+        "preferred_route_order": [
+          "complete current one-shot or loop boundary",
+          "hold current frame if required",
+          "enter neutral idle or explicit transition animation",
+          "start target state"
+        ]
+      }
+    }
+  },
+  "notes": [
+    "Transitions reference only existing animation IDs.",
+    "No visual bridge frames were created.",
+    "When no bridge animation exists, the graph recommends a hold and neutral-idle routing strategy.",
+    "Prop-based activities must return to idle before locomotion.",
+    "Sleep states must route through wake-up or a wake hold before standing states."
+  ]
+}

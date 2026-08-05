@@ -1,0 +1,1 @@
+import type { SoundCueDefinition,SoundCueId } from './types.js'; /** Deliberately empty until original, licensed PokoLoko audio is reviewed. */ export const SOUND_REGISTRY:ReadonlyMap<SoundCueId,SoundCueDefinition>=new Map();

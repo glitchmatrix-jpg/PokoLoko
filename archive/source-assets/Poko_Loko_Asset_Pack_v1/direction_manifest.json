@@ -1,0 +1,1667 @@
+{
+  "version": "step8",
+  "policy": {
+    "automatic_mirroring": false,
+    "manual_visual_audit_required": true,
+    "originals_preserved": true,
+    "mirroring_resampling": "none",
+    "unsafe_content_checks": [
+      "text",
+      "directional symbols",
+      "meaning-bearing asymmetry",
+      "held props",
+      "asymmetric effects",
+      "shadows"
+    ]
+  },
+  "audited_sequences": [
+    {
+      "character": "loko",
+      "source_sequence": "locomotion_side_01",
+      "classified_direction": "neutral_transition",
+      "mirror_allowed": false,
+      "original_output": "normalized/loko/locomotion/walk_preparation",
+      "mirrored_output": null,
+      "notes": "These three frames are predominantly front-facing preparation/weight-shift poses rather than a reliable directional walk cycle. They are retained unchanged and are not mirrored."
+    },
+    {
+      "character": "loko",
+      "source_sequence": "locomotion_side_02",
+      "classified_direction": "right",
+      "mirror_allowed": true,
+      "original_output": "normalized/loko/locomotion/walk_right",
+      "mirrored_output": "normalized/loko/locomotion/walk_left",
+      "notes": "This is a visually coherent right-facing shuffle/walk progression. No text, directional symbol, held prop, or meaning-bearing asymmetric effect is present."
+    },
+    {
+      "character": "poko",
+      "source_sequence": "locomotion_side",
+      "classified_direction": "right",
+      "mirror_allowed": true,
+      "original_output": "normalized/poko/locomotion/walk_right",
+      "mirrored_output": "normalized/poko/locomotion/walk_left",
+      "notes": "The sequence progresses from a near-front preparation pose into a consistent right-facing gait. No text, directional symbol, held prop, or meaning-bearing asymmetric effect is present."
+    }
+  ],
+  "directional_assets": [
+    {
+      "path": "normalized/loko/locomotion/walk_preparation",
+      "manifest": {
+        "id": "loko_walk_preparation",
+        "character": "loko",
+        "category": "locomotion",
+        "name": "walk_preparation",
+        "source_order_preserved": true,
+        "reordered": false,
+        "frame_ids": [
+          "L-R01-C09",
+          "L-R01-C10",
+          "L-R01-C11"
+        ],
+        "frame_files": [
+          "frame_000.png",
+          "frame_001.png",
+          "frame_002.png"
+        ],
+        "frame_count": 3,
+        "canvas_width": 56,
+        "canvas_height": 59,
+        "anchor": {
+          "origin": {
+            "x": 0,
+            "y": 0
+          },
+          "canonical_ground": {
+            "x": 64,
+            "y": 112
+          },
+          "canonical_body_center_x": 64,
+          "per_frame": [
+            {
+              "frame_id": "L-R01-C09",
+              "file": "frame_000.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "L-R01-C10",
+              "file": "frame_001.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 89.5
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 64
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "L-R01-C11",
+              "file": "frame_002.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 89.5
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 41,
+                "y": 64
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            }
+          ]
+        },
+        "alignment": "bottom_center",
+        "loop": true,
+        "playback": "loop",
+        "fps_range": [
+          7,
+          10
+        ],
+        "recommended_fps": 8,
+        "exact_duplicates": [],
+        "near_duplicates": [],
+        "abrupt_transitions": [],
+        "missing_transition_suspected": false,
+        "limitations": [
+          "No fabricated or interpolated frames were inserted."
+        ],
+        "confidence": "medium",
+        "canvas": {
+          "width": 128,
+          "height": 128,
+          "power_of_two": true,
+          "shared_across_characters": true,
+          "transparent": true
+        },
+        "normalization": {
+          "uniform_scale_factor": 1.0,
+          "resampling": "none",
+          "alignment_strategy": "body-proxy horizontal center + anatomical ground contact",
+          "full_visible_bbox_used_for_centering": false,
+          "effects_and_props_ignored_for_body_centering": true,
+          "safety_shift_policy": "minimal translation only when full composite would exceed canvas"
+        },
+        "normalized_path": "normalized/loko/locomotion/locomotion_side_01",
+        "direction": "neutral_transition",
+        "generated_by_mirroring": false,
+        "mirrored_from": null,
+        "direction_audit": {
+          "audited": true,
+          "mirror_allowed": false,
+          "notes": "These three frames are predominantly front-facing preparation/weight-shift poses rather than a reliable directional walk cycle. They are retained unchanged and are not mirrored."
+        }
+      }
+    },
+    {
+      "path": "normalized/loko/locomotion/walk_right",
+      "manifest": {
+        "id": "loko_walk_right",
+        "character": "loko",
+        "category": "locomotion",
+        "name": "walk_right",
+        "source_order_preserved": true,
+        "reordered": false,
+        "frame_ids": [
+          "L-R02-C01",
+          "L-R02-C02",
+          "L-R02-C03",
+          "L-R02-C04",
+          "L-R02-C05",
+          "L-R02-C06",
+          "L-R02-C07"
+        ],
+        "frame_files": [
+          "frame_000.png",
+          "frame_001.png",
+          "frame_002.png",
+          "frame_003.png",
+          "frame_004.png",
+          "frame_005.png",
+          "frame_006.png"
+        ],
+        "frame_count": 7,
+        "canvas_width": 61,
+        "canvas_height": 59,
+        "anchor": {
+          "origin": {
+            "x": 0,
+            "y": 0
+          },
+          "canonical_ground": {
+            "x": 64,
+            "y": 112
+          },
+          "canonical_body_center_x": 64,
+          "per_frame": [
+            {
+              "frame_id": "L-R02-C01",
+              "file": "frame_000.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "L-R02-C02",
+              "file": "frame_001.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 89.5
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 64
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "L-R02-C03",
+              "file": "frame_002.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 39,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "L-R02-C04",
+              "file": "frame_003.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "L-R02-C05",
+              "file": "frame_004.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.5,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 64.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "L-R02-C06",
+              "file": "frame_005.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "L-R02-C07",
+              "file": "frame_006.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            }
+          ]
+        },
+        "alignment": "bottom_center",
+        "loop": true,
+        "playback": "loop",
+        "fps_range": [
+          7,
+          10
+        ],
+        "recommended_fps": 8,
+        "exact_duplicates": [],
+        "near_duplicates": [],
+        "abrupt_transitions": [],
+        "missing_transition_suspected": false,
+        "limitations": [
+          "No fabricated or interpolated frames were inserted."
+        ],
+        "confidence": "medium",
+        "canvas": {
+          "width": 128,
+          "height": 128,
+          "power_of_two": true,
+          "shared_across_characters": true,
+          "transparent": true
+        },
+        "normalization": {
+          "uniform_scale_factor": 1.0,
+          "resampling": "none",
+          "alignment_strategy": "body-proxy horizontal center + anatomical ground contact",
+          "full_visible_bbox_used_for_centering": false,
+          "effects_and_props_ignored_for_body_centering": true,
+          "safety_shift_policy": "minimal translation only when full composite would exceed canvas"
+        },
+        "normalized_path": "normalized/loko/locomotion/locomotion_side_02",
+        "direction": "right",
+        "generated_by_mirroring": false,
+        "mirrored_from": null,
+        "direction_audit": {
+          "audited": true,
+          "mirror_allowed": true,
+          "notes": "This is a visually coherent right-facing shuffle/walk progression. No text, directional symbol, held prop, or meaning-bearing asymmetric effect is present."
+        }
+      }
+    },
+    {
+      "path": "normalized/loko/locomotion/walk_left",
+      "manifest": {
+        "id": "loko_walk_left",
+        "character": "loko",
+        "category": "locomotion",
+        "name": "walk_left",
+        "source_order_preserved": true,
+        "reordered": false,
+        "frame_ids": [
+          "L-R02-C01",
+          "L-R02-C02",
+          "L-R02-C03",
+          "L-R02-C04",
+          "L-R02-C05",
+          "L-R02-C06",
+          "L-R02-C07"
+        ],
+        "frame_files": [
+          "frame_000.png",
+          "frame_001.png",
+          "frame_002.png",
+          "frame_003.png",
+          "frame_004.png",
+          "frame_005.png",
+          "frame_006.png"
+        ],
+        "frame_count": 7,
+        "canvas_width": 61,
+        "canvas_height": 59,
+        "anchor": {
+          "origin": {
+            "x": 0,
+            "y": 0
+          },
+          "canonical_ground": {
+            "x": 63,
+            "y": 112
+          },
+          "canonical_body_center_x": 63,
+          "per_frame": [
+            {
+              "frame_id": "L-R02-C01",
+              "file": "frame_000.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 40,
+                "y": 65
+              }
+            },
+            {
+              "frame_id": "L-R02-C02",
+              "file": "frame_001.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 89.5
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 64
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 40,
+                "y": 64
+              }
+            },
+            {
+              "frame_id": "L-R02-C03",
+              "file": "frame_002.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.0,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 63.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 39,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 39,
+                "y": 65
+              }
+            },
+            {
+              "frame_id": "L-R02-C04",
+              "file": "frame_003.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 38,
+                "y": 65
+              }
+            },
+            {
+              "frame_id": "L-R02-C05",
+              "file": "frame_004.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 62.5,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 62.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 62.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 38,
+                "y": 65
+              }
+            },
+            {
+              "frame_id": "L-R02-C06",
+              "file": "frame_005.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.0,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 63.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 38,
+                "y": 65
+              }
+            },
+            {
+              "frame_id": "L-R02-C07",
+              "file": "frame_006.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.0,
+                "y": 90.0
+              },
+              "ground": {
+                "x": 63.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 65
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 38,
+                "y": 65
+              }
+            }
+          ]
+        },
+        "alignment": "bottom_center",
+        "loop": true,
+        "playback": "loop",
+        "fps_range": [
+          7,
+          10
+        ],
+        "recommended_fps": 8,
+        "exact_duplicates": [],
+        "near_duplicates": [],
+        "abrupt_transitions": [],
+        "missing_transition_suspected": false,
+        "limitations": [
+          "No fabricated or interpolated frames were inserted."
+        ],
+        "confidence": "medium",
+        "canvas": {
+          "width": 128,
+          "height": 128,
+          "power_of_two": true,
+          "shared_across_characters": true,
+          "transparent": true
+        },
+        "normalization": {
+          "uniform_scale_factor": 1.0,
+          "resampling": "none",
+          "alignment_strategy": "body-proxy horizontal center + anatomical ground contact",
+          "full_visible_bbox_used_for_centering": false,
+          "effects_and_props_ignored_for_body_centering": true,
+          "safety_shift_policy": "minimal translation only when full composite would exceed canvas",
+          "mirror_transform": {
+            "axis": "vertical",
+            "formula": "x_mirrored = canvas_width - 1 - x_original",
+            "resampling": "none"
+          }
+        },
+        "normalized_path": "normalized/loko/locomotion/locomotion_side_02",
+        "direction": "left",
+        "generated_by_mirroring": true,
+        "mirrored_from": "loko_walk_right",
+        "direction_audit": {
+          "audited": true,
+          "mirror_allowed": true,
+          "notes": "This is a visually coherent right-facing shuffle/walk progression. No text, directional symbol, held prop, or meaning-bearing asymmetric effect is present. The full normalized composite was mirrored horizontally with no resampling. Source originals remain unchanged."
+        }
+      }
+    },
+    {
+      "path": "normalized/poko/locomotion/walk_right",
+      "manifest": {
+        "id": "poko_walk_right",
+        "character": "poko",
+        "category": "locomotion",
+        "name": "walk_right",
+        "source_order_preserved": true,
+        "reordered": false,
+        "frame_ids": [
+          "P-R02-C02",
+          "P-R02-C03",
+          "P-R02-C04",
+          "P-R02-C05",
+          "P-R02-C06",
+          "P-R02-C07",
+          "P-R02-C08",
+          "P-R02-C09",
+          "P-R02-C10"
+        ],
+        "frame_files": [
+          "frame_000.png",
+          "frame_001.png",
+          "frame_002.png",
+          "frame_003.png",
+          "frame_004.png",
+          "frame_005.png",
+          "frame_006.png",
+          "frame_007.png",
+          "frame_008.png"
+        ],
+        "frame_count": 9,
+        "canvas_width": 60,
+        "canvas_height": 64,
+        "anchor": {
+          "origin": {
+            "x": 0,
+            "y": 0
+          },
+          "canonical_ground": {
+            "x": 64,
+            "y": 112
+          },
+          "canonical_body_center_x": 64,
+          "per_frame": [
+            {
+              "frame_id": "P-R02-C02",
+              "file": "frame_000.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.5,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 64.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 42,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "P-R02-C03",
+              "file": "frame_001.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.5,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 64.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "P-R02-C04",
+              "file": "frame_002.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 87.0
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 41,
+                "y": 59
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "P-R02-C05",
+              "file": "frame_003.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "P-R02-C06",
+              "file": "frame_004.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "P-R02-C07",
+              "file": "frame_005.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.5,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 64.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "P-R02-C08",
+              "file": "frame_006.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 87.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 59
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "P-R02-C09",
+              "file": "frame_007.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 87.5
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 41,
+                "y": 60
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            },
+            {
+              "frame_id": "P-R02-C10",
+              "file": "frame_008.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 64.0,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 64.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 64.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null
+            }
+          ]
+        },
+        "alignment": "bottom_center",
+        "loop": true,
+        "playback": "loop",
+        "fps_range": [
+          7,
+          10
+        ],
+        "recommended_fps": 8,
+        "exact_duplicates": [],
+        "near_duplicates": [],
+        "abrupt_transitions": [],
+        "missing_transition_suspected": false,
+        "limitations": [
+          "No fabricated or interpolated frames were inserted."
+        ],
+        "confidence": "medium",
+        "canvas": {
+          "width": 128,
+          "height": 128,
+          "power_of_two": true,
+          "shared_across_characters": true,
+          "transparent": true
+        },
+        "normalization": {
+          "uniform_scale_factor": 1.0,
+          "resampling": "none",
+          "alignment_strategy": "body-proxy horizontal center + anatomical ground contact",
+          "full_visible_bbox_used_for_centering": false,
+          "effects_and_props_ignored_for_body_centering": true,
+          "safety_shift_policy": "minimal translation only when full composite would exceed canvas"
+        },
+        "normalized_path": "normalized/poko/locomotion/locomotion_side",
+        "direction": "right",
+        "generated_by_mirroring": false,
+        "mirrored_from": null,
+        "direction_audit": {
+          "audited": true,
+          "mirror_allowed": true,
+          "notes": "The sequence progresses from a near-front preparation pose into a consistent right-facing gait. No text, directional symbol, held prop, or meaning-bearing asymmetric effect is present."
+        }
+      }
+    },
+    {
+      "path": "normalized/poko/locomotion/walk_left",
+      "manifest": {
+        "id": "poko_walk_left",
+        "character": "poko",
+        "category": "locomotion",
+        "name": "walk_left",
+        "source_order_preserved": true,
+        "reordered": false,
+        "frame_ids": [
+          "P-R02-C02",
+          "P-R02-C03",
+          "P-R02-C04",
+          "P-R02-C05",
+          "P-R02-C06",
+          "P-R02-C07",
+          "P-R02-C08",
+          "P-R02-C09",
+          "P-R02-C10"
+        ],
+        "frame_files": [
+          "frame_000.png",
+          "frame_001.png",
+          "frame_002.png",
+          "frame_003.png",
+          "frame_004.png",
+          "frame_005.png",
+          "frame_006.png",
+          "frame_007.png",
+          "frame_008.png"
+        ],
+        "frame_count": 9,
+        "canvas_width": 60,
+        "canvas_height": 64,
+        "anchor": {
+          "origin": {
+            "x": 0,
+            "y": 0
+          },
+          "canonical_ground": {
+            "x": 63,
+            "y": 112
+          },
+          "canonical_body_center_x": 63,
+          "per_frame": [
+            {
+              "frame_id": "P-R02-C02",
+              "file": "frame_000.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 62.5,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 62.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 62.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 42,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 42,
+                "y": 61
+              }
+            },
+            {
+              "frame_id": "P-R02-C03",
+              "file": "frame_001.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 62.5,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 62.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 62.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 40,
+                "y": 61
+              }
+            },
+            {
+              "frame_id": "P-R02-C04",
+              "file": "frame_002.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.0,
+                "y": 87.0
+              },
+              "ground": {
+                "x": 63.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 41,
+                "y": 59
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 41,
+                "y": 59
+              }
+            },
+            {
+              "frame_id": "P-R02-C05",
+              "file": "frame_003.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.0,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 63.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 40,
+                "y": 61
+              }
+            },
+            {
+              "frame_id": "P-R02-C06",
+              "file": "frame_004.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 40,
+                "y": 61
+              }
+            },
+            {
+              "frame_id": "P-R02-C07",
+              "file": "frame_005.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 62.5,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 62.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 62.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 40,
+                "y": 61
+              }
+            },
+            {
+              "frame_id": "P-R02-C08",
+              "file": "frame_006.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.5,
+                "y": 87.0
+              },
+              "ground": {
+                "x": 63.5,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.5,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 40,
+                "y": 59
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 40,
+                "y": 59
+              }
+            },
+            {
+              "frame_id": "P-R02-C09",
+              "file": "frame_007.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.0,
+                "y": 87.5
+              },
+              "ground": {
+                "x": 63.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 41,
+                "y": 60
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 41,
+                "y": 60
+              }
+            },
+            {
+              "frame_id": "P-R02-C10",
+              "file": "frame_008.png",
+              "origin": {
+                "x": 0,
+                "y": 0
+              },
+              "body_center": {
+                "x": 63.0,
+                "y": 88.0
+              },
+              "ground": {
+                "x": 63.0,
+                "y": 112
+              },
+              "contact": {
+                "x": 63.0,
+                "y": 112
+              },
+              "placement_offset": {
+                "x": 38,
+                "y": 61
+              },
+              "anchor_shift_due_to_canvas_extents": {
+                "x": 0,
+                "y": 0
+              },
+              "body_alignment_exact": true,
+              "would_have_clipped_before_safety_shift": false,
+              "interaction": null,
+              "prop": null,
+              "mirrored_source_placement_offset": {
+                "x": 38,
+                "y": 61
+              }
+            }
+          ]
+        },
+        "alignment": "bottom_center",
+        "loop": true,
+        "playback": "loop",
+        "fps_range": [
+          7,
+          10
+        ],
+        "recommended_fps": 8,
+        "exact_duplicates": [],
+        "near_duplicates": [],
+        "abrupt_transitions": [],
+        "missing_transition_suspected": false,
+        "limitations": [
+          "No fabricated or interpolated frames were inserted."
+        ],
+        "confidence": "medium",
+        "canvas": {
+          "width": 128,
+          "height": 128,
+          "power_of_two": true,
+          "shared_across_characters": true,
+          "transparent": true
+        },
+        "normalization": {
+          "uniform_scale_factor": 1.0,
+          "resampling": "none",
+          "alignment_strategy": "body-proxy horizontal center + anatomical ground contact",
+          "full_visible_bbox_used_for_centering": false,
+          "effects_and_props_ignored_for_body_centering": true,
+          "safety_shift_policy": "minimal translation only when full composite would exceed canvas",
+          "mirror_transform": {
+            "axis": "vertical",
+            "formula": "x_mirrored = canvas_width - 1 - x_original",
+            "resampling": "none"
+          }
+        },
+        "normalized_path": "normalized/poko/locomotion/locomotion_side",
+        "direction": "left",
+        "generated_by_mirroring": true,
+        "mirrored_from": "poko_walk_right",
+        "direction_audit": {
+          "audited": true,
+          "mirror_allowed": true,
+          "notes": "The sequence progresses from a near-front preparation pose into a consistent right-facing gait. No text, directional symbol, held prop, or meaning-bearing asymmetric effect is present. The full normalized composite was mirrored horizontally with no resampling. Source originals remain unchanged."
+        }
+      }
+    }
+  ]
+}

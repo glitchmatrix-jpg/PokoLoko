@@ -1,0 +1,7 @@
+{
+  "name": "@pokoloko/character-switch",
+  "version": "0.16.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts"
+}

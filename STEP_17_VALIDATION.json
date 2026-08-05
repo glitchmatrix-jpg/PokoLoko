@@ -1,0 +1,22 @@
+{
+  "step": "17",
+  "status": "STATIC_PASS_NATIVE_PENDING",
+  "title": "Context Sensing and Privacy-Safe Desktop Awareness",
+  "checks": {
+    "context_package_present": true,
+    "typed_events": true,
+    "hysteresis_and_debounce": true,
+    "one_second_sampling": true,
+    "global_disable_clears_state": true,
+    "privacy_settings_present": true,
+    "content_sensitive_apis_absent": true,
+    "typing_provider_contract_present": true,
+    "typing_native_adapter_available": false,
+    "audio_native_adapter_available": false,
+    "windows_native_validation_pending": true
+  },
+  "notes": [
+    "Unavailable signals are explicit and cannot influence behavior.",
+    "Native runtime validation deferred to the GitHub Actions Windows EXE after Step 27."
+  ]
+}

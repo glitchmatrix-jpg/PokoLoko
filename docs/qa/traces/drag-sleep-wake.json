@@ -1,0 +1,65 @@
+{
+  "format": "pokoloko-diagnostic-trace",
+  "version": 1,
+  "exportedAtIso": "1970-01-01T00:00:00.000Z",
+  "seed": 2603,
+  "evidenceClass": "template",
+  "events": [
+    {
+      "sequence": 1,
+      "monotonicMs": 0,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:force_sleep",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "drag-sleep-wake"
+      },
+      "replayCommand": {
+        "type": "force_sleep"
+      }
+    },
+    {
+      "sequence": 2,
+      "monotonicMs": 1000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:complete_drag",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "drag-sleep-wake"
+      },
+      "replayCommand": {
+        "type": "complete_drag"
+      }
+    },
+    {
+      "sequence": 3,
+      "monotonicMs": 2000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:force_wake",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "drag-sleep-wake"
+      },
+      "replayCommand": {
+        "type": "force_wake"
+      }
+    },
+    {
+      "sequence": 4,
+      "monotonicMs": 3000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:force_idle",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "drag-sleep-wake"
+      },
+      "replayCommand": {
+        "type": "force_idle"
+      }
+    }
+  ]
+}

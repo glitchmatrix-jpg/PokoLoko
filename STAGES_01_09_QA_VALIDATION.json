@@ -1,0 +1,8 @@
+{
+  "status": "READY_FOR_STEP_10_WITH_NATIVE_VALIDATION_DEFERRED",
+  "files": 378,
+  "dependency_free_checks": "PASS",
+  "native_windows_checks": "PENDING_GITHUB_ACTIONS_EXE",
+  "critical_static_defects_open": 0,
+  "known_native_risks": 8
+}

@@ -1,0 +1,43 @@
+{
+  "version": "step14",
+  "contact_sheets": {
+    "poko": {
+      "path": "reference/poko_contact_sheet.png",
+      "frame_count": 192,
+      "dimensions": [
+        900,
+        6552
+      ]
+    },
+    "loko": {
+      "path": "reference/loko_contact_sheet.png",
+      "frame_count": 214,
+      "dimensions": [
+        900,
+        7224
+      ]
+    }
+  },
+  "animation_preview_gif_count": 31,
+  "alignment_preview_gif_count": 31,
+  "animation_directory_count": 31,
+  "gif_failures": [],
+  "contact_sheet_policy": {
+    "preview_scale": "1:1 normalized 128x128",
+    "checkerboard": "documentation only",
+    "guides": {
+      "body_center_x": 64,
+      "ground_y": 112
+    },
+    "labels": [
+      "frame_id",
+      "assigned_animation",
+      "frame_number"
+    ]
+  },
+  "runtime_policy": {
+    "preview_gif_runtime_asset": false,
+    "alignment_preview_gif_runtime_asset": false,
+    "runtime_assets": "PNG frames only"
+  }
+}

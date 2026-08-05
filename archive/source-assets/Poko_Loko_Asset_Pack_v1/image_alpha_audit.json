@@ -1,0 +1,188 @@
+{
+  "poko": {
+    "source_file": "Poko_Sprite_Sheet(3).png",
+    "preserved_copy": "reference/Poko_Sprite_Sheet_original.png",
+    "sha256": "ef941efc8f1dc5ba4a36b92baec0205de4072a20c9eae65763dab48b34263271",
+    "width": 864,
+    "height": 1152,
+    "mode": "RGBA",
+    "bands": [
+      "R",
+      "G",
+      "B",
+      "A"
+    ],
+    "alpha_channel": true,
+    "total_pixels": 995328,
+    "fully_transparent_pixels": 693201,
+    "fully_transparent_percent": 69.64548369984568,
+    "semi_transparent_pixels": 117972,
+    "semi_transparent_percent": 11.852575231481481,
+    "fully_opaque_pixels": 184155,
+    "fully_opaque_percent": 18.50194106867284,
+    "literal_alpha_bbox_xyxy": [
+      0,
+      0,
+      864,
+      1152
+    ],
+    "visible_content_bbox_alpha_ge_4_xyxy": [
+      10,
+      9,
+      843,
+      1128
+    ],
+    "visible_content_bbox_xywh": [
+      10,
+      9,
+      833,
+      1119
+    ],
+    "border_nontransparent_pixel_counts": {
+      "top": 2,
+      "bottom": 2,
+      "left": 2,
+      "right": 2
+    },
+    "edge_pixels": [
+      {
+        "x": 0,
+        "y": 0,
+        "rgba": [
+          255,
+          170,
+          170,
+          3
+        ]
+      },
+      {
+        "x": 863,
+        "y": 0,
+        "rgba": [
+          255,
+          255,
+          255,
+          2
+        ]
+      },
+      {
+        "x": 0,
+        "y": 1151,
+        "rgba": [
+          255,
+          128,
+          128,
+          2
+        ]
+      },
+      {
+        "x": 863,
+        "y": 1151,
+        "rgba": [
+          255,
+          255,
+          255,
+          1
+        ]
+      }
+    ],
+    "opaque_pure_black_pixels": 20,
+    "opaque_pure_white_pixels": 177,
+    "opaque_neutral_gray_pixels_including_black_white": 228,
+    "background_assessment": "No opaque full-sheet black, white, grey, or checkerboard background detected. The black seen behind the sprites in some viewers is the viewer showing transparent pixels. A few opaque neutral pixels occur inside sprite artwork/props, not as a background field.",
+    "clipping_assessment": "No visible sprite touches a border. Four isolated corner pixels with alpha 1\u20133 touch the canvas edges; they are near-invisible residue, not clipped sprite content."
+  },
+  "loko": {
+    "source_file": "Loko_Sprite_Sheet(3).png",
+    "preserved_copy": "reference/Loko_Sprite_Sheet_original.png",
+    "sha256": "6d2689b46f231a57b190b1972098c9291e5137d348bff34bced38085363f5897",
+    "width": 864,
+    "height": 1152,
+    "mode": "RGBA",
+    "bands": [
+      "R",
+      "G",
+      "B",
+      "A"
+    ],
+    "alpha_channel": true,
+    "total_pixels": 995328,
+    "fully_transparent_pixels": 657802,
+    "fully_transparent_percent": 66.088967656893,
+    "semi_transparent_pixels": 125429,
+    "semi_transparent_percent": 12.601775495113168,
+    "fully_opaque_pixels": 212097,
+    "fully_opaque_percent": 21.309256847993826,
+    "literal_alpha_bbox_xyxy": [
+      0,
+      0,
+      864,
+      1152
+    ],
+    "visible_content_bbox_alpha_ge_4_xyxy": [
+      6,
+      12,
+      854,
+      1126
+    ],
+    "visible_content_bbox_xywh": [
+      6,
+      12,
+      848,
+      1114
+    ],
+    "border_nontransparent_pixel_counts": {
+      "top": 2,
+      "bottom": 2,
+      "left": 2,
+      "right": 2
+    },
+    "edge_pixels": [
+      {
+        "x": 0,
+        "y": 0,
+        "rgba": [
+          255,
+          255,
+          128,
+          2
+        ]
+      },
+      {
+        "x": 863,
+        "y": 0,
+        "rgba": [
+          255,
+          255,
+          255,
+          2
+        ]
+      },
+      {
+        "x": 0,
+        "y": 1151,
+        "rgba": [
+          255,
+          128,
+          128,
+          2
+        ]
+      },
+      {
+        "x": 863,
+        "y": 1151,
+        "rgba": [
+          255,
+          255,
+          255,
+          1
+        ]
+      }
+    ],
+    "opaque_pure_black_pixels": 2,
+    "opaque_pure_white_pixels": 72,
+    "opaque_neutral_gray_pixels_including_black_white": 82,
+    "background_assessment": "No opaque full-sheet black, white, grey, or checkerboard background detected. The black seen behind the sprites in some viewers is the viewer showing transparent pixels. A few opaque neutral pixels occur inside sprite artwork/props, not as a background field.",
+    "clipping_assessment": "No visible sprite touches a border. Four isolated corner pixels with alpha 1\u20133 touch the canvas edges; they are near-invisible residue, not clipped sprite content."
+  }
+}

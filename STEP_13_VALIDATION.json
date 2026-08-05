@@ -1,0 +1,32 @@
+{
+  "step": 13,
+  "title": "Dragging, Pickup, Landing, and Physical Recovery",
+  "status": "STATIC_PASS_NATIVE_PENDING",
+  "checks": {
+    "alpha_aware_drag_start": true,
+    "pointer_capture": true,
+    "click_double_click_drag_thresholds": true,
+    "cursor_window_offset_preserved": true,
+    "locomotion_interrupted_immediately": true,
+    "authoritative_dragged_state": true,
+    "animation_frozen_during_drag": true,
+    "cross_monitor_coordinates_supported": true,
+    "release_display_selected": true,
+    "work_area_grounding_reused": true,
+    "horizontal_position_preserved_unless_invalid": true,
+    "deterministic_vertical_settlement": true,
+    "drag_and_recovery_generation_protection": true,
+    "state_machine_drag_recovery_route": true,
+    "unit_tests_authored": true,
+    "dependency_free_validator_passed": true
+  },
+  "native_windows_pending": [
+    "rapid click-drag-release",
+    "sleep and activity interruption visuals",
+    "cross-monitor mixed-DPI dragging",
+    "side and auto-hidden taskbar release",
+    "partial off-screen release",
+    "display removal during drag and settlement",
+    "system suspend and renderer pointer cancellation"
+  ]
+}

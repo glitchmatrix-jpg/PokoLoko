@@ -1,0 +1,51 @@
+name: PokoLoko deterministic CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: pokoloko-ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  quality:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 35
+    env:
+      CI: 'true'
+      TZ: UTC
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.12.0
+      - name: Install pinned dependencies
+        shell: bash
+        run: |
+          if [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi
+      - run: npm run format:check
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run test:ci
+      - run: npm run build
+      - run: npm run smoke:package
+      - name: Create unpacked Windows package
+        if: runner.os == 'Windows'
+        run: npm run package:dir
+      - uses: actions/upload-artifact@v4
+        if: runner.os == 'Windows'
+        with:
+          name: PokoLoko-Windows-unpacked-${{ github.sha }}
+          path: release/win-unpacked/**
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-report-${{ matrix.os }}-${{ github.sha }}
+          path: reports/tests/**
+          if-no-files-found: ignore
+          retention-days: 7

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ]
+  },
+  "include": [
+    "packages/pet-engine/diagnostics/src/**/*.ts",
+    "packages/pet-engine/orchestration/src/**/*.ts",
+    "electron/main/static-pet-controller.ts",
+    "electron/preload/**/*.ts",
+    "src/diagnostics/**/*.tsx",
+    "tests/diagnostics/**/*.ts"
+  ]
+}

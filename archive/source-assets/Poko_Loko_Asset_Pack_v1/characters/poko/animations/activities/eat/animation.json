@@ -1,0 +1,111 @@
+{
+  "id": "poko_eat",
+  "character": "poko",
+  "category": "activities",
+  "state": "eating",
+  "direction": "none",
+  "source_frame_ids": [
+    "P-R10-C01",
+    "P-R10-C02",
+    "P-R10-C03",
+    "P-R10-C04",
+    "P-R10-C05",
+    "P-R10-C06",
+    "P-R10-C07",
+    "P-R10-C08",
+    "P-R10-C09",
+    "P-R10-C10",
+    "P-R10-C11"
+  ],
+  "frames": [
+    "frame_000.png",
+    "frame_001.png",
+    "frame_002.png",
+    "frame_003.png",
+    "frame_004.png",
+    "frame_005.png",
+    "frame_006.png",
+    "frame_007.png",
+    "frame_008.png",
+    "frame_009.png",
+    "frame_010.png"
+  ],
+  "frame_count": 11,
+  "canvas_width": 72,
+  "canvas_height": 60,
+  "fps": 6,
+  "recommended_fps_range": [
+    5,
+    8
+  ],
+  "loop": true,
+  "playback": "forward",
+  "loop_validation": {
+    "final_to_first_distance": 16.116,
+    "median_internal_distance": 14.319,
+    "acceptable_for_forward_loop": true,
+    "assessment": "acceptable"
+  },
+  "anchor": {
+    "ground_x": 36,
+    "ground_y": 44,
+    "body_center_x": 36,
+    "body_center_y": 30
+  },
+  "movement": {
+    "moves_character": false,
+    "recommended_speed_css_px_per_second": 0,
+    "signed_speed_css_px_per_second": 0
+  },
+  "transition_from": [
+    "idle_front",
+    "sit_idle"
+  ],
+  "transition_to": [
+    "idle_front",
+    "sit_idle"
+  ],
+  "recommended_next_state": null,
+  "generated_by_mirroring": false,
+  "mirrored_from": null,
+  "confidence": "medium",
+  "known_issues": [
+    "No fabricated or interpolated frames were inserted.",
+    "At least one adjacent pair may jump abruptly; review before production use."
+  ],
+  "runtime_asset_format": "png_frames",
+  "preview_assets": {
+    "png": "preview.png",
+    "gif": "preview.gif",
+    "gif_runtime_asset": false
+  },
+  "technical_details": {
+    "normalization": null,
+    "scale_normalization": {
+      "canonical_body_width": 41,
+      "canonical_head_to_foot_height": 47,
+      "uniform_scale_factor": 1.0,
+      "resampling": "none",
+      "nearest_neighbor_used": false,
+      "decision": "Source character scale preserved. No frame in this sequence was resized because the ordinary upright source artwork is already consistent and deviations are pose-driven."
+    },
+    "per_frame_anchors": null,
+    "exact_duplicates": [],
+    "near_duplicates": [],
+    "abrupt_transitions": [
+      {
+        "frame_a": "P-R10-C03",
+        "frame_b": "P-R10-C04",
+        "distance": 48.45
+      }
+    ],
+    "source_order_preserved": true,
+    "reordered": false,
+    "direction_audit": null,
+    "naming": {
+      "directory_style": "lowercase_snake_case",
+      "frame_pattern": "frame_%03d.png",
+      "zero_padded": true
+    }
+  }
+}

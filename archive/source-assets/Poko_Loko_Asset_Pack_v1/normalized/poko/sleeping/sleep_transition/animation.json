@@ -1,0 +1,403 @@
+{
+  "id": "poko_sleep_transition",
+  "character": "poko",
+  "category": "sleeping",
+  "state": "sleep_transition",
+  "direction": "none",
+  "source_frame_ids": [
+    "P-R16-C02",
+    "P-R16-C03",
+    "P-R16-C04",
+    "P-R16-C05",
+    "P-R16-C06",
+    "P-R16-C07",
+    "P-R16-C08",
+    "P-R16-C09"
+  ],
+  "frames": [
+    "frame_000.png",
+    "frame_001.png",
+    "frame_002.png",
+    "frame_003.png",
+    "frame_004.png",
+    "frame_005.png",
+    "frame_006.png",
+    "frame_007.png"
+  ],
+  "frame_count": 8,
+  "canvas_width": 128,
+  "canvas_height": 128,
+  "fps": 6,
+  "recommended_fps_range": [
+    5,
+    8
+  ],
+  "loop": false,
+  "playback": "forward",
+  "loop_validation": {
+    "final_to_first_distance": 8.588,
+    "median_internal_distance": 4.324,
+    "acceptable_for_forward_loop": null,
+    "assessment": "not_applicable_one_shot"
+  },
+  "anchor": {
+    "ground_x": 64.25,
+    "ground_y": 112.0,
+    "body_center_x": 64.25,
+    "body_center_y": 92.0
+  },
+  "movement": {
+    "moves_character": false,
+    "recommended_speed_css_px_per_second": 0,
+    "signed_speed_css_px_per_second": 0
+  },
+  "transition_from": [
+    "sit_idle",
+    "idle_front"
+  ],
+  "transition_to": [
+    "sleep_loop"
+  ],
+  "recommended_next_state": "sleep_loop",
+  "generated_by_mirroring": false,
+  "mirrored_from": null,
+  "confidence": "high",
+  "known_issues": [
+    "No fabricated or interpolated frames were inserted."
+  ],
+  "runtime_asset_format": "png_frames",
+  "preview_assets": {
+    "png": "preview.png",
+    "gif": "preview.gif",
+    "gif_runtime_asset": false,
+    "alignment_gif": "preview_alignment.gif",
+    "alignment_gif_runtime_asset": false,
+    "alignment_guides": {
+      "checkerboard": "documentation_only",
+      "body_center_x": 64,
+      "ground_y": 112
+    }
+  },
+  "technical_details": {
+    "normalization": {
+      "uniform_scale_factor": 1.0,
+      "resampling": "none",
+      "alignment_strategy": "body-proxy horizontal center + anatomical ground contact",
+      "full_visible_bbox_used_for_centering": false,
+      "effects_and_props_ignored_for_body_centering": true,
+      "safety_shift_policy": "minimal translation only when full composite would exceed canvas"
+    },
+    "scale_normalization": null,
+    "per_frame_anchors": [
+      {
+        "frame_id": "P-R16-C02",
+        "file": "frame_000.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.5,
+          "y": 89.5
+        },
+        "ground": {
+          "x": 64.5,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.5,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 40,
+          "y": 64
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "P-R16-C03",
+        "file": "frame_001.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 89.5
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 39,
+          "y": 64
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "P-R16-C04",
+        "file": "frame_002.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.5,
+          "y": 92.0
+        },
+        "ground": {
+          "x": 64.5,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.5,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 42,
+          "y": 69
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "P-R16-C05",
+        "file": "frame_003.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 92.0
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 41,
+          "y": 59
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": {
+          "x": 47.5,
+          "y": 64.98,
+          "source_component_area": 56,
+          "confidence": "heuristic"
+        },
+        "prop": {
+          "x": 47.5,
+          "y": 64.98,
+          "source_component_area": 56,
+          "confidence": "heuristic"
+        }
+      },
+      {
+        "frame_id": "P-R16-C06",
+        "file": "frame_004.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.0,
+          "y": 91.0
+        },
+        "ground": {
+          "x": 64.0,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.0,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 41,
+          "y": 60
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": {
+          "x": 88.75,
+          "y": 66.64,
+          "source_component_area": 61,
+          "confidence": "heuristic"
+        },
+        "prop": {
+          "x": 88.75,
+          "y": 66.64,
+          "source_component_area": 61,
+          "confidence": "heuristic"
+        }
+      },
+      {
+        "frame_id": "P-R16-C07",
+        "file": "frame_005.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.5,
+          "y": 93.5
+        },
+        "ground": {
+          "x": 64.5,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.5,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 42,
+          "y": 72
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "P-R16-C08",
+        "file": "frame_006.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 63.5,
+          "y": 95.0
+        },
+        "ground": {
+          "x": 63.5,
+          "y": 112
+        },
+        "contact": {
+          "x": 63.5,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 38,
+          "y": 75
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      },
+      {
+        "frame_id": "P-R16-C09",
+        "file": "frame_007.png",
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "body_center": {
+          "x": 64.5,
+          "y": 96.5
+        },
+        "ground": {
+          "x": 64.5,
+          "y": 112
+        },
+        "contact": {
+          "x": 64.5,
+          "y": 112
+        },
+        "placement_offset": {
+          "x": 42,
+          "y": 78
+        },
+        "anchor_shift_due_to_canvas_extents": {
+          "x": 0,
+          "y": 0
+        },
+        "body_alignment_exact": true,
+        "would_have_clipped_before_safety_shift": false,
+        "interaction": null,
+        "prop": null
+      }
+    ],
+    "exact_duplicates": [],
+    "near_duplicates": [],
+    "abrupt_transitions": [],
+    "source_order_preserved": true,
+    "reordered": false,
+    "direction_audit": null,
+    "naming": {
+      "directory_style": "lowercase_snake_case",
+      "frame_pattern": "frame_%03d.png",
+      "zero_padded": true
+    }
+  },
+  "transition_graph": {
+    "allowed": [
+      {
+        "from": "poko_sleep_transition",
+        "to": "poko_sleep_loop_01",
+        "safety": "safe",
+        "bridge_strategy": "none",
+        "recommended_hold_ms": 0,
+        "notes": "Sleep transition resolves into the sleep loop."
+      },
+      {
+        "from": "poko_sleep_transition",
+        "to": "poko_sleep_loop_02",
+        "safety": "safe",
+        "bridge_strategy": "none",
+        "recommended_hold_ms": 0,
+        "notes": "Sleep transition resolves into the sleep loop."
+      }
+    ],
+    "forbidden": [],
+    "fallback_strategy": "Hold final frame, route through a neutral idle or explicit transition animation, then start the requested target state."
+  }
+}

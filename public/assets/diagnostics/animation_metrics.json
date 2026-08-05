@@ -1,0 +1,4103 @@
+{
+  "loko_drink_02": {
+    "animationId": "loko_drink_02",
+    "loopSeamScore": 0.09284890426758939,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 1.5693080848107863,
+    "maxAreaDeltaRatio": 0.03335354760460885,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1649,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 44,
+          "height": 48
+        },
+        "centroid": {
+          "x": 63.876288659793815,
+          "y": 91.69375379017586
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1594,
+        "bounds": {
+          "x": 42,
+          "y": 67,
+          "width": 45,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.2547051442911,
+          "y": 92.5138017565872
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.9031487712191439,
+        "visibleAreaDeltaRatio": 0.03335354760460885
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1587,
+        "bounds": {
+          "x": 42,
+          "y": 67,
+          "width": 45,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.98550724637681,
+          "y": 92.42155009451795
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.28456612130752,
+        "visibleAreaDeltaRatio": 0.00439146800501882
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1632,
+        "bounds": {
+          "x": 42,
+          "y": 67,
+          "width": 44,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.799632352941174,
+          "y": 92.12438725490196
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.3505071030069865,
+        "visibleAreaDeltaRatio": 0.02835538752362949
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1670,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 44,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.98203592814371,
+          "y": 91.76047904191617
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.8949263105530579,
+        "visibleAreaDeltaRatio": 0.023284313725490197
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1708,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 45,
+          "height": 49
+        },
+        "centroid": {
+          "x": 63.93384074941452,
+          "y": 91.94613583138174
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.9697426778630636,
+        "visibleAreaDeltaRatio": 0.022754491017964073
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1658,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 43,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.50301568154403,
+          "y": 91.3015681544029
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 1.5693080848107863,
+        "visibleAreaDeltaRatio": 0.02927400468384075
+      }
+    ]
+  },
+  "loko_eat": {
+    "animationId": "loko_eat",
+    "loopSeamScore": 0.13366336633663367,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 1.2392458464809306,
+    "maxAreaDeltaRatio": 0.06875349357182783,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1783,
+        "bounds": {
+          "x": 40,
+          "y": 65,
+          "width": 49,
+          "height": 49
+        },
+        "centroid": {
+          "x": 62.85473920358945,
+          "y": 91.39371845204711
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1781,
+        "bounds": {
+          "x": 40,
+          "y": 64,
+          "width": 48,
+          "height": 49
+        },
+        "centroid": {
+          "x": 62.49017405951712,
+          "y": 90.5979786636721
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.8752768448185946,
+        "visibleAreaDeltaRatio": 0.0011217049915872126
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1785,
+        "bounds": {
+          "x": 39,
+          "y": 64,
+          "width": 50,
+          "height": 49
+        },
+        "centroid": {
+          "x": 62.38711484593838,
+          "y": 90.86946778711484
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.29039205507586013,
+        "visibleAreaDeltaRatio": 0.0022459292532285235
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1789,
+        "bounds": {
+          "x": 40,
+          "y": 64,
+          "width": 49,
+          "height": 49
+        },
+        "centroid": {
+          "x": 62.84907769703745,
+          "y": 90.6618222470654
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.5064842999521396,
+        "visibleAreaDeltaRatio": 0.002240896358543417
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1666,
+        "bounds": {
+          "x": 40,
+          "y": 65,
+          "width": 47,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.191476590636256,
+          "y": 91.29351740696279
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.9118541496192607,
+        "visibleAreaDeltaRatio": 0.06875349357182783
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1557,
+        "bounds": {
+          "x": 42,
+          "y": 67,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 62.714836223506744,
+          "y": 92.41682723185613
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.2392458464809306,
+        "visibleAreaDeltaRatio": 0.06542617046818727
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1558,
+        "bounds": {
+          "x": 42,
+          "y": 66,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 62.80872913992298,
+          "y": 92.00834403080873
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.41913530666251403,
+        "visibleAreaDeltaRatio": 0.0006422607578676942
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1570,
+        "bounds": {
+          "x": 43,
+          "y": 66,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.47898089171974,
+          "y": 91.18152866242038
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.0643594619252443,
+        "visibleAreaDeltaRatio": 0.007702182284980745
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1610,
+        "bounds": {
+          "x": 42,
+          "y": 66,
+          "width": 43,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.98571428571429,
+          "y": 91.74223602484471
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.7467962847236186,
+        "visibleAreaDeltaRatio": 0.025477707006369428
+      }
+    ]
+  },
+  "loko_laptop": {
+    "animationId": "loko_laptop",
+    "loopSeamScore": 0.11601584606677985,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 2.9719146078123617,
+    "maxAreaDeltaRatio": 0.11617161716171617,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1704,
+        "bounds": {
+          "x": 38,
+          "y": 67,
+          "width": 51,
+          "height": 46
+        },
+        "centroid": {
+          "x": 60.8362676056338,
+          "y": 93.16666666666667
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1757,
+        "bounds": {
+          "x": 37,
+          "y": 67,
+          "width": 53,
+          "height": 46
+        },
+        "centroid": {
+          "x": 60.82583949914627,
+          "y": 93.44336937962436
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.2768991454718827,
+        "visibleAreaDeltaRatio": 0.031103286384976527
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1734,
+        "bounds": {
+          "x": 38,
+          "y": 67,
+          "width": 52,
+          "height": 46
+        },
+        "centroid": {
+          "x": 61.18339100346021,
+          "y": 93.459630911188
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.357921102543502,
+        "visibleAreaDeltaRatio": 0.01309049516220831
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1756,
+        "bounds": {
+          "x": 38,
+          "y": 67,
+          "width": 53,
+          "height": 46
+        },
+        "centroid": {
+          "x": 61.85364464692483,
+          "y": 93.25284738041002
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.7014266712769096,
+        "visibleAreaDeltaRatio": 0.012687427912341407
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1692,
+        "bounds": {
+          "x": 38,
+          "y": 68,
+          "width": 53,
+          "height": 45
+        },
+        "centroid": {
+          "x": 61.839243498817964,
+          "y": 93.73049645390071
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.47786612191419875,
+        "visibleAreaDeltaRatio": 0.03644646924829157
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1515,
+        "bounds": {
+          "x": 44,
+          "y": 68,
+          "width": 41,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.1069306930693,
+          "y": 92.51881188118811
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.5711057377558815,
+        "visibleAreaDeltaRatio": 0.10460992907801418
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1691,
+        "bounds": {
+          "x": 38,
+          "y": 68,
+          "width": 51,
+          "height": 46
+        },
+        "centroid": {
+          "x": 61.247191011235955,
+          "y": 93.32761679479597
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.9719146078123617,
+        "visibleAreaDeltaRatio": 0.11617161716171617
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1654,
+        "bounds": {
+          "x": 38,
+          "y": 68,
+          "width": 51,
+          "height": 45
+        },
+        "centroid": {
+          "x": 61.23700120918984,
+          "y": 93.67533252720678
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.3478650063339534,
+        "visibleAreaDeltaRatio": 0.02188054405677114
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1654,
+        "bounds": {
+          "x": 38,
+          "y": 69,
+          "width": 52,
+          "height": 44
+        },
+        "centroid": {
+          "x": 61.23700120918984,
+          "y": 94.46493349455865
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.7896009673518734,
+        "visibleAreaDeltaRatio": 0.0
+      },
+      {
+        "frame": 9,
+        "visiblePixels": 1662,
+        "bounds": {
+          "x": 38,
+          "y": 68,
+          "width": 52,
+          "height": 45
+        },
+        "centroid": {
+          "x": 61.12274368231047,
+          "y": 93.83935018050542
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.6359318086638006,
+        "visibleAreaDeltaRatio": 0.0048367593712212815
+      },
+      {
+        "frame": 10,
+        "visiblePixels": 1646,
+        "bounds": {
+          "x": 40,
+          "y": 68,
+          "width": 49,
+          "height": 45
+        },
+        "centroid": {
+          "x": 61.87545565006075,
+          "y": 93.50060753341434
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.8254222479148298,
+        "visibleAreaDeltaRatio": 0.009626955475330927
+      },
+      {
+        "frame": 11,
+        "visiblePixels": 1625,
+        "bounds": {
+          "x": 40,
+          "y": 69,
+          "width": 49,
+          "height": 45
+        },
+        "centroid": {
+          "x": 62.17230769230769,
+          "y": 94.35015384615384
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.8999167030761617,
+        "visibleAreaDeltaRatio": 0.01275820170109356
+      }
+    ]
+  },
+  "loko_music": {
+    "animationId": "loko_music",
+    "loopSeamScore": 0.2538046146293569,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 2.8272401589265352,
+    "maxAreaDeltaRatio": 0.2265246853823814,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1855,
+        "bounds": {
+          "x": 41,
+          "y": 52,
+          "width": 59,
+          "height": 61
+        },
+        "centroid": {
+          "x": 65.30026954177897,
+          "y": 85.59353099730458
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1847,
+        "bounds": {
+          "x": 41,
+          "y": 49,
+          "width": 56,
+          "height": 64
+        },
+        "centroid": {
+          "x": 64.4937736870601,
+          "y": 87.93340552246887
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.474964314326884,
+        "visibleAreaDeltaRatio": 0.00431266846361186
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1812,
+        "bounds": {
+          "x": 41,
+          "y": 50,
+          "width": 54,
+          "height": 64
+        },
+        "centroid": {
+          "x": 64.29580573951435,
+          "y": 86.71192052980132
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.2374234907934851,
+        "visibleAreaDeltaRatio": 0.018949648077964266
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1714,
+        "bounds": {
+          "x": 41,
+          "y": 62,
+          "width": 46,
+          "height": 51
+        },
+        "centroid": {
+          "x": 62.689031505250874,
+          "y": 88.59218203033839
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.4732785428040467,
+        "visibleAreaDeltaRatio": 0.05408388520971302
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1918,
+        "bounds": {
+          "x": 27,
+          "y": 48,
+          "width": 62,
+          "height": 65
+        },
+        "centroid": {
+          "x": 61.8274244004171,
+          "y": 87.00938477580813
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.8021137455911527,
+        "visibleAreaDeltaRatio": 0.11901983663943991
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 2066,
+        "bounds": {
+          "x": 22,
+          "y": 50,
+          "width": 69,
+          "height": 64
+        },
+        "centroid": {
+          "x": 61.679090029041625,
+          "y": 86.01984511132623
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.0005957392045506,
+        "visibleAreaDeltaRatio": 0.07716371220020855
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1598,
+        "bounds": {
+          "x": 43,
+          "y": 54,
+          "width": 41,
+          "height": 59
+        },
+        "centroid": {
+          "x": 63.694618272841055,
+          "y": 88.00250312891114
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.8272401589265352,
+        "visibleAreaDeltaRatio": 0.2265246853823814
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1677,
+        "bounds": {
+          "x": 44,
+          "y": 52,
+          "width": 47,
+          "height": 62
+        },
+        "centroid": {
+          "x": 64.75849731663685,
+          "y": 87.76565295169947
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.0899250553469517,
+        "visibleAreaDeltaRatio": 0.04943679599499374
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1770,
+        "bounds": {
+          "x": 41,
+          "y": 56,
+          "width": 59,
+          "height": 57
+        },
+        "centroid": {
+          "x": 63.998870056497175,
+          "y": 86.89774011299436
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.1533890366812354,
+        "visibleAreaDeltaRatio": 0.055456171735241505
+      },
+      {
+        "frame": 9,
+        "visiblePixels": 1716,
+        "bounds": {
+          "x": 43,
+          "y": 51,
+          "width": 45,
+          "height": 62
+        },
+        "centroid": {
+          "x": 64.2027972027972,
+          "y": 87.23135198135198
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.391002761764076,
+        "visibleAreaDeltaRatio": 0.030508474576271188
+      },
+      {
+        "frame": 10,
+        "visiblePixels": 1702,
+        "bounds": {
+          "x": 43,
+          "y": 55,
+          "width": 45,
+          "height": 58
+        },
+        "centroid": {
+          "x": 64.57755581668626,
+          "y": 88.67743830787309
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.4938573166254434,
+        "visibleAreaDeltaRatio": 0.008158508158508158
+      }
+    ]
+  },
+  "loko_peeking_01": {
+    "animationId": "loko_peeking_01",
+    "loopSeamScore": 0.048109965635738834,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0.6286208365822896,
+    "maxAreaDeltaRatio": 0.019886363636363636,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1404,
+        "bounds": {
+          "x": 42,
+          "y": 72,
+          "width": 44,
+          "height": 42
+        },
+        "centroid": {
+          "x": 62.50569800569801,
+          "y": 94.87891737891738
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1408,
+        "bounds": {
+          "x": 42,
+          "y": 71,
+          "width": 44,
+          "height": 42
+        },
+        "centroid": {
+          "x": 62.25639204545455,
+          "y": 94.3018465909091
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.6286208365822896,
+        "visibleAreaDeltaRatio": 0.002849002849002849
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1436,
+        "bounds": {
+          "x": 42,
+          "y": 71,
+          "width": 44,
+          "height": 42
+        },
+        "centroid": {
+          "x": 62.38231197771588,
+          "y": 94.18871866295265
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.16927420779438407,
+        "visibleAreaDeltaRatio": 0.019886363636363636
+      }
+    ]
+  },
+  "loko_peeking_02": {
+    "animationId": "loko_peeking_02",
+    "loopSeamScore": 0.12203791469194313,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 2.476464328680151,
+    "maxAreaDeltaRatio": 0.0904126213592233,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1677,
+        "bounds": {
+          "x": 39,
+          "y": 67,
+          "width": 51,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.91592128801431,
+          "y": 93.49970184853906
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1648,
+        "bounds": {
+          "x": 39,
+          "y": 67,
+          "width": 50,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.945995145631066,
+          "y": 93.61650485436893
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.12061251627772511,
+        "visibleAreaDeltaRatio": 0.0172927847346452
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1499,
+        "bounds": {
+          "x": 38,
+          "y": 71,
+          "width": 51,
+          "height": 42
+        },
+        "centroid": {
+          "x": 62.683789192795196,
+          "y": 95.74716477651768
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.476464328680151,
+        "visibleAreaDeltaRatio": 0.0904126213592233
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1492,
+        "bounds": {
+          "x": 39,
+          "y": 72,
+          "width": 51,
+          "height": 41
+        },
+        "centroid": {
+          "x": 63.970509383378015,
+          "y": 95.61193029490616
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 1.2938072553012772,
+        "visibleAreaDeltaRatio": 0.004669779853235491
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1493,
+        "bounds": {
+          "x": 40,
+          "y": 72,
+          "width": 50,
+          "height": 41
+        },
+        "centroid": {
+          "x": 63.905559276624246,
+          "y": 95.57937039517749
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.07265441099938111,
+        "visibleAreaDeltaRatio": 0.0006702412868632708
+      }
+    ]
+  },
+  "loko_playing_ball_01": {
+    "animationId": "loko_playing_ball_01",
+    "loopSeamScore": 0.08758314855875832,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 5.458127617565811,
+    "maxAreaDeltaRatio": 0.1528729573010016,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1744,
+        "bounds": {
+          "x": 40,
+          "y": 64,
+          "width": 49,
+          "height": 49
+        },
+        "centroid": {
+          "x": 62.252866972477065,
+          "y": 90.41628440366972
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1846,
+        "bounds": {
+          "x": 39,
+          "y": 60,
+          "width": 50,
+          "height": 53
+        },
+        "centroid": {
+          "x": 61.730227518959914,
+          "y": 88.56283856988082
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.9257241383859016,
+        "visibleAreaDeltaRatio": 0.058486238532110095
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1864,
+        "bounds": {
+          "x": 36,
+          "y": 64,
+          "width": 56,
+          "height": 49
+        },
+        "centroid": {
+          "x": 60.308476394849784,
+          "y": 91.26448497854078
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 3.052911655507517,
+        "visibleAreaDeltaRatio": 0.009750812567713976
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1651,
+        "bounds": {
+          "x": 38,
+          "y": 66,
+          "width": 53,
+          "height": 48
+        },
+        "centroid": {
+          "x": 65.65051483949122,
+          "y": 90.14476075105996
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 5.458127617565811,
+        "visibleAreaDeltaRatio": 0.11427038626609443
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1897,
+        "bounds": {
+          "x": 34,
+          "y": 63,
+          "width": 60,
+          "height": 50
+        },
+        "centroid": {
+          "x": 65.77385345282025,
+          "y": 90.3252503953611
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.2186067822321081,
+        "visibleAreaDeltaRatio": 0.14900060569351908
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1607,
+        "bounds": {
+          "x": 38,
+          "y": 65,
+          "width": 52,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.4835096453018,
+          "y": 89.57809583074051
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 3.374107632413105,
+        "visibleAreaDeltaRatio": 0.1528729573010016
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1706,
+        "bounds": {
+          "x": 40,
+          "y": 63,
+          "width": 48,
+          "height": 50
+        },
+        "centroid": {
+          "x": 61.98241500586167,
+          "y": 89.63012895662368
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.5037889278902532,
+        "visibleAreaDeltaRatio": 0.06160547604231487
+      }
+    ]
+  },
+  "loko_reading_01": {
+    "animationId": "loko_reading_01",
+    "loopSeamScore": 0.08571428571428572,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 1.8629991720271413,
+    "maxAreaDeltaRatio": 0.06526674233825198,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1682,
+        "bounds": {
+          "x": 42,
+          "y": 64,
+          "width": 45,
+          "height": 49
+        },
+        "centroid": {
+          "x": 64.07966706302021,
+          "y": 90.84958382877527
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1762,
+        "bounds": {
+          "x": 39,
+          "y": 65,
+          "width": 50,
+          "height": 49
+        },
+        "centroid": {
+          "x": 62.37343927355278,
+          "y": 91.59761634506243
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.8629991720271413,
+        "visibleAreaDeltaRatio": 0.04756242568370987
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1647,
+        "bounds": {
+          "x": 41,
+          "y": 66,
+          "width": 46,
+          "height": 48
+        },
+        "centroid": {
+          "x": 63.002428658166366,
+          "y": 92.12264723740134
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.8193198910479101,
+        "visibleAreaDeltaRatio": 0.06526674233825198
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1636,
+        "bounds": {
+          "x": 40,
+          "y": 66,
+          "width": 47,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.016503667481665,
+          "y": 91.66748166259168
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.45538314239663,
+        "visibleAreaDeltaRatio": 0.006678809957498482
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1668,
+        "bounds": {
+          "x": 41,
+          "y": 66,
+          "width": 46,
+          "height": 48
+        },
+        "centroid": {
+          "x": 63.01618705035971,
+          "y": 91.95323741007195
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.2857559228859614,
+        "visibleAreaDeltaRatio": 0.019559902200488997
+      }
+    ]
+  },
+  "loko_love_reaction": {
+    "animationId": "loko_love_reaction",
+    "loopSeamScore": 0.20683559222156747,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 4.500748552513911,
+    "maxAreaDeltaRatio": 0.12169637369391519,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1605,
+        "bounds": {
+          "x": 43,
+          "y": 64,
+          "width": 42,
+          "height": 49
+        },
+        "centroid": {
+          "x": 63.25171339563863,
+          "y": 90.22305295950156
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1587,
+        "bounds": {
+          "x": 39,
+          "y": 66,
+          "width": 48,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.117202268431,
+          "y": 92.4234404536862
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.2044950369431144,
+        "visibleAreaDeltaRatio": 0.011214953271028037
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1618,
+        "bounds": {
+          "x": 28,
+          "y": 67,
+          "width": 57,
+          "height": 47
+        },
+        "centroid": {
+          "x": 60.03337453646477,
+          "y": 92.04697156983931
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 3.1067221151800664,
+        "visibleAreaDeltaRatio": 0.019533711405166982
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1663,
+        "bounds": {
+          "x": 28,
+          "y": 69,
+          "width": 59,
+          "height": 45
+        },
+        "centroid": {
+          "x": 61.51894167167769,
+          "y": 92.89176187612748
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.7089705599638516,
+        "visibleAreaDeltaRatio": 0.02781211372064277
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1643,
+        "bounds": {
+          "x": 32,
+          "y": 69,
+          "width": 56,
+          "height": 44
+        },
+        "centroid": {
+          "x": 63.25989044430919,
+          "y": 93.16311625076081
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.7619693032399262,
+        "visibleAreaDeltaRatio": 0.012026458208057728
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1627,
+        "bounds": {
+          "x": 42,
+          "y": 70,
+          "width": 60,
+          "height": 43
+        },
+        "centroid": {
+          "x": 67.59741856177013,
+          "y": 92.74861708666256
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 4.357288116111022,
+        "visibleAreaDeltaRatio": 0.009738283627510651
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1429,
+        "bounds": {
+          "x": 42,
+          "y": 70,
+          "width": 43,
+          "height": 43
+        },
+        "centroid": {
+          "x": 63.13226032190343,
+          "y": 93.31350594821554
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 4.500748552513911,
+        "visibleAreaDeltaRatio": 0.12169637369391519
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1438,
+        "bounds": {
+          "x": 44,
+          "y": 70,
+          "width": 41,
+          "height": 44
+        },
+        "centroid": {
+          "x": 64.04589707927677,
+          "y": 93.92837273991655
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 1.1012689480596347,
+        "visibleAreaDeltaRatio": 0.006298110566829951
+      }
+    ]
+  },
+  "loko_idle_front": {
+    "animationId": "loko_idle_front",
+    "loopSeamScore": 0.039081885856079406,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 1.8250586419671073,
+    "maxAreaDeltaRatio": 0.04317460317460318,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1591,
+        "bounds": {
+          "x": 42,
+          "y": 66,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.184789440603396,
+          "y": 91.65556253928347
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1571,
+        "bounds": {
+          "x": 43,
+          "y": 66,
+          "width": 42,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.74411203055379,
+          "y": 91.59579885423297
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.5625064067898498,
+        "visibleAreaDeltaRatio": 0.01257071024512885
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1575,
+        "bounds": {
+          "x": 43,
+          "y": 66,
+          "width": 42,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.41396825396826,
+          "y": 91.50539682539683
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.3422972977337772,
+        "visibleAreaDeltaRatio": 0.002546148949713558
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1643,
+        "bounds": {
+          "x": 42,
+          "y": 66,
+          "width": 45,
+          "height": 47
+        },
+        "centroid": {
+          "x": 64.7620206938527,
+          "y": 91.48691418137554
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.3481791382484862,
+        "visibleAreaDeltaRatio": 0.04317460317460318
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1634,
+        "bounds": {
+          "x": 41,
+          "y": 65,
+          "width": 46,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.96328029375765,
+          "y": 91.17809057527539
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.8250586419671073,
+        "visibleAreaDeltaRatio": 0.005477784540474742
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1603,
+        "bounds": {
+          "x": 41,
+          "y": 66,
+          "width": 44,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.42170929507174,
+          "y": 91.25826575171553
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.46538715943077424,
+        "visibleAreaDeltaRatio": 0.018971848225214197
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1572,
+        "bounds": {
+          "x": 43,
+          "y": 66,
+          "width": 42,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.48027989821883,
+          "y": 91.5178117048346
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.2660725790710153,
+        "visibleAreaDeltaRatio": 0.01933873986275733
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1570,
+        "bounds": {
+          "x": 41,
+          "y": 67,
+          "width": 44,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.244585987261146,
+          "y": 91.86942675159236
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.4233022097379004,
+        "visibleAreaDeltaRatio": 0.001272264631043257
+      }
+    ]
+  },
+  "loko_locomotion_side_01": {
+    "animationId": "loko_locomotion_side_01",
+    "loopSeamScore": 0.045089561457689935,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 0.8906063138629131,
+    "maxAreaDeltaRatio": 0.008280254777070064,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1570,
+        "bounds": {
+          "x": 41,
+          "y": 67,
+          "width": 44,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.57515923566879,
+          "y": 91.6859872611465
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1583,
+        "bounds": {
+          "x": 42,
+          "y": 66,
+          "width": 44,
+          "height": 47
+        },
+        "centroid": {
+          "x": 64.15982312065698,
+          "y": 91.77700568540746
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.5917061871946505,
+        "visibleAreaDeltaRatio": 0.008280254777070064
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1595,
+        "bounds": {
+          "x": 43,
+          "y": 66,
+          "width": 42,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.33667711598746,
+          "y": 91.43699059561129
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.8906063138629131,
+        "visibleAreaDeltaRatio": 0.007580543272267846
+      }
+    ]
+  },
+  "loko_locomotion_side_02": {
+    "animationId": "loko_locomotion_side_02",
+    "loopSeamScore": 0.11892208553016989,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 1.277010502883332,
+    "maxAreaDeltaRatio": 0.04419191919191919,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1589,
+        "bounds": {
+          "x": 42,
+          "y": 67,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.34487098804279,
+          "y": 92.2196349905601
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1584,
+        "bounds": {
+          "x": 42,
+          "y": 66,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.3125,
+          "y": 91.17992424242425
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.0402145551068143,
+        "visibleAreaDeltaRatio": 0.0031466331025802393
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1654,
+        "bounds": {
+          "x": 41,
+          "y": 67,
+          "width": 46,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.99576783555018,
+          "y": 92.25876662636034
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.277010502883332,
+        "visibleAreaDeltaRatio": 0.04419191919191919
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1657,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 47,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.54496077248038,
+          "y": 92.30235365117683
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.550919876848139,
+        "visibleAreaDeltaRatio": 0.0018137847642079807
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1672,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 49,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.85406698564593,
+          "y": 92.247009569378
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.3140216846138211,
+        "visibleAreaDeltaRatio": 0.009052504526252263
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1658,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 48,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.31664656212304,
+          "y": 92.18817852834741
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.540630930495346,
+        "visibleAreaDeltaRatio": 0.008373205741626795
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1622,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 48,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.14180024660912,
+          "y": 92.04254007398274
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.2275561325003638,
+        "visibleAreaDeltaRatio": 0.021712907117008445
+      }
+    ]
+  },
+  "loko_walk_left": {
+    "animationId": "loko_walk_left",
+    "loopSeamScore": 0.11892208553016989,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 1.277010502883332,
+    "maxAreaDeltaRatio": 0.04419191919191919,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1589,
+        "bounds": {
+          "x": 43,
+          "y": 67,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.65512901195721,
+          "y": 92.2196349905601
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1584,
+        "bounds": {
+          "x": 43,
+          "y": 66,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.6875,
+          "y": 91.17992424242425
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.0402145551068143,
+        "visibleAreaDeltaRatio": 0.0031466331025802393
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1654,
+        "bounds": {
+          "x": 41,
+          "y": 67,
+          "width": 46,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.00423216444982,
+          "y": 92.25876662636034
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.277010502883332,
+        "visibleAreaDeltaRatio": 0.04419191919191919
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1657,
+        "bounds": {
+          "x": 41,
+          "y": 67,
+          "width": 47,
+          "height": 46
+        },
+        "centroid": {
+          "x": 62.45503922751961,
+          "y": 92.30235365117683
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.5509198768481461,
+        "visibleAreaDeltaRatio": 0.0018137847642079807
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1672,
+        "bounds": {
+          "x": 39,
+          "y": 67,
+          "width": 49,
+          "height": 46
+        },
+        "centroid": {
+          "x": 62.145933014354064,
+          "y": 92.247009569378
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.3140216846138211,
+        "visibleAreaDeltaRatio": 0.009052504526252263
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1658,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 48,
+          "height": 46
+        },
+        "centroid": {
+          "x": 62.68335343787696,
+          "y": 92.18817852834741
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.5406309304953532,
+        "visibleAreaDeltaRatio": 0.008373205741626795
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1622,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 48,
+          "height": 46
+        },
+        "centroid": {
+          "x": 62.85819975339088,
+          "y": 92.04254007398274
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.2275561325003638,
+        "visibleAreaDeltaRatio": 0.021712907117008445
+      }
+    ]
+  },
+  "loko_walk_preparation": {
+    "animationId": "loko_walk_preparation",
+    "loopSeamScore": 0.045089561457689935,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 0.8906063138629131,
+    "maxAreaDeltaRatio": 0.008280254777070064,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1570,
+        "bounds": {
+          "x": 41,
+          "y": 67,
+          "width": 44,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.57515923566879,
+          "y": 91.6859872611465
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1583,
+        "bounds": {
+          "x": 42,
+          "y": 66,
+          "width": 44,
+          "height": 47
+        },
+        "centroid": {
+          "x": 64.15982312065698,
+          "y": 91.77700568540746
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.5917061871946505,
+        "visibleAreaDeltaRatio": 0.008280254777070064
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1595,
+        "bounds": {
+          "x": 43,
+          "y": 66,
+          "width": 42,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.33667711598746,
+          "y": 91.43699059561129
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.8906063138629131,
+        "visibleAreaDeltaRatio": 0.007580543272267846
+      }
+    ]
+  },
+  "loko_walk_right": {
+    "animationId": "loko_walk_right",
+    "loopSeamScore": 0.11892208553016989,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 1.277010502883332,
+    "maxAreaDeltaRatio": 0.04419191919191919,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1589,
+        "bounds": {
+          "x": 42,
+          "y": 67,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.34487098804279,
+          "y": 92.2196349905601
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1584,
+        "bounds": {
+          "x": 42,
+          "y": 66,
+          "width": 43,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.3125,
+          "y": 91.17992424242425
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.0402145551068143,
+        "visibleAreaDeltaRatio": 0.0031466331025802393
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1654,
+        "bounds": {
+          "x": 41,
+          "y": 67,
+          "width": 46,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.99576783555018,
+          "y": 92.25876662636034
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.277010502883332,
+        "visibleAreaDeltaRatio": 0.04419191919191919
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1657,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 47,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.54496077248038,
+          "y": 92.30235365117683
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.550919876848139,
+        "visibleAreaDeltaRatio": 0.0018137847642079807
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1672,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 49,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.85406698564593,
+          "y": 92.247009569378
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.3140216846138211,
+        "visibleAreaDeltaRatio": 0.009052504526252263
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1658,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 48,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.31664656212304,
+          "y": 92.18817852834741
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.540630930495346,
+        "visibleAreaDeltaRatio": 0.008373205741626795
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1622,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 48,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.14180024660912,
+          "y": 92.04254007398274
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.2275561325003638,
+        "visibleAreaDeltaRatio": 0.021712907117008445
+      }
+    ]
+  },
+  "loko_sleep_loop": {
+    "animationId": "loko_sleep_loop",
+    "loopSeamScore": 0.33491404860699464,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 2.5044461024171647,
+    "maxAreaDeltaRatio": 0.14787798408488065,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1524,
+        "bounds": {
+          "x": 34,
+          "y": 64,
+          "width": 59,
+          "height": 49
+        },
+        "centroid": {
+          "x": 63.738188976377955,
+          "y": 96.69553805774278
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1508,
+        "bounds": {
+          "x": 36,
+          "y": 60,
+          "width": 57,
+          "height": 53
+        },
+        "centroid": {
+          "x": 64.97944297082228,
+          "y": 95.90119363395226
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.473667039168304,
+        "visibleAreaDeltaRatio": 0.010498687664041995
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1285,
+        "bounds": {
+          "x": 41,
+          "y": 60,
+          "width": 46,
+          "height": 53
+        },
+        "centroid": {
+          "x": 62.60700389105058,
+          "y": 95.0988326848249
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.5044461024171647,
+        "visibleAreaDeltaRatio": 0.14787798408488065
+      }
+    ]
+  },
+  "loko_sleep_transition": {
+    "animationId": "loko_sleep_transition",
+    "loopSeamScore": 0.26813040585495673,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 3.123229599425393,
+    "maxAreaDeltaRatio": 0.11289031224979984,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1495,
+        "bounds": {
+          "x": 38,
+          "y": 75,
+          "width": 51,
+          "height": 39
+        },
+        "centroid": {
+          "x": 61.1933110367893,
+          "y": 96.52976588628762
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1506,
+        "bounds": {
+          "x": 38,
+          "y": 72,
+          "width": 56,
+          "height": 42
+        },
+        "centroid": {
+          "x": 64.31540504648075,
+          "y": 96.44555112881807
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 3.123229599425393,
+        "visibleAreaDeltaRatio": 0.007357859531772575
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1472,
+        "bounds": {
+          "x": 37,
+          "y": 69,
+          "width": 54,
+          "height": 45
+        },
+        "centroid": {
+          "x": 64.07948369565217,
+          "y": 97.02717391304348
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.6276495414695255,
+        "visibleAreaDeltaRatio": 0.02257636122177955
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1335,
+        "bounds": {
+          "x": 38,
+          "y": 79,
+          "width": 52,
+          "height": 35
+        },
+        "centroid": {
+          "x": 63.02022471910112,
+          "y": 98.70936329588015
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.987911139646938,
+        "visibleAreaDeltaRatio": 0.09307065217391304
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1249,
+        "bounds": {
+          "x": 39,
+          "y": 80,
+          "width": 48,
+          "height": 34
+        },
+        "centroid": {
+          "x": 62.83907125700561,
+          "y": 98.5404323458767
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.24769788593821684,
+        "visibleAreaDeltaRatio": 0.06441947565543071
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1108,
+        "bounds": {
+          "x": 42,
+          "y": 82,
+          "width": 45,
+          "height": 31
+        },
+        "centroid": {
+          "x": 63.66064981949459,
+          "y": 99.27436823104694
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 1.1016593020902983,
+        "visibleAreaDeltaRatio": 0.11289031224979984
+      }
+    ]
+  },
+  "poko_drink": {
+    "animationId": "poko_drink",
+    "loopSeamScore": 0.21477663230240548,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 2.914460824786366,
+    "maxAreaDeltaRatio": 0.08172177167810356,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1620,
+        "bounds": {
+          "x": 38,
+          "y": 67,
+          "width": 51,
+          "height": 46
+        },
+        "centroid": {
+          "x": 61.6820987654321,
+          "y": 91.67654320987654
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1603,
+        "bounds": {
+          "x": 40,
+          "y": 66,
+          "width": 48,
+          "height": 47
+        },
+        "centroid": {
+          "x": 64.23268870867125,
+          "y": 90.26637554585153
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.914460824786366,
+        "visibleAreaDeltaRatio": 0.010493827160493827
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1472,
+        "bounds": {
+          "x": 43,
+          "y": 67,
+          "width": 42,
+          "height": 46
+        },
+        "centroid": {
+          "x": 65.3179347826087,
+          "y": 91.1508152173913
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.3999973477082126,
+        "visibleAreaDeltaRatio": 0.08172177167810356
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1470,
+        "bounds": {
+          "x": 43,
+          "y": 68,
+          "width": 43,
+          "height": 45
+        },
+        "centroid": {
+          "x": 62.92448979591837,
+          "y": 92.04353741496598
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.554512052497632,
+        "visibleAreaDeltaRatio": 0.001358695652173913
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1498,
+        "bounds": {
+          "x": 42,
+          "y": 68,
+          "width": 44,
+          "height": 45
+        },
+        "centroid": {
+          "x": 62.466622162883844,
+          "y": 92.24365821094793
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.4996910068883424,
+        "visibleAreaDeltaRatio": 0.01904761904761905
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1508,
+        "bounds": {
+          "x": 44,
+          "y": 66,
+          "width": 42,
+          "height": 47
+        },
+        "centroid": {
+          "x": 64.0238726790451,
+          "y": 90.62466843501326
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.246365300806053,
+        "visibleAreaDeltaRatio": 0.006675567423230975
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1468,
+        "bounds": {
+          "x": 42,
+          "y": 69,
+          "width": 45,
+          "height": 44
+        },
+        "centroid": {
+          "x": 63.17302452316076,
+          "y": 93.04564032697547
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.566134736533306,
+        "visibleAreaDeltaRatio": 0.026525198938992044
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1497,
+        "bounds": {
+          "x": 44,
+          "y": 67,
+          "width": 41,
+          "height": 46
+        },
+        "centroid": {
+          "x": 63.21309285237141,
+          "y": 91.02471609886439
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.021321401156213,
+        "visibleAreaDeltaRatio": 0.019754768392370572
+      }
+    ]
+  },
+  "poko_eat": {
+    "animationId": "poko_eat",
+    "loopSeamScore": 0.11182294700058241,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 4.3408097539820485,
+    "maxAreaDeltaRatio": 0.11844431349440189,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1631,
+        "bounds": {
+          "x": 40,
+          "y": 65,
+          "width": 48,
+          "height": 48
+        },
+        "centroid": {
+          "x": 61.191293684855914,
+          "y": 89.79031269160025
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1681,
+        "bounds": {
+          "x": 40,
+          "y": 65,
+          "width": 47,
+          "height": 48
+        },
+        "centroid": {
+          "x": 61.13920285544319,
+          "y": 90.80963712076145
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.020654567615173,
+        "visibleAreaDeltaRatio": 0.030656039239730228
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1697,
+        "bounds": {
+          "x": 34,
+          "y": 65,
+          "width": 60,
+          "height": 48
+        },
+        "centroid": {
+          "x": 59.20624631703005,
+          "y": 90.9593400117855
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.9387449380914075,
+        "visibleAreaDeltaRatio": 0.009518143961927425
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1496,
+        "bounds": {
+          "x": 40,
+          "y": 70,
+          "width": 47,
+          "height": 44
+        },
+        "centroid": {
+          "x": 62.606951871657756,
+          "y": 93.65708556149733
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 4.3408097539820485,
+        "visibleAreaDeltaRatio": 0.11844431349440189
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1515,
+        "bounds": {
+          "x": 39,
+          "y": 69,
+          "width": 48,
+          "height": 44
+        },
+        "centroid": {
+          "x": 62.198019801980195,
+          "y": 93.0970297029703
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.6934608873478113,
+        "visibleAreaDeltaRatio": 0.01270053475935829
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1525,
+        "bounds": {
+          "x": 39,
+          "y": 69,
+          "width": 48,
+          "height": 44
+        },
+        "centroid": {
+          "x": 62.689180327868854,
+          "y": 93.35868852459016
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.5565105579615887,
+        "visibleAreaDeltaRatio": 0.006600660066006601
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1519,
+        "bounds": {
+          "x": 38,
+          "y": 69,
+          "width": 53,
+          "height": 44
+        },
+        "centroid": {
+          "x": 61.964450296247534,
+          "y": 93.25082290980909
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.7327131837123847,
+        "visibleAreaDeltaRatio": 0.003934426229508197
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1600,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 44,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.309375,
+          "y": 90.4725
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.799651985949108,
+        "visibleAreaDeltaRatio": 0.05332455562870309
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1634,
+        "bounds": {
+          "x": 40,
+          "y": 65,
+          "width": 47,
+          "height": 48
+        },
+        "centroid": {
+          "x": 61.10587515299878,
+          "y": 90.66891064871481
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.2194215943063123,
+        "visibleAreaDeltaRatio": 0.02125
+      },
+      {
+        "frame": 9,
+        "visiblePixels": 1621,
+        "bounds": {
+          "x": 41,
+          "y": 65,
+          "width": 46,
+          "height": 48
+        },
+        "centroid": {
+          "x": 61.77051202961135,
+          "y": 90.203578038248
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.8113424776980328,
+        "visibleAreaDeltaRatio": 0.00795593635250918
+      },
+      {
+        "frame": 10,
+        "visiblePixels": 1611,
+        "bounds": {
+          "x": 40,
+          "y": 65,
+          "width": 47,
+          "height": 48
+        },
+        "centroid": {
+          "x": 61.2756052141527,
+          "y": 90.46492861576661
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.5596756921260205,
+        "visibleAreaDeltaRatio": 0.006169031462060457
+      }
+    ]
+  },
+  "poko_music": {
+    "animationId": "poko_music",
+    "loopSeamScore": 0.23855544252288913,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 4.831927712867481,
+    "maxAreaDeltaRatio": 0.14350028137310072,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1769,
+        "bounds": {
+          "x": 44,
+          "y": 63,
+          "width": 58,
+          "height": 50
+        },
+        "centroid": {
+          "x": 67.09892594686264,
+          "y": 87.56924816280385
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1690,
+        "bounds": {
+          "x": 42,
+          "y": 64,
+          "width": 59,
+          "height": 50
+        },
+        "centroid": {
+          "x": 67.17573964497042,
+          "y": 88.82840236686391
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.2614950074491516,
+        "visibleAreaDeltaRatio": 0.04465799886941775
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1757,
+        "bounds": {
+          "x": 39,
+          "y": 62,
+          "width": 60,
+          "height": 52
+        },
+        "centroid": {
+          "x": 65.53215708594195,
+          "y": 87.7546955036995
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.9632142156038295,
+        "visibleAreaDeltaRatio": 0.03964497041420118
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1851,
+        "bounds": {
+          "x": 41,
+          "y": 62,
+          "width": 61,
+          "height": 52
+        },
+        "centroid": {
+          "x": 64.32847109670449,
+          "y": 86.67152890329551
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.6192930077405014,
+        "visibleAreaDeltaRatio": 0.053500284575981785
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1681,
+        "bounds": {
+          "x": 42,
+          "y": 62,
+          "width": 45,
+          "height": 52
+        },
+        "centroid": {
+          "x": 65.73884592504461,
+          "y": 88.28970850684117
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.146546618582185,
+        "visibleAreaDeltaRatio": 0.09184224743381955
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1657,
+        "bounds": {
+          "x": 43,
+          "y": 62,
+          "width": 55,
+          "height": 51
+        },
+        "centroid": {
+          "x": 66.52745926372963,
+          "y": 87.28726614363308
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.2754613633921408,
+        "visibleAreaDeltaRatio": 0.014277215942891136
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1673,
+        "bounds": {
+          "x": 43,
+          "y": 64,
+          "width": 54,
+          "height": 50
+        },
+        "centroid": {
+          "x": 64.47878063359235,
+          "y": 88.50806933652122
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.3848363812528146,
+        "visibleAreaDeltaRatio": 0.009656004828002414
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1621,
+        "bounds": {
+          "x": 42,
+          "y": 64,
+          "width": 46,
+          "height": 50
+        },
+        "centroid": {
+          "x": 66.15052436767428,
+          "y": 89.52683528685996
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.9577055892068653,
+        "visibleAreaDeltaRatio": 0.031081888822474597
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1777,
+        "bounds": {
+          "x": 39,
+          "y": 63,
+          "width": 63,
+          "height": 50
+        },
+        "centroid": {
+          "x": 66.24535734383792,
+          "y": 87.65109735509286
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.8781336699069084,
+        "visibleAreaDeltaRatio": 0.09623689080814313
+      },
+      {
+        "frame": 9,
+        "visiblePixels": 1522,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 43,
+          "height": 48
+        },
+        "centroid": {
+          "x": 61.79434954007884,
+          "y": 89.53153745072274
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 4.831927712867481,
+        "visibleAreaDeltaRatio": 0.14350028137310072
+      },
+      {
+        "frame": 10,
+        "visiblePixels": 1683,
+        "bounds": {
+          "x": 42,
+          "y": 59,
+          "width": 61,
+          "height": 54
+        },
+        "centroid": {
+          "x": 64.88770053475936,
+          "y": 87.13666072489602
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 3.9120652995824945,
+        "visibleAreaDeltaRatio": 0.10578186596583443
+      },
+      {
+        "frame": 11,
+        "visiblePixels": 1694,
+        "bounds": {
+          "x": 40,
+          "y": 61,
+          "width": 49,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.899645808736715,
+          "y": 88.13695395513578
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 1.4060009559311066,
+        "visibleAreaDeltaRatio": 0.006535947712418301
+      }
+    ]
+  },
+  "poko_peeking": {
+    "animationId": "poko_peeking",
+    "loopSeamScore": 0.35510627268014516,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 8.023198819985293,
+    "maxAreaDeltaRatio": 0.22403560830860533,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1523,
+        "bounds": {
+          "x": 41,
+          "y": 69,
+          "width": 46,
+          "height": 44
+        },
+        "centroid": {
+          "x": 61.974392646093236,
+          "y": 93.58108995403808
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1495,
+        "bounds": {
+          "x": 42,
+          "y": 69,
+          "width": 45,
+          "height": 44
+        },
+        "centroid": {
+          "x": 62.68026755852843,
+          "y": 93.56321070234114
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.7061013097613065,
+        "visibleAreaDeltaRatio": 0.018384766907419567
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1481,
+        "bounds": {
+          "x": 42,
+          "y": 69,
+          "width": 45,
+          "height": 44
+        },
+        "centroid": {
+          "x": 62.59621877110061,
+          "y": 93.44226873733963
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.14727918239354867,
+        "visibleAreaDeltaRatio": 0.009364548494983277
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1426,
+        "bounds": {
+          "x": 42,
+          "y": 71,
+          "width": 44,
+          "height": 43
+        },
+        "centroid": {
+          "x": 61.96774193548387,
+          "y": 94.6500701262272
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.361531243822771,
+        "visibleAreaDeltaRatio": 0.03713706954760297
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1409,
+        "bounds": {
+          "x": 42,
+          "y": 71,
+          "width": 43,
+          "height": 43
+        },
+        "centroid": {
+          "x": 61.565649396735274,
+          "y": 94.78779276082328
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.4250246272833798,
+        "visibleAreaDeltaRatio": 0.011921458625525946
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1362,
+        "bounds": {
+          "x": 36,
+          "y": 62,
+          "width": 57,
+          "height": 51
+        },
+        "centroid": {
+          "x": 63.198237885462554,
+          "y": 86.93245227606461
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 8.023198819985293,
+        "visibleAreaDeltaRatio": 0.0333569907735983
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1472,
+        "bounds": {
+          "x": 36,
+          "y": 62,
+          "width": 57,
+          "height": 52
+        },
+        "centroid": {
+          "x": 63.47282608695652,
+          "y": 85.9476902173913
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.022328221562034,
+        "visibleAreaDeltaRatio": 0.08076358296622614
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1651,
+        "bounds": {
+          "x": 40,
+          "y": 55,
+          "width": 48,
+          "height": 58
+        },
+        "centroid": {
+          "x": 62.90006056935191,
+          "y": 81.91156874621441
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 4.076559440048917,
+        "visibleAreaDeltaRatio": 0.12160326086956522
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1707,
+        "bounds": {
+          "x": 38,
+          "y": 53,
+          "width": 51,
+          "height": 60
+        },
+        "centroid": {
+          "x": 62.05916813122437,
+          "y": 79.76215582893965
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.3080459227337027,
+        "visibleAreaDeltaRatio": 0.03391883706844337
+      },
+      {
+        "frame": 9,
+        "visiblePixels": 1643,
+        "bounds": {
+          "x": 41,
+          "y": 52,
+          "width": 46,
+          "height": 62
+        },
+        "centroid": {
+          "x": 65.53499695678637,
+          "y": 78.95252586731588
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 3.5688775125193986,
+        "visibleAreaDeltaRatio": 0.03749267721148213
+      },
+      {
+        "frame": 10,
+        "visiblePixels": 1348,
+        "bounds": {
+          "x": 43,
+          "y": 61,
+          "width": 42,
+          "height": 52
+        },
+        "centroid": {
+          "x": 62.612017804154306,
+          "y": 83.68694362017804
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 5.564037974828895,
+        "visibleAreaDeltaRatio": 0.17954960438222764
+      },
+      {
+        "frame": 11,
+        "visiblePixels": 1650,
+        "bounds": {
+          "x": 40,
+          "y": 61,
+          "width": 48,
+          "height": 52
+        },
+        "centroid": {
+          "x": 64.39575757575757,
+          "y": 87.88
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 4.556692811367128,
+        "visibleAreaDeltaRatio": 0.22403560830860533
+      }
+    ]
+  },
+  "poko_playing_ball": {
+    "animationId": "poko_playing_ball",
+    "loopSeamScore": 0.5102803738317757,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 15.60415874214813,
+    "maxAreaDeltaRatio": 0.8380797396257119,
+    "verdict": "review",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1969,
+        "bounds": {
+          "x": 44,
+          "y": 67,
+          "width": 68,
+          "height": 46
+        },
+        "centroid": {
+          "x": 72.43473844591163,
+          "y": 93.13458608430676
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1544,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 47,
+          "height": 46
+        },
+        "centroid": {
+          "x": 62.057642487046635,
+          "y": 91.264896373057
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 10.54418608313821,
+        "visibleAreaDeltaRatio": 0.21584560690705942
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1861,
+        "bounds": {
+          "x": 28,
+          "y": 71,
+          "width": 71,
+          "height": 42
+        },
+        "centroid": {
+          "x": 61.117141321869966,
+          "y": 96.05588393336916
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 4.882428109533672,
+        "visibleAreaDeltaRatio": 0.20531088082901555
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1705,
+        "bounds": {
+          "x": 40,
+          "y": 60,
+          "width": 47,
+          "height": 53
+        },
+        "centroid": {
+          "x": 61.60645161290323,
+          "y": 87.99765395894428
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 8.073072208374615,
+        "visibleAreaDeltaRatio": 0.08382590005373455
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1515,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 43,
+          "height": 48
+        },
+        "centroid": {
+          "x": 63.345874587458745,
+          "y": 89.64554455445544
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.3960667142602015,
+        "visibleAreaDeltaRatio": 0.11143695014662756
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 2072,
+        "bounds": {
+          "x": 30,
+          "y": 54,
+          "width": 67,
+          "height": 60
+        },
+        "centroid": {
+          "x": 63.48455598455598,
+          "y": 84.16843629343629
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 5.478863699055225,
+        "visibleAreaDeltaRatio": 0.36765676567656763
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1743,
+        "bounds": {
+          "x": 38,
+          "y": 68,
+          "width": 52,
+          "height": 45
+        },
+        "centroid": {
+          "x": 62.660929432013766,
+          "y": 92.2788296041308
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 8.152106497845264,
+        "visibleAreaDeltaRatio": 0.15878378378378377
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 2039,
+        "bounds": {
+          "x": 33,
+          "y": 58,
+          "width": 60,
+          "height": 55
+        },
+        "centroid": {
+          "x": 61.8582638548308,
+          "y": 87.2270720941638
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 5.115127170296208,
+        "visibleAreaDeltaRatio": 0.16982214572576018
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1229,
+        "bounds": {
+          "x": 39,
+          "y": 79,
+          "width": 51,
+          "height": 34
+        },
+        "centroid": {
+          "x": 64.62327095199349,
+          "y": 98.33685923515053
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 11.448695758268451,
+        "visibleAreaDeltaRatio": 0.39725355566454146
+      },
+      {
+        "frame": 9,
+        "visiblePixels": 2259,
+        "bounds": {
+          "x": 35,
+          "y": 45,
+          "width": 64,
+          "height": 69
+        },
+        "centroid": {
+          "x": 66.2191235059761,
+          "y": 82.81451969898185
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 15.60415874214813,
+        "visibleAreaDeltaRatio": 0.8380797396257119
+      },
+      {
+        "frame": 10,
+        "visiblePixels": 2016,
+        "bounds": {
+          "x": 36,
+          "y": 59,
+          "width": 57,
+          "height": 55
+        },
+        "centroid": {
+          "x": 64.87896825396825,
+          "y": 87.56051587301587
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 4.931581468801845,
+        "visibleAreaDeltaRatio": 0.10756972111553785
+      }
+    ]
+  },
+  "poko_sad_to_crying": {
+    "animationId": "poko_sad_to_crying",
+    "loopSeamScore": 0.15153337342152737,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 2.202463032148459,
+    "maxAreaDeltaRatio": 0.07573726541554959,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1502,
+        "bounds": {
+          "x": 44,
+          "y": 66,
+          "width": 40,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.491344873501994,
+          "y": 90.79893475366178
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1500,
+        "bounds": {
+          "x": 44,
+          "y": 66,
+          "width": 40,
+          "height": 48
+        },
+        "centroid": {
+          "x": 63.797333333333334,
+          "y": 91.12266666666666
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.4454562706346755,
+        "visibleAreaDeltaRatio": 0.0013315579227696406
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1520,
+        "bounds": {
+          "x": 44,
+          "y": 66,
+          "width": 40,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.44868421052632,
+          "y": 90.10526315789474
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.0754841284256678,
+        "visibleAreaDeltaRatio": 0.013333333333333334
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1493,
+        "bounds": {
+          "x": 44,
+          "y": 66,
+          "width": 41,
+          "height": 47
+        },
+        "centroid": {
+          "x": 64.15941058271936,
+          "y": 90.88345612860013
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.0539052499091015,
+        "visibleAreaDeltaRatio": 0.017763157894736842
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1529,
+        "bounds": {
+          "x": 41,
+          "y": 67,
+          "width": 44,
+          "height": 46
+        },
+        "centroid": {
+          "x": 64.02943100065403,
+          "y": 90.77043819489863
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.17224327299501357,
+        "visibleAreaDeltaRatio": 0.024112525117213665
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1492,
+        "bounds": {
+          "x": 44,
+          "y": 66,
+          "width": 40,
+          "height": 47
+        },
+        "centroid": {
+          "x": 63.7902144772118,
+          "y": 90.2479892761394
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.5746106662780196,
+        "visibleAreaDeltaRatio": 0.02419882275997384
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1605,
+        "bounds": {
+          "x": 40,
+          "y": 67,
+          "width": 49,
+          "height": 46
+        },
+        "centroid": {
+          "x": 62.6006230529595,
+          "y": 92.10155763239875
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.202463032148459,
+        "visibleAreaDeltaRatio": 0.07573726541554959
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1572,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 44,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.166666666666664,
+          "y": 90.78689567430025
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.3844328113981232,
+        "visibleAreaDeltaRatio": 0.020560747663551402
+      }
+    ]
+  },
+  "poko_idle_blink": {
+    "animationId": "poko_idle_blink",
+    "loopSeamScore": 0.09892594686263426,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0.534800427277454,
+    "maxAreaDeltaRatio": 0.004154302670623145,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1685,
+        "bounds": {
+          "x": 42,
+          "y": 64,
+          "width": 43,
+          "height": 49
+        },
+        "centroid": {
+          "x": 62.713946587537095,
+          "y": 89.06409495548961
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1678,
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 43,
+          "height": 50
+        },
+        "centroid": {
+          "x": 62.23241954707986,
+          "y": 89.29678188319429
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.534800427277454,
+        "visibleAreaDeltaRatio": 0.004154302670623145
+      }
+    ]
+  },
+  "poko_idle_look_01": {
+    "animationId": "poko_idle_look_01",
+    "loopSeamScore": 0.08977978543195934,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 0.959515983432963,
+    "maxAreaDeltaRatio": 0.04224537037037037,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1728,
+        "bounds": {
+          "x": 42,
+          "y": 64,
+          "width": 44,
+          "height": 49
+        },
+        "centroid": {
+          "x": 63.64756944444444,
+          "y": 88.91840277777777
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1655,
+        "bounds": {
+          "x": 41,
+          "y": 64,
+          "width": 44,
+          "height": 49
+        },
+        "centroid": {
+          "x": 62.90815709969789,
+          "y": 89.52990936555891
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.959515983432963,
+        "visibleAreaDeltaRatio": 0.04224537037037037
+      }
+    ]
+  },
+  "poko_locomotion_side": {
+    "animationId": "poko_locomotion_side",
+    "loopSeamScore": 0.1681081081081081,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 2.1968180833456388,
+    "maxAreaDeltaRatio": 0.0740514075887393,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1634,
+        "bounds": {
+          "x": 44,
+          "y": 63,
+          "width": 41,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.77294981640147,
+          "y": 88.81395348837209
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1706,
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 45,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.31301289566237,
+          "y": 89.33118405627198
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.6921484171975023,
+        "visibleAreaDeltaRatio": 0.044063647490820076
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1640,
+        "bounds": {
+          "x": 43,
+          "y": 61,
+          "width": 42,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.60609756097561,
+          "y": 87.3219512195122
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.030496297301604,
+        "visibleAreaDeltaRatio": 0.038686987104337635
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1720,
+        "bounds": {
+          "x": 42,
+          "y": 62,
+          "width": 44,
+          "height": 51
+        },
+        "centroid": {
+          "x": 63.18313953488372,
+          "y": 88.88488372093023
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.6191514740209998,
+        "visibleAreaDeltaRatio": 0.04878048780487805
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1646,
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 43,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.78554070473876,
+          "y": 88.82563791008505
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.6053075545087955,
+        "visibleAreaDeltaRatio": 0.04302325581395349
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1665,
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 45,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.87567567567567,
+          "y": 89.13573573573574
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.32293184181663176,
+        "visibleAreaDeltaRatio": 0.011543134872417983
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1694,
+        "bounds": {
+          "x": 42,
+          "y": 60,
+          "width": 43,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.20720188902007,
+          "y": 87.043093270366
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 2.1968180833456388,
+        "visibleAreaDeltaRatio": 0.017417417417417418
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1634,
+        "bounds": {
+          "x": 43,
+          "y": 61,
+          "width": 42,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.63341493268054,
+          "y": 87.90820073439413
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.964400582177084,
+        "visibleAreaDeltaRatio": 0.03541912632821724
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1755,
+        "bounds": {
+          "x": 40,
+          "y": 63,
+          "width": 48,
+          "height": 50
+        },
+        "centroid": {
+          "x": 62.25185185185185,
+          "y": 89.40512820512821
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.037034216439962,
+        "visibleAreaDeltaRatio": 0.0740514075887393
+      }
+    ]
+  },
+  "poko_walk_left": {
+    "animationId": "poko_walk_left",
+    "loopSeamScore": 0.1681081081081081,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 2.1968180833456388,
+    "maxAreaDeltaRatio": 0.0740514075887393,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1634,
+        "bounds": {
+          "x": 43,
+          "y": 63,
+          "width": 41,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.22705018359853,
+          "y": 88.81395348837209
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1706,
+        "bounds": {
+          "x": 41,
+          "y": 63,
+          "width": 45,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.68698710433763,
+          "y": 89.33118405627198
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.6921484171975023,
+        "visibleAreaDeltaRatio": 0.044063647490820076
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1640,
+        "bounds": {
+          "x": 43,
+          "y": 61,
+          "width": 42,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.39390243902439,
+          "y": 87.3219512195122
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.030496297301604,
+        "visibleAreaDeltaRatio": 0.038686987104337635
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1720,
+        "bounds": {
+          "x": 42,
+          "y": 62,
+          "width": 44,
+          "height": 51
+        },
+        "centroid": {
+          "x": 63.81686046511628,
+          "y": 88.88488372093023
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.6191514740209998,
+        "visibleAreaDeltaRatio": 0.04878048780487805
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1646,
+        "bounds": {
+          "x": 43,
+          "y": 63,
+          "width": 43,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.21445929526124,
+          "y": 88.82563791008505
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.6053075545087955,
+        "visibleAreaDeltaRatio": 0.04302325581395349
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1665,
+        "bounds": {
+          "x": 41,
+          "y": 63,
+          "width": 45,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.12432432432433,
+          "y": 89.13573573573574
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.32293184181663176,
+        "visibleAreaDeltaRatio": 0.011543134872417983
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1694,
+        "bounds": {
+          "x": 43,
+          "y": 60,
+          "width": 43,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.79279811097993,
+          "y": 87.043093270366
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 2.1968180833456388,
+        "visibleAreaDeltaRatio": 0.017417417417417418
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1634,
+        "bounds": {
+          "x": 43,
+          "y": 61,
+          "width": 42,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.36658506731946,
+          "y": 87.90820073439413
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.964400582177084,
+        "visibleAreaDeltaRatio": 0.03541912632821724
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1755,
+        "bounds": {
+          "x": 40,
+          "y": 63,
+          "width": 48,
+          "height": 50
+        },
+        "centroid": {
+          "x": 64.74814814814815,
+          "y": 89.40512820512821
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.037034216439962,
+        "visibleAreaDeltaRatio": 0.0740514075887393
+      }
+    ]
+  },
+  "poko_walk_right": {
+    "animationId": "poko_walk_right",
+    "loopSeamScore": 0.1681081081081081,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 2.1968180833456388,
+    "maxAreaDeltaRatio": 0.0740514075887393,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1634,
+        "bounds": {
+          "x": 44,
+          "y": 63,
+          "width": 41,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.77294981640147,
+          "y": 88.81395348837209
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1706,
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 45,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.31301289566237,
+          "y": 89.33118405627198
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.6921484171975023,
+        "visibleAreaDeltaRatio": 0.044063647490820076
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1640,
+        "bounds": {
+          "x": 43,
+          "y": 61,
+          "width": 42,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.60609756097561,
+          "y": 87.3219512195122
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.030496297301604,
+        "visibleAreaDeltaRatio": 0.038686987104337635
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1720,
+        "bounds": {
+          "x": 42,
+          "y": 62,
+          "width": 44,
+          "height": 51
+        },
+        "centroid": {
+          "x": 63.18313953488372,
+          "y": 88.88488372093023
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.6191514740209998,
+        "visibleAreaDeltaRatio": 0.04878048780487805
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1646,
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 43,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.78554070473876,
+          "y": 88.82563791008505
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.6053075545087955,
+        "visibleAreaDeltaRatio": 0.04302325581395349
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1665,
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 45,
+          "height": 50
+        },
+        "centroid": {
+          "x": 63.87567567567567,
+          "y": 89.13573573573574
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.32293184181663176,
+        "visibleAreaDeltaRatio": 0.011543134872417983
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1694,
+        "bounds": {
+          "x": 42,
+          "y": 60,
+          "width": 43,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.20720188902007,
+          "y": 87.043093270366
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 2.1968180833456388,
+        "visibleAreaDeltaRatio": 0.017417417417417418
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1634,
+        "bounds": {
+          "x": 43,
+          "y": 61,
+          "width": 42,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.63341493268054,
+          "y": 87.90820073439413
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.964400582177084,
+        "visibleAreaDeltaRatio": 0.03541912632821724
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 1755,
+        "bounds": {
+          "x": 40,
+          "y": 63,
+          "width": 48,
+          "height": 50
+        },
+        "centroid": {
+          "x": 62.25185185185185,
+          "y": 89.40512820512821
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 2.037034216439962,
+        "visibleAreaDeltaRatio": 0.0740514075887393
+      }
+    ]
+  },
+  "poko_sleep_loop_01": {
+    "animationId": "poko_sleep_loop_01",
+    "loopSeamScore": 0.30158730158730157,
+    "maxGroundDelta": 0.5,
+    "maxCentroidDelta": 1.464874238476411,
+    "maxAreaDeltaRatio": 0.09433962264150944,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1608,
+        "bounds": {
+          "x": 34,
+          "y": 79,
+          "width": 60,
+          "height": 34
+        },
+        "centroid": {
+          "x": 64.0292288557214,
+          "y": 97.3526119402985
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1537,
+        "bounds": {
+          "x": 35,
+          "y": 79,
+          "width": 57,
+          "height": 34
+        },
+        "centroid": {
+          "x": 64.07807417046195,
+          "y": 96.63825634352635
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.7160235913793618,
+        "visibleAreaDeltaRatio": 0.04415422885572139
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1392,
+        "bounds": {
+          "x": 37,
+          "y": 81,
+          "width": 54,
+          "height": 32
+        },
+        "centroid": {
+          "x": 63.9382183908046,
+          "y": 97.80747126436782
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.1775496466059878,
+        "visibleAreaDeltaRatio": 0.09433962264150944
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1378,
+        "bounds": {
+          "x": 37,
+          "y": 69,
+          "width": 54,
+          "height": 44
+        },
+        "centroid": {
+          "x": 62.91364296081277,
+          "y": 96.76052249637155
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.464874238476411,
+        "visibleAreaDeltaRatio": 0.010057471264367816
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1382,
+        "bounds": {
+          "x": 36,
+          "y": 68,
+          "width": 54,
+          "height": 45
+        },
+        "centroid": {
+          "x": 62.55499276410998,
+          "y": 96.60057887120115
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.392698264355216,
+        "visibleAreaDeltaRatio": 0.002902757619738752
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1442,
+        "bounds": {
+          "x": 37,
+          "y": 66,
+          "width": 54,
+          "height": 47
+        },
+        "centroid": {
+          "x": 61.72746185852982,
+          "y": 95.56657420249654
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.3243764776653406,
+        "visibleAreaDeltaRatio": 0.04341534008683068
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1388,
+        "bounds": {
+          "x": 39,
+          "y": 66,
+          "width": 50,
+          "height": 47
+        },
+        "centroid": {
+          "x": 61.50864553314121,
+          "y": 94.71325648414985
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.8809266216325684,
+        "visibleAreaDeltaRatio": 0.03744798890429958
+      }
+    ]
+  },
+  "poko_sleep_loop_02": {
+    "animationId": "poko_sleep_loop_02",
+    "loopSeamScore": 0.07402511566424323,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0.706692811171957,
+    "maxAreaDeltaRatio": 0.03205574912891986,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1433,
+        "bounds": {
+          "x": 35,
+          "y": 81,
+          "width": 58,
+          "height": 32
+        },
+        "centroid": {
+          "x": 62.28122819260293,
+          "y": 97.78367062107466
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1448,
+        "bounds": {
+          "x": 35,
+          "y": 80,
+          "width": 58,
+          "height": 33
+        },
+        "centroid": {
+          "x": 62.591160220994475,
+          "y": 97.95096685082873
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.35220149163912357,
+        "visibleAreaDeltaRatio": 0.0104675505931612
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1435,
+        "bounds": {
+          "x": 36,
+          "y": 81,
+          "width": 56,
+          "height": 32
+        },
+        "centroid": {
+          "x": 62.82996515679442,
+          "y": 97.70662020905924
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.3416622289724865,
+        "visibleAreaDeltaRatio": 0.008977900552486187
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1481,
+        "bounds": {
+          "x": 34,
+          "y": 81,
+          "width": 60,
+          "height": 32
+        },
+        "centroid": {
+          "x": 62.718433490884536,
+          "y": 98.40445644834571
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 0.706692811171957,
+        "visibleAreaDeltaRatio": 0.03205574912891986
+      }
+    ]
+  },
+  "poko_sleep_transition": {
+    "animationId": "poko_sleep_transition",
+    "loopSeamScore": 0.31201434548714885,
+    "maxGroundDelta": 1.0,
+    "maxCentroidDelta": 3.516742106977652,
+    "maxAreaDeltaRatio": 0.15038650737877723,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1615,
+        "bounds": {
+          "x": 42,
+          "y": 65,
+          "width": 45,
+          "height": 48
+        },
+        "centroid": {
+          "x": 62.59628482972136,
+          "y": 90.8030959752322
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1596,
+        "bounds": {
+          "x": 41,
+          "y": 66,
+          "width": 46,
+          "height": 47
+        },
+        "centroid": {
+          "x": 62.2562656641604,
+          "y": 91.36278195488721
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 0.6548751245628173,
+        "visibleAreaDeltaRatio": 0.011764705882352941
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1417,
+        "bounds": {
+          "x": 44,
+          "y": 71,
+          "width": 41,
+          "height": 43
+        },
+        "centroid": {
+          "x": 64.25970359915314,
+          "y": 93.4333098094566
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 2.8811194275690304,
+        "visibleAreaDeltaRatio": 0.11215538847117794
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1495,
+        "bounds": {
+          "x": 43,
+          "y": 61,
+          "width": 42,
+          "height": 53
+        },
+        "centroid": {
+          "x": 63.04080267558528,
+          "y": 92.29163879598663
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 1.6700695088744468,
+        "visibleAreaDeltaRatio": 0.05504587155963303
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1530,
+        "bounds": {
+          "x": 43,
+          "y": 62,
+          "width": 51,
+          "height": 52
+        },
+        "centroid": {
+          "x": 64.48692810457516,
+          "y": 91.559477124183
+        },
+        "groundDelta": 0.0,
+        "centroidDelta": 1.6209069899378628,
+        "visibleAreaDeltaRatio": 0.023411371237458192
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 1330,
+        "bounds": {
+          "x": 44,
+          "y": 74,
+          "width": 41,
+          "height": 40
+        },
+        "centroid": {
+          "x": 64.15112781954888,
+          "y": 95.06015037593986
+        },
+        "groundDelta": 0.5,
+        "centroidDelta": 3.516742106977652,
+        "visibleAreaDeltaRatio": 0.13071895424836602
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 1423,
+        "bounds": {
+          "x": 40,
+          "y": 77,
+          "width": 47,
+          "height": 37
+        },
+        "centroid": {
+          "x": 63.50597329585383,
+          "y": 95.32044975404077
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 0.6956868014300005,
+        "visibleAreaDeltaRatio": 0.06992481203007518
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 1209,
+        "bounds": {
+          "x": 44,
+          "y": 80,
+          "width": 42,
+          "height": 33
+        },
+        "centroid": {
+          "x": 64.36807278742762,
+          "y": 96.67576509511993
+        },
+        "groundDelta": 1.0,
+        "centroidDelta": 1.6062674768345153,
+        "visibleAreaDeltaRatio": 0.15038650737877723
+      }
+    ]
+  }
+}

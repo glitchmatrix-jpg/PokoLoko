@@ -1,0 +1,1592 @@
+[
+  {
+    "path": ".github/workflows/build-windows.yml",
+    "bytes": 1646,
+    "sha256": "49e02df0944723cc71f36b3e0db892812d5554c1ef77954e937b9224e05559d1"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 60,
+    "sha256": "9f2d66c713ac4411b873a7f45ce860df9c9ede9efe01e684c88295287d9897ff"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "bytes": 1069,
+    "sha256": "c6241bb5eae47b8daf15716ce010e8461056fb9cee997bdc33a5ec742d42e545"
+  },
+  {
+    "path": "GITHUB_ACTIONS_BUILD.md",
+    "bytes": 1817,
+    "sha256": "9e0feea37855e44f91dcea7029815b2ec45086add36ec9248d21561f9b57ad81"
+  },
+  {
+    "path": "IMPLEMENTATION.json",
+    "bytes": 689,
+    "sha256": "323ef5f605e3c3d80a1f2fea3cd6fe34874f8c04637e9bb1354d24f9df9813df"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2672,
+    "sha256": "b776ac126f76945144c315b76ac0ca98f7d8f6d4c109b6a0686514cdf90d39e8"
+  },
+  {
+    "path": "electron/main.ts",
+    "bytes": 12987,
+    "sha256": "5d5a03fd4a05f5d5299fa99ce16bd2afdac10d336d1ba82838b01fb31b48f894"
+  },
+  {
+    "path": "electron/preload.cts",
+    "bytes": 1757,
+    "sha256": "917e653895987dafbf8da9a649d16cfce8274dd145c9b12c6c0732184ac26988"
+  },
+  {
+    "path": "electron/store.ts",
+    "bytes": 1573,
+    "sha256": "4e74cea0d7fa1a934141537dcd219378b1a3808afb7e50ae1cee2dc5299492df"
+  },
+  {
+    "path": "electron/types.ts",
+    "bytes": 332,
+    "sha256": "820fb135ed659a3ff0f23b3e9a3c8641625bab4730d6b71d60137c72502d1650"
+  },
+  {
+    "path": "index.html",
+    "bytes": 508,
+    "sha256": "2842c76109cd8c59b8e0552f25e7d895231834889cedb8deb7bd520e2e08cb59"
+  },
+  {
+    "path": "package.json",
+    "bytes": 1683,
+    "sha256": "144d2ea522a1e32fccb27a577e9485aafe2157abfc5e6c43481fbba0291516b2"
+  },
+  {
+    "path": "public/assets/animations.json",
+    "bytes": 17819,
+    "sha256": "807ca56b9ab11857c0bb9e23fc6cee9ad4b9503775c7f1d7afc2d4bd69d04a26"
+  },
+  {
+    "path": "public/assets/loko/confused/_preview.png",
+    "bytes": 50716,
+    "sha256": "998540efdbb6cea8188369b5898003c5525db8aaf2ddb1a451ba25b58f6a6194"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_000.png",
+    "bytes": 3886,
+    "sha256": "9069bcb32f39b3fa12be39aeeb390fc73e08fc4a7002ea764a5cda39704be66c"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_001.png",
+    "bytes": 3924,
+    "sha256": "abec78650725b422ee114eb2d8d432273dc424cdfceaad48bd858fa15aeebb24"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_002.png",
+    "bytes": 3774,
+    "sha256": "16164bfb3a9495b6b48321537b60525df503fa75d4698fec51448ee9d104e41c"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_003.png",
+    "bytes": 4085,
+    "sha256": "4ee9d57f963aeb3b999f543bc90a3c3b47a8fa555f61237c9787c7493506fa14"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_004.png",
+    "bytes": 4006,
+    "sha256": "37ef93f543ed282cd19f418daed47fd8e247412d8d3a11e00090366288311dfe"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_005.png",
+    "bytes": 4420,
+    "sha256": "bd4e2d414f8813a6d421e7bcc7e04345e012d92c997960019fa7105953edfdf1"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_006.png",
+    "bytes": 3846,
+    "sha256": "0e6966a739d0f40da968efba515992291299d009ed1d5c303cb527a971cc6c9f"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_007.png",
+    "bytes": 3912,
+    "sha256": "b1cbbf5d4933ee7a07af1684b38bc80c80e270121233613d0ace72e6e416cc8f"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_008.png",
+    "bytes": 4100,
+    "sha256": "b145671e6c5b5c702b4f5f3f75bb66a735a0b67a9be70c3fb45a7d298e30a050"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_009.png",
+    "bytes": 4077,
+    "sha256": "d07e555d8ae230f0cbc0b406c81f5453b123369d461b95be079f986c89ca65a8"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_010.png",
+    "bytes": 3787,
+    "sha256": "0f13a05313cc3ea4b1ad6ce188016a7eea564f5386b1ca771680660a75aafd12"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_011.png",
+    "bytes": 4017,
+    "sha256": "1343510e149324312aece4589d441a80c5bf1341217a5957f43858a786cebb73"
+  },
+  {
+    "path": "public/assets/loko/confused/loko_confused_012.png",
+    "bytes": 4590,
+    "sha256": "b2efb1c7953406f34493c8d9aa8be3a89d16097c869b219b5b65307c8f3ab3ca"
+  },
+  {
+    "path": "public/assets/loko/dragged/loko_dragged_000.png",
+    "bytes": 4234,
+    "sha256": "149b97bc8d8df6a93b1d038b433676b0c3c71bedbaa5f60c69c97fc823c5f259"
+  },
+  {
+    "path": "public/assets/loko/dragged/loko_dragged_001.png",
+    "bytes": 4210,
+    "sha256": "8d508814e4424a827f23b2a93b8c41601b30c9dc2b5670e36c7138cee4891d82"
+  },
+  {
+    "path": "public/assets/loko/dragged/loko_dragged_002.png",
+    "bytes": 4222,
+    "sha256": "91211c3e12b7b1588029862aae8c0242d2a52f8f6e0644f0695f5ad2c57b12aa"
+  },
+  {
+    "path": "public/assets/loko/happy/_preview.png",
+    "bytes": 55885,
+    "sha256": "313a06d06421da916655bb65b6e062d6d85ef2bd010f34268ac7a019ff330728"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_000.png",
+    "bytes": 4745,
+    "sha256": "9863a1d23d9a0ad89f40d8fa951d47241ce8c39c2ba52703dde78a71077fe847"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_001.png",
+    "bytes": 4669,
+    "sha256": "49b4c04a839ba15aea91d1e6fe874ed089c92a43886e39a044fae7b286df94c7"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_002.png",
+    "bytes": 4647,
+    "sha256": "ca4b8e19d8fa1e58af09581ba36001c349e46476d02c2291bc1a8ac59d5cd4f8"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_003.png",
+    "bytes": 4428,
+    "sha256": "461b8df3d29ff9fa53d95e19734ed9f73c9640a8f392b67aa9dbbfc21a3da733"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_004.png",
+    "bytes": 4061,
+    "sha256": "5dbba283d7e5785493e37c808e3971a96c3b2312b231204e2bf8405ad3041761"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_005.png",
+    "bytes": 4807,
+    "sha256": "d4fed29d68bcfa93772972193dbfe8e031ac125b49507abf9b353052205eb374"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_006.png",
+    "bytes": 4466,
+    "sha256": "4074f3bbb0853098bda3622827e7a1d79a9b0a1a791f9f789a710af742e85e6a"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_007.png",
+    "bytes": 4384,
+    "sha256": "0859f44d79c6d42b49664a888a4bcef784b6fb2e335104cb187fb0467a5a990b"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_008.png",
+    "bytes": 4321,
+    "sha256": "ab9680173b3bd9f15cb61c3574ef607dc9d85dafc838e2c7aef3632574783e3a"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_009.png",
+    "bytes": 4443,
+    "sha256": "48c514499caf2a89e7b7d0ec5a009e1d5940939c722f3d3b18f937947e9fe94a"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_010.png",
+    "bytes": 4354,
+    "sha256": "c0afbdf27336c3dab720f2f9fd50daecd319cb6b1b98148dfb750e0edcab0332"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_011.png",
+    "bytes": 4269,
+    "sha256": "9c8cabc45818f74a56e853629711136a0cbd303a73b490095323942750476fa6"
+  },
+  {
+    "path": "public/assets/loko/happy/loko_happy_012.png",
+    "bytes": 4258,
+    "sha256": "16cb1b22cd95f54cdb6f8bd9f864741f444696b608b7ab4c9b55374f95d0ab6d"
+  },
+  {
+    "path": "public/assets/loko/idle/_preview.png",
+    "bytes": 43634,
+    "sha256": "ff2ef55e0fbf79b0c25d387a900b756ad3ce224ea2004d6da26863d9e36edd5f"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_000.png",
+    "bytes": 4121,
+    "sha256": "31f12f2fdb5460e5bb4c9f08f07f777310b1301c56ecdfcac713d147b1e148a2"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_001.png",
+    "bytes": 4117,
+    "sha256": "57befff05e27e71c9d120f5056585a7e3e50f35694c0fd37112082bb86b1aecb"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_002.png",
+    "bytes": 4083,
+    "sha256": "2fbde4386d7e61eb42694ce22bfdab1c282e8e361f11484b212bb74916c15182"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_003.png",
+    "bytes": 4295,
+    "sha256": "e859fefeabcaed2e2c0b9be9f81c982bd70e838e1d40be3bcb9f4a8784025057"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_004.png",
+    "bytes": 4132,
+    "sha256": "eda3fab6494bca83ad3cf21a20acd2602cd0f455510e838fc6459343452d75fb"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_005.png",
+    "bytes": 4044,
+    "sha256": "1c920406ae3f53004eee236f0552b2373b6bc09aad3a56d79c67f9bd3281975f"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_006.png",
+    "bytes": 3995,
+    "sha256": "d6ada64be9066b6021ea8fc9de50291f6bc18db8ac397730fe6ecfcc94ff9a2b"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_007.png",
+    "bytes": 4091,
+    "sha256": "254edd41986188fc979403c4c303793ee04b56398362e51a64c7c9039c8137e6"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_008.png",
+    "bytes": 4009,
+    "sha256": "9ef3fff07735f24b8b894b8e3ea7f18e4c98e611509e947df25b57e9da2d949f"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_009.png",
+    "bytes": 4063,
+    "sha256": "e90b9435171b3832189dcaebe2f1e4d09bc8bbb375f5b99cb13013d593c51fce"
+  },
+  {
+    "path": "public/assets/loko/idle/loko_idle_010.png",
+    "bytes": 4008,
+    "sha256": "6623c60308454f7ee00a0c46dae447643fe7c7be6cd714d21fea863c5c8dc3e3"
+  },
+  {
+    "path": "public/assets/loko/landing/loko_landing_000.png",
+    "bytes": 4745,
+    "sha256": "9863a1d23d9a0ad89f40d8fa951d47241ce8c39c2ba52703dde78a71077fe847"
+  },
+  {
+    "path": "public/assets/loko/landing/loko_landing_001.png",
+    "bytes": 4669,
+    "sha256": "49b4c04a839ba15aea91d1e6fe874ed089c92a43886e39a044fae7b286df94c7"
+  },
+  {
+    "path": "public/assets/loko/landing/loko_landing_002.png",
+    "bytes": 4647,
+    "sha256": "ca4b8e19d8fa1e58af09581ba36001c349e46476d02c2291bc1a8ac59d5cd4f8"
+  },
+  {
+    "path": "public/assets/loko/landing/loko_landing_003.png",
+    "bytes": 4428,
+    "sha256": "461b8df3d29ff9fa53d95e19734ed9f73c9640a8f392b67aa9dbbfc21a3da733"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/_preview.png",
+    "bytes": 52040,
+    "sha256": "4ee19656bc2d741e08acd2c89ad521f87737b89115dd4d3469a98567b5554ac9"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_000.png",
+    "bytes": 4234,
+    "sha256": "149b97bc8d8df6a93b1d038b433676b0c3c71bedbaa5f60c69c97fc823c5f259"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_001.png",
+    "bytes": 4210,
+    "sha256": "8d508814e4424a827f23b2a93b8c41601b30c9dc2b5670e36c7138cee4891d82"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_002.png",
+    "bytes": 4222,
+    "sha256": "91211c3e12b7b1588029862aae8c0242d2a52f8f6e0644f0695f5ad2c57b12aa"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_003.png",
+    "bytes": 4449,
+    "sha256": "7fe130ed438cd480b9eb0dd01958b9c661e2ce1c43318374b28ca184268cd71b"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_004.png",
+    "bytes": 4285,
+    "sha256": "f15fb202d97bd405f5759925e28e8d3a46800b82e96b4488429fbcf36b53413d"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_005.png",
+    "bytes": 4390,
+    "sha256": "4e2cf279c151351ce5312555094bd5b7a39baa5748b16f9077e70748839f39f5"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_006.png",
+    "bytes": 4411,
+    "sha256": "96c852ef944312dddda3f333aed33ca34e9c9d6eb1797d3a6a7eabac5b8e040a"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_007.png",
+    "bytes": 4465,
+    "sha256": "6802aa57463d4f47cfff8841cee8dd5cc3a80e2970a26ed9a2520680da686599"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_008.png",
+    "bytes": 3692,
+    "sha256": "6b4c58ca2bf077686d0fee25c97253c805547e9e8bd972ca906128bfb98019f7"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_009.png",
+    "bytes": 3826,
+    "sha256": "a3937b78dd7d030e105f3aecb0c9db9c656e7d9e8b57dc6cab87fc025a2faa0c"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_010.png",
+    "bytes": 3781,
+    "sha256": "444eb14f94e35ddeef4153a8757ed8ebfbe9eb79d71a5c0cb505265bd1b3fd78"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_011.png",
+    "bytes": 3770,
+    "sha256": "d1771e58a7c436a51f3365b574465d0123596a6a2b702d5a9a434f3fa3eed844"
+  },
+  {
+    "path": "public/assets/loko/pet_reaction/loko_pet_reaction_012.png",
+    "bytes": 4116,
+    "sha256": "1a1ebafd16c75383ac12cb9ce796fbcda5929a4f3e3f6da67101c7e2e4daf71d"
+  },
+  {
+    "path": "public/assets/loko/sit/_preview.png",
+    "bytes": 45272,
+    "sha256": "adbc411137ecbf88f42aa9762a3257836ab266a9a5f578c11d8f65a0841b74de"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_000.png",
+    "bytes": 4378,
+    "sha256": "94370e2e5a4578edd4b965c97bf33e1395c780758343d00aa0a17918728daccc"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_001.png",
+    "bytes": 4256,
+    "sha256": "9425e12f56051b339403598a26457e57bc5c120feab5ab41cd72b2d7ace7dacf"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_002.png",
+    "bytes": 4636,
+    "sha256": "a3935d50bd287ace0cf1330a2b2799532ea3dbcfabafd51fc8599de236400cc3"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_003.png",
+    "bytes": 4049,
+    "sha256": "dc3f2b85cb6d611ad33aff3952e0eb03f041a6a162ff6f41daeb9758f75916e8"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_004.png",
+    "bytes": 3656,
+    "sha256": "8b00357e6442d92b7a6ba670f00d71788fc87d78e72c8b406be7dc0ca36244e1"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_005.png",
+    "bytes": 3777,
+    "sha256": "3f0f84eff7814d7f66ac38bccbf0fc7fcf5fb20d875b1abbc6c13bf1f4e2791f"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_006.png",
+    "bytes": 4046,
+    "sha256": "76ff64e720169812cb33d2ef1c7fe1280d87efcd1d276e2adb042336a61c4dd0"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_007.png",
+    "bytes": 3400,
+    "sha256": "17eff7f2a1f49b8a4b243302543495afc1aab6bc8616834dcba36ebaae18d208"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_008.png",
+    "bytes": 3703,
+    "sha256": "1c19ae93f3d6f3823708694b659bd154eec67cbfc3712dcb1d9619d6b3b691c0"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_009.png",
+    "bytes": 3508,
+    "sha256": "9d1a73c7277e1ec26a31e74be04be59db96a5bf585efdd9b2e4f261632d8b495"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_010.png",
+    "bytes": 3575,
+    "sha256": "255d97689b6ba176781cfe0e0d299afadcaef83874a4ead8165a624fdc35acfa"
+  },
+  {
+    "path": "public/assets/loko/sit/loko_sit_011.png",
+    "bytes": 3475,
+    "sha256": "300b33b5e4881b62b713c51d74d2b1f54cec4b6cf812de2dd7018342f039d527"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/_preview.png",
+    "bytes": 31497,
+    "sha256": "a2ba30910622bccf66c5831d8ffd6ed90f8586028df3c2e95e2cef10edc166d2"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_000.png",
+    "bytes": 4044,
+    "sha256": "ad48c6a654e45f9edd4f664b84a479e9b445ce6cb63e1a14f6ce29b0dcdb8caf"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_001.png",
+    "bytes": 3971,
+    "sha256": "639cdd917cf56f939dc7a914fdd9425c3c7a2175230bb190ec7a722bf74d0c40"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_002.png",
+    "bytes": 3332,
+    "sha256": "74084d9a6349d63be5f68819f4630e63c7583ae8dcd5273eec161b078f03dbb7"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_003.png",
+    "bytes": 3652,
+    "sha256": "7cf98ae6cd012df758b1ba622bd178fd2339477927bd17a869d8ac2a6668fcec"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_004.png",
+    "bytes": 3989,
+    "sha256": "e970b18f51c5f92852377b1cb6c632fb2af6513f5165e2ded6c6a9452a71c2d2"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_005.png",
+    "bytes": 3915,
+    "sha256": "a730cdb35a6d739c8bdacb035858963d7f2f324b08af29b2697e5d5d67d88093"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_006.png",
+    "bytes": 3416,
+    "sha256": "0a3e4cfab560a1af0c76d603d37d3ca4fadad42c6ca33619d4e253867ce98df0"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_007.png",
+    "bytes": 2874,
+    "sha256": "7d8efe29e6017352ffd8b0895293a13b350816ca5e4b9efd42ddb1e4afe57c80"
+  },
+  {
+    "path": "public/assets/loko/sleep_loop/loko_sleep_loop_008.png",
+    "bytes": 2661,
+    "sha256": "eca343ceaceb1bdfbf234350e40b8bf21c49ef2d425803fb0c25bbfb1627b8fa"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/_preview.png",
+    "bytes": 49894,
+    "sha256": "5c5533c9f3209499822712d0a445ccf1be2dba410b40077d5cab934532219773"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_000.png",
+    "bytes": 4344,
+    "sha256": "93a9a19ab59fbed1042e5162d65955668bfefc73b718cd86d074163384d81cbf"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_001.png",
+    "bytes": 4313,
+    "sha256": "050c07edb5138c28d408edeb59ca46861c1a251f4a521d14a6c5878d42434ac7"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_002.png",
+    "bytes": 4308,
+    "sha256": "6cd288f1e1fb8fa635917276c249876a5d1f0f26a1cbbf79adababfd71f52267"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_003.png",
+    "bytes": 4251,
+    "sha256": "fc086909164109d88871bb31f82697ccc0fda99b899b5501d7a37d309540438b"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_004.png",
+    "bytes": 4167,
+    "sha256": "06265f42a7568495ba9bd59d2f938d6900730c3c76e0fd1f167dee122f897632"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_005.png",
+    "bytes": 4277,
+    "sha256": "94af9a2db13d3a9e8d9ef40125700edfbdf064d0c2f098b7e3ad2064cf175868"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_006.png",
+    "bytes": 4292,
+    "sha256": "ab36b8fd531806b2409f80277e266877b950b070c7db2c7d167b65bf880aeb13"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_007.png",
+    "bytes": 3770,
+    "sha256": "3d534a34f15198c0eb77cc56ae5c1e06239607b20d0656e3f52cb6fa2fbb7709"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_008.png",
+    "bytes": 3363,
+    "sha256": "7c32d56974104130c2437428824eed1a1a1f50598ce58578d500ebd9c8083c18"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_009.png",
+    "bytes": 3339,
+    "sha256": "61e24fa3b601d9b7680b1fe36ad9a7a7eff5415f8f0357a764806202cdff7385"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_010.png",
+    "bytes": 4066,
+    "sha256": "f5351963186e8cdba6395f972375aeeba33ba0b01d24c5edcef4a1db10b598f2"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_011.png",
+    "bytes": 3870,
+    "sha256": "a742eea3dbffb1367f79a39fcdbab40a90ec95f5119ea208adb4373a596c1602"
+  },
+  {
+    "path": "public/assets/loko/sleep_transition/loko_sleep_transition_012.png",
+    "bytes": 3552,
+    "sha256": "779f35e419407c8be621622fb37040cb4c03a7b59a75be153573e2061d29adcb"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_000.png",
+    "bytes": 3552,
+    "sha256": "779f35e419407c8be621622fb37040cb4c03a7b59a75be153573e2061d29adcb"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_001.png",
+    "bytes": 3870,
+    "sha256": "a742eea3dbffb1367f79a39fcdbab40a90ec95f5119ea208adb4373a596c1602"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_002.png",
+    "bytes": 4066,
+    "sha256": "f5351963186e8cdba6395f972375aeeba33ba0b01d24c5edcef4a1db10b598f2"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_003.png",
+    "bytes": 3339,
+    "sha256": "61e24fa3b601d9b7680b1fe36ad9a7a7eff5415f8f0357a764806202cdff7385"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_004.png",
+    "bytes": 3363,
+    "sha256": "7c32d56974104130c2437428824eed1a1a1f50598ce58578d500ebd9c8083c18"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_005.png",
+    "bytes": 3770,
+    "sha256": "3d534a34f15198c0eb77cc56ae5c1e06239607b20d0656e3f52cb6fa2fbb7709"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_006.png",
+    "bytes": 4292,
+    "sha256": "ab36b8fd531806b2409f80277e266877b950b070c7db2c7d167b65bf880aeb13"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_007.png",
+    "bytes": 4277,
+    "sha256": "94af9a2db13d3a9e8d9ef40125700edfbdf064d0c2f098b7e3ad2064cf175868"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_008.png",
+    "bytes": 4167,
+    "sha256": "06265f42a7568495ba9bd59d2f938d6900730c3c76e0fd1f167dee122f897632"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_009.png",
+    "bytes": 4251,
+    "sha256": "fc086909164109d88871bb31f82697ccc0fda99b899b5501d7a37d309540438b"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_010.png",
+    "bytes": 4308,
+    "sha256": "6cd288f1e1fb8fa635917276c249876a5d1f0f26a1cbbf79adababfd71f52267"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_011.png",
+    "bytes": 4313,
+    "sha256": "050c07edb5138c28d408edeb59ca46861c1a251f4a521d14a6c5878d42434ac7"
+  },
+  {
+    "path": "public/assets/loko/wake/loko_wake_012.png",
+    "bytes": 4344,
+    "sha256": "93a9a19ab59fbed1042e5162d65955668bfefc73b718cd86d074163384d81cbf"
+  },
+  {
+    "path": "public/assets/loko/walk_left/_preview.png",
+    "bytes": 51346,
+    "sha256": "0a85fbe7d21f0fd30796a93fa5c2b6fbcdbb59061267203533b743967dd2d984"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_000.png",
+    "bytes": 4152,
+    "sha256": "b5a3f2ec5e31396d57e070ee48bd0ab7ba060eff753c8c23d51faf1a7331a233"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_001.png",
+    "bytes": 4308,
+    "sha256": "afe4752c0ba46103bbd7db518b938e7eb3a77dd4fccbb96c45893f82762e9485"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_002.png",
+    "bytes": 4093,
+    "sha256": "a62867ca84f80807b3c1731feac561474e16cfa522a1dd580ba7a36ad631661d"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_003.png",
+    "bytes": 4186,
+    "sha256": "30b1ba36f3c52a042481005e24074a1aa39712bc1cadca43a6755486c0f4c4c4"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_004.png",
+    "bytes": 4379,
+    "sha256": "2f6a1c6464e6fee239dd5c67b5ed44a86695e8868dd55b7b6764f154598a5abf"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_005.png",
+    "bytes": 4423,
+    "sha256": "706282e445b2100515c063873e09af1b2fd86070060c9a9645bf35b73b47eb6e"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_006.png",
+    "bytes": 4305,
+    "sha256": "5461579a85d7b477648ea7d353ae4490de7c89bcdcabe114e4eb3a94550a91de"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_007.png",
+    "bytes": 4121,
+    "sha256": "8d25b4654bfa0b82a8f230e6ed67e5835c349829c682421e61299ba56e550869"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_008.png",
+    "bytes": 4287,
+    "sha256": "9f8a87f493f248ade060a7b590b6f4fada6b6422ebf16eb6b89d65cca247ad3a"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_009.png",
+    "bytes": 3998,
+    "sha256": "7aab635cd1471e5ace635686fc52a8801db1507ef96f4320c51ca76d18664ec7"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_010.png",
+    "bytes": 3436,
+    "sha256": "81c551bf803ac518c4485b2878bf6d60d5dae36d3a4b34e11290d66d478e8a10"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_011.png",
+    "bytes": 3402,
+    "sha256": "8225c11b6c6f743c9d691cf159a0f70dda53a1c6606880d0a4a10c89244a9e62"
+  },
+  {
+    "path": "public/assets/loko/walk_left/loko_walk_left_012.png",
+    "bytes": 3912,
+    "sha256": "9bba005a750c8fa0cbb48961878d99f3fdf79715229da92291a8b9875eb6e76e"
+  },
+  {
+    "path": "public/assets/loko/walk_right/_preview.png",
+    "bytes": 52013,
+    "sha256": "14c155e2dcbc8b004dfbfcfe43f876a50dd980908eede098ffb70b4c767acefe"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_000.png",
+    "bytes": 4214,
+    "sha256": "0dbf2ee6e3ab38abee08d9b4540139c8dcb1b932e77e1fcd1b622e03d12e27c8"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_001.png",
+    "bytes": 4107,
+    "sha256": "4516a940b0bd263f7fc204856e9563dc895ae8398843f1a8da598eb17bf1fd12"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_002.png",
+    "bytes": 4363,
+    "sha256": "0f1bfb81311e912879dd5c2061e5231c377f81603fa24534553655e630bbc610"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_003.png",
+    "bytes": 4312,
+    "sha256": "8fe6b99efa215caa5fc57fa2eaf45a8b3a1c4df16a5b618318a1b74df3c69684"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_004.png",
+    "bytes": 4375,
+    "sha256": "111f7726f666fc1c99a5625e6c68219cce66772914ba58780c23f58131f7927d"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_005.png",
+    "bytes": 4300,
+    "sha256": "09e0057a32451185cf23bb5f175bc456dd7daf92314a43e546d6689bbd9e908a"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_006.png",
+    "bytes": 4221,
+    "sha256": "5f36acf7c0f45e12f5717d3a3dd951330bd8b6b890376ec01dfa1ac790ed0325"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_007.png",
+    "bytes": 3903,
+    "sha256": "b510c230adfd3084b53d06cad8ff26dcc07142ff7ff6d526e43078bce7fcdbf7"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_008.png",
+    "bytes": 4022,
+    "sha256": "3688e906b152ba8cb79cec9cac43e50e11234f158872ea1926cab970fd009200"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_009.png",
+    "bytes": 4051,
+    "sha256": "f5d03879b7de3bfc8fb2bffeb9d289320ae744b61e0749588dbfd3b3770e7946"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_010.png",
+    "bytes": 3866,
+    "sha256": "2b8a34ecfc2b751fac8a950f50d25949e8d5f9e7446973c06f389e56d0b62c66"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_011.png",
+    "bytes": 4085,
+    "sha256": "24f0886b464435e2b0cc29b89f3b4e2b63e3d91c6858a25a1651f83a7869eab5"
+  },
+  {
+    "path": "public/assets/loko/walk_right/loko_walk_right_012.png",
+    "bytes": 4177,
+    "sha256": "e0cdd8ca09d046c59cc90b37cc8d3a7d37e67945c0f51d5c68ff966ce29356de"
+  },
+  {
+    "path": "public/assets/poko/confused/_preview.png",
+    "bytes": 52106,
+    "sha256": "66415b0cf68dec7c8a40e5a16a92183f01fabbc0f40747a22fc484b9d4d6c0af"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_000.png",
+    "bytes": 4087,
+    "sha256": "047adae3c9c13b12a7e9bed7a650b249d28b79fce869718c636c2bb79b5c2066"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_001.png",
+    "bytes": 3975,
+    "sha256": "fb04614f3b3c10d1f4026afc5a00c496e4571b15e8a8a4f0a3129ae8ee10418e"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_002.png",
+    "bytes": 3945,
+    "sha256": "a7398fe52500ff75ba4e65d037192b06d9908d1e89a3f0829334e3b7600edf62"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_003.png",
+    "bytes": 4011,
+    "sha256": "e389c5cdef430838b5ced90a64f8514e98fe55ba4dfc196973a8d8b04396c80f"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_004.png",
+    "bytes": 4187,
+    "sha256": "1ea97dd501f5c8cf009d07d0e086752db3438d6ebfb23275a298503b5920b6f0"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_005.png",
+    "bytes": 3952,
+    "sha256": "fb31ab1bda26fc1403d57efdf9aa8e263162430b80ffd5fe7301841a9163a60b"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_006.png",
+    "bytes": 4463,
+    "sha256": "fa2c5dca15a99da562abb24ab9c9d4bf98d0d86aee52faf09d7d37c579202a3d"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_007.png",
+    "bytes": 4243,
+    "sha256": "38892647ec352787ef352ae59399dd7ee19d84966f362e6aacd0ff57431ba563"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_008.png",
+    "bytes": 4606,
+    "sha256": "7cbc414463dfb0650587c7f11401f8747cf9a291ca7c510fa5f41c8391498927"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_009.png",
+    "bytes": 3900,
+    "sha256": "6c9ce2befd6aee3e8c821bf0270fc7523c0edb1d766bb02f2ebac6c62e8555fe"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_010.png",
+    "bytes": 4347,
+    "sha256": "1834796a8fcdd30c7a05bda9fd8dee64679ce2ad4d67326ef048ab5dcf749d66"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_011.png",
+    "bytes": 3912,
+    "sha256": "2ae52aca9d1ac0e60464cf1dd7ac44ebb408d96ce4d6a59d6c1f4c7ecef3c713"
+  },
+  {
+    "path": "public/assets/poko/confused/poko_confused_012.png",
+    "bytes": 4402,
+    "sha256": "31a33609d22eaed8492ee97424e8d63d14c451a88ba25239fa1da6e4aea6d039"
+  },
+  {
+    "path": "public/assets/poko/dragged/poko_dragged_000.png",
+    "bytes": 4198,
+    "sha256": "feabd51d29e2b007ccd474321c3d8450f8c9c30f4fa79f2c3ad64e1f8dfc129b"
+  },
+  {
+    "path": "public/assets/poko/dragged/poko_dragged_001.png",
+    "bytes": 3980,
+    "sha256": "b9eff91e5d6fb293d45b6b7d9dfd201a970af5fc6222391189e87bd55e3cf5a0"
+  },
+  {
+    "path": "public/assets/poko/dragged/poko_dragged_002.png",
+    "bytes": 2547,
+    "sha256": "7299863a9eb3fdac4948d46dd2d7b550055e2a1710092c2576f0928eabd22151"
+  },
+  {
+    "path": "public/assets/poko/happy/_preview.png",
+    "bytes": 53420,
+    "sha256": "3860513f6a94a2ef0af77fb12f6b1c46a5d4a49d369dcfaa3697350f17aab88b"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_000.png",
+    "bytes": 4092,
+    "sha256": "e10db6f1215709b7af565f2d53c14e6ec1b634c059fb361dacbf98258bedc78e"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_001.png",
+    "bytes": 4043,
+    "sha256": "fbf33d0de8f78e789a2ab094c2d55e83f93c5678faafc6d3943b8b79e6c8b654"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_002.png",
+    "bytes": 4005,
+    "sha256": "fab452768e11318692c794a811133fdf8eaf4dc1f8856b94ee60c1d6f9a39c26"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_003.png",
+    "bytes": 4583,
+    "sha256": "449536955c58ea338d6fa78a7c4b5f151e871ddf557916e0aaef1fe50a4672bf"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_004.png",
+    "bytes": 3998,
+    "sha256": "66010650a1cb134cf259d5f3419b2a39659ce62805ae9dc9ccb448d1090e1bc2"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_005.png",
+    "bytes": 4063,
+    "sha256": "6cfae756f672955f637ffc49b7164b1c4fa19f12c2b12dfc055ac6a8c11f1378"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_006.png",
+    "bytes": 692,
+    "sha256": "537144066d5cc05dc1bfeb7700aa52bd1a78aae1d0464945d2d34b8c56186cf2"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_007.png",
+    "bytes": 3989,
+    "sha256": "7f70fad61b328ee15ba7c126d573a1e91341037b93043e0dd0fb9f26f1796672"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_008.png",
+    "bytes": 4179,
+    "sha256": "430c00311e12ef4e6ae2cd7d5e18e256a382a6a3bb5463a6be8a6b3ff4c2edf2"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_009.png",
+    "bytes": 797,
+    "sha256": "d2d4642a5d39d77997ed3a43b193f9541995ab16805f788844c17395901b85d4"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_010.png",
+    "bytes": 3922,
+    "sha256": "c68c26d38d3d127f3a09d20c0e360479081b6cb086056fe204b964962b22dc05"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_011.png",
+    "bytes": 5298,
+    "sha256": "933cac344ace1841b542c4117a9cfb22156b00a36d6e5b907f6205116df621ba"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_012.png",
+    "bytes": 4027,
+    "sha256": "7b5433a2ca56c0585d90bc776815aee119e96403514646b6dab31c631f4a613c"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_013.png",
+    "bytes": 4118,
+    "sha256": "db399d91d5782a516c6101ab4cbd676d8b49ecbe18f45438c7c2cbf5b4e2162e"
+  },
+  {
+    "path": "public/assets/poko/happy/poko_happy_014.png",
+    "bytes": 3960,
+    "sha256": "35c24fd8925bbd21c23e5ef33f60c34f79230a889dcb60ae549edb249e83c7a7"
+  },
+  {
+    "path": "public/assets/poko/idle/_preview.png",
+    "bytes": 29823,
+    "sha256": "a9920cdea09ebfa4621ea8d0c98777e28b323510e9305f807b2b7746ed52bcda"
+  },
+  {
+    "path": "public/assets/poko/idle/poko_idle_000.png",
+    "bytes": 4589,
+    "sha256": "2664f443e3544b0beee0b5a0ba354073ae02286fb3b89bd051680c4dc26f8f96"
+  },
+  {
+    "path": "public/assets/poko/idle/poko_idle_001.png",
+    "bytes": 4547,
+    "sha256": "c4e113d2eed3fb2040b4df0b406156966e6eab3514b95eeeddd074ba51e0e7c1"
+  },
+  {
+    "path": "public/assets/poko/idle/poko_idle_002.png",
+    "bytes": 4488,
+    "sha256": "c249da7c9e23cd3fb50df0a752ee32c346b98576b0fe79fbfc140637761d2502"
+  },
+  {
+    "path": "public/assets/poko/idle/poko_idle_003.png",
+    "bytes": 4172,
+    "sha256": "e786bae167edd744b71047c579704330d3224f70638e444ba2b8027db5c5441b"
+  },
+  {
+    "path": "public/assets/poko/idle/poko_idle_004.png",
+    "bytes": 4466,
+    "sha256": "3e43f44305a2a295398740062b5c33bd7fc5df5f4d817bd91f342bf608fb5437"
+  },
+  {
+    "path": "public/assets/poko/idle/poko_idle_005.png",
+    "bytes": 4419,
+    "sha256": "96225f64ca7484bd4fe08f9a8a75661c9b6356673e910af4f3c26d12aaf539e3"
+  },
+  {
+    "path": "public/assets/poko/idle/poko_idle_006.png",
+    "bytes": 4371,
+    "sha256": "a462c670446cf1589aae3d1bef8e99494bb2d2d99f6653c040eb03bc10df221c"
+  },
+  {
+    "path": "public/assets/poko/landing/poko_landing_000.png",
+    "bytes": 4092,
+    "sha256": "e10db6f1215709b7af565f2d53c14e6ec1b634c059fb361dacbf98258bedc78e"
+  },
+  {
+    "path": "public/assets/poko/landing/poko_landing_001.png",
+    "bytes": 4043,
+    "sha256": "fbf33d0de8f78e789a2ab094c2d55e83f93c5678faafc6d3943b8b79e6c8b654"
+  },
+  {
+    "path": "public/assets/poko/landing/poko_landing_002.png",
+    "bytes": 4005,
+    "sha256": "fab452768e11318692c794a811133fdf8eaf4dc1f8856b94ee60c1d6f9a39c26"
+  },
+  {
+    "path": "public/assets/poko/landing/poko_landing_003.png",
+    "bytes": 4583,
+    "sha256": "449536955c58ea338d6fa78a7c4b5f151e871ddf557916e0aaef1fe50a4672bf"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/_preview.png",
+    "bytes": 56563,
+    "sha256": "5133783fe6792a1df77c763ada1a1961f701729f288ff969138fe6bace139800"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_000.png",
+    "bytes": 4198,
+    "sha256": "feabd51d29e2b007ccd474321c3d8450f8c9c30f4fa79f2c3ad64e1f8dfc129b"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_001.png",
+    "bytes": 3980,
+    "sha256": "b9eff91e5d6fb293d45b6b7d9dfd201a970af5fc6222391189e87bd55e3cf5a0"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_002.png",
+    "bytes": 2547,
+    "sha256": "7299863a9eb3fdac4948d46dd2d7b550055e2a1710092c2576f0928eabd22151"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_003.png",
+    "bytes": 3961,
+    "sha256": "de1bb8fe31db5ffef3d744851267264808b2f8d5077ac7397ff3eca8b3d39413"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_004.png",
+    "bytes": 3957,
+    "sha256": "65e6fb21bfb66632d1b58bb11c28fd8f7c383d991969557e0be79b50e9f874e2"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_005.png",
+    "bytes": 3938,
+    "sha256": "8cac614069be9a9bd6df2af4191524f435246e0a7035ede44f0e45620132e023"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_006.png",
+    "bytes": 4743,
+    "sha256": "5bbefc730a9ce7fa6a9f41c5eb8d5412d5f4d59d0ce306eaa2d8c87ecebd44fe"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_007.png",
+    "bytes": 4140,
+    "sha256": "633e01c71e4d40267540738866874f9476cd502d46ba66f288464082e73865a0"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_008.png",
+    "bytes": 4886,
+    "sha256": "fd5307194e732a16619aebba55b2cf4159f31ed7d749ad008a2f2ba1f5e29588"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_009.png",
+    "bytes": 4236,
+    "sha256": "532b3869bc4161c7b22b8614826b1eae29823ba6c5cb4019b6216e81d166a891"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_010.png",
+    "bytes": 4281,
+    "sha256": "58383f3f53ac2791cb231ae5b488a2e13e85010e279b085a8c170d0991fa8fbf"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_011.png",
+    "bytes": 4861,
+    "sha256": "bb61d1f445d0cef5981c778d32245e7606c97cc5c1dcc93fcb756b439cbbf220"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_012.png",
+    "bytes": 4118,
+    "sha256": "cb5f843b01fc73b31a57f444e382d535b155dc901f4d3387cf3bc705818ff56d"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_013.png",
+    "bytes": 1018,
+    "sha256": "ab44e57e628f452258f9ab66c2211c0fb54d7f85b9c5c1520eeb5887059d86bb"
+  },
+  {
+    "path": "public/assets/poko/pet_reaction/poko_pet_reaction_014.png",
+    "bytes": 3995,
+    "sha256": "16e45cf00c4752f251d10001f6c6054d1a4412fe0235e7942f0e31afd425fd33"
+  },
+  {
+    "path": "public/assets/poko/sit/_preview.png",
+    "bytes": 51703,
+    "sha256": "bf50159330e06913cd0c4899f4d072e5783a420f48b4ab2529bb26277ba93148"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_000.png",
+    "bytes": 4007,
+    "sha256": "8c5c95e4aa68d84a6a65dcfd3047a3d861b4387a6d1e14d6151b17e51ffd02c1"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_001.png",
+    "bytes": 4004,
+    "sha256": "6a28ce463530588f971a4437dd2130484c64624209f5a9be3fb3235b3133a0f3"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_002.png",
+    "bytes": 3940,
+    "sha256": "b58c30931bbee77f63d87924398223fa77ae5f126bc33a91d28ec23ed951c3d5"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_003.png",
+    "bytes": 4157,
+    "sha256": "924ac82a2cccea3414d6bf4a7a5088eb5c362c3b383c4175555cf9e1d0b31c87"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_004.png",
+    "bytes": 4118,
+    "sha256": "e69e4fba91a7c5f7566d5e4fac0d2c9b0c4a0c56f28162e89aeee3761aa1be75"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_005.png",
+    "bytes": 4058,
+    "sha256": "53212edcd1b463a5b57effb51472bef0070aab7b2b3403e69eafb9a7c3e0316c"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_006.png",
+    "bytes": 3956,
+    "sha256": "7016bd2da80dc6e143e601447e092482d7c8602875c855558294017ae27aecb6"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_007.png",
+    "bytes": 4002,
+    "sha256": "b27d4bb04225bd9087ea2800fe2372f02461f6556aad4f3df78000477d8f9fb5"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_008.png",
+    "bytes": 3957,
+    "sha256": "9a1b3aeae081000900093841474de4c0f8f678f6f19051de3452d78ac752700e"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_009.png",
+    "bytes": 4367,
+    "sha256": "1262530e2f0316208a5ed818a84676848e4ed1b4c21815ff4e915af57fc3b36c"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_010.png",
+    "bytes": 4428,
+    "sha256": "4d65408146f4acbaa9e4dc9c2f486e6a2792da6a8d98b0d69a625ef681302d9a"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_011.png",
+    "bytes": 4344,
+    "sha256": "3dfe4ce358834e47022f032b0fab2e1ddf8b654b5ea520a3f1a59948b6b2a8a6"
+  },
+  {
+    "path": "public/assets/poko/sit/poko_sit_012.png",
+    "bytes": 4248,
+    "sha256": "3fb6c6a6b71b554c1c76638e4485d8924d6110b05a6ca0cd5836931613406c4f"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/_preview.png",
+    "bytes": 49195,
+    "sha256": "2b3fdd82b4e24712a5bd5860f845213ddf90f63b4791f4032279b75041c7db4b"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_000.png",
+    "bytes": 4355,
+    "sha256": "d2bf99135d4414e33d01732f6935c059b82c55292abbd70106ab97b4367f8653"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_001.png",
+    "bytes": 4316,
+    "sha256": "bc8ba7ee88cb7c661ca1981d47c233125010dc87c35f9facc5eeec2ef93f8da4"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_002.png",
+    "bytes": 4288,
+    "sha256": "7f50e9c2a4147ee6e3fb0bac8dafcf871fb5b37275059cdad8a5eea1a0e42a37"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_003.png",
+    "bytes": 3861,
+    "sha256": "1495cf292c0eef49835b2d3f43d3e96e12941418c9dfe8c4e977aaa8da10d8e5"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_004.png",
+    "bytes": 3993,
+    "sha256": "9193cd6c8230fa06d42918ab9d2c8f9cd86b21d8348d9f3543ee76e5d65d52c5"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_005.png",
+    "bytes": 4158,
+    "sha256": "cb848a60ff9cd02a4555d2bf4024d707e71458e1a7c0f523c9c3e953f5fa1afe"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_006.png",
+    "bytes": 3588,
+    "sha256": "361bd48b2834086073f3c7b367ad2923f94722dfbb74738db36dd208ab3e7593"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_007.png",
+    "bytes": 3750,
+    "sha256": "685163694e9a611c3e48cbf494672ed6811c857dccdc6b14baa144d3edf1f96f"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_008.png",
+    "bytes": 3330,
+    "sha256": "e27c0ab097d9fb007b68374a8f9e527a71afef122c9f24b0dded6028a9270a9c"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_009.png",
+    "bytes": 3885,
+    "sha256": "22da628ddda48bf8af019903b596ab695900fd5d8a9fe956fbff292671c35f8b"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_010.png",
+    "bytes": 3744,
+    "sha256": "2d288c9868777def142854619a23d2aab33c5dc86a001bd2aae19e6b19f0a3e8"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_011.png",
+    "bytes": 3746,
+    "sha256": "c23aa6d4caa334bdcf84aedc515ed70cda44cc62fe40c8ac33c3c47d9e471b8c"
+  },
+  {
+    "path": "public/assets/poko/sleep_loop/poko_sleep_loop_012.png",
+    "bytes": 3918,
+    "sha256": "e22d353be051d1a004ac1c0547ed9e0d5637849fee67ff5b253854963c3ced28"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/_preview.png",
+    "bytes": 49242,
+    "sha256": "569580811fa4c862b135bf48454780a8fafe00e5a57e76c1da5041f14a8ebd69"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_000.png",
+    "bytes": 3989,
+    "sha256": "b37f6c4245e7c6ff628a15ad6b643951444384a6879e2b4c0eed7482248acaa8"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_001.png",
+    "bytes": 3931,
+    "sha256": "9e93a97330b009dc24f4b503ea3d26dd442a12a6c7328162d76481bc32006bc4"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_002.png",
+    "bytes": 4217,
+    "sha256": "0ed41cdaef144824c87b580ae94bcd2f1d6a176bd5c120c66b140e336dd22172"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_003.png",
+    "bytes": 4071,
+    "sha256": "5c304c712974bac5bba9ce63c56d38903d2d4488d1d164ec8d87b7a7115cfe94"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_004.png",
+    "bytes": 3986,
+    "sha256": "dc0e5247a1d116015f6e54ebce89b27755654226d26291a71f86aed6128415dd"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_005.png",
+    "bytes": 3893,
+    "sha256": "28c107abab9f4f6a9581ba7e457da37b224b68406444942e821e7712298d92a5"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_006.png",
+    "bytes": 4144,
+    "sha256": "ad6e55faa21f2397e49d539bf775d2831a433c162170fbbb61ee348c0eb6b938"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_007.png",
+    "bytes": 3897,
+    "sha256": "3a1845799929d147210aeb21b23497f78d84dcd40f250fca959104a8d3129df9"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_008.png",
+    "bytes": 3652,
+    "sha256": "81e72f48cb8df35d83615e10afbca536667c8848c3e9c2383310dba7cf1bb49d"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_009.png",
+    "bytes": 3702,
+    "sha256": "6f6d09f2914ae8bbd468497c3b5c35f27dbb1ac4ee756eccaa9ab66ff07422d9"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_010.png",
+    "bytes": 3703,
+    "sha256": "c6856703252689008a78362fadbe9e28f361c0c60cea648dd70066f28d5212f7"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_011.png",
+    "bytes": 3852,
+    "sha256": "4eada4c5c7ea5f59d75529d00175c5b6ef4470f6354ef49960cb80d08d04ec6a"
+  },
+  {
+    "path": "public/assets/poko/sleep_transition/poko_sleep_transition_012.png",
+    "bytes": 3744,
+    "sha256": "fc9934282fb131f042f42458b8d60ca092b64ffdea9e670892379d2eaaf09bc9"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_000.png",
+    "bytes": 3744,
+    "sha256": "fc9934282fb131f042f42458b8d60ca092b64ffdea9e670892379d2eaaf09bc9"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_001.png",
+    "bytes": 3852,
+    "sha256": "4eada4c5c7ea5f59d75529d00175c5b6ef4470f6354ef49960cb80d08d04ec6a"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_002.png",
+    "bytes": 3703,
+    "sha256": "c6856703252689008a78362fadbe9e28f361c0c60cea648dd70066f28d5212f7"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_003.png",
+    "bytes": 3702,
+    "sha256": "6f6d09f2914ae8bbd468497c3b5c35f27dbb1ac4ee756eccaa9ab66ff07422d9"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_004.png",
+    "bytes": 3652,
+    "sha256": "81e72f48cb8df35d83615e10afbca536667c8848c3e9c2383310dba7cf1bb49d"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_005.png",
+    "bytes": 3897,
+    "sha256": "3a1845799929d147210aeb21b23497f78d84dcd40f250fca959104a8d3129df9"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_006.png",
+    "bytes": 4144,
+    "sha256": "ad6e55faa21f2397e49d539bf775d2831a433c162170fbbb61ee348c0eb6b938"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_007.png",
+    "bytes": 3893,
+    "sha256": "28c107abab9f4f6a9581ba7e457da37b224b68406444942e821e7712298d92a5"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_008.png",
+    "bytes": 3986,
+    "sha256": "dc0e5247a1d116015f6e54ebce89b27755654226d26291a71f86aed6128415dd"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_009.png",
+    "bytes": 4071,
+    "sha256": "5c304c712974bac5bba9ce63c56d38903d2d4488d1d164ec8d87b7a7115cfe94"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_010.png",
+    "bytes": 4217,
+    "sha256": "0ed41cdaef144824c87b580ae94bcd2f1d6a176bd5c120c66b140e336dd22172"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_011.png",
+    "bytes": 3931,
+    "sha256": "9e93a97330b009dc24f4b503ea3d26dd442a12a6c7328162d76481bc32006bc4"
+  },
+  {
+    "path": "public/assets/poko/wake/poko_wake_012.png",
+    "bytes": 3989,
+    "sha256": "b37f6c4245e7c6ff628a15ad6b643951444384a6879e2b4c0eed7482248acaa8"
+  },
+  {
+    "path": "public/assets/poko/walk_left/_preview.png",
+    "bytes": 49734,
+    "sha256": "1b1a75be1ea60c8b85fed89604139dcf9bd8847b8779823c4d34618a875e52fe"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_000.png",
+    "bytes": 4188,
+    "sha256": "6f6ae4b8e28eae3af9e2ec9ba096088f9c93a7351627f3e85dc3ebdc8cc75ded"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_001.png",
+    "bytes": 4153,
+    "sha256": "3819cd108dc258ac4dc195919a32edfccb25684e4492fc8b83428eddf21a8307"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_002.png",
+    "bytes": 4051,
+    "sha256": "f48148be3dde2d37f1baf3318750c12b0bcf7d14714e878b860847398fa6ba68"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_003.png",
+    "bytes": 4123,
+    "sha256": "eb3293b0e2434adf6dfd066c67dbf277c197305694a4a18e0bcdd6a4e259c956"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_004.png",
+    "bytes": 4069,
+    "sha256": "15cfeafb9cb33e26750b086abefb6f55749dcf9120521adef9b72ff54ea7a2c7"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_005.png",
+    "bytes": 4099,
+    "sha256": "117c9a37847b491ef3f751cfd58fc1b0743a70715d6a3a3da81c903dbd179e42"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_006.png",
+    "bytes": 3997,
+    "sha256": "e3cde4bcd6d679546c487b83ec23c59444adb5c210911a061380b7f3347367c5"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_007.png",
+    "bytes": 3923,
+    "sha256": "55a7cbb1c41e62c2e7e6abb05c2662abd164733ab93105d31e505948e75c4d0e"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_008.png",
+    "bytes": 4010,
+    "sha256": "7027db5f1ad0358f06a754fc75b189e940039c85a0932e572bb9c5ef216da90f"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_009.png",
+    "bytes": 3535,
+    "sha256": "8f0e17bf4a931e89b30ebfe3d9e01510c6432d538039617ba4434ca54096e449"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_010.png",
+    "bytes": 3575,
+    "sha256": "282d48db3efaed5cfff4c1ee0611c54bbe9fab028ab20695193900b4f0eca9a7"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_011.png",
+    "bytes": 4055,
+    "sha256": "7349b7f78616e795d591aae9710395f49af2f103378ae90e0e6e632cc8b7ea07"
+  },
+  {
+    "path": "public/assets/poko/walk_left/poko_walk_left_012.png",
+    "bytes": 3610,
+    "sha256": "ffa554397b8c6b164c9f5b8ba76e531fdcd11903173553d8fc5dcf96f86ddc02"
+  },
+  {
+    "path": "public/assets/poko/walk_right/_preview.png",
+    "bytes": 57048,
+    "sha256": "c358b30c8d417f659692e5356f0a975e0965dacef25a2d5a9d18cb909d5d23cc"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_000.png",
+    "bytes": 4406,
+    "sha256": "4a8239b4101cfe0c00b1b005580f57a6534977289e7d333ddb41372f4350a79a"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_001.png",
+    "bytes": 4310,
+    "sha256": "7c16f9b40a94c9fd8ad2bcbc760a2235fc89d9ed54000ac15e8a37d23ebf0fb5"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_002.png",
+    "bytes": 4573,
+    "sha256": "04a23b6e3f0b5c3c0baa2ca1da3324584b5ce953e5e90e7e8ffc8c32898a97fd"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_003.png",
+    "bytes": 4367,
+    "sha256": "2493c446699d94e721a717fe6e2112475884e6e69de91874e7a2445353be1f22"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_004.png",
+    "bytes": 4513,
+    "sha256": "957d21886abecc48a2ca15bcd66aecaf86e3e34a71e8cc4550150070122a18b9"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_005.png",
+    "bytes": 4509,
+    "sha256": "4e45a96ab02a9a576a444dda0c250167e9b747ce98479e5f8ed9004bbeefe077"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_006.png",
+    "bytes": 4631,
+    "sha256": "72146346acbc22b21e80642c5cd41747c4368878efef4590690e7d7df3411724"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_007.png",
+    "bytes": 4663,
+    "sha256": "2f04f773f233607b0ef604f9c968ab31bdda1c580053eb3ab1d84ecdfa232d33"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_008.png",
+    "bytes": 4366,
+    "sha256": "5ed1d4a2264bc995120d900d23bb85b10b216b6018d4d3960e2e72b7c9771cda"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_009.png",
+    "bytes": 4742,
+    "sha256": "eea945a540fce7d8e298960efe979d12288488ad35c5b7685352000f23b21dd4"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_010.png",
+    "bytes": 4686,
+    "sha256": "0a1a2a917b346ec1a77e64f8b0a22a902fb349088073daa0fef46bb07960fdad"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_011.png",
+    "bytes": 4414,
+    "sha256": "a972b612b870e22ef05770342a74221995a795953f1d6f7cb2232aabfbc05780"
+  },
+  {
+    "path": "public/assets/poko/walk_right/poko_walk_right_012.png",
+    "bytes": 4738,
+    "sha256": "ea9b44440892d8689c7a88d1ad0bbe868d5105db00b4c8d5f742dc5615fc7526"
+  },
+  {
+    "path": "public/icons/poko-128.png",
+    "bytes": 5294,
+    "sha256": "6beb6159364c59f134d3a538f06984f18eacc4c9747e7b02f781d9c0913b7420"
+  },
+  {
+    "path": "public/icons/poko-16.png",
+    "bytes": 306,
+    "sha256": "2b09e75cb1079d211385d7029b5cb6e19b824cae2f20a4502267a2e4bb641a3b"
+  },
+  {
+    "path": "public/icons/poko-24.png",
+    "bytes": 540,
+    "sha256": "fa5296e58d4718360713e3b62ec14259430d0f00faee23b1ce5c9e9305f33294"
+  },
+  {
+    "path": "public/icons/poko-256.png",
+    "bytes": 7138,
+    "sha256": "0357f38cc953a002cd52214c6eb4fcdb98d7b0462411979125c19231be3db8bb"
+  },
+  {
+    "path": "public/icons/poko-32.png",
+    "bytes": 834,
+    "sha256": "ddf04e4acc7feee3078d2e5635b6eb62b09541b95a5d54eedfa478af8bce64f9"
+  },
+  {
+    "path": "public/icons/poko-48.png",
+    "bytes": 1700,
+    "sha256": "0ee480e16ad885d1a680b7f17a7ca5947f64d026dd9c3365f8bb192cbb794c7e"
+  },
+  {
+    "path": "public/icons/poko-64.png",
+    "bytes": 2626,
+    "sha256": "0b30cf57e598a8ab8dc51d5cd32939ce6b4b4db31b6b03313c433789daa90d1b"
+  },
+  {
+    "path": "scripts/dev.mjs",
+    "bytes": 885,
+    "sha256": "3e88a6b6bbd20b3da5205de33355e5882a25f3c96ebef78584a83aa0189d7bac"
+  },
+  {
+    "path": "scripts/validate-assets.mjs",
+    "bytes": 2143,
+    "sha256": "c4d552ab6aba2ed6e78e71268ebcbec565597a58694053e608ef36f857117832"
+  },
+  {
+    "path": "src/App.tsx",
+    "bytes": 251,
+    "sha256": "8369b8cdcd3d13a51624471b46470f2dc85d7efc335893de7938565e02f0629a"
+  },
+  {
+    "path": "src/components/Pet.tsx",
+    "bytes": 5170,
+    "sha256": "7be187403942bad8946e4be7c50ec61131be7f84a4155c7f62cdbf8f35099d35"
+  },
+  {
+    "path": "src/components/Settings.tsx",
+    "bytes": 2920,
+    "sha256": "41ccc8568bdf7ff418703bd392ed40ba54af888f58c1d1b4abbbd097bc5dae81"
+  },
+  {
+    "path": "src/components/Sprite.tsx",
+    "bytes": 509,
+    "sha256": "79390bd90202c0a24ef4e368c23324c81f884ca88a2c9fcd221e55a628158810"
+  },
+  {
+    "path": "src/hooks/useSpriteAnimation.ts",
+    "bytes": 2051,
+    "sha256": "5007a8b07a119d355eabec303ab96e9ae31965b748f243cd9f3dc0ed90e3393e"
+  },
+  {
+    "path": "src/main.tsx",
+    "bytes": 229,
+    "sha256": "bc94bdda75bc660a06dad06b727b3c89687631288343f452cabec58e5ed40257"
+  },
+  {
+    "path": "src/styles.css",
+    "bytes": 3086,
+    "sha256": "8cd6799929c5f8250239a778a470daad1a4a566f65174e62c2431bd8a6768804"
+  },
+  {
+    "path": "src/types/animation.ts",
+    "bytes": 553,
+    "sha256": "37cb81267e4e7eda13d11a38b172ee4c6b24d7641ec3eb530dcb961b0e0499b0"
+  },
+  {
+    "path": "src/types/global.d.ts",
+    "bytes": 902,
+    "sha256": "6ccea27ca34bfad305d1ac8ec26139dda74c6f073c857a2e4a3f76aaaef87c27"
+  },
+  {
+    "path": "tsconfig.app.json",
+    "bytes": 402,
+    "sha256": "fedd317542803e74732ad4c6d9eaa8c470bec18fd39c1974cbe42a543527871f"
+  },
+  {
+    "path": "tsconfig.electron.json",
+    "bytes": 340,
+    "sha256": "5b8bbb203f4c96a6bf9b30a3d8d7c460ed2f8f5947fb5505fad4d1eb19344ae1"
+  },
+  {
+    "path": "tsconfig.json",
+    "bytes": 94,
+    "sha256": "3dcdabe1b6745e73e8f95d9f77ad59a41614375362f6cc989905df694bda4770"
+  },
+  {
+    "path": "vite.config.ts",
+    "bytes": 161,
+    "sha256": "f4e805204ffd53573dc38ca912659ba0e23a6270966dbd6c4cce64a8b68eb372"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "step": "07",
+  "status": "IMPLEMENTED_AWAITING_NATIVE_VISUAL_CLOSURE",
+  "counts": {
+    "animations": 31,
+    "frames": 223,
+    "stable": 30,
+    "review": 1,
+    "quarantine": 0
+  },
+  "checks": {
+    "all_animations_inspectable_in_code": true,
+    "deterministic_frame_player": true,
+    "fixed_128_canvas": true,
+    "integer_scale_only": true,
+    "guides_and_metrics": true,
+    "side_by_side_and_mirror_review": true,
+    "transition_chain_composer": true,
+    "interruption_simulation": true,
+    "transparent_preview_surface": true,
+    "static_validation_passed": true,
+    "runtime_asset_validation_passed": true,
+    "typescript_typecheck_run": false,
+    "electron_native_visual_review_run": false,
+    "packaged_preview_run": false,
+    "short_recordings_exported": false
+  },
+  "blocker": "Dependencies are unavailable in this environment due the previously documented npm mirror failure."
+}

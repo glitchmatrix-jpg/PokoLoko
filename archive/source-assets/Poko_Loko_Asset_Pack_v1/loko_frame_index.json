@@ -1,0 +1,5352 @@
+[
+  {
+    "frame_id": "L-R01-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      9,
+      11,
+      56,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      11,
+      13,
+      54,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 1,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L001_row01_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      73,
+      11,
+      119,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      75,
+      13,
+      117,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 2,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L002_row01_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      137,
+      10,
+      183,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      139,
+      12,
+      181,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 3,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L003_row01_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      199,
+      10,
+      248,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      201,
+      12,
+      246,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 4,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L004_row01_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      262,
+      10,
+      312,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      264,
+      12,
+      310,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 5,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L005_row01_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      329,
+      10,
+      376,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      331,
+      12,
+      374,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 6,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L006_row01_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      394,
+      10,
+      440,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      396,
+      12,
+      438,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 7,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L007_row01_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      457,
+      11,
+      504,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      459,
+      13,
+      502,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 8,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L008_row01_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      520,
+      11,
+      567,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      522,
+      13,
+      565,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 9,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L009_row01_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      582,
+      10,
+      630,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      584,
+      12,
+      628,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 10,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L010_row01_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R01-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      646,
+      10,
+      692,
+      61
+    ],
+    "visible_pixel_bbox_xyxy": [
+      648,
+      12,
+      690,
+      59
+    ],
+    "detected_row": 1,
+    "horizontal_order": 11,
+    "tentative_pose_label": "idle/front and turn poses",
+    "tentative_sequence": "idle_turn",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L011_row01_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      8,
+      75,
+      55,
+      125
+    ],
+    "visible_pixel_bbox_xyxy": [
+      10,
+      77,
+      53,
+      123
+    ],
+    "detected_row": 2,
+    "horizontal_order": 1,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L012_row02_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      72,
+      75,
+      119,
+      126
+    ],
+    "visible_pixel_bbox_xyxy": [
+      74,
+      77,
+      117,
+      124
+    ],
+    "detected_row": 2,
+    "horizontal_order": 2,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L013_row02_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      135,
+      74,
+      185,
+      124
+    ],
+    "visible_pixel_bbox_xyxy": [
+      137,
+      76,
+      183,
+      122
+    ],
+    "detected_row": 2,
+    "horizontal_order": 3,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L014_row02_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      201,
+      74,
+      252,
+      124
+    ],
+    "visible_pixel_bbox_xyxy": [
+      203,
+      76,
+      250,
+      122
+    ],
+    "detected_row": 2,
+    "horizontal_order": 4,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L015_row02_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      272,
+      74,
+      325,
+      124
+    ],
+    "visible_pixel_bbox_xyxy": [
+      274,
+      76,
+      323,
+      122
+    ],
+    "detected_row": 2,
+    "horizontal_order": 5,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L016_row02_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      344,
+      74,
+      396,
+      124
+    ],
+    "visible_pixel_bbox_xyxy": [
+      346,
+      76,
+      394,
+      122
+    ],
+    "detected_row": 2,
+    "horizontal_order": 6,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L017_row02_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      413,
+      74,
+      465,
+      124
+    ],
+    "visible_pixel_bbox_xyxy": [
+      415,
+      76,
+      463,
+      122
+    ],
+    "detected_row": 2,
+    "horizontal_order": 7,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L018_row02_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      484,
+      74,
+      530,
+      124
+    ],
+    "visible_pixel_bbox_xyxy": [
+      486,
+      76,
+      528,
+      122
+    ],
+    "detected_row": 2,
+    "horizontal_order": 8,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L019_row02_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      547,
+      74,
+      594,
+      124
+    ],
+    "visible_pixel_bbox_xyxy": [
+      549,
+      76,
+      592,
+      122
+    ],
+    "detected_row": 2,
+    "horizontal_order": 9,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L020_row02_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      612,
+      74,
+      664,
+      123
+    ],
+    "visible_pixel_bbox_xyxy": [
+      614,
+      76,
+      662,
+      121
+    ],
+    "detected_row": 2,
+    "horizontal_order": 10,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L021_row02_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      677,
+      75,
+      727,
+      123
+    ],
+    "visible_pixel_bbox_xyxy": [
+      679,
+      77,
+      725,
+      121
+    ],
+    "detected_row": 2,
+    "horizontal_order": 11,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L022_row02_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      742,
+      76,
+      792,
+      123
+    ],
+    "visible_pixel_bbox_xyxy": [
+      744,
+      78,
+      790,
+      121
+    ],
+    "detected_row": 2,
+    "horizontal_order": 12,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L023_row02_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R02-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      806,
+      75,
+      855,
+      125
+    ],
+    "visible_pixel_bbox_xyxy": [
+      808,
+      77,
+      853,
+      123
+    ],
+    "detected_row": 2,
+    "horizontal_order": 13,
+    "tentative_pose_label": "side-facing movement poses",
+    "tentative_sequence": "locomotion",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L024_row02_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      7,
+      137,
+      56,
+      185
+    ],
+    "visible_pixel_bbox_xyxy": [
+      9,
+      139,
+      54,
+      183
+    ],
+    "detected_row": 3,
+    "horizontal_order": 1,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L025_row03_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      68,
+      135,
+      118,
+      186
+    ],
+    "visible_pixel_bbox_xyxy": [
+      70,
+      137,
+      116,
+      184
+    ],
+    "detected_row": 3,
+    "horizontal_order": 2,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L026_row03_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      134,
+      136,
+      182,
+      186
+    ],
+    "visible_pixel_bbox_xyxy": [
+      136,
+      138,
+      180,
+      184
+    ],
+    "detected_row": 3,
+    "horizontal_order": 3,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L027_row03_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      196,
+      135,
+      247,
+      186
+    ],
+    "visible_pixel_bbox_xyxy": [
+      198,
+      137,
+      245,
+      184
+    ],
+    "detected_row": 3,
+    "horizontal_order": 4,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L028_row03_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      263,
+      135,
+      318,
+      186
+    ],
+    "visible_pixel_bbox_xyxy": [
+      265,
+      137,
+      316,
+      184
+    ],
+    "detected_row": 3,
+    "horizontal_order": 5,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L029_row03_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      334,
+      135,
+      390,
+      184
+    ],
+    "visible_pixel_bbox_xyxy": [
+      336,
+      137,
+      388,
+      182
+    ],
+    "detected_row": 3,
+    "horizontal_order": 6,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L030_row03_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      405,
+      136,
+      460,
+      184
+    ],
+    "visible_pixel_bbox_xyxy": [
+      407,
+      138,
+      458,
+      182
+    ],
+    "detected_row": 3,
+    "horizontal_order": 7,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L031_row03_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      473,
+      136,
+      521,
+      186
+    ],
+    "visible_pixel_bbox_xyxy": [
+      475,
+      138,
+      519,
+      184
+    ],
+    "detected_row": 3,
+    "horizontal_order": 8,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L032_row03_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      537,
+      136,
+      592,
+      183
+    ],
+    "visible_pixel_bbox_xyxy": [
+      539,
+      138,
+      590,
+      181
+    ],
+    "detected_row": 3,
+    "horizontal_order": 9,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L033_row03_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      606,
+      142,
+      665,
+      185
+    ],
+    "visible_pixel_bbox_xyxy": [
+      608,
+      144,
+      663,
+      183
+    ],
+    "detected_row": 3,
+    "horizontal_order": 10,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L034_row03_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      675,
+      145,
+      726,
+      185
+    ],
+    "visible_pixel_bbox_xyxy": [
+      677,
+      147,
+      724,
+      183
+    ],
+    "detected_row": 3,
+    "horizontal_order": 11,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L035_row03_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      736,
+      145,
+      786,
+      185
+    ],
+    "visible_pixel_bbox_xyxy": [
+      738,
+      147,
+      784,
+      183
+    ],
+    "detected_row": 3,
+    "horizontal_order": 12,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L036_row03_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R03-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      795,
+      142,
+      852,
+      184
+    ],
+    "visible_pixel_bbox_xyxy": [
+      797,
+      144,
+      850,
+      182
+    ],
+    "detected_row": 3,
+    "horizontal_order": 13,
+    "tentative_pose_label": "sit/lie transition poses",
+    "tentative_sequence": "sitting_sleeping_transition",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L037_row03_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      7,
+      202,
+      56,
+      252
+    ],
+    "visible_pixel_bbox_xyxy": [
+      9,
+      204,
+      54,
+      250
+    ],
+    "detected_row": 4,
+    "horizontal_order": 1,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L038_row04_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      73,
+      202,
+      123,
+      252
+    ],
+    "visible_pixel_bbox_xyxy": [
+      75,
+      204,
+      121,
+      250
+    ],
+    "detected_row": 4,
+    "horizontal_order": 2,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L039_row04_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      136,
+      203,
+      188,
+      252
+    ],
+    "visible_pixel_bbox_xyxy": [
+      138,
+      205,
+      186,
+      250
+    ],
+    "detected_row": 4,
+    "horizontal_order": 3,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L040_row04_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      203,
+      203,
+      252,
+      253
+    ],
+    "visible_pixel_bbox_xyxy": [
+      205,
+      205,
+      250,
+      251
+    ],
+    "detected_row": 4,
+    "horizontal_order": 4,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L041_row04_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      268,
+      202,
+      318,
+      252
+    ],
+    "visible_pixel_bbox_xyxy": [
+      270,
+      204,
+      316,
+      250
+    ],
+    "detected_row": 4,
+    "horizontal_order": 5,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L042_row04_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      335,
+      202,
+      386,
+      253
+    ],
+    "visible_pixel_bbox_xyxy": [
+      337,
+      204,
+      384,
+      251
+    ],
+    "detected_row": 4,
+    "horizontal_order": 6,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L043_row04_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      401,
+      202,
+      453,
+      253
+    ],
+    "visible_pixel_bbox_xyxy": [
+      403,
+      204,
+      451,
+      251
+    ],
+    "detected_row": 4,
+    "horizontal_order": 7,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L044_row04_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      463,
+      205,
+      512,
+      252
+    ],
+    "visible_pixel_bbox_xyxy": [
+      465,
+      207,
+      510,
+      250
+    ],
+    "detected_row": 4,
+    "horizontal_order": 8,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L045_row04_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      523,
+      214,
+      573,
+      253
+    ],
+    "visible_pixel_bbox_xyxy": [
+      525,
+      216,
+      571,
+      251
+    ],
+    "detected_row": 4,
+    "horizontal_order": 9,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L046_row04_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      583,
+      216,
+      633,
+      253
+    ],
+    "visible_pixel_bbox_xyxy": [
+      585,
+      218,
+      631,
+      251
+    ],
+    "detected_row": 4,
+    "horizontal_order": 10,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L047_row04_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R04-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      650,
+      200,
+      712,
+      253
+    ],
+    "visible_pixel_bbox_xyxy": [
+      652,
+      202,
+      710,
+      251
+    ],
+    "detected_row": 4,
+    "horizontal_order": 11,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L048_row04_slot11.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R04-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      729,
+      196,
+      790,
+      253
+    ],
+    "visible_pixel_bbox_xyxy": [
+      731,
+      198,
+      788,
+      251
+    ],
+    "detected_row": 4,
+    "horizontal_order": 12,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "medium",
+    "notes": "Composite includes 2 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L049_row04_slot12.png",
+    "component_count": 3,
+    "detached_component_count": 2
+  },
+  {
+    "frame_id": "L-R04-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      803,
+      196,
+      853,
+      253
+    ],
+    "visible_pixel_bbox_xyxy": [
+      805,
+      198,
+      851,
+      251
+    ],
+    "detected_row": 4,
+    "horizontal_order": 13,
+    "tentative_pose_label": "sleep poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "medium",
+    "notes": "Composite includes 2 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L050_row04_slot13.png",
+    "component_count": 3,
+    "detached_component_count": 2
+  },
+  {
+    "frame_id": "L-R05-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      10,
+      266,
+      58,
+      323
+    ],
+    "visible_pixel_bbox_xyxy": [
+      12,
+      268,
+      56,
+      321
+    ],
+    "detected_row": 5,
+    "horizontal_order": 1,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L051_row05_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      82,
+      275,
+      137,
+      324
+    ],
+    "visible_pixel_bbox_xyxy": [
+      84,
+      277,
+      135,
+      322
+    ],
+    "detected_row": 5,
+    "horizontal_order": 2,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L052_row05_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      162,
+      277,
+      220,
+      325
+    ],
+    "visible_pixel_bbox_xyxy": [
+      164,
+      279,
+      218,
+      323
+    ],
+    "detected_row": 5,
+    "horizontal_order": 3,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L053_row05_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      234,
+      282,
+      292,
+      324
+    ],
+    "visible_pixel_bbox_xyxy": [
+      236,
+      284,
+      290,
+      322
+    ],
+    "detected_row": 5,
+    "horizontal_order": 4,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L054_row05_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      302,
+      284,
+      358,
+      325
+    ],
+    "visible_pixel_bbox_xyxy": [
+      304,
+      286,
+      356,
+      323
+    ],
+    "detected_row": 5,
+    "horizontal_order": 5,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L055_row05_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      375,
+      282,
+      428,
+      324
+    ],
+    "visible_pixel_bbox_xyxy": [
+      377,
+      284,
+      426,
+      322
+    ],
+    "detected_row": 5,
+    "horizontal_order": 6,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L056_row05_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      443,
+      280,
+      496,
+      324
+    ],
+    "visible_pixel_bbox_xyxy": [
+      445,
+      282,
+      494,
+      322
+    ],
+    "detected_row": 5,
+    "horizontal_order": 7,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L057_row05_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      512,
+      281,
+      559,
+      324
+    ],
+    "visible_pixel_bbox_xyxy": [
+      514,
+      283,
+      557,
+      322
+    ],
+    "detected_row": 5,
+    "horizontal_order": 8,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L058_row05_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      581,
+      284,
+      640,
+      323
+    ],
+    "visible_pixel_bbox_xyxy": [
+      583,
+      286,
+      638,
+      321
+    ],
+    "detected_row": 5,
+    "horizontal_order": 9,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L059_row05_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      655,
+      281,
+      706,
+      323
+    ],
+    "visible_pixel_bbox_xyxy": [
+      657,
+      283,
+      704,
+      321
+    ],
+    "detected_row": 5,
+    "horizontal_order": 10,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L060_row05_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      725,
+      281,
+      777,
+      322
+    ],
+    "visible_pixel_bbox_xyxy": [
+      727,
+      283,
+      775,
+      320
+    ],
+    "detected_row": 5,
+    "horizontal_order": 11,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L061_row05_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R05-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      797,
+      280,
+      848,
+      322
+    ],
+    "visible_pixel_bbox_xyxy": [
+      799,
+      282,
+      846,
+      320
+    ],
+    "detected_row": 5,
+    "horizontal_order": 12,
+    "tentative_pose_label": "front reaction poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L062_row05_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R06-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      9,
+      338,
+      54,
+      390
+    ],
+    "visible_pixel_bbox_xyxy": [
+      11,
+      340,
+      52,
+      388
+    ],
+    "detected_row": 6,
+    "horizontal_order": 1,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L063_row06_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R06-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      78,
+      338,
+      124,
+      390
+    ],
+    "visible_pixel_bbox_xyxy": [
+      80,
+      340,
+      122,
+      388
+    ],
+    "detected_row": 6,
+    "horizontal_order": 2,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L064_row06_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R06-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      148,
+      338,
+      194,
+      390
+    ],
+    "visible_pixel_bbox_xyxy": [
+      150,
+      340,
+      192,
+      388
+    ],
+    "detected_row": 6,
+    "horizontal_order": 3,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L065_row06_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R06-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      214,
+      338,
+      265,
+      389
+    ],
+    "visible_pixel_bbox_xyxy": [
+      216,
+      340,
+      263,
+      387
+    ],
+    "detected_row": 6,
+    "horizontal_order": 4,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L066_row06_slot04.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R06-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      277,
+      339,
+      338,
+      389
+    ],
+    "visible_pixel_bbox_xyxy": [
+      279,
+      341,
+      336,
+      387
+    ],
+    "detected_row": 6,
+    "horizontal_order": 5,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L067_row06_slot05.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R06-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      342,
+      341,
+      405,
+      389
+    ],
+    "visible_pixel_bbox_xyxy": [
+      344,
+      343,
+      403,
+      387
+    ],
+    "detected_row": 6,
+    "horizontal_order": 6,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L068_row06_slot06.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R06-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      419,
+      341,
+      479,
+      389
+    ],
+    "visible_pixel_bbox_xyxy": [
+      421,
+      343,
+      477,
+      387
+    ],
+    "detected_row": 6,
+    "horizontal_order": 7,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L069_row06_slot07.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R06-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      491,
+      342,
+      555,
+      389
+    ],
+    "visible_pixel_bbox_xyxy": [
+      493,
+      344,
+      553,
+      387
+    ],
+    "detected_row": 6,
+    "horizontal_order": 8,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L070_row06_slot08.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R06-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      557,
+      343,
+      604,
+      390
+    ],
+    "visible_pixel_bbox_xyxy": [
+      559,
+      345,
+      602,
+      388
+    ],
+    "detected_row": 6,
+    "horizontal_order": 9,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L071_row06_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R06-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      614,
+      342,
+      659,
+      389
+    ],
+    "visible_pixel_bbox_xyxy": [
+      616,
+      344,
+      657,
+      387
+    ],
+    "detected_row": 6,
+    "horizontal_order": 10,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L072_row06_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R06-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      673,
+      342,
+      719,
+      389
+    ],
+    "visible_pixel_bbox_xyxy": [
+      675,
+      344,
+      717,
+      387
+    ],
+    "detected_row": 6,
+    "horizontal_order": 11,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L073_row06_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R06-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      733,
+      342,
+      778,
+      390
+    ],
+    "visible_pixel_bbox_xyxy": [
+      735,
+      344,
+      776,
+      388
+    ],
+    "detected_row": 6,
+    "horizontal_order": 12,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L074_row06_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R06-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      801,
+      338,
+      847,
+      389
+    ],
+    "visible_pixel_bbox_xyxy": [
+      803,
+      340,
+      845,
+      387
+    ],
+    "detected_row": 6,
+    "horizontal_order": 13,
+    "tentative_pose_label": "love/happy poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L075_row06_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      8,
+      406,
+      54,
+      454
+    ],
+    "visible_pixel_bbox_xyxy": [
+      10,
+      408,
+      52,
+      452
+    ],
+    "detected_row": 7,
+    "horizontal_order": 1,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L076_row07_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      74,
+      407,
+      120,
+      454
+    ],
+    "visible_pixel_bbox_xyxy": [
+      76,
+      409,
+      118,
+      452
+    ],
+    "detected_row": 7,
+    "horizontal_order": 2,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L077_row07_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      141,
+      407,
+      186,
+      454
+    ],
+    "visible_pixel_bbox_xyxy": [
+      143,
+      409,
+      184,
+      452
+    ],
+    "detected_row": 7,
+    "horizontal_order": 3,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L078_row07_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      204,
+      408,
+      255,
+      455
+    ],
+    "visible_pixel_bbox_xyxy": [
+      206,
+      410,
+      253,
+      453
+    ],
+    "detected_row": 7,
+    "horizontal_order": 4,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L079_row07_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      270,
+      408,
+      320,
+      455
+    ],
+    "visible_pixel_bbox_xyxy": [
+      272,
+      410,
+      318,
+      453
+    ],
+    "detected_row": 7,
+    "horizontal_order": 5,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L080_row07_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      337,
+      407,
+      393,
+      456
+    ],
+    "visible_pixel_bbox_xyxy": [
+      339,
+      409,
+      391,
+      454
+    ],
+    "detected_row": 7,
+    "horizontal_order": 6,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L081_row07_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      407,
+      406,
+      453,
+      456
+    ],
+    "visible_pixel_bbox_xyxy": [
+      409,
+      408,
+      451,
+      454
+    ],
+    "detected_row": 7,
+    "horizontal_order": 7,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L082_row07_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      469,
+      406,
+      515,
+      456
+    ],
+    "visible_pixel_bbox_xyxy": [
+      471,
+      408,
+      513,
+      454
+    ],
+    "detected_row": 7,
+    "horizontal_order": 8,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L083_row07_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      531,
+      407,
+      585,
+      456
+    ],
+    "visible_pixel_bbox_xyxy": [
+      533,
+      409,
+      583,
+      454
+    ],
+    "detected_row": 7,
+    "horizontal_order": 9,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L084_row07_slot09.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R07-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      597,
+      407,
+      649,
+      456
+    ],
+    "visible_pixel_bbox_xyxy": [
+      599,
+      409,
+      647,
+      454
+    ],
+    "detected_row": 7,
+    "horizontal_order": 10,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L085_row07_slot10.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R07-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      664,
+      407,
+      709,
+      456
+    ],
+    "visible_pixel_bbox_xyxy": [
+      666,
+      409,
+      707,
+      454
+    ],
+    "detected_row": 7,
+    "horizontal_order": 11,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L086_row07_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R07-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      728,
+      408,
+      780,
+      457
+    ],
+    "visible_pixel_bbox_xyxy": [
+      730,
+      410,
+      778,
+      455
+    ],
+    "detected_row": 7,
+    "horizontal_order": 12,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L087_row07_slot12.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R07-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      799,
+      401,
+      845,
+      457
+    ],
+    "visible_pixel_bbox_xyxy": [
+      801,
+      403,
+      843,
+      455
+    ],
+    "detected_row": 7,
+    "horizontal_order": 13,
+    "tentative_pose_label": "confused/angry poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L088_row07_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      7,
+      470,
+      69,
+      524
+    ],
+    "visible_pixel_bbox_xyxy": [
+      9,
+      472,
+      67,
+      522
+    ],
+    "detected_row": 8,
+    "horizontal_order": 1,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L089_row08_slot01.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R08-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      73,
+      471,
+      119,
+      524
+    ],
+    "visible_pixel_bbox_xyxy": [
+      75,
+      473,
+      117,
+      522
+    ],
+    "detected_row": 8,
+    "horizontal_order": 2,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L090_row08_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      122,
+      473,
+      185,
+      524
+    ],
+    "visible_pixel_bbox_xyxy": [
+      124,
+      475,
+      183,
+      522
+    ],
+    "detected_row": 8,
+    "horizontal_order": 3,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L091_row08_slot03.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R08-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      201,
+      473,
+      253,
+      523
+    ],
+    "visible_pixel_bbox_xyxy": [
+      203,
+      475,
+      251,
+      521
+    ],
+    "detected_row": 8,
+    "horizontal_order": 4,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L092_row08_slot04.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R08-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      263,
+      472,
+      309,
+      522
+    ],
+    "visible_pixel_bbox_xyxy": [
+      265,
+      474,
+      307,
+      520
+    ],
+    "detected_row": 8,
+    "horizontal_order": 5,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L093_row08_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      326,
+      472,
+      384,
+      523
+    ],
+    "visible_pixel_bbox_xyxy": [
+      328,
+      474,
+      382,
+      521
+    ],
+    "detected_row": 8,
+    "horizontal_order": 6,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L094_row08_slot06.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R08-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      399,
+      471,
+      444,
+      523
+    ],
+    "visible_pixel_bbox_xyxy": [
+      401,
+      473,
+      442,
+      521
+    ],
+    "detected_row": 8,
+    "horizontal_order": 7,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L095_row08_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      462,
+      471,
+      508,
+      523
+    ],
+    "visible_pixel_bbox_xyxy": [
+      464,
+      473,
+      506,
+      521
+    ],
+    "detected_row": 8,
+    "horizontal_order": 8,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L096_row08_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      525,
+      471,
+      570,
+      523
+    ],
+    "visible_pixel_bbox_xyxy": [
+      527,
+      473,
+      568,
+      521
+    ],
+    "detected_row": 8,
+    "horizontal_order": 9,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L097_row08_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      588,
+      471,
+      634,
+      524
+    ],
+    "visible_pixel_bbox_xyxy": [
+      590,
+      473,
+      632,
+      522
+    ],
+    "detected_row": 8,
+    "horizontal_order": 10,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L098_row08_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      655,
+      471,
+      701,
+      524
+    ],
+    "visible_pixel_bbox_xyxy": [
+      657,
+      473,
+      699,
+      522
+    ],
+    "detected_row": 8,
+    "horizontal_order": 11,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L099_row08_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      721,
+      472,
+      768,
+      523
+    ],
+    "visible_pixel_bbox_xyxy": [
+      723,
+      474,
+      766,
+      521
+    ],
+    "detected_row": 8,
+    "horizontal_order": 12,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L100_row08_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R08-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      795,
+      472,
+      840,
+      523
+    ],
+    "visible_pixel_bbox_xyxy": [
+      797,
+      474,
+      838,
+      521
+    ],
+    "detected_row": 8,
+    "horizontal_order": 13,
+    "tentative_pose_label": "surprised/excited poses",
+    "tentative_sequence": "emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L101_row08_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      5,
+      538,
+      60,
+      587
+    ],
+    "visible_pixel_bbox_xyxy": [
+      7,
+      540,
+      58,
+      585
+    ],
+    "detected_row": 9,
+    "horizontal_order": 1,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L102_row09_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      77,
+      537,
+      131,
+      587
+    ],
+    "visible_pixel_bbox_xyxy": [
+      79,
+      539,
+      129,
+      585
+    ],
+    "detected_row": 9,
+    "horizontal_order": 2,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L103_row09_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      146,
+      537,
+      198,
+      589
+    ],
+    "visible_pixel_bbox_xyxy": [
+      148,
+      539,
+      196,
+      587
+    ],
+    "detected_row": 9,
+    "horizontal_order": 3,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L104_row09_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      212,
+      537,
+      264,
+      589
+    ],
+    "visible_pixel_bbox_xyxy": [
+      214,
+      539,
+      262,
+      587
+    ],
+    "detected_row": 9,
+    "horizontal_order": 4,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L105_row09_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      276,
+      537,
+      328,
+      590
+    ],
+    "visible_pixel_bbox_xyxy": [
+      278,
+      539,
+      326,
+      588
+    ],
+    "detected_row": 9,
+    "horizontal_order": 5,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L106_row09_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      347,
+      537,
+      400,
+      590
+    ],
+    "visible_pixel_bbox_xyxy": [
+      349,
+      539,
+      398,
+      588
+    ],
+    "detected_row": 9,
+    "horizontal_order": 6,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L107_row09_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      415,
+      537,
+      468,
+      590
+    ],
+    "visible_pixel_bbox_xyxy": [
+      417,
+      539,
+      466,
+      588
+    ],
+    "detected_row": 9,
+    "horizontal_order": 7,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L108_row09_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      488,
+      538,
+      538,
+      590
+    ],
+    "visible_pixel_bbox_xyxy": [
+      490,
+      540,
+      536,
+      588
+    ],
+    "detected_row": 9,
+    "horizontal_order": 8,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L109_row09_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      555,
+      540,
+      602,
+      590
+    ],
+    "visible_pixel_bbox_xyxy": [
+      557,
+      542,
+      600,
+      588
+    ],
+    "detected_row": 9,
+    "horizontal_order": 9,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L110_row09_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      617,
+      541,
+      664,
+      591
+    ],
+    "visible_pixel_bbox_xyxy": [
+      619,
+      543,
+      662,
+      589
+    ],
+    "detected_row": 9,
+    "horizontal_order": 10,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L111_row09_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      680,
+      541,
+      726,
+      592
+    ],
+    "visible_pixel_bbox_xyxy": [
+      682,
+      543,
+      724,
+      590
+    ],
+    "detected_row": 9,
+    "horizontal_order": 11,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L112_row09_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      746,
+      540,
+      793,
+      591
+    ],
+    "visible_pixel_bbox_xyxy": [
+      748,
+      542,
+      791,
+      589
+    ],
+    "detected_row": 9,
+    "horizontal_order": 12,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L113_row09_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R09-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      808,
+      543,
+      856,
+      590
+    ],
+    "visible_pixel_bbox_xyxy": [
+      810,
+      545,
+      854,
+      588
+    ],
+    "detected_row": 9,
+    "horizontal_order": 13,
+    "tentative_pose_label": "food/drink activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L114_row09_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      5,
+      603,
+      53,
+      654
+    ],
+    "visible_pixel_bbox_xyxy": [
+      7,
+      605,
+      51,
+      652
+    ],
+    "detected_row": 10,
+    "horizontal_order": 1,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L115_row10_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      65,
+      604,
+      113,
+      654
+    ],
+    "visible_pixel_bbox_xyxy": [
+      67,
+      606,
+      111,
+      652
+    ],
+    "detected_row": 10,
+    "horizontal_order": 2,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L116_row10_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      132,
+      605,
+      181,
+      655
+    ],
+    "visible_pixel_bbox_xyxy": [
+      134,
+      607,
+      179,
+      653
+    ],
+    "detected_row": 10,
+    "horizontal_order": 3,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L117_row10_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      200,
+      605,
+      248,
+      655
+    ],
+    "visible_pixel_bbox_xyxy": [
+      202,
+      607,
+      246,
+      653
+    ],
+    "detected_row": 10,
+    "horizontal_order": 4,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L118_row10_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      268,
+      604,
+      315,
+      655
+    ],
+    "visible_pixel_bbox_xyxy": [
+      270,
+      606,
+      313,
+      653
+    ],
+    "detected_row": 10,
+    "horizontal_order": 5,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L119_row10_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      338,
+      603,
+      387,
+      655
+    ],
+    "visible_pixel_bbox_xyxy": [
+      340,
+      605,
+      385,
+      653
+    ],
+    "detected_row": 10,
+    "horizontal_order": 6,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L120_row10_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      409,
+      603,
+      456,
+      655
+    ],
+    "visible_pixel_bbox_xyxy": [
+      411,
+      605,
+      454,
+      653
+    ],
+    "detected_row": 10,
+    "horizontal_order": 7,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L121_row10_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      477,
+      603,
+      526,
+      656
+    ],
+    "visible_pixel_bbox_xyxy": [
+      479,
+      605,
+      524,
+      654
+    ],
+    "detected_row": 10,
+    "horizontal_order": 8,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L122_row10_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      552,
+      605,
+      606,
+      657
+    ],
+    "visible_pixel_bbox_xyxy": [
+      554,
+      607,
+      604,
+      655
+    ],
+    "detected_row": 10,
+    "horizontal_order": 9,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L123_row10_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      618,
+      607,
+      668,
+      657
+    ],
+    "visible_pixel_bbox_xyxy": [
+      620,
+      609,
+      666,
+      655
+    ],
+    "detected_row": 10,
+    "horizontal_order": 10,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L124_row10_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      681,
+      607,
+      731,
+      658
+    ],
+    "visible_pixel_bbox_xyxy": [
+      683,
+      609,
+      729,
+      656
+    ],
+    "detected_row": 10,
+    "horizontal_order": 11,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L125_row10_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R10-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      747,
+      607,
+      797,
+      658
+    ],
+    "visible_pixel_bbox_xyxy": [
+      749,
+      609,
+      795,
+      656
+    ],
+    "detected_row": 10,
+    "horizontal_order": 12,
+    "tentative_pose_label": "food/drink activity continuation",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L126_row10_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R11-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      5,
+      665,
+      62,
+      725
+    ],
+    "visible_pixel_bbox_xyxy": [
+      7,
+      667,
+      60,
+      723
+    ],
+    "detected_row": 11,
+    "horizontal_order": 1,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L127_row11_slot01.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R11-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      68,
+      664,
+      130,
+      729
+    ],
+    "visible_pixel_bbox_xyxy": [
+      70,
+      666,
+      128,
+      727
+    ],
+    "detected_row": 11,
+    "horizontal_order": 2,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L128_row11_slot02.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R11-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      132,
+      662,
+      192,
+      730
+    ],
+    "visible_pixel_bbox_xyxy": [
+      134,
+      664,
+      190,
+      728
+    ],
+    "detected_row": 11,
+    "horizontal_order": 3,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L129_row11_slot03.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R11-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      197,
+      662,
+      254,
+      729
+    ],
+    "visible_pixel_bbox_xyxy": [
+      199,
+      664,
+      252,
+      727
+    ],
+    "detected_row": 11,
+    "horizontal_order": 4,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L130_row11_slot04.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R11-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      257,
+      675,
+      307,
+      730
+    ],
+    "visible_pixel_bbox_xyxy": [
+      259,
+      677,
+      305,
+      728
+    ],
+    "detected_row": 11,
+    "horizontal_order": 5,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L131_row11_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R11-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      312,
+      662,
+      378,
+      731
+    ],
+    "visible_pixel_bbox_xyxy": [
+      314,
+      664,
+      376,
+      729
+    ],
+    "detected_row": 11,
+    "horizontal_order": 6,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 2 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L132_row11_slot06.png",
+    "component_count": 3,
+    "detached_component_count": 2
+  },
+  {
+    "frame_id": "L-R11-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      380,
+      664,
+      452,
+      731
+    ],
+    "visible_pixel_bbox_xyxy": [
+      382,
+      666,
+      450,
+      729
+    ],
+    "detected_row": 11,
+    "horizontal_order": 7,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 2 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L133_row11_slot07.png",
+    "component_count": 3,
+    "detached_component_count": 2
+  },
+  {
+    "frame_id": "L-R11-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      462,
+      666,
+      506,
+      729
+    ],
+    "visible_pixel_bbox_xyxy": [
+      464,
+      668,
+      504,
+      727
+    ],
+    "detected_row": 11,
+    "horizontal_order": 8,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L134_row11_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R11-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      513,
+      664,
+      564,
+      729
+    ],
+    "visible_pixel_bbox_xyxy": [
+      515,
+      666,
+      562,
+      727
+    ],
+    "detected_row": 11,
+    "horizontal_order": 9,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L135_row11_slot09.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R11-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      569,
+      670,
+      632,
+      731
+    ],
+    "visible_pixel_bbox_xyxy": [
+      571,
+      672,
+      630,
+      729
+    ],
+    "detected_row": 11,
+    "horizontal_order": 10,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L136_row11_slot10.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R11-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      631,
+      665,
+      680,
+      731
+    ],
+    "visible_pixel_bbox_xyxy": [
+      633,
+      667,
+      678,
+      729
+    ],
+    "detected_row": 11,
+    "horizontal_order": 11,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L137_row11_slot11.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R11-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      687,
+      670,
+      736,
+      732
+    ],
+    "visible_pixel_bbox_xyxy": [
+      689,
+      672,
+      734,
+      730
+    ],
+    "detected_row": 11,
+    "horizontal_order": 12,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L138_row11_slot12.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R11-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      749,
+      681,
+      794,
+      731
+    ],
+    "visible_pixel_bbox_xyxy": [
+      751,
+      683,
+      792,
+      729
+    ],
+    "detected_row": 11,
+    "horizontal_order": 13,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L139_row11_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R11-C14",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      800,
+      678,
+      856,
+      731
+    ],
+    "visible_pixel_bbox_xyxy": [
+      802,
+      680,
+      854,
+      729
+    ],
+    "detected_row": 11,
+    "horizontal_order": 14,
+    "tentative_pose_label": "music/dance and object poses",
+    "tentative_sequence": "music_activity",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L140_row11_slot14.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R12-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      5,
+      743,
+      58,
+      794
+    ],
+    "visible_pixel_bbox_xyxy": [
+      7,
+      745,
+      56,
+      792
+    ],
+    "detected_row": 12,
+    "horizontal_order": 1,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L141_row12_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      67,
+      746,
+      122,
+      796
+    ],
+    "visible_pixel_bbox_xyxy": [
+      69,
+      748,
+      120,
+      794
+    ],
+    "detected_row": 12,
+    "horizontal_order": 2,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L142_row12_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      133,
+      746,
+      189,
+      796
+    ],
+    "visible_pixel_bbox_xyxy": [
+      135,
+      748,
+      187,
+      794
+    ],
+    "detected_row": 12,
+    "horizontal_order": 3,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L143_row12_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      199,
+      747,
+      255,
+      796
+    ],
+    "visible_pixel_bbox_xyxy": [
+      201,
+      749,
+      253,
+      794
+    ],
+    "detected_row": 12,
+    "horizontal_order": 4,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L144_row12_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      262,
+      746,
+      319,
+      796
+    ],
+    "visible_pixel_bbox_xyxy": [
+      264,
+      748,
+      317,
+      794
+    ],
+    "detected_row": 12,
+    "horizontal_order": 5,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L145_row12_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      326,
+      748,
+      383,
+      797
+    ],
+    "visible_pixel_bbox_xyxy": [
+      328,
+      750,
+      381,
+      795
+    ],
+    "detected_row": 12,
+    "horizontal_order": 6,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L146_row12_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      391,
+      747,
+      436,
+      796
+    ],
+    "visible_pixel_bbox_xyxy": [
+      393,
+      749,
+      434,
+      794
+    ],
+    "detected_row": 12,
+    "horizontal_order": 7,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L147_row12_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      455,
+      747,
+      509,
+      796
+    ],
+    "visible_pixel_bbox_xyxy": [
+      457,
+      749,
+      507,
+      794
+    ],
+    "detected_row": 12,
+    "horizontal_order": 8,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L148_row12_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      514,
+      748,
+      568,
+      797
+    ],
+    "visible_pixel_bbox_xyxy": [
+      516,
+      750,
+      566,
+      795
+    ],
+    "detected_row": 12,
+    "horizontal_order": 9,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L149_row12_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      572,
+      749,
+      628,
+      797
+    ],
+    "visible_pixel_bbox_xyxy": [
+      574,
+      751,
+      626,
+      795
+    ],
+    "detected_row": 12,
+    "horizontal_order": 10,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L150_row12_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      634,
+      750,
+      690,
+      798
+    ],
+    "visible_pixel_bbox_xyxy": [
+      636,
+      752,
+      688,
+      796
+    ],
+    "detected_row": 12,
+    "horizontal_order": 11,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L151_row12_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      696,
+      749,
+      749,
+      798
+    ],
+    "visible_pixel_bbox_xyxy": [
+      698,
+      751,
+      747,
+      796
+    ],
+    "detected_row": 12,
+    "horizontal_order": 12,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L152_row12_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      753,
+      749,
+      806,
+      797
+    ],
+    "visible_pixel_bbox_xyxy": [
+      755,
+      751,
+      804,
+      795
+    ],
+    "detected_row": 12,
+    "horizontal_order": 13,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L153_row12_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R12-C14",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      811,
+      749,
+      856,
+      797
+    ],
+    "visible_pixel_bbox_xyxy": [
+      813,
+      751,
+      854,
+      795
+    ],
+    "detected_row": 12,
+    "horizontal_order": 14,
+    "tentative_pose_label": "laptop poses",
+    "tentative_sequence": "laptop_activity",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L154_row12_slot14.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      5,
+      812,
+      53,
+      864
+    ],
+    "visible_pixel_bbox_xyxy": [
+      7,
+      814,
+      51,
+      862
+    ],
+    "detected_row": 13,
+    "horizontal_order": 1,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L155_row13_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      65,
+      812,
+      113,
+      864
+    ],
+    "visible_pixel_bbox_xyxy": [
+      67,
+      814,
+      111,
+      862
+    ],
+    "detected_row": 13,
+    "horizontal_order": 2,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L156_row13_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      125,
+      812,
+      172,
+      864
+    ],
+    "visible_pixel_bbox_xyxy": [
+      127,
+      814,
+      170,
+      862
+    ],
+    "detected_row": 13,
+    "horizontal_order": 3,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L157_row13_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      187,
+      812,
+      234,
+      865
+    ],
+    "visible_pixel_bbox_xyxy": [
+      189,
+      814,
+      232,
+      863
+    ],
+    "detected_row": 13,
+    "horizontal_order": 4,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L158_row13_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      247,
+      813,
+      300,
+      864
+    ],
+    "visible_pixel_bbox_xyxy": [
+      249,
+      815,
+      298,
+      862
+    ],
+    "detected_row": 13,
+    "horizontal_order": 5,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L159_row13_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      311,
+      814,
+      359,
+      865
+    ],
+    "visible_pixel_bbox_xyxy": [
+      313,
+      816,
+      357,
+      863
+    ],
+    "detected_row": 13,
+    "horizontal_order": 6,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L160_row13_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      377,
+      812,
+      430,
+      865
+    ],
+    "visible_pixel_bbox_xyxy": [
+      379,
+      814,
+      428,
+      863
+    ],
+    "detected_row": 13,
+    "horizontal_order": 7,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L161_row13_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      439,
+      810,
+      493,
+      867
+    ],
+    "visible_pixel_bbox_xyxy": [
+      441,
+      812,
+      491,
+      865
+    ],
+    "detected_row": 13,
+    "horizontal_order": 8,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L162_row13_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      506,
+      813,
+      564,
+      866
+    ],
+    "visible_pixel_bbox_xyxy": [
+      508,
+      815,
+      562,
+      864
+    ],
+    "detected_row": 13,
+    "horizontal_order": 9,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L163_row13_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      576,
+      816,
+      633,
+      866
+    ],
+    "visible_pixel_bbox_xyxy": [
+      578,
+      818,
+      631,
+      864
+    ],
+    "detected_row": 13,
+    "horizontal_order": 10,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L164_row13_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      649,
+      813,
+      713,
+      867
+    ],
+    "visible_pixel_bbox_xyxy": [
+      651,
+      815,
+      711,
+      865
+    ],
+    "detected_row": 13,
+    "horizontal_order": 11,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L165_row13_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      731,
+      815,
+      787,
+      866
+    ],
+    "visible_pixel_bbox_xyxy": [
+      733,
+      817,
+      785,
+      864
+    ],
+    "detected_row": 13,
+    "horizontal_order": 12,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L166_row13_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R13-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      802,
+      812,
+      854,
+      865
+    ],
+    "visible_pixel_bbox_xyxy": [
+      804,
+      814,
+      852,
+      863
+    ],
+    "detected_row": 13,
+    "horizontal_order": 13,
+    "tentative_pose_label": "reading/food activity poses",
+    "tentative_sequence": "activities",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L167_row13_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      7,
+      880,
+      52,
+      930
+    ],
+    "visible_pixel_bbox_xyxy": [
+      9,
+      882,
+      50,
+      928
+    ],
+    "detected_row": 14,
+    "horizontal_order": 1,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L168_row14_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      65,
+      880,
+      109,
+      930
+    ],
+    "visible_pixel_bbox_xyxy": [
+      67,
+      882,
+      107,
+      928
+    ],
+    "detected_row": 14,
+    "horizontal_order": 2,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L169_row14_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      128,
+      880,
+      173,
+      930
+    ],
+    "visible_pixel_bbox_xyxy": [
+      130,
+      882,
+      171,
+      928
+    ],
+    "detected_row": 14,
+    "horizontal_order": 3,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L170_row14_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      189,
+      880,
+      235,
+      930
+    ],
+    "visible_pixel_bbox_xyxy": [
+      191,
+      882,
+      233,
+      928
+    ],
+    "detected_row": 14,
+    "horizontal_order": 4,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L171_row14_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      251,
+      883,
+      296,
+      930
+    ],
+    "visible_pixel_bbox_xyxy": [
+      253,
+      885,
+      294,
+      928
+    ],
+    "detected_row": 14,
+    "horizontal_order": 5,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L172_row14_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      311,
+      883,
+      356,
+      931
+    ],
+    "visible_pixel_bbox_xyxy": [
+      313,
+      885,
+      354,
+      929
+    ],
+    "detected_row": 14,
+    "horizontal_order": 6,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L173_row14_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      370,
+      883,
+      415,
+      931
+    ],
+    "visible_pixel_bbox_xyxy": [
+      372,
+      885,
+      413,
+      929
+    ],
+    "detected_row": 14,
+    "horizontal_order": 7,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L174_row14_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      428,
+      884,
+      474,
+      930
+    ],
+    "visible_pixel_bbox_xyxy": [
+      430,
+      886,
+      472,
+      928
+    ],
+    "detected_row": 14,
+    "horizontal_order": 8,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L175_row14_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      488,
+      885,
+      532,
+      930
+    ],
+    "visible_pixel_bbox_xyxy": [
+      490,
+      887,
+      530,
+      928
+    ],
+    "detected_row": 14,
+    "horizontal_order": 9,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L176_row14_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      545,
+      885,
+      593,
+      930
+    ],
+    "visible_pixel_bbox_xyxy": [
+      547,
+      887,
+      591,
+      928
+    ],
+    "detected_row": 14,
+    "horizontal_order": 10,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L177_row14_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      610,
+      885,
+      658,
+      931
+    ],
+    "visible_pixel_bbox_xyxy": [
+      612,
+      887,
+      656,
+      929
+    ],
+    "detected_row": 14,
+    "horizontal_order": 11,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L178_row14_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R14-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      671,
+      885,
+      719,
+      931
+    ],
+    "visible_pixel_bbox_xyxy": [
+      673,
+      887,
+      717,
+      929
+    ],
+    "detected_row": 14,
+    "horizontal_order": 12,
+    "tentative_pose_label": "idle/sitting reaction poses",
+    "tentative_sequence": "idle_emotions",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L179_row14_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      4,
+      951,
+      57,
+      1001
+    ],
+    "visible_pixel_bbox_xyxy": [
+      6,
+      953,
+      55,
+      999
+    ],
+    "detected_row": 15,
+    "horizontal_order": 1,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L180_row15_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      63,
+      952,
+      117,
+      1001
+    ],
+    "visible_pixel_bbox_xyxy": [
+      65,
+      954,
+      115,
+      999
+    ],
+    "detected_row": 15,
+    "horizontal_order": 2,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L181_row15_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      123,
+      952,
+      178,
+      997
+    ],
+    "visible_pixel_bbox_xyxy": [
+      125,
+      954,
+      176,
+      995
+    ],
+    "detected_row": 15,
+    "horizontal_order": 3,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L182_row15_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      183,
+      952,
+      236,
+      997
+    ],
+    "visible_pixel_bbox_xyxy": [
+      185,
+      954,
+      234,
+      995
+    ],
+    "detected_row": 15,
+    "horizontal_order": 4,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L183_row15_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      241,
+      952,
+      294,
+      997
+    ],
+    "visible_pixel_bbox_xyxy": [
+      243,
+      954,
+      292,
+      995
+    ],
+    "detected_row": 15,
+    "horizontal_order": 5,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L184_row15_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      298,
+      951,
+      353,
+      996
+    ],
+    "visible_pixel_bbox_xyxy": [
+      300,
+      953,
+      351,
+      994
+    ],
+    "detected_row": 15,
+    "horizontal_order": 6,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L185_row15_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      357,
+      951,
+      415,
+      996
+    ],
+    "visible_pixel_bbox_xyxy": [
+      359,
+      953,
+      413,
+      994
+    ],
+    "detected_row": 15,
+    "horizontal_order": 7,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L186_row15_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      421,
+      951,
+      468,
+      996
+    ],
+    "visible_pixel_bbox_xyxy": [
+      423,
+      953,
+      466,
+      994
+    ],
+    "detected_row": 15,
+    "horizontal_order": 8,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L187_row15_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      471,
+      951,
+      521,
+      995
+    ],
+    "visible_pixel_bbox_xyxy": [
+      473,
+      953,
+      519,
+      993
+    ],
+    "detected_row": 15,
+    "horizontal_order": 9,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L188_row15_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      523,
+      952,
+      572,
+      995
+    ],
+    "visible_pixel_bbox_xyxy": [
+      525,
+      954,
+      570,
+      993
+    ],
+    "detected_row": 15,
+    "horizontal_order": 10,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L189_row15_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      575,
+      951,
+      628,
+      1007
+    ],
+    "visible_pixel_bbox_xyxy": [
+      577,
+      953,
+      626,
+      1005
+    ],
+    "detected_row": 15,
+    "horizontal_order": 11,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L190_row15_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      631,
+      952,
+      688,
+      995
+    ],
+    "visible_pixel_bbox_xyxy": [
+      633,
+      954,
+      686,
+      993
+    ],
+    "detected_row": 15,
+    "horizontal_order": 12,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L191_row15_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C13",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      691,
+      951,
+      750,
+      994
+    ],
+    "visible_pixel_bbox_xyxy": [
+      693,
+      953,
+      748,
+      992
+    ],
+    "detected_row": 15,
+    "horizontal_order": 13,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L192_row15_slot13.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R15-C14",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      754,
+      952,
+      811,
+      992
+    ],
+    "visible_pixel_bbox_xyxy": [
+      756,
+      954,
+      809,
+      990
+    ],
+    "detected_row": 15,
+    "horizontal_order": 14,
+    "tentative_pose_label": "peeking/furniture interaction poses",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L193_row15_slot14.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      4,
+      1021,
+      61,
+      1063
+    ],
+    "visible_pixel_bbox_xyxy": [
+      6,
+      1023,
+      59,
+      1061
+    ],
+    "detected_row": 16,
+    "horizontal_order": 1,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L194_row16_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      67,
+      1021,
+      121,
+      1063
+    ],
+    "visible_pixel_bbox_xyxy": [
+      69,
+      1023,
+      119,
+      1061
+    ],
+    "detected_row": 16,
+    "horizontal_order": 2,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L195_row16_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      127,
+      1021,
+      178,
+      1064
+    ],
+    "visible_pixel_bbox_xyxy": [
+      129,
+      1023,
+      176,
+      1062
+    ],
+    "detected_row": 16,
+    "horizontal_order": 3,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L196_row16_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      182,
+      1020,
+      236,
+      1064
+    ],
+    "visible_pixel_bbox_xyxy": [
+      184,
+      1022,
+      234,
+      1062
+    ],
+    "detected_row": 16,
+    "horizontal_order": 4,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L197_row16_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      242,
+      1018,
+      294,
+      1064
+    ],
+    "visible_pixel_bbox_xyxy": [
+      244,
+      1020,
+      292,
+      1062
+    ],
+    "detected_row": 16,
+    "horizontal_order": 5,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L198_row16_slot05.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      301,
+      1020,
+      350,
+      1066
+    ],
+    "visible_pixel_bbox_xyxy": [
+      303,
+      1022,
+      348,
+      1064
+    ],
+    "detected_row": 16,
+    "horizontal_order": 6,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L199_row16_slot06.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      355,
+      1022,
+      407,
+      1065
+    ],
+    "visible_pixel_bbox_xyxy": [
+      357,
+      1024,
+      405,
+      1063
+    ],
+    "detected_row": 16,
+    "horizontal_order": 7,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L200_row16_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      413,
+      1023,
+      465,
+      1066
+    ],
+    "visible_pixel_bbox_xyxy": [
+      415,
+      1025,
+      463,
+      1064
+    ],
+    "detected_row": 16,
+    "horizontal_order": 8,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L201_row16_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      470,
+      1023,
+      525,
+      1066
+    ],
+    "visible_pixel_bbox_xyxy": [
+      472,
+      1025,
+      523,
+      1064
+    ],
+    "detected_row": 16,
+    "horizontal_order": 9,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L202_row16_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C10",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      531,
+      1024,
+      579,
+      1070
+    ],
+    "visible_pixel_bbox_xyxy": [
+      533,
+      1026,
+      577,
+      1068
+    ],
+    "detected_row": 16,
+    "horizontal_order": 10,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L203_row16_slot10.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C11",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      589,
+      1024,
+      635,
+      1073
+    ],
+    "visible_pixel_bbox_xyxy": [
+      591,
+      1026,
+      633,
+      1071
+    ],
+    "detected_row": 16,
+    "horizontal_order": 11,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L204_row16_slot11.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R16-C12",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      648,
+      1025,
+      693,
+      1073
+    ],
+    "visible_pixel_bbox_xyxy": [
+      650,
+      1027,
+      691,
+      1071
+    ],
+    "detected_row": 16,
+    "horizontal_order": 12,
+    "tentative_pose_label": "peeking/furniture interaction continuation",
+    "tentative_sequence": "peeking",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L205_row16_slot12.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R17-C01",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      8,
+      1078,
+      54,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      10,
+      1080,
+      52,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 1,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L206_row17_slot01.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R17-C02",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      72,
+      1078,
+      118,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      74,
+      1080,
+      116,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 2,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L207_row17_slot02.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R17-C03",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      134,
+      1085,
+      181,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      136,
+      1087,
+      179,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 3,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L208_row17_slot03.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R17-C04",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      200,
+      1087,
+      255,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      202,
+      1089,
+      253,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 4,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L209_row17_slot04.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R17-C05",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      269,
+      1083,
+      329,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      271,
+      1085,
+      327,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 5,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L210_row17_slot05.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R17-C06",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      339,
+      1080,
+      396,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      341,
+      1082,
+      394,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 6,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "medium",
+    "notes": "Composite includes 1 detached component(s). Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L211_row17_slot06.png",
+    "component_count": 2,
+    "detached_component_count": 1
+  },
+  {
+    "frame_id": "L-R17-C07",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      406,
+      1090,
+      462,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      408,
+      1092,
+      460,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 7,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L212_row17_slot07.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R17-C08",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      475,
+      1091,
+      526,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      477,
+      1093,
+      524,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 8,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "high",
+    "notes": "Clean composite candidate; final animation ordering not yet assigned.",
+    "candidate_file": "characters/loko/detection_candidates/L213_row17_slot08.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  },
+  {
+    "frame_id": "L-R17-C09",
+    "character": "loko",
+    "source_bbox_xyxy": [
+      541,
+      1093,
+      590,
+      1128
+    ],
+    "visible_pixel_bbox_xyxy": [
+      543,
+      1095,
+      588,
+      1126
+    ],
+    "detected_row": 17,
+    "horizontal_order": 9,
+    "tentative_pose_label": "sleep transition poses",
+    "tentative_sequence": "sleeping",
+    "confidence": "medium",
+    "notes": "Manual visual review recommended.",
+    "candidate_file": "characters/loko/detection_candidates/L214_row17_slot09.png",
+    "component_count": 1,
+    "detached_component_count": 0
+  }
+]

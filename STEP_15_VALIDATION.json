@@ -1,0 +1,31 @@
+{
+  "step": 15,
+  "title": "Sleep, Wake, Rest, and Daily Rhythm",
+  "status": "PASS_STATIC_NATIVE_PENDING",
+  "checks": {
+    "authoritative_sleep_assets_verified": true,
+    "sleep_entry_completion_drives_loop": true,
+    "sleep_deadline_cannot_directly_swap_state": true,
+    "poko_character_specific_profile": true,
+    "loko_character_specific_profile": true,
+    "poko_primary_quiet_loop_locked": true,
+    "loko_unsafe_reverse_wake_prevented": true,
+    "locomotion_disabled_during_sleep_lifecycle": true,
+    "stale_generation_protection": true,
+    "drag_recovery_defined": true,
+    "suspend_resume_recovery_defined": true,
+    "post_wake_sleep_protection": true,
+    "daily_rhythm_is_probabilistic": true,
+    "strict_standalone_typescript": true,
+    "compiled_runtime_scenarios": true,
+    "native_windows_visual_review": false
+  },
+  "native_pending": [
+    "Poko reverse-entry wake visual approval",
+    "Loko lying-hold neutral recovery visual approval",
+    "click wake and drag-from-sleep in Electron",
+    "suspend/resume under Windows",
+    "long-session sleep duration tuning",
+    "mixed-DPI grounding while sleeping"
+  ]
+}

@@ -1,0 +1,42 @@
+name: Windows Manual QA Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      qa_label:
+        description: Label attached to the QA artifact
+        required: false
+        default: manual-qa
+
+jobs:
+  build-windows-qa:
+    runs-on: windows-2022
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        shell: bash
+        run: |
+          npm install --no-audit --no-fund
+      - run: npm run format:check
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run test:ci
+      - run: npm run build
+      - run: npm run package:dir
+      - name: Include QA documents and trace templates
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path release\manual-qa-evidence | Out-Null
+          Copy-Item docs\qa\*.md release\manual-qa-evidence\
+          Copy-Item docs\qa\traces release\manual-qa-evidence\traces -Recurse
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PokoLoko-Windows-${{ inputs.qa_label }}
+          path: |
+            release/win-unpacked/**
+            release/manual-qa-evidence/**
+          retention-days: 14

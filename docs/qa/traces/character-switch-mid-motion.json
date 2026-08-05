@@ -1,0 +1,54 @@
+{
+  "format": "pokoloko-diagnostic-trace",
+  "version": 1,
+  "exportedAtIso": "1970-01-01T00:00:00.000Z",
+  "seed": 2605,
+  "evidenceClass": "template",
+  "events": [
+    {
+      "sequence": 1,
+      "monotonicMs": 0,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:force_walk",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "character-switch-mid-motion"
+      },
+      "replayCommand": {
+        "type": "force_walk",
+        "region": "right",
+        "durationMs": 4000
+      }
+    },
+    {
+      "sequence": 2,
+      "monotonicMs": 1000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:set_character",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "character-switch-mid-motion"
+      },
+      "replayCommand": {
+        "type": "set_character",
+        "character": "loko"
+      }
+    },
+    {
+      "sequence": 3,
+      "monotonicMs": 2000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:force_idle",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "character-switch-mid-motion"
+      },
+      "replayCommand": {
+        "type": "force_idle"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "step": "08",
+  "title": "Static Pet Renderer and Desktop Grounding",
+  "implementationStatus": "COMPLETE",
+  "stopCondition": "PENDING_NATIVE_WINDOWS_VALIDATION",
+  "automatedChecks": {
+    "runtimeAssetIntegrity": "PASS",
+    "animationLabCoverage": "PASS",
+    "staticRendererStructure": "PASS",
+    "fixed128Canvas": "PASS",
+    "safeIntegerScaling": "PASS",
+    "manifestAnchorPlacement": "PASS",
+    "alphaAwareHitTestingImplemented": "PASS",
+    "developmentAssetResolutionTestDefined": "PASS",
+    "packagedAssetResolutionTestDefined": "PASS",
+    "displayGeometryUnitTestsDefined": "PASS",
+    "sourcePackageSyntaxBuild": "BLOCKED_BY_DEPENDENCY_REGISTRY"
+  },
+  "nativeChecks": {
+    "windows100Dpi": "PENDING",
+    "windows125Dpi": "PENDING",
+    "windows150Dpi": "PENDING",
+    "mixedDpi": "PENDING",
+    "multipleMonitors": "PENDING",
+    "negativeCoordinates": "PENDING",
+    "sideTaskbar": "PENDING",
+    "autoHiddenTaskbar": "PENDING",
+    "displayRemoval": "PENDING",
+    "alphaMousePassThrough": "PENDING",
+    "packagedAppLaunch": "PENDING"
+  },
+  "blockers": [
+    "No package-lock.json was inherited, so npm ci cannot run.",
+    "Configured npm registry returns 404 for @eslint/js@9.38.0.",
+    "Electron/Windows native rendering cannot be launched in this container."
+  ]
+}

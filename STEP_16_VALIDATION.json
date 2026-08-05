@@ -1,0 +1,15 @@
+{
+  "step": "16",
+  "title": "Character Switching and Profile Isolation",
+  "status": "STATIC_PASS_NATIVE_PENDING",
+  "checks": {
+    "atomic_target_preload_before_commit": true,
+    "stale_switch_generation_rejected": true,
+    "animation_and_movement_invalidated": true,
+    "profile_and_session_memory_isolated": true,
+    "ground_x_preserved_and_anchor_recomputed": true,
+    "persistence_commit_gated": true,
+    "failed_target_keeps_current_character": true,
+    "native_windows_matrix_pending": true
+  }
+}

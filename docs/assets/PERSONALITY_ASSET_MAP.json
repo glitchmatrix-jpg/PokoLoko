@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "characters": {
+    "poko": {
+      "identity": "energetic, curious, emotionally transparent, affectionate, distractible",
+      "primary_assets": [
+        "poko_idle_look_01",
+        "poko_idle_blink",
+        "poko_walk_left",
+        "poko_walk_right",
+        "poko_music",
+        "poko_playing_ball",
+        "poko_peeking",
+        "poko_sleep_transition",
+        "poko_sleep_loop_02"
+      ],
+      "contextual_assets": [
+        "poko_drink",
+        "poko_eat"
+      ],
+      "social_assets": [
+        "poko_sad_to_crying"
+      ],
+      "rules": [
+        "music and ball play may occur spontaneously",
+        "crying requires context and cooldown",
+        "shorter activity sessions than Loko",
+        "more frequent glance/walk intentions"
+      ]
+    },
+    "loko": {
+      "identity": "calm, deliberate, focused, observant, quietly affectionate",
+      "primary_assets": [
+        "loko_idle_front",
+        "loko_walk_left",
+        "loko_walk_right",
+        "loko_reading_01",
+        "loko_laptop",
+        "loko_sleep_transition",
+        "loko_sleep_loop"
+      ],
+      "contextual_assets": [
+        "loko_drink_02",
+        "loko_eat",
+        "loko_peeking_01",
+        "loko_peeking_02"
+      ],
+      "spontaneous_assets": [
+        "loko_music",
+        "loko_playing_ball_01"
+      ],
+      "social_assets": [
+        "loko_love_reaction"
+      ],
+      "rules": [
+        "longer calm holds",
+        "reading/laptop favored under sustained typing or quiet use",
+        "ball play rare enough to surprise",
+        "love reaction subtle and cooldown-bound"
+      ]
+    },
+    "shared_policy": {
+      "both_can": [
+        "walk",
+        "sleep",
+        "eat",
+        "drink",
+        "listen_to_music",
+        "peek",
+        "play_ball"
+      ],
+      "must_differ_by": [
+        "selection weights",
+        "duration",
+        "reaction latency",
+        "movement cadence",
+        "cooldowns",
+        "context sensitivity"
+      ]
+    }
+  }
+}

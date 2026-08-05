@@ -1,0 +1,27 @@
+{
+  "step": "20",
+  "title": "Reactions, Social Interaction, and Emotional Continuity",
+  "status": "STATIC_PASS_NATIVE_PENDING",
+  "checks": {
+    "reaction_registry_present": true,
+    "social_controller_present": true,
+    "nine_reaction_definitions": true,
+    "sleep_specific_wake_routing": true,
+    "locked_transition_deferral": true,
+    "prop_safe_activity_exit": true,
+    "spam_queue_collapse": true,
+    "poko_loko_distinct": true,
+    "contextual_crying_reason_gated": true,
+    "strict_typescript_passed": true,
+    "steps_06_19_regressions_passed": true,
+    "native_windows_visual_review_pending": true
+  },
+  "native_pending": [
+    "click timing",
+    "double-click behavior",
+    "click-drag alternation",
+    "sleep wake visuals",
+    "activity safe exits",
+    "long-session reaction frequency"
+  ]
+}

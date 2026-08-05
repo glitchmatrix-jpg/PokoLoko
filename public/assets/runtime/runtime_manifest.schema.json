@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PokoLoko Runtime Asset Manifest",
+  "type": "object",
+  "required": [
+    "manifestVersion",
+    "runtimeAssetVersion",
+    "generatedFrom",
+    "counts",
+    "animations"
+  ],
+  "properties": {
+    "manifestVersion": {
+      "type": "string"
+    },
+    "runtimeAssetVersion": {
+      "type": "string"
+    },
+    "animations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "character",
+          "frames",
+          "frameCount",
+          "fps",
+          "playback",
+          "loop",
+          "anchor",
+          "posture",
+          "interruptionLevel"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "character": {
+            "enum": [
+              "poko",
+              "loko"
+            ]
+          },
+          "frameCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "frames": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "fps": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "playback": {
+            "enum": [
+              "forward",
+              "reverse",
+              "ping_pong"
+            ]
+          },
+          "loop": {
+            "type": "boolean"
+          },
+          "interruptionLevel": {
+            "enum": [
+              "immediate",
+              "soft",
+              "deferred",
+              "locked"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

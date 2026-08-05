@@ -1,0 +1,6 @@
+{
+  "name": "@pokoloko/performance-monitor",
+  "version": "0.26.0",
+  "private": true,
+  "type": "module"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@pokoloko/audio-runtime",
+  "version": "0.23.0",
+  "private": true,
+  "type": "module"
+}

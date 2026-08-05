@@ -1,0 +1,70 @@
+{
+  "format": "pokoloko-diagnostic-trace",
+  "version": 1,
+  "exportedAtIso": "1970-01-01T00:00:00.000Z",
+  "seed": 2606,
+  "evidenceClass": "template",
+  "events": [
+    {
+      "sequence": 1,
+      "monotonicMs": 0,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:set_paused",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "pause-resume-fullscreen"
+      },
+      "replayCommand": {
+        "type": "set_paused",
+        "paused": true
+      }
+    },
+    {
+      "sequence": 2,
+      "monotonicMs": 1000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:set_context",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "pause-resume-fullscreen"
+      },
+      "replayCommand": {
+        "type": "set_context",
+        "patch": {
+          "fullscreenActive": true
+        }
+      }
+    },
+    {
+      "sequence": 3,
+      "monotonicMs": 2000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:set_paused",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "pause-resume-fullscreen"
+      },
+      "replayCommand": {
+        "type": "set_paused",
+        "paused": false
+      }
+    },
+    {
+      "sequence": 4,
+      "monotonicMs": 3000,
+      "category": "diagnostic",
+      "severity": "info",
+      "name": "qa-template:force_idle",
+      "details": {
+        "evidenceClass": "deterministic-template-not-native-capture",
+        "scenario": "pause-resume-fullscreen"
+      },
+      "replayCommand": {
+        "type": "force_idle"
+      }
+    }
+  ]
+}

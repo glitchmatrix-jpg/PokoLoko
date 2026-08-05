@@ -1,0 +1,28 @@
+{
+  "status": "READY_FOR_STEP_10_WITH_NATIVE_VALIDATION_DEFERRED",
+  "static_validators": {
+    "foundation": "PASS",
+    "runtime_assets": "PASS",
+    "animation_lab": "PASS",
+    "static_renderer": "PASS",
+    "animation_runtime": "PASS"
+  },
+  "counts": {
+    "animations": 31,
+    "frames": 223,
+    "mirrored_sequences": 2,
+    "isolated_poses_archival": 218
+  },
+  "native_validation": "DEFERRED_TO_WINDOWS_EXE_AFTER_STEP_27",
+  "known_blockers": [],
+  "native_risks_to_test": [
+    "transparent_window",
+    "alpha_hit_testing",
+    "dpi",
+    "multi_monitor",
+    "tray",
+    "suspend_resume",
+    "packaged_assets",
+    "nsis"
+  ]
+}

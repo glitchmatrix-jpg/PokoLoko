@@ -1,17 +1,24 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2022",
+    "lib": [
+      "ES2022"
+    ],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "dist-electron",
-    "rootDir": "electron",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "types": ["node"]
+    "rootDir": ".",
+    "types": [
+      "node",
+      "electron"
+    ],
+    "sourceMap": true,
+    "declaration": true
   },
   "include": [
     "electron/**/*.ts",
-    "electron/**/*.cts"
+    "packages/pet-engine/locomotion/src/**/*.ts",
+    "packages/pet-engine/direction/src/**/*.ts"
   ]
 }

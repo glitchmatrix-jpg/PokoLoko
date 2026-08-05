@@ -1,0 +1,38 @@
+{
+  "audit": "Stages 01-20.5 final QA/UI/UX hardening",
+  "overallStatus": "STATIC_QA_PASS_NATIVE_PENDING",
+  "critical": [
+    {
+      "id": "QA-CRIT-01",
+      "title": "Living systems disconnected",
+      "open": false,
+      "resolution": "Closed by Step 20.5 orchestration and compiled end-to-end scenarios."
+    },
+    {
+      "id": "QA-CRIT-02",
+      "title": "Stale visual loads and active-state interruption races",
+      "open": false,
+      "resolution": "Closed with runtime visual generations, locomotion cancellation, completion watchdog semantics, and contextual restraint."
+    },
+    {
+      "id": "QA-CRIT-03",
+      "title": "Native Windows and packaged EXE validation",
+      "open": true,
+      "resolution": "Must be closed using the GitHub Actions Windows artifact and a human test matrix."
+    }
+  ],
+  "fixedInFinalAudit": [
+    "Generation-guarded runtime animation and idle asset loads",
+    "Stopped locomotion before social reactions",
+    "Changed reaction timer into a missing-completion watchdog",
+    "Applied quiet/fullscreen/lock restraint to active behavior",
+    "Connected real screen region and edge proximity to planning",
+    "Gated context influence through authoritative privacy state",
+    "Broadcast authoritative settings to open renderer windows",
+    "Removed duplicate tray visibility command",
+    "Removed stale temporary test artifact",
+    "Updated stale blocked audit gate"
+  ],
+  "step21Allowed": true,
+  "requiredNextGate": "Proceed to Step 21; keep native Windows validation as a release blocker, not a hidden assumption."
+}

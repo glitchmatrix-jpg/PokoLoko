@@ -1,0 +1,787 @@
+{
+  "version": "step13",
+  "animation_count": 31,
+  "frame_count": 223,
+  "passed_check_counts": {
+    "png_format": 223,
+    "alpha_supporting_mode": 223,
+    "exact_canvas_dimensions": 223,
+    "nonblank": 223,
+    "no_visible_pixels_at_boundary": 223,
+    "no_full_opaque_background": 223,
+    "no_suspicious_white_fringe": 223,
+    "no_resampling_declared": 223
+  },
+  "frame_warnings": [],
+  "animation_results": [
+    {
+      "animation": "loko_drink_02",
+      "path": "normalized/loko/activities/drink_02",
+      "frame_count": 7,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_eat",
+      "path": "normalized/loko/activities/eat",
+      "frame_count": 9,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_laptop",
+      "path": "normalized/loko/activities/laptop",
+      "frame_count": 12,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_music",
+      "path": "normalized/loko/activities/music",
+      "frame_count": 11,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_peeking_01",
+      "path": "normalized/loko/activities/peeking_01",
+      "frame_count": 3,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_peeking_02",
+      "path": "normalized/loko/activities/peeking_02",
+      "frame_count": 5,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_playing_ball_01",
+      "path": "normalized/loko/activities/playing_ball_01",
+      "frame_count": 7,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_reading_01",
+      "path": "normalized/loko/activities/reading_01",
+      "frame_count": 5,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_love_reaction",
+      "path": "normalized/loko/emotions/love_reaction",
+      "frame_count": 8,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_idle_front",
+      "path": "normalized/loko/idle/idle_front",
+      "frame_count": 8,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_locomotion_side_01",
+      "path": "normalized/loko/locomotion/locomotion_side_01",
+      "frame_count": 3,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_locomotion_side_02",
+      "path": "normalized/loko/locomotion/locomotion_side_02",
+      "frame_count": 7,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_walk_left",
+      "path": "normalized/loko/locomotion/walk_left",
+      "frame_count": 7,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_walk_preparation",
+      "path": "normalized/loko/locomotion/walk_preparation",
+      "frame_count": 3,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_walk_right",
+      "path": "normalized/loko/locomotion/walk_right",
+      "frame_count": 7,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_sleep_loop",
+      "path": "normalized/loko/sleeping/sleep_loop",
+      "frame_count": 3,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "loko_sleep_transition",
+      "path": "normalized/loko/sleeping/sleep_transition",
+      "frame_count": 6,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_drink",
+      "path": "normalized/poko/activities/drink",
+      "frame_count": 8,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_eat",
+      "path": "normalized/poko/activities/eat",
+      "frame_count": 11,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_music",
+      "path": "normalized/poko/activities/music",
+      "frame_count": 12,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_peeking",
+      "path": "normalized/poko/activities/peeking",
+      "frame_count": 12,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_playing_ball",
+      "path": "normalized/poko/activities/playing_ball",
+      "frame_count": 11,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_sad_to_crying",
+      "path": "normalized/poko/emotions/sad_to_crying",
+      "frame_count": 8,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_idle_blink",
+      "path": "normalized/poko/idle/idle_blink",
+      "frame_count": 2,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_idle_look_01",
+      "path": "normalized/poko/idle/idle_look_01",
+      "frame_count": 2,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_locomotion_side",
+      "path": "normalized/poko/locomotion/locomotion_side",
+      "frame_count": 9,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_walk_left",
+      "path": "normalized/poko/locomotion/walk_left",
+      "frame_count": 9,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_walk_right",
+      "path": "normalized/poko/locomotion/walk_right",
+      "frame_count": 9,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_sleep_loop_01",
+      "path": "normalized/poko/sleeping/sleep_loop_01",
+      "frame_count": 7,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_sleep_loop_02",
+      "path": "normalized/poko/sleeping/sleep_loop_02",
+      "frame_count": 4,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    },
+    {
+      "animation": "poko_sleep_transition",
+      "path": "normalized/poko/sleeping/sleep_transition",
+      "frame_count": 8,
+      "passes": [
+        "consistent_canvas_dimensions",
+        "unique_frame_filenames",
+        "no_exact_duplicate_frames",
+        "body_metrics_computed"
+      ],
+      "warnings": []
+    }
+  ],
+  "rejected_candidates": [],
+  "ambiguous_sequences": [
+    {
+      "animation": "loko_drink_02",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_eat",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_laptop",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ]
+    },
+    {
+      "animation": "loko_music",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_peeking_01",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_peeking_02",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_playing_ball_01",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_reading_01",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_love_reaction",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ]
+    },
+    {
+      "animation": "loko_idle_front",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_locomotion_side_01",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_locomotion_side_02",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_walk_left",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_walk_preparation",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_walk_right",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_sleep_loop",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "loko_sleep_transition",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_drink",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_eat",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ]
+    },
+    {
+      "animation": "poko_music",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_peeking",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted.",
+        "At least one adjacent pair may jump abruptly; review before production use."
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_sad_to_crying",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_idle_blink",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_idle_look_01",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_locomotion_side",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_walk_left",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_walk_right",
+      "confidence": "medium",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_sleep_loop_01",
+      "confidence": "high",
+      "known_issues": [
+        "Forward loop seam is visibly/quantitatively harsher than internal motion; ping-pong recommended.",
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_sleep_loop_02",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    },
+    {
+      "animation": "poko_sleep_transition",
+      "confidence": "high",
+      "known_issues": [
+        "No fabricated or interpolated frames were inserted."
+      ]
+    }
+  ],
+  "possible_missing_frames": [],
+  "abrupt_loops": [],
+  "manual_review": [
+    {
+      "animation": "poko_peeking",
+      "frames": [
+        "frame_004.png",
+        "frame_005.png"
+      ],
+      "reason": "body width changes unexpectedly",
+      "values": [
+        43,
+        57
+      ]
+    },
+    {
+      "animation": "poko_peeking",
+      "frames": [
+        "frame_004.png",
+        "frame_005.png"
+      ],
+      "reason": "body centroid y changes unexpectedly",
+      "values": [
+        94.78257686676427,
+        86.59710586443259
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_004.png",
+        "frame_005.png"
+      ],
+      "reason": "visible body area changes unexpectedly",
+      "values": [
+        1475,
+        2022
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_007.png",
+        "frame_008.png"
+      ],
+      "reason": "visible body area changes unexpectedly",
+      "values": [
+        2012,
+        1206
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_008.png",
+        "frame_009.png"
+      ],
+      "reason": "visible body area changes unexpectedly",
+      "values": [
+        1206,
+        2011
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_001.png",
+        "frame_002.png"
+      ],
+      "reason": "body width changes unexpectedly",
+      "values": [
+        47,
+        71
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_002.png",
+        "frame_003.png"
+      ],
+      "reason": "body width changes unexpectedly",
+      "values": [
+        71,
+        46
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_004.png",
+        "frame_005.png"
+      ],
+      "reason": "body width changes unexpectedly",
+      "values": [
+        43,
+        67
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_007.png",
+        "frame_008.png"
+      ],
+      "reason": "body height changes unexpectedly",
+      "values": [
+        54,
+        34
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_008.png",
+        "frame_009.png"
+      ],
+      "reason": "body height changes unexpectedly",
+      "values": [
+        34,
+        57
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_002.png",
+        "frame_003.png"
+      ],
+      "reason": "body centroid y changes unexpectedly",
+      "values": [
+        96.11813186813187,
+        88.02759448110378
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_005.png",
+        "frame_006.png"
+      ],
+      "reason": "body centroid y changes unexpectedly",
+      "values": [
+        84.14193867457962,
+        92.17972893341191
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_007.png",
+        "frame_008.png"
+      ],
+      "reason": "body centroid y changes unexpectedly",
+      "values": [
+        87.33101391650099,
+        98.41708126036484
+      ]
+    },
+    {
+      "animation": "poko_playing_ball",
+      "frames": [
+        "frame_008.png",
+        "frame_009.png"
+      ],
+      "reason": "body centroid y changes unexpectedly",
+      "values": [
+        98.41708126036484,
+        85.75534559920438
+      ]
+    }
+  ]
+}

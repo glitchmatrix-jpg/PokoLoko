@@ -1,0 +1,30 @@
+{
+  "step": "06",
+  "status": "CONDITIONALLY_PASSING",
+  "counts": {
+    "animations": 31,
+    "frames": 223,
+    "pokoAnimations": 14,
+    "lokoAnimations": 17,
+    "mirroredAnimations": 2,
+    "isolatedRuntimePoses": 0
+  },
+  "checks": {
+    "approved_assets_only": true,
+    "animation_ids_unique": true,
+    "all_paths_exist": true,
+    "all_png_rgba_128": true,
+    "all_frames_preserve_alpha": true,
+    "anchors_copied_from_normalized_sources": true,
+    "typed_registry_generated": true,
+    "startup_integrity_check_added": true,
+    "development_packaged_path_policy_defined": true,
+    "mirrored_assets_validated": true,
+    "core_personality_activities_available": true,
+    "node_runtime_validator_passed": true,
+    "full_npm_typecheck_build_package_not_run": false
+  },
+  "blockers": [
+    "Step 05 npm mirror/install blocker prevents full TypeScript/Vite/Electron/package validation in this environment."
+  ]
+}

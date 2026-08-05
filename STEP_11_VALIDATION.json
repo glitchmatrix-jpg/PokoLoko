@@ -1,0 +1,29 @@
+{
+  "step": "11",
+  "title": "Direction, Turning, Start, and Stop Choreography",
+  "status": "PASS_WITH_NATIVE_VISUAL_VALIDATION_DEFERRED",
+  "checks": {
+    "runtime_asset_direction_audit_complete": true,
+    "dedicated_turn_asset_available": false,
+    "dedicated_stop_asset_available": false,
+    "loko_preparation_integrated": true,
+    "poko_neutral_start_route_integrated": true,
+    "gait_boundary_stop_integrated": true,
+    "same_direction_retarget_preserves_motion": true,
+    "authoritative_direction_main_process": true,
+    "unsafe_dom_mirroring_absent": true,
+    "left_right_anchor_parity_validated": true,
+    "stale_choreography_generation_guarded": true,
+    "pure_direction_and_locomotion_typecheck_passed": true,
+    "dependency_free_validation_passed": true,
+    "native_windows_visual_test_pending": true
+  },
+  "native_pending": [
+    "gait-boundary visual timing",
+    "no one-frame backward displacement under DWM",
+    "Loko preparation visual suitability in both requested directions",
+    "mixed-DPI anchor stability",
+    "screen-edge and display-change turning",
+    "rapid repeated opposite-direction requests"
+  ]
+}

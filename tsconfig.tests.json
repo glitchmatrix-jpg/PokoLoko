@@ -1,0 +1,36 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "types": [
+      "node",
+      "vitest/globals"
+    ]
+  },
+  "include": [
+    "tests/**/*.ts",
+    "src/shared/**/*.ts",
+    "electron/services/**/*.ts",
+    "packages/animation-runtime/src/**/*.ts",
+    "tests/animation-runtime/**/*.ts",
+    "packages/pet-engine/locomotion/src/**/*.ts",
+    "packages/pet-engine/direction/src/**/*.ts",
+    "packages/pet-engine/state-machine/src/**/*.ts",
+    "packages/pet-engine/interaction/src/**/*.ts",
+    "packages/pet-engine/behavior/src/**/*.ts",
+    "tests/state-machine/**/*.ts",
+    "tests/dragging/**/*.ts",
+    "tests/behavior-planner/**/*.ts",
+    "packages/pet-engine/sleep/src/**/*.ts",
+    "tests/sleep-wake/**/*.ts",
+    "packages/pet-engine/activities/src/**/*.ts",
+    "tests/activity-framework/**/*.ts"
+  ]
+}

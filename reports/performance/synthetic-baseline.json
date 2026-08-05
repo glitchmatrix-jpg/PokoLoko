@@ -1,0 +1,30 @@
+{
+  "evidenceClass": "deterministic-synthetic-baseline",
+  "warning": "Not a measurement of Electron, Windows, DWM, GPU, tray, or packaged executable performance.",
+  "scenarios": [
+    {
+      "mode": "idle",
+      "durationMinutes": 180,
+      "samples": 2160,
+      "timerGrowth": 0,
+      "listenerGrowth": 0,
+      "simulatedMemoryGrowthBytes": 0
+    },
+    {
+      "mode": "walking",
+      "durationMinutes": 60,
+      "samples": 720,
+      "timerGrowth": 0,
+      "listenerGrowth": 0,
+      "simulatedMovementTicks": 225000
+    },
+    {
+      "mode": "mixed-behavior",
+      "durationMinutes": 240,
+      "samples": 2880,
+      "timerGrowth": 0,
+      "listenerGrowth": 0,
+      "maximumIdenticalActionStreak": 2
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "step": "26",
+  "title": "Manual Visual QA, Long-Session Evaluation, and Performance",
+  "status": "READY_FOR_NATIVE_QA_NOT_ACCEPTED",
+  "staticChecks": {
+    "manualQaReadinessValidator": "PASS",
+    "formatHygiene": "PASS",
+    "performanceSampler": "IMPLEMENTED",
+    "performanceSamplerUnitTests": "ADDED_PENDING_CI_EXECUTION",
+    "diagnosticTraceTemplates": 6,
+    "windowsQaWorkflow": "IMPLEMENTED",
+    "loggerSyntaxDefect": "CORRECTED",
+    "duplicateValidatorChain": "CORRECTED",
+    "runtimeAssetRegistry": "31 animations / 223 frames",
+    "regressionStructuralValidators": "PASS_EXCEPT_LEGACY_STAGES_01_20_AUDIT_NOT_IN_ACTIVE_GATE"
+  },
+  "nativeEvidence": {
+    "windows10": "PENDING",
+    "windows11": "PENDING",
+    "dpi100_125_150_mixed": "PENDING",
+    "multiMonitorAndNegativeCoordinates": "PENDING",
+    "taskbarVariants": "PENDING",
+    "packagedAssetsAndTray": "PENDING",
+    "multiHourSessions": "PENDING",
+    "cpuMemoryStartupJitterMeasurements": "PENDING"
+  },
+  "openReleaseBlockers": [
+    "QA-26-001"
+  ],
+  "readyForStep27": false
+}

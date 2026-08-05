@@ -1,0 +1,407 @@
+frame_id,character,contact_sheet_index,category,pose_label,tentative_sequence,temporal_continuity,confidence,is_sequence_claim,source_bbox_xyxy,visible_pixel_bbox_xyxy,detected_row,horizontal_order,notes
+P-R01-C01,poko,1,IDLE,front_idle,idle_front,isolated_variants,high,False,"[13, 8, 61, 61]","[15, 10, 59, 59]",1,1,Neutral front-facing idle variants.
+P-R01-C02,poko,2,IDLE,front_idle,idle_front,isolated_variants,high,False,"[75, 8, 122, 61]","[77, 10, 120, 59]",1,2,Neutral front-facing idle variants.
+P-R01-C03,poko,3,IDLE,front_idle,idle_front,isolated_variants,high,False,"[133, 8, 181, 61]","[135, 10, 179, 59]",1,3,Neutral front-facing idle variants.
+P-R01-C04,poko,4,IDLE,blink_eyes_closed,idle_blink,plausible_sequence,high,True,"[191, 8, 238, 61]","[193, 10, 236, 59]",1,4,Closed-eye frames plausibly form blink/rest variants.
+P-R01-C05,poko,5,IDLE,blink_eyes_closed,idle_blink,plausible_sequence,high,True,"[241, 7, 288, 61]","[243, 9, 286, 59]",1,5,Closed-eye frames plausibly form blink/rest variants.
+P-R01-C06,poko,6,IDLE,front_idle_look,idle_look,plausible_sequence,medium,True,"[295, 8, 343, 61]","[297, 10, 341, 59]",1,6,Subtle head/eye direction changes.
+P-R01-C07,poko,7,IDLE,front_idle_look,idle_look,plausible_sequence,medium,True,"[352, 8, 399, 61]","[354, 10, 397, 59]",1,7,Subtle head/eye direction changes.
+P-R02-C01,poko,8,IDLE,front_idle_look,idle_look,plausible_sequence,medium,True,"[10, 72, 55, 126]","[12, 74, 53, 124]",2,1,Subtle head/eye direction changes.
+P-R02-C02,poko,9,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[66, 72, 111, 126]","[68, 74, 109, 124]",2,2,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C03,poko,10,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[124, 72, 173, 126]","[126, 74, 171, 124]",2,3,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C04,poko,11,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[189, 71, 235, 127]","[191, 73, 233, 125]",2,4,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C05,poko,12,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[253, 72, 301, 126]","[255, 74, 299, 124]",2,5,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C06,poko,13,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[326, 72, 373, 126]","[328, 74, 371, 124]",2,6,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C07,poko,14,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[387, 72, 436, 126]","[389, 74, 434, 124]",2,7,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C08,poko,15,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[452, 71, 499, 127]","[454, 73, 497, 125]",2,8,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C09,poko,16,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[512, 71, 558, 126]","[514, 73, 556, 124]",2,9,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C10,poko,17,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[574, 72, 626, 126]","[576, 74, 624, 124]",2,10,Side-facing gait-like progression; exact cycle order requires motion QA.
+P-R02-C11,poko,18,POSTURE_TRANSITIONS,turn_and_lower,stand_to_sit_or_lie,uncertain_sequence,medium,False,"[645, 71, 695, 128]","[647, 73, 693, 126]",2,11,Body rotates and lowers; likely transitional but not one guaranteed continuous sequence.
+P-R02-C12,poko,19,POSTURE_TRANSITIONS,turn_and_lower,stand_to_sit_or_lie,uncertain_sequence,medium,False,"[712, 72, 758, 127]","[714, 74, 756, 125]",2,12,Body rotates and lowers; likely transitional but not one guaranteed continuous sequence.
+P-R02-C13,poko,20,POSTURE_TRANSITIONS,turn_and_lower,stand_to_sit_or_lie,uncertain_sequence,medium,False,"[778, 71, 827, 128]","[780, 73, 825, 126]",2,13,Body rotates and lowers; likely transitional but not one guaranteed continuous sequence.
+P-R03-C01,poko,21,POSTURE_TRANSITIONS,turn_and_lower,stand_to_sit_or_lie,uncertain_sequence,medium,False,"[12, 140, 58, 191]","[14, 142, 56, 189]",3,1,Body rotates and lowers; likely transitional but not one guaranteed continuous sequence.
+P-R03-C02,poko,22,POSTURE_TRANSITIONS,turn_and_lower,stand_to_sit_or_lie,uncertain_sequence,medium,False,"[71, 140, 117, 191]","[73, 142, 115, 189]",3,2,Body rotates and lowers; likely transitional but not one guaranteed continuous sequence.
+P-R03-C03,poko,23,POSTURE_TRANSITIONS,turn_and_lower,stand_to_sit_or_lie,uncertain_sequence,medium,False,"[130, 140, 175, 191]","[132, 142, 173, 189]",3,3,Body rotates and lowers; likely transitional but not one guaranteed continuous sequence.
+P-R03-C04,poko,24,POSTURE_TRANSITIONS,turn_and_lower,stand_to_sit_or_lie,uncertain_sequence,medium,False,"[187, 141, 233, 191]","[189, 143, 231, 189]",3,4,Body rotates and lowers; likely transitional but not one guaranteed continuous sequence.
+P-R03-C05,poko,25,POSTURE_TRANSITIONS,turn_and_lower,stand_to_sit_or_lie,uncertain_sequence,medium,False,"[246, 140, 291, 191]","[248, 142, 289, 189]",3,5,Body rotates and lowers; likely transitional but not one guaranteed continuous sequence.
+P-R03-C06,poko,26,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[312, 143, 365, 187]","[314, 145, 363, 185]",3,6,Progressive low-body and lying poses; several may be separate variants.
+P-R03-C07,poko,27,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[381, 141, 434, 187]","[383, 143, 432, 185]",3,7,Progressive low-body and lying poses; several may be separate variants.
+P-R03-C08,poko,28,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[447, 146, 503, 188]","[449, 148, 501, 186]",3,8,Progressive low-body and lying poses; several may be separate variants.
+P-R03-C09,poko,29,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[516, 139, 566, 189]","[518, 141, 564, 187]",3,9,Progressive low-body and lying poses; several may be separate variants.
+P-R03-C10,poko,30,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[578, 150, 632, 187]","[580, 152, 630, 185]",3,10,Progressive low-body and lying poses; several may be separate variants.
+P-R03-C11,poko,31,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[641, 152, 700, 187]","[643, 154, 698, 185]",3,11,Progressive low-body and lying poses; several may be separate variants.
+P-R03-C12,poko,32,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[711, 138, 756, 189]","[713, 140, 754, 187]",3,12,Progressive low-body and lying poses; several may be separate variants.
+P-R03-C13,poko,33,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[773, 147, 823, 187]","[775, 149, 821, 185]",3,13,Progressive low-body and lying poses; several may be separate variants.
+P-R04-C01,poko,34,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[11, 209, 56, 258]","[13, 211, 54, 256]",4,1,Progressive low-body and lying poses; several may be separate variants.
+P-R04-C02,poko,35,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[71, 212, 118, 258]","[73, 214, 116, 256]",4,2,Progressive low-body and lying poses; several may be separate variants.
+P-R04-C03,poko,36,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[134, 209, 183, 258]","[136, 211, 181, 256]",4,3,Progressive low-body and lying poses; several may be separate variants.
+P-R04-C04,poko,37,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[198, 211, 246, 258]","[200, 213, 244, 256]",4,4,Progressive low-body and lying poses; several may be separate variants.
+P-R04-C05,poko,38,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[263, 217, 314, 258]","[265, 219, 312, 256]",4,5,Progressive low-body and lying poses; several may be separate variants.
+P-R04-C06,poko,39,POSTURE_TRANSITIONS,lying_and_roll_variants,sit_to_lie_or_roll,uncertain_sequence,medium,False,"[324, 217, 375, 258]","[326, 219, 373, 256]",4,6,Progressive low-body and lying poses; several may be separate variants.
+P-R04-C07,poko,40,SLEEP,sleeping_lying,sleep_loop,plausible_sequence,high,True,"[386, 221, 450, 258]","[388, 223, 448, 256]",4,7,Lying poses with sleep symbols and subtle body changes.
+P-R04-C08,poko,41,SLEEP,sleeping_lying,sleep_loop,plausible_sequence,high,True,"[463, 221, 523, 258]","[465, 223, 521, 256]",4,8,Lying poses with sleep symbols and subtle body changes.
+P-R04-C09,poko,42,SLEEP,sleeping_lying,sleep_loop,plausible_sequence,high,True,"[530, 222, 588, 258]","[532, 224, 586, 256]",4,9,Lying poses with sleep symbols and subtle body changes.
+P-R04-C10,poko,43,SLEEP,sleeping_lying,sleep_loop,plausible_sequence,high,True,"[598, 210, 655, 258]","[600, 212, 653, 256]",4,10,Lying poses with sleep symbols and subtle body changes.
+P-R04-C11,poko,44,SLEEP,sleeping_lying,sleep_loop,plausible_sequence,high,True,"[661, 210, 719, 258]","[663, 212, 717, 256]",4,11,Lying poses with sleep symbols and subtle body changes.
+P-R04-C12,poko,45,SLEEP,sleeping_lying,sleep_loop,plausible_sequence,high,True,"[727, 207, 784, 258]","[729, 209, 782, 256]",4,12,Lying poses with sleep symbols and subtle body changes.
+P-R04-C13,poko,46,SLEEP,sleeping_lying,sleep_loop,plausible_sequence,high,True,"[793, 207, 845, 258]","[795, 209, 843, 256]",4,13,Lying poses with sleep symbols and subtle body changes.
+P-R05-C01,poko,47,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[10, 277, 55, 327]","[12, 279, 53, 325]",5,1,Front neutral/subtle-motion poses.
+P-R05-C02,poko,48,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[70, 277, 114, 328]","[72, 279, 112, 326]",5,2,Front neutral/subtle-motion poses.
+P-R05-C03,poko,49,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[131, 277, 176, 328]","[133, 279, 174, 326]",5,3,Front neutral/subtle-motion poses.
+P-R05-C04,poko,50,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[192, 275, 236, 328]","[194, 277, 234, 326]",5,4,Front neutral/subtle-motion poses.
+P-R05-C05,poko,51,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[251, 279, 296, 328]","[253, 281, 294, 326]",5,5,Front neutral/subtle-motion poses.
+P-R05-C06,poko,52,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[311, 277, 355, 328]","[313, 279, 353, 326]",5,6,Front neutral/subtle-motion poses.
+P-R05-C07,poko,53,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[370, 277, 415, 328]","[372, 279, 413, 326]",5,7,Front neutral/subtle-motion poses.
+P-R05-C08,poko,54,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[429, 277, 473, 327]","[431, 279, 471, 325]",5,8,Front neutral/subtle-motion poses.
+P-R05-C09,poko,55,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[482, 277, 526, 327]","[484, 279, 524, 325]",5,9,Front neutral/subtle-motion poses.
+P-R05-C10,poko,56,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[543, 274, 596, 323]","[545, 276, 594, 321]",5,10,Open-mouth and raised-body reactions; likely several short reactions.
+P-R05-C11,poko,57,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[614, 274, 668, 323]","[616, 276, 666, 321]",5,11,Open-mouth and raised-body reactions; likely several short reactions.
+P-R05-C12,poko,58,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[688, 274, 740, 323]","[690, 276, 738, 321]",5,12,Open-mouth and raised-body reactions; likely several short reactions.
+P-R05-C13,poko,59,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[753, 277, 802, 328]","[755, 279, 800, 326]",5,13,Open-mouth and raised-body reactions; likely several short reactions.
+P-R06-C01,poko,60,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[9, 350, 53, 401]","[11, 352, 51, 399]",6,1,Open-mouth and raised-body reactions; likely several short reactions.
+P-R06-C02,poko,61,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[60, 351, 104, 402]","[62, 353, 102, 400]",6,2,Open-mouth and raised-body reactions; likely several short reactions.
+P-R06-C03,poko,62,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[161, 351, 205, 402]","[163, 353, 203, 400]",6,3,Open-mouth and raised-body reactions; likely several short reactions.
+P-R06-C04,poko,63,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[215, 352, 259, 402]","[217, 354, 257, 400]",6,4,Open-mouth and raised-body reactions; likely several short reactions.
+P-R06-C05,poko,64,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[269, 352, 313, 402]","[271, 354, 311, 400]",6,5,Open-mouth and raised-body reactions; likely several short reactions.
+P-R06-C06,poko,65,EMOTIONS,love_angry,love_and_angry,isolated_variants,high,False,"[328, 351, 391, 401]","[330, 353, 389, 399]",6,6,Heart reactions followed by anger symbol; not a single sequence.
+P-R06-C07,poko,66,EMOTIONS,love_angry,love_and_angry,isolated_variants,high,False,"[395, 351, 439, 402]","[397, 353, 437, 400]",6,7,Heart reactions followed by anger symbol; not a single sequence.
+P-R06-C08,poko,67,EMOTIONS,love_angry,love_and_angry,isolated_variants,high,False,"[454, 348, 514, 401]","[456, 350, 512, 399]",6,8,Heart reactions followed by anger symbol; not a single sequence.
+P-R06-C09,poko,68,EMOTIONS,love_angry,love_and_angry,isolated_variants,high,False,"[522, 350, 567, 402]","[524, 352, 565, 400]",6,9,Heart reactions followed by anger symbol; not a single sequence.
+P-R06-C10,poko,69,EMOTIONS,love_angry,love_and_angry,isolated_variants,high,False,"[581, 352, 629, 403]","[583, 354, 627, 401]",6,10,Heart reactions followed by anger symbol; not a single sequence.
+P-R06-C11,poko,70,EMOTIONS,love_angry,love_and_angry,isolated_variants,high,False,"[644, 349, 701, 401]","[646, 351, 699, 399]",6,11,Heart reactions followed by anger symbol; not a single sequence.
+P-R06-C12,poko,71,EMOTIONS,love_angry,love_and_angry,isolated_variants,high,False,"[711, 350, 775, 402]","[713, 352, 773, 400]",6,12,Heart reactions followed by anger symbol; not a single sequence.
+P-R06-C13,poko,72,EMOTIONS,love_angry,love_and_angry,isolated_variants,high,False,"[781, 351, 825, 402]","[783, 353, 823, 400]",6,13,Heart reactions followed by anger symbol; not a single sequence.
+P-R07-C01,poko,73,EMOTIONS,sad_crying,sad_to_crying,plausible_sequence,high,True,"[9, 423, 53, 473]","[11, 425, 51, 471]",7,1,Sad expression progresses into visible tears.
+P-R07-C02,poko,74,EMOTIONS,sad_crying,sad_to_crying,plausible_sequence,high,True,"[60, 423, 104, 473]","[62, 425, 102, 471]",7,2,Sad expression progresses into visible tears.
+P-R07-C03,poko,75,EMOTIONS,sad_crying,sad_to_crying,plausible_sequence,high,True,"[111, 423, 155, 474]","[113, 425, 153, 472]",7,3,Sad expression progresses into visible tears.
+P-R07-C04,poko,76,EMOTIONS,sad_crying,sad_to_crying,plausible_sequence,high,True,"[169, 423, 214, 473]","[171, 425, 212, 471]",7,4,Sad expression progresses into visible tears.
+P-R07-C05,poko,77,EMOTIONS,sad_crying,sad_to_crying,plausible_sequence,high,True,"[227, 423, 274, 473]","[229, 425, 272, 471]",7,5,Sad expression progresses into visible tears.
+P-R07-C06,poko,78,EMOTIONS,sad_crying,sad_to_crying,plausible_sequence,high,True,"[287, 423, 331, 473]","[289, 425, 329, 471]",7,6,Sad expression progresses into visible tears.
+P-R07-C07,poko,79,EMOTIONS,sad_crying,sad_to_crying,plausible_sequence,high,True,"[343, 423, 395, 473]","[345, 425, 393, 471]",7,7,Sad expression progresses into visible tears.
+P-R07-C08,poko,80,EMOTIONS,sad_crying,sad_to_crying,plausible_sequence,high,True,"[416, 423, 464, 474]","[418, 425, 462, 472]",7,8,Sad expression progresses into visible tears.
+P-R07-C09,poko,81,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[482, 421, 539, 474]","[484, 423, 537, 472]",7,9,Question-mark and puzzled variants.
+P-R07-C10,poko,82,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[562, 424, 606, 475]","[564, 426, 604, 473]",7,10,Question-mark and puzzled variants.
+P-R07-C11,poko,83,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[627, 422, 683, 474]","[629, 424, 681, 472]",7,11,Question-mark and puzzled variants.
+P-R07-C12,poko,84,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[696, 423, 740, 474]","[698, 425, 738, 472]",7,12,Question-mark and puzzled variants.
+P-R07-C13,poko,85,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[754, 422, 810, 473]","[756, 424, 808, 471]",7,13,Question-mark and puzzled variants.
+P-R08-C01,poko,86,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[9, 496, 53, 546]","[11, 498, 51, 544]",8,1,Question-mark and puzzled variants.
+P-R08-C02,poko,87,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[61, 496, 104, 546]","[63, 498, 102, 544]",8,2,Question-mark and puzzled variants.
+P-R08-C03,poko,88,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[113, 496, 158, 546]","[115, 498, 156, 544]",8,3,Question-mark and puzzled variants.
+P-R08-C04,poko,89,EMOTIONS,surprised_proud_happy,positive_reactions,uncertain_sequence,medium,False,"[171, 489, 214, 546]","[173, 491, 212, 544]",8,4,"Sparkle, open-mouth, and happy poses; likely multiple reactions."
+P-R08-C05,poko,90,EMOTIONS,surprised_proud_happy,positive_reactions,uncertain_sequence,medium,False,"[225, 496, 269, 546]","[227, 498, 267, 544]",8,5,"Sparkle, open-mouth, and happy poses; likely multiple reactions."
+P-R08-C06,poko,91,EMOTIONS,surprised_proud_happy,positive_reactions,uncertain_sequence,medium,False,"[284, 496, 327, 546]","[286, 498, 325, 544]",8,6,"Sparkle, open-mouth, and happy poses; likely multiple reactions."
+P-R08-C07,poko,92,EMOTIONS,surprised_proud_happy,positive_reactions,uncertain_sequence,medium,False,"[337, 488, 394, 546]","[339, 490, 392, 544]",8,7,"Sparkle, open-mouth, and happy poses; likely multiple reactions."
+P-R08-C08,poko,93,EMOTIONS,surprised_proud_happy,positive_reactions,uncertain_sequence,medium,False,"[409, 488, 452, 546]","[411, 490, 450, 544]",8,8,"Sparkle, open-mouth, and happy poses; likely multiple reactions."
+P-R08-C09,poko,94,EMOTIONS,surprised_proud_happy,positive_reactions,uncertain_sequence,medium,False,"[465, 486, 521, 546]","[467, 488, 519, 544]",8,9,"Sparkle, open-mouth, and happy poses; likely multiple reactions."
+P-R08-C10,poko,95,EMOTIONS,surprised_proud_happy,positive_reactions,uncertain_sequence,medium,False,"[545, 494, 600, 546]","[547, 496, 598, 544]",8,10,"Sparkle, open-mouth, and happy poses; likely multiple reactions."
+P-R08-C11,poko,96,EMOTIONS,surprised_proud_happy,positive_reactions,uncertain_sequence,medium,False,"[612, 498, 657, 547]","[614, 500, 655, 545]",8,11,"Sparkle, open-mouth, and happy poses; likely multiple reactions."
+P-R08-C12,poko,97,EMOTIONS,tired_embarrassed_happy,mixed_reactions,isolated_variants,medium,False,"[669, 497, 714, 547]","[671, 499, 712, 545]",8,12,"Mixed subtle reactions, not one animation."
+P-R08-C13,poko,98,EMOTIONS,tired_embarrassed_happy,mixed_reactions,isolated_variants,medium,False,"[724, 498, 768, 547]","[726, 500, 766, 545]",8,13,"Mixed subtle reactions, not one animation."
+P-R09-C01,poko,99,EMOTIONS,tired_embarrassed_happy,mixed_reactions,isolated_variants,medium,False,"[9, 574, 56, 624]","[11, 576, 54, 622]",9,1,"Mixed subtle reactions, not one animation."
+P-R09-C02,poko,100,EMOTIONS,tired_embarrassed_happy,mixed_reactions,isolated_variants,medium,False,"[68, 574, 121, 623]","[70, 576, 119, 621]",9,2,"Mixed subtle reactions, not one animation."
+P-R09-C03,poko,101,EMOTIONS,tired_embarrassed_happy,mixed_reactions,isolated_variants,medium,False,"[129, 574, 181, 624]","[131, 576, 179, 622]",9,3,"Mixed subtle reactions, not one animation."
+P-R09-C04,poko,102,EMOTIONS,tired_embarrassed_happy,mixed_reactions,isolated_variants,medium,False,"[190, 573, 236, 626]","[192, 575, 234, 624]",9,4,"Mixed subtle reactions, not one animation."
+P-R09-C05,poko,103,EMOTIONS,tired_embarrassed_happy,mixed_reactions,isolated_variants,medium,False,"[245, 573, 291, 624]","[247, 575, 289, 622]",9,5,"Mixed subtle reactions, not one animation."
+P-R09-C06,poko,104,EMOTIONS,tired_embarrassed_happy,mixed_reactions,isolated_variants,medium,False,"[301, 573, 346, 624]","[303, 575, 344, 622]",9,6,"Mixed subtle reactions, not one animation."
+P-R09-C07,poko,105,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[359, 574, 414, 624]","[361, 576, 412, 622]",9,7,Cup/bottle interaction with repeated sipping poses.
+P-R09-C08,poko,106,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[425, 574, 477, 625]","[427, 576, 475, 623]",9,8,Cup/bottle interaction with repeated sipping poses.
+P-R09-C09,poko,107,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[487, 575, 533, 625]","[489, 577, 531, 623]",9,9,Cup/bottle interaction with repeated sipping poses.
+P-R09-C10,poko,108,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[543, 576, 589, 625]","[545, 578, 587, 623]",9,10,Cup/bottle interaction with repeated sipping poses.
+P-R09-C11,poko,109,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[597, 576, 645, 625]","[599, 578, 643, 623]",9,11,Cup/bottle interaction with repeated sipping poses.
+P-R09-C12,poko,110,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[653, 574, 698, 625]","[655, 576, 696, 623]",9,12,Cup/bottle interaction with repeated sipping poses.
+P-R09-C13,poko,111,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[710, 577, 758, 625]","[712, 579, 756, 623]",9,13,Cup/bottle interaction with repeated sipping poses.
+P-R09-C14,poko,112,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[765, 575, 810, 625]","[767, 577, 808, 623]",9,14,Cup/bottle interaction with repeated sipping poses.
+P-R10-C01,poko,113,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[9, 641, 61, 693]","[11, 643, 59, 691]",10,1,Food interaction and chewing progression.
+P-R10-C02,poko,114,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[68, 641, 119, 693]","[70, 643, 117, 691]",10,2,Food interaction and chewing progression.
+P-R10-C03,poko,115,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[129, 641, 193, 693]","[131, 643, 191, 691]",10,3,Food interaction and chewing progression.
+P-R10-C04,poko,116,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[198, 645, 249, 692]","[200, 647, 247, 690]",10,4,Food interaction and chewing progression.
+P-R10-C05,poko,117,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[254, 645, 305, 693]","[256, 647, 303, 691]",10,5,Food interaction and chewing progression.
+P-R10-C06,poko,118,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[307, 646, 358, 693]","[309, 648, 356, 691]",10,6,Food interaction and chewing progression.
+P-R10-C07,poko,119,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[361, 646, 418, 694]","[363, 648, 416, 692]",10,7,Food interaction and chewing progression.
+P-R10-C08,poko,120,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[426, 644, 474, 695]","[428, 646, 472, 693]",10,8,Food interaction and chewing progression.
+P-R10-C09,poko,121,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[483, 644, 534, 695]","[485, 646, 532, 693]",10,9,Food interaction and chewing progression.
+P-R10-C10,poko,122,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[544, 643, 594, 695]","[546, 645, 592, 693]",10,10,Food interaction and chewing progression.
+P-R10-C11,poko,123,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[608, 643, 659, 695]","[610, 645, 657, 693]",10,11,Food interaction and chewing progression.
+P-R11-C01,poko,124,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[8, 716, 70, 769]","[10, 718, 68, 767]",11,1,Music-note effects and rhythmic body movement.
+P-R11-C02,poko,125,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[76, 717, 139, 769]","[78, 719, 137, 767]",11,2,Music-note effects and rhythmic body movement.
+P-R11-C03,poko,126,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[147, 715, 210, 769]","[149, 717, 208, 767]",11,3,Music-note effects and rhythmic body movement.
+P-R11-C04,poko,127,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[217, 715, 281, 769]","[219, 717, 279, 767]",11,4,Music-note effects and rhythmic body movement.
+P-R11-C05,poko,128,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[288, 715, 337, 770]","[290, 717, 335, 768]",11,5,Music-note effects and rhythmic body movement.
+P-R11-C06,poko,129,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[351, 717, 409, 771]","[353, 719, 407, 769]",11,6,Music-note effects and rhythmic body movement.
+P-R11-C07,poko,130,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[420, 716, 478, 769]","[422, 718, 476, 767]",11,7,Music-note effects and rhythmic body movement.
+P-R11-C08,poko,131,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[482, 717, 531, 770]","[484, 719, 529, 768]",11,8,Music-note effects and rhythmic body movement.
+P-R11-C09,poko,132,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[553, 716, 620, 770]","[555, 718, 618, 768]",11,9,Music-note effects and rhythmic body movement.
+P-R11-C10,poko,133,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[627, 720, 674, 772]","[629, 722, 672, 770]",11,10,Music-note effects and rhythmic body movement.
+P-R11-C11,poko,134,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[701, 717, 765, 774]","[703, 719, 763, 772]",11,11,Music-note effects and rhythmic body movement.
+P-R11-C12,poko,135,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[781, 714, 834, 769]","[783, 716, 832, 767]",11,12,Music-note effects and rhythmic body movement.
+P-R12-C01,poko,136,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[9, 789, 63, 839]","[11, 791, 61, 837]",12,1,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C02,poko,137,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[81, 789, 133, 839]","[83, 791, 131, 837]",12,2,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C03,poko,138,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[146, 789, 195, 839]","[148, 791, 193, 837]",12,3,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C04,poko,139,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[209, 788, 254, 839]","[211, 790, 252, 837]",12,4,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C05,poko,140,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[266, 788, 313, 839]","[268, 790, 311, 837]",12,5,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C06,poko,141,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[325, 788, 378, 839]","[327, 790, 376, 837]",12,6,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C07,poko,142,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[395, 788, 452, 839]","[397, 790, 450, 837]",12,7,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C08,poko,143,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[473, 788, 527, 839]","[475, 790, 525, 837]",12,8,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C09,poko,144,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[546, 789, 601, 839]","[548, 791, 599, 837]",12,9,Laptop frames followed by book-reading frames; two activity families.
+P-R12-C10,poko,145,ACTIVITIES,laptop_reading,laptop_and_reading,uncertain_sequence,high,False,"[623, 792, 681, 841]","[625, 794, 679, 839]",12,10,Laptop frames followed by book-reading frames; two activity families.
+P-R13-C01,poko,146,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[9, 857, 81, 907]","[11, 859, 79, 905]",13,1,"Ball approach, push, roll, and celebratory poses."
+P-R13-C02,poko,147,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[81, 864, 132, 914]","[83, 866, 130, 912]",13,2,"Ball approach, push, roll, and celebratory poses."
+P-R13-C03,poko,148,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[140, 867, 215, 912]","[142, 869, 213, 910]",13,3,"Ball approach, push, roll, and celebratory poses."
+P-R13-C04,poko,149,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[219, 850, 269, 906]","[221, 852, 267, 904]",13,4,"Ball approach, push, roll, and celebratory poses."
+P-R13-C05,poko,150,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[279, 859, 326, 911]","[281, 861, 324, 909]",13,5,"Ball approach, push, roll, and celebratory poses."
+P-R13-C06,poko,151,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[333, 852, 404, 914]","[335, 854, 402, 912]",13,6,"Ball approach, push, roll, and celebratory poses."
+P-R13-C07,poko,152,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[425, 866, 481, 915]","[427, 868, 479, 913]",13,7,"Ball approach, push, roll, and celebratory poses."
+P-R13-C08,poko,153,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[507, 854, 570, 912]","[509, 856, 568, 910]",13,8,"Ball approach, push, roll, and celebratory poses."
+P-R13-C09,poko,154,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[575, 875, 629, 913]","[577, 877, 627, 911]",13,9,"Ball approach, push, roll, and celebratory poses."
+P-R13-C10,poko,155,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[656, 842, 723, 914]","[658, 844, 721, 912]",13,10,"Ball approach, push, roll, and celebratory poses."
+P-R13-C11,poko,156,ACTIVITIES,playing_ball,playing_ball,plausible_sequence,high,True,"[731, 856, 792, 914]","[733, 858, 790, 912]",13,11,"Ball approach, push, roll, and celebratory poses."
+P-R14-C01,poko,157,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[9, 926, 59, 974]","[11, 928, 57, 972]",14,1,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C02,poko,158,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[78, 927, 127, 974]","[80, 929, 125, 972]",14,2,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C03,poko,159,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[146, 926, 195, 974]","[148, 928, 193, 972]",14,3,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C04,poko,160,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[206, 927, 254, 973]","[208, 929, 252, 971]",14,4,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C05,poko,161,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[272, 927, 319, 973]","[274, 929, 317, 971]",14,5,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C06,poko,162,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[325, 932, 386, 986]","[327, 934, 384, 984]",14,6,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C07,poko,163,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[391, 930, 452, 985]","[393, 932, 450, 983]",14,7,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C08,poko,164,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[465, 928, 517, 990]","[467, 930, 515, 988]",14,8,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C09,poko,165,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[526, 925, 581, 989]","[528, 927, 579, 987]",14,9,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C10,poko,166,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[602, 924, 652, 989]","[604, 926, 650, 987]",14,10,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C11,poko,167,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[668, 934, 714, 990]","[670, 936, 712, 988]",14,11,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C12,poko,168,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[726, 931, 778, 987]","[728, 933, 776, 985]",14,12,"Body rises, leans, and peeks around edge/furniture."
+P-R14-C13,poko,169,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[789, 934, 842, 990]","[791, 936, 840, 988]",14,13,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C01,poko,170,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[11, 996, 59, 1059]","[13, 998, 57, 1057]",15,1,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C02,poko,171,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[76, 998, 125, 1059]","[78, 1000, 123, 1057]",15,2,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C03,poko,172,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[139, 997, 187, 1058]","[141, 999, 185, 1056]",15,3,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C04,poko,173,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[204, 998, 247, 1054]","[206, 1000, 245, 1052]",15,4,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C05,poko,174,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[252, 1011, 298, 1061]","[254, 1013, 296, 1059]",15,5,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C06,poko,175,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[310, 1019, 364, 1061]","[312, 1021, 362, 1059]",15,6,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C07,poko,176,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[380, 1011, 427, 1057]","[382, 1013, 425, 1055]",15,7,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C08,poko,177,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[440, 1010, 488, 1060]","[442, 1012, 486, 1058]",15,8,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C09,poko,178,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[502, 1017, 557, 1061]","[504, 1019, 555, 1059]",15,9,Chair/table/ledge interactions; likely multiple short sequences.
+P-R15-C10,poko,179,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[571, 1017, 626, 1060]","[573, 1019, 624, 1058]",15,10,Chair/table/ledge interactions; likely multiple short sequences.
+P-R16-C01,poko,180,ACTIVITIES,furniture_interaction,furniture_activity,uncertain_sequence,medium,False,"[9, 1079, 57, 1130]","[11, 1081, 55, 1128]",16,1,Chair/table/ledge interactions; likely multiple short sequences.
+P-R16-C02,poko,181,POSTURE_TRANSITIONS,drowsy_to_sleep,sleep_transition,plausible_sequence,high,True,"[70, 1079, 119, 1130]","[72, 1081, 117, 1128]",16,2,Eyes close and body lowers toward sleep.
+P-R16-C03,poko,182,POSTURE_TRANSITIONS,drowsy_to_sleep,sleep_transition,plausible_sequence,high,True,"[130, 1079, 180, 1130]","[132, 1081, 178, 1128]",16,3,Eyes close and body lowers toward sleep.
+P-R16-C04,poko,183,POSTURE_TRANSITIONS,drowsy_to_sleep,sleep_transition,plausible_sequence,high,True,"[189, 1082, 234, 1128]","[191, 1084, 232, 1126]",16,4,Eyes close and body lowers toward sleep.
+P-R16-C05,poko,184,POSTURE_TRANSITIONS,drowsy_to_sleep,sleep_transition,plausible_sequence,high,True,"[245, 1072, 291, 1128]","[247, 1074, 289, 1126]",16,5,Eyes close and body lowers toward sleep.
+P-R16-C06,poko,185,POSTURE_TRANSITIONS,drowsy_to_sleep,sleep_transition,plausible_sequence,high,True,"[298, 1073, 352, 1128]","[300, 1075, 350, 1126]",16,6,Eyes close and body lowers toward sleep.
+P-R16-C07,poko,186,POSTURE_TRANSITIONS,drowsy_to_sleep,sleep_transition,plausible_sequence,high,True,"[364, 1085, 409, 1128]","[366, 1087, 407, 1126]",16,7,Eyes close and body lowers toward sleep.
+P-R16-C08,poko,187,POSTURE_TRANSITIONS,drowsy_to_sleep,sleep_transition,plausible_sequence,high,True,"[423, 1088, 474, 1128]","[425, 1090, 472, 1126]",16,8,Eyes close and body lowers toward sleep.
+P-R16-C09,poko,188,POSTURE_TRANSITIONS,drowsy_to_sleep,sleep_transition,plausible_sequence,high,True,"[493, 1091, 538, 1128]","[495, 1093, 536, 1126]",16,9,Eyes close and body lowers toward sleep.
+P-R16-C10,poko,189,SLEEP,lying_sleep,sleep_loop,plausible_sequence,high,True,"[546, 1091, 606, 1127]","[548, 1093, 604, 1125]",16,10,Final lying sleep variants.
+P-R16-C11,poko,190,SLEEP,lying_sleep,sleep_loop,plausible_sequence,high,True,"[618, 1092, 678, 1128]","[620, 1094, 676, 1126]",16,11,Final lying sleep variants.
+P-R16-C12,poko,191,SLEEP,lying_sleep,sleep_loop,plausible_sequence,high,True,"[686, 1091, 746, 1127]","[688, 1093, 744, 1125]",16,12,Final lying sleep variants.
+P-R16-C13,poko,192,SLEEP,lying_sleep,sleep_loop,plausible_sequence,high,True,"[759, 1092, 823, 1127]","[761, 1094, 821, 1125]",16,13,Final lying sleep variants.
+L-R01-C01,loko,1,IDLE,front_idle_and_blink,idle_front,plausible_sequence,high,True,"[9, 11, 56, 61]","[11, 13, 54, 59]",1,1,Neutral front poses with subtle eye/ear changes.
+L-R01-C02,loko,2,IDLE,front_idle_and_blink,idle_front,plausible_sequence,high,True,"[73, 11, 119, 61]","[75, 13, 117, 59]",1,2,Neutral front poses with subtle eye/ear changes.
+L-R01-C03,loko,3,IDLE,front_idle_and_blink,idle_front,plausible_sequence,high,True,"[137, 10, 183, 61]","[139, 12, 181, 59]",1,3,Neutral front poses with subtle eye/ear changes.
+L-R01-C04,loko,4,IDLE,front_idle_and_blink,idle_front,plausible_sequence,high,True,"[199, 10, 248, 61]","[201, 12, 246, 59]",1,4,Neutral front poses with subtle eye/ear changes.
+L-R01-C05,loko,5,IDLE,front_idle_and_blink,idle_front,plausible_sequence,high,True,"[262, 10, 312, 61]","[264, 12, 310, 59]",1,5,Neutral front poses with subtle eye/ear changes.
+L-R01-C06,loko,6,IDLE,front_idle_and_blink,idle_front,plausible_sequence,high,True,"[329, 10, 376, 61]","[331, 12, 374, 59]",1,6,Neutral front poses with subtle eye/ear changes.
+L-R01-C07,loko,7,IDLE,front_idle_and_blink,idle_front,plausible_sequence,high,True,"[394, 10, 440, 61]","[396, 12, 438, 59]",1,7,Neutral front poses with subtle eye/ear changes.
+L-R01-C08,loko,8,IDLE,front_idle_and_blink,idle_front,plausible_sequence,high,True,"[457, 11, 504, 61]","[459, 13, 502, 59]",1,8,Neutral front poses with subtle eye/ear changes.
+L-R01-C09,loko,9,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[520, 11, 567, 61]","[522, 13, 565, 59]",1,9,Side-oriented motion progression; exact cycle order requires QA.
+L-R01-C10,loko,10,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[582, 10, 630, 61]","[584, 12, 628, 59]",1,10,Side-oriented motion progression; exact cycle order requires QA.
+L-R01-C11,loko,11,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[646, 10, 692, 61]","[648, 12, 690, 59]",1,11,Side-oriented motion progression; exact cycle order requires QA.
+L-R02-C01,loko,12,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[8, 75, 55, 125]","[10, 77, 53, 123]",2,1,Side-oriented motion progression; exact cycle order requires QA.
+L-R02-C02,loko,13,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[72, 75, 119, 126]","[74, 77, 117, 124]",2,2,Side-oriented motion progression; exact cycle order requires QA.
+L-R02-C03,loko,14,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[135, 74, 185, 124]","[137, 76, 183, 122]",2,3,Side-oriented motion progression; exact cycle order requires QA.
+L-R02-C04,loko,15,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[201, 74, 252, 124]","[203, 76, 250, 122]",2,4,Side-oriented motion progression; exact cycle order requires QA.
+L-R02-C05,loko,16,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[272, 74, 325, 124]","[274, 76, 323, 122]",2,5,Side-oriented motion progression; exact cycle order requires QA.
+L-R02-C06,loko,17,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[344, 74, 396, 124]","[346, 76, 394, 122]",2,6,Side-oriented motion progression; exact cycle order requires QA.
+L-R02-C07,loko,18,LOCOMOTION,side_walk_or_shuffle,locomotion_side,plausible_sequence,medium,True,"[413, 74, 465, 124]","[415, 76, 463, 122]",2,7,Side-oriented motion progression; exact cycle order requires QA.
+L-R02-C08,loko,19,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[484, 74, 530, 124]","[486, 76, 528, 122]",2,8,Turning and body-lowering variants; may contain multiple transition branches.
+L-R02-C09,loko,20,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[547, 74, 594, 124]","[549, 76, 592, 122]",2,9,Turning and body-lowering variants; may contain multiple transition branches.
+L-R02-C10,loko,21,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[612, 74, 664, 123]","[614, 76, 662, 121]",2,10,Turning and body-lowering variants; may contain multiple transition branches.
+L-R02-C11,loko,22,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[677, 75, 727, 123]","[679, 77, 725, 121]",2,11,Turning and body-lowering variants; may contain multiple transition branches.
+L-R02-C12,loko,23,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[742, 76, 792, 123]","[744, 78, 790, 121]",2,12,Turning and body-lowering variants; may contain multiple transition branches.
+L-R02-C13,loko,24,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[806, 75, 855, 125]","[808, 77, 853, 123]",2,13,Turning and body-lowering variants; may contain multiple transition branches.
+L-R03-C01,loko,25,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[7, 137, 56, 185]","[9, 139, 54, 183]",3,1,Turning and body-lowering variants; may contain multiple transition branches.
+L-R03-C02,loko,26,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[68, 135, 118, 186]","[70, 137, 116, 184]",3,2,Turning and body-lowering variants; may contain multiple transition branches.
+L-R03-C03,loko,27,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[134, 136, 182, 186]","[136, 138, 180, 184]",3,3,Turning and body-lowering variants; may contain multiple transition branches.
+L-R03-C04,loko,28,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[196, 135, 247, 186]","[198, 137, 245, 184]",3,4,Turning and body-lowering variants; may contain multiple transition branches.
+L-R03-C05,loko,29,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[263, 135, 318, 186]","[265, 137, 316, 184]",3,5,Turning and body-lowering variants; may contain multiple transition branches.
+L-R03-C06,loko,30,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[334, 135, 390, 184]","[336, 137, 388, 182]",3,6,Turning and body-lowering variants; may contain multiple transition branches.
+L-R03-C07,loko,31,POSTURE_TRANSITIONS,turn_lower_sit,stand_to_sit,uncertain_sequence,medium,False,"[405, 136, 460, 184]","[407, 138, 458, 182]",3,7,Turning and body-lowering variants; may contain multiple transition branches.
+L-R03-C08,loko,32,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[473, 136, 521, 186]","[475, 138, 519, 184]",3,8,Body progressively lowers and curls; likely several short paths.
+L-R03-C09,loko,33,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[537, 136, 592, 183]","[539, 138, 590, 181]",3,9,Body progressively lowers and curls; likely several short paths.
+L-R03-C10,loko,34,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[606, 142, 665, 185]","[608, 144, 663, 183]",3,10,Body progressively lowers and curls; likely several short paths.
+L-R03-C11,loko,35,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[675, 145, 726, 185]","[677, 147, 724, 183]",3,11,Body progressively lowers and curls; likely several short paths.
+L-R03-C12,loko,36,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[736, 145, 786, 185]","[738, 147, 784, 183]",3,12,Body progressively lowers and curls; likely several short paths.
+L-R03-C13,loko,37,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[795, 142, 852, 184]","[797, 144, 850, 182]",3,13,Body progressively lowers and curls; likely several short paths.
+L-R04-C01,loko,38,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[7, 202, 56, 252]","[9, 204, 54, 250]",4,1,Body progressively lowers and curls; likely several short paths.
+L-R04-C02,loko,39,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[73, 202, 123, 252]","[75, 204, 121, 250]",4,2,Body progressively lowers and curls; likely several short paths.
+L-R04-C03,loko,40,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[136, 203, 188, 252]","[138, 205, 186, 250]",4,3,Body progressively lowers and curls; likely several short paths.
+L-R04-C04,loko,41,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[203, 203, 252, 253]","[205, 205, 250, 251]",4,4,Body progressively lowers and curls; likely several short paths.
+L-R04-C05,loko,42,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[268, 202, 318, 252]","[270, 204, 316, 250]",4,5,Body progressively lowers and curls; likely several short paths.
+L-R04-C06,loko,43,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[335, 202, 386, 253]","[337, 204, 384, 251]",4,6,Body progressively lowers and curls; likely several short paths.
+L-R04-C07,loko,44,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[401, 202, 453, 253]","[403, 204, 451, 251]",4,7,Body progressively lowers and curls; likely several short paths.
+L-R04-C08,loko,45,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[463, 205, 512, 252]","[465, 207, 510, 250]",4,8,Body progressively lowers and curls; likely several short paths.
+L-R04-C09,loko,46,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[523, 214, 573, 253]","[525, 216, 571, 251]",4,9,Body progressively lowers and curls; likely several short paths.
+L-R04-C10,loko,47,POSTURE_TRANSITIONS,lying_and_curling,sit_to_lie,uncertain_sequence,medium,False,"[583, 216, 633, 253]","[585, 218, 631, 251]",4,10,Body progressively lowers and curls; likely several short paths.
+L-R04-C11,loko,48,SLEEP,sleeping_with_symbols,sleep_loop,plausible_sequence,high,True,"[650, 200, 712, 253]","[652, 202, 710, 251]",4,11,Sleep-symbol poses.
+L-R04-C12,loko,49,SLEEP,sleeping_with_symbols,sleep_loop,plausible_sequence,high,True,"[729, 196, 790, 253]","[731, 198, 788, 251]",4,12,Sleep-symbol poses.
+L-R04-C13,loko,50,SLEEP,sleeping_with_symbols,sleep_loop,plausible_sequence,high,True,"[803, 196, 853, 253]","[805, 198, 851, 251]",4,13,Sleep-symbol poses.
+L-R05-C01,loko,51,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[10, 266, 58, 323]","[12, 268, 56, 321]",5,1,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C02,loko,52,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[82, 275, 137, 324]","[84, 277, 135, 322]",5,2,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C03,loko,53,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[162, 277, 220, 325]","[164, 279, 218, 323]",5,3,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C04,loko,54,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[234, 282, 292, 324]","[236, 284, 290, 322]",5,4,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C05,loko,55,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[302, 284, 358, 325]","[304, 286, 356, 323]",5,5,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C06,loko,56,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[375, 282, 428, 324]","[377, 284, 426, 322]",5,6,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C07,loko,57,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[443, 280, 496, 324]","[445, 282, 494, 322]",5,7,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C08,loko,58,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[512, 281, 559, 324]","[514, 283, 557, 322]",5,8,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C09,loko,59,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[581, 284, 640, 323]","[583, 286, 638, 321]",5,9,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C10,loko,60,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[655, 281, 706, 323]","[657, 283, 704, 321]",5,10,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C11,loko,61,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[725, 281, 777, 322]","[727, 283, 775, 320]",5,11,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R05-C12,loko,62,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[797, 280, 848, 322]","[799, 282, 846, 320]",5,12,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R06-C01,loko,63,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[9, 338, 54, 390]","[11, 340, 52, 388]",6,1,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R06-C02,loko,64,POSTURE_TRANSITIONS,wake_or_rise,wake_up_or_lie_to_sit,uncertain_sequence,medium,False,"[78, 338, 124, 390]","[80, 340, 122, 388]",6,2,"Low-body to upright progression, but exact chronology is not fully certain."
+L-R06-C03,loko,65,EMOTIONS,love_happy,love_reaction,plausible_sequence,high,True,"[148, 338, 194, 390]","[150, 340, 192, 388]",6,3,Heart and pleased-eye reactions.
+L-R06-C04,loko,66,EMOTIONS,love_happy,love_reaction,plausible_sequence,high,True,"[214, 338, 265, 389]","[216, 340, 263, 387]",6,4,Heart and pleased-eye reactions.
+L-R06-C05,loko,67,EMOTIONS,love_happy,love_reaction,plausible_sequence,high,True,"[277, 339, 338, 389]","[279, 341, 336, 387]",6,5,Heart and pleased-eye reactions.
+L-R06-C06,loko,68,EMOTIONS,love_happy,love_reaction,plausible_sequence,high,True,"[342, 341, 405, 389]","[344, 343, 403, 387]",6,6,Heart and pleased-eye reactions.
+L-R06-C07,loko,69,EMOTIONS,love_happy,love_reaction,plausible_sequence,high,True,"[419, 341, 479, 389]","[421, 343, 477, 387]",6,7,Heart and pleased-eye reactions.
+L-R06-C08,loko,70,EMOTIONS,love_happy,love_reaction,plausible_sequence,high,True,"[491, 342, 555, 389]","[493, 344, 553, 387]",6,8,Heart and pleased-eye reactions.
+L-R06-C09,loko,71,EMOTIONS,love_happy,love_reaction,plausible_sequence,high,True,"[557, 343, 604, 390]","[559, 345, 602, 388]",6,9,Heart and pleased-eye reactions.
+L-R06-C10,loko,72,EMOTIONS,love_happy,love_reaction,plausible_sequence,high,True,"[614, 342, 659, 389]","[616, 344, 657, 387]",6,10,Heart and pleased-eye reactions.
+L-R06-C11,loko,73,EMOTIONS,annoyed_angry,annoyed_reaction,isolated_variants,medium,False,"[673, 342, 719, 389]","[675, 344, 717, 387]",6,11,Subtle annoyance and reaction symbols.
+L-R06-C12,loko,74,EMOTIONS,annoyed_angry,annoyed_reaction,isolated_variants,medium,False,"[733, 342, 778, 390]","[735, 344, 776, 388]",6,12,Subtle annoyance and reaction symbols.
+L-R06-C13,loko,75,EMOTIONS,annoyed_angry,annoyed_reaction,isolated_variants,medium,False,"[801, 338, 847, 389]","[803, 340, 845, 387]",6,13,Subtle annoyance and reaction symbols.
+L-R07-C01,loko,76,EMOTIONS,annoyed_angry,annoyed_reaction,isolated_variants,medium,False,"[8, 406, 54, 454]","[10, 408, 52, 452]",7,1,Subtle annoyance and reaction symbols.
+L-R07-C02,loko,77,EMOTIONS,annoyed_angry,annoyed_reaction,isolated_variants,medium,False,"[74, 407, 120, 454]","[76, 409, 118, 452]",7,2,Subtle annoyance and reaction symbols.
+L-R07-C03,loko,78,EMOTIONS,annoyed_angry,annoyed_reaction,isolated_variants,medium,False,"[141, 407, 186, 454]","[143, 409, 184, 452]",7,3,Subtle annoyance and reaction symbols.
+L-R07-C04,loko,79,EMOTIONS,annoyed_angry,annoyed_reaction,isolated_variants,medium,False,"[204, 408, 255, 455]","[206, 410, 253, 453]",7,4,Subtle annoyance and reaction symbols.
+L-R07-C05,loko,80,EMOTIONS,annoyed_angry,annoyed_reaction,isolated_variants,medium,False,"[270, 408, 320, 455]","[272, 410, 318, 453]",7,5,Subtle annoyance and reaction symbols.
+L-R07-C06,loko,81,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[337, 407, 393, 456]","[339, 409, 391, 454]",7,6,Question-mark and puzzled variants.
+L-R07-C07,loko,82,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[407, 406, 453, 456]","[409, 408, 451, 454]",7,7,Question-mark and puzzled variants.
+L-R07-C08,loko,83,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[469, 406, 515, 456]","[471, 408, 513, 454]",7,8,Question-mark and puzzled variants.
+L-R07-C09,loko,84,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[531, 407, 585, 456]","[533, 409, 583, 454]",7,9,Question-mark and puzzled variants.
+L-R07-C10,loko,85,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[597, 407, 649, 456]","[599, 409, 647, 454]",7,10,Question-mark and puzzled variants.
+L-R07-C11,loko,86,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[664, 407, 709, 456]","[666, 409, 707, 454]",7,11,Question-mark and puzzled variants.
+L-R07-C12,loko,87,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[728, 408, 780, 457]","[730, 410, 778, 455]",7,12,Question-mark and puzzled variants.
+L-R07-C13,loko,88,EMOTIONS,confused,confused_reaction,isolated_variants,high,False,"[799, 401, 845, 457]","[801, 403, 843, 455]",7,13,Question-mark and puzzled variants.
+L-R08-C01,loko,89,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[7, 470, 69, 524]","[9, 472, 67, 522]",8,1,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C02,loko,90,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[73, 471, 119, 524]","[75, 473, 117, 522]",8,2,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C03,loko,91,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[122, 473, 185, 524]","[124, 475, 183, 522]",8,3,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C04,loko,92,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[201, 473, 253, 523]","[203, 475, 251, 521]",8,4,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C05,loko,93,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[263, 472, 309, 522]","[265, 474, 307, 520]",8,5,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C06,loko,94,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[326, 472, 384, 523]","[328, 474, 382, 521]",8,6,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C07,loko,95,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[399, 471, 444, 523]","[401, 473, 442, 521]",8,7,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C08,loko,96,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[462, 471, 508, 523]","[464, 473, 506, 521]",8,8,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C09,loko,97,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[525, 471, 570, 523]","[527, 473, 568, 521]",8,9,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C10,loko,98,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[588, 471, 634, 524]","[590, 473, 632, 522]",8,10,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C11,loko,99,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[655, 471, 701, 524]","[657, 473, 699, 522]",8,11,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C12,loko,100,EMOTIONS,surprised_excited,surprise_excited,uncertain_sequence,medium,False,"[721, 472, 768, 523]","[723, 474, 766, 521]",8,12,"Sparkles, open-mouth surprise, and animated reactions."
+L-R08-C13,loko,101,EMOTIONS,tired_embarrassed,mixed_reactions,isolated_variants,medium,False,"[795, 472, 840, 523]","[797, 474, 838, 521]",8,13,Subtle tired/embarrassed poses.
+L-R09-C01,loko,102,EMOTIONS,tired_embarrassed,mixed_reactions,isolated_variants,medium,False,"[5, 538, 60, 587]","[7, 540, 58, 585]",9,1,Subtle tired/embarrassed poses.
+L-R09-C02,loko,103,EMOTIONS,tired_embarrassed,mixed_reactions,isolated_variants,medium,False,"[77, 537, 131, 587]","[79, 539, 129, 585]",9,2,Subtle tired/embarrassed poses.
+L-R09-C03,loko,104,EMOTIONS,tired_embarrassed,mixed_reactions,isolated_variants,medium,False,"[146, 537, 198, 589]","[148, 539, 196, 587]",9,3,Subtle tired/embarrassed poses.
+L-R09-C04,loko,105,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[212, 537, 264, 589]","[214, 539, 262, 587]",9,4,Food interaction and chewing progression.
+L-R09-C05,loko,106,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[276, 537, 328, 590]","[278, 539, 326, 588]",9,5,Food interaction and chewing progression.
+L-R09-C06,loko,107,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[347, 537, 400, 590]","[349, 539, 398, 588]",9,6,Food interaction and chewing progression.
+L-R09-C07,loko,108,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[415, 537, 468, 590]","[417, 539, 466, 588]",9,7,Food interaction and chewing progression.
+L-R09-C08,loko,109,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[488, 538, 538, 590]","[490, 540, 536, 588]",9,8,Food interaction and chewing progression.
+L-R09-C09,loko,110,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[555, 540, 602, 590]","[557, 542, 600, 588]",9,9,Food interaction and chewing progression.
+L-R09-C10,loko,111,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[617, 541, 664, 591]","[619, 543, 662, 589]",9,10,Food interaction and chewing progression.
+L-R09-C11,loko,112,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[680, 541, 726, 592]","[682, 543, 724, 590]",9,11,Food interaction and chewing progression.
+L-R09-C12,loko,113,ACTIVITIES,eating,eat,plausible_sequence,high,True,"[746, 540, 793, 591]","[748, 542, 791, 589]",9,12,Food interaction and chewing progression.
+L-R09-C13,loko,114,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[808, 543, 856, 590]","[810, 545, 854, 588]",9,13,Cup interaction and sipping frames.
+L-R10-C01,loko,115,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[5, 603, 53, 654]","[7, 605, 51, 652]",10,1,Cup interaction and sipping frames.
+L-R10-C02,loko,116,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[65, 604, 113, 654]","[67, 606, 111, 652]",10,2,Cup interaction and sipping frames.
+L-R10-C03,loko,117,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[132, 605, 181, 655]","[134, 607, 179, 653]",10,3,Cup interaction and sipping frames.
+L-R10-C04,loko,118,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[200, 605, 248, 655]","[202, 607, 246, 653]",10,4,Cup interaction and sipping frames.
+L-R10-C05,loko,119,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[268, 604, 315, 655]","[270, 606, 313, 653]",10,5,Cup interaction and sipping frames.
+L-R10-C06,loko,120,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[338, 603, 387, 655]","[340, 605, 385, 653]",10,6,Cup interaction and sipping frames.
+L-R10-C07,loko,121,ACTIVITIES,drinking,drink,plausible_sequence,high,True,"[409, 603, 456, 655]","[411, 605, 454, 653]",10,7,Cup interaction and sipping frames.
+L-R10-C08,loko,122,ACTIVITIES,reading,reading,plausible_sequence,high,True,"[477, 603, 526, 656]","[479, 605, 524, 654]",10,8,Book-opening and reading progression.
+L-R10-C09,loko,123,ACTIVITIES,reading,reading,plausible_sequence,high,True,"[552, 605, 606, 657]","[554, 607, 604, 655]",10,9,Book-opening and reading progression.
+L-R10-C10,loko,124,ACTIVITIES,reading,reading,plausible_sequence,high,True,"[618, 607, 668, 657]","[620, 609, 666, 655]",10,10,Book-opening and reading progression.
+L-R10-C11,loko,125,ACTIVITIES,reading,reading,plausible_sequence,high,True,"[681, 607, 731, 658]","[683, 609, 729, 656]",10,11,Book-opening and reading progression.
+L-R10-C12,loko,126,ACTIVITIES,reading,reading,plausible_sequence,high,True,"[747, 607, 797, 658]","[749, 609, 795, 656]",10,12,Book-opening and reading progression.
+L-R11-C01,loko,127,ACTIVITIES,reading,reading,plausible_sequence,high,True,"[5, 665, 62, 725]","[7, 667, 60, 723]",11,1,Book-opening and reading progression.
+L-R11-C02,loko,128,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[68, 664, 130, 729]","[70, 666, 128, 727]",11,2,Music-note effects and rhythmic movement.
+L-R11-C03,loko,129,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[132, 662, 192, 730]","[134, 664, 190, 728]",11,3,Music-note effects and rhythmic movement.
+L-R11-C04,loko,130,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[197, 662, 254, 729]","[199, 664, 252, 727]",11,4,Music-note effects and rhythmic movement.
+L-R11-C05,loko,131,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[257, 675, 307, 730]","[259, 677, 305, 728]",11,5,Music-note effects and rhythmic movement.
+L-R11-C06,loko,132,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[312, 662, 378, 731]","[314, 664, 376, 729]",11,6,Music-note effects and rhythmic movement.
+L-R11-C07,loko,133,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[380, 664, 452, 731]","[382, 666, 450, 729]",11,7,Music-note effects and rhythmic movement.
+L-R11-C08,loko,134,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[462, 666, 506, 729]","[464, 668, 504, 727]",11,8,Music-note effects and rhythmic movement.
+L-R11-C09,loko,135,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[513, 664, 564, 729]","[515, 666, 562, 727]",11,9,Music-note effects and rhythmic movement.
+L-R11-C10,loko,136,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[569, 670, 632, 731]","[571, 672, 630, 729]",11,10,Music-note effects and rhythmic movement.
+L-R11-C11,loko,137,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[631, 665, 680, 731]","[633, 667, 678, 729]",11,11,Music-note effects and rhythmic movement.
+L-R11-C12,loko,138,ACTIVITIES,music_dance,music,plausible_sequence,high,True,"[687, 670, 736, 732]","[689, 672, 734, 730]",11,12,Music-note effects and rhythmic movement.
+L-R11-C13,loko,139,ACTIVITIES,holding_round_object,object_activity,uncertain_sequence,medium,False,"[749, 681, 794, 731]","[751, 683, 792, 729]",11,13,Round yellow object; precise semantic role uncertain.
+L-R11-C14,loko,140,ACTIVITIES,holding_round_object,object_activity,uncertain_sequence,medium,False,"[800, 678, 856, 731]","[802, 680, 854, 729]",11,14,Round yellow object; precise semantic role uncertain.
+L-R12-C01,loko,141,ACTIVITIES,holding_round_object,object_activity,uncertain_sequence,medium,False,"[5, 743, 58, 794]","[7, 745, 56, 792]",12,1,Round yellow object; precise semantic role uncertain.
+L-R12-C02,loko,142,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[67, 746, 122, 796]","[69, 748, 120, 794]",12,2,Laptop opening/use and reaction variants.
+L-R12-C03,loko,143,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[133, 746, 189, 796]","[135, 748, 187, 794]",12,3,Laptop opening/use and reaction variants.
+L-R12-C04,loko,144,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[199, 747, 255, 796]","[201, 749, 253, 794]",12,4,Laptop opening/use and reaction variants.
+L-R12-C05,loko,145,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[262, 746, 319, 796]","[264, 748, 317, 794]",12,5,Laptop opening/use and reaction variants.
+L-R12-C06,loko,146,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[326, 748, 383, 797]","[328, 750, 381, 795]",12,6,Laptop opening/use and reaction variants.
+L-R12-C07,loko,147,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[391, 747, 436, 796]","[393, 749, 434, 794]",12,7,Laptop opening/use and reaction variants.
+L-R12-C08,loko,148,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[455, 747, 509, 796]","[457, 749, 507, 794]",12,8,Laptop opening/use and reaction variants.
+L-R12-C09,loko,149,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[514, 748, 568, 797]","[516, 750, 566, 795]",12,9,Laptop opening/use and reaction variants.
+L-R12-C10,loko,150,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[572, 749, 628, 797]","[574, 751, 626, 795]",12,10,Laptop opening/use and reaction variants.
+L-R12-C11,loko,151,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[634, 750, 690, 798]","[636, 752, 688, 796]",12,11,Laptop opening/use and reaction variants.
+L-R12-C12,loko,152,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[696, 749, 749, 798]","[698, 751, 747, 796]",12,12,Laptop opening/use and reaction variants.
+L-R12-C13,loko,153,ACTIVITIES,laptop_use,laptop,plausible_sequence,high,True,"[753, 749, 806, 797]","[755, 751, 804, 795]",12,13,Laptop opening/use and reaction variants.
+L-R12-C14,loko,154,ACTIVITIES,reading_or_food,mixed_activity,uncertain_sequence,medium,False,"[811, 749, 856, 797]","[813, 751, 854, 795]",12,14,Book/green prop followed by orange object interaction.
+L-R13-C01,loko,155,ACTIVITIES,reading_or_food,mixed_activity,uncertain_sequence,medium,False,"[5, 812, 53, 864]","[7, 814, 51, 862]",13,1,Book/green prop followed by orange object interaction.
+L-R13-C02,loko,156,ACTIVITIES,reading_or_food,mixed_activity,uncertain_sequence,medium,False,"[65, 812, 113, 864]","[67, 814, 111, 862]",13,2,Book/green prop followed by orange object interaction.
+L-R13-C03,loko,157,ACTIVITIES,reading_or_food,mixed_activity,uncertain_sequence,medium,False,"[125, 812, 172, 864]","[127, 814, 170, 862]",13,3,Book/green prop followed by orange object interaction.
+L-R13-C04,loko,158,ACTIVITIES,reading_or_food,mixed_activity,uncertain_sequence,medium,False,"[187, 812, 234, 865]","[189, 814, 232, 863]",13,4,Book/green prop followed by orange object interaction.
+L-R13-C05,loko,159,ACTIVITIES,reading_or_food,mixed_activity,uncertain_sequence,medium,False,"[247, 813, 300, 864]","[249, 815, 298, 862]",13,5,Book/green prop followed by orange object interaction.
+L-R13-C06,loko,160,ACTIVITIES,reading_or_food,mixed_activity,uncertain_sequence,medium,False,"[311, 814, 359, 865]","[313, 816, 357, 863]",13,6,Book/green prop followed by orange object interaction.
+L-R13-C07,loko,161,ACTIVITIES,playing_with_orange_ball,playing_ball,plausible_sequence,medium,True,"[377, 812, 430, 865]","[379, 814, 428, 863]",13,7,Round orange object behaves like a ball or toy.
+L-R13-C08,loko,162,ACTIVITIES,playing_with_orange_ball,playing_ball,plausible_sequence,medium,True,"[439, 810, 493, 867]","[441, 812, 491, 865]",13,8,Round orange object behaves like a ball or toy.
+L-R13-C09,loko,163,ACTIVITIES,playing_with_orange_ball,playing_ball,plausible_sequence,medium,True,"[506, 813, 564, 866]","[508, 815, 562, 864]",13,9,Round orange object behaves like a ball or toy.
+L-R13-C10,loko,164,ACTIVITIES,playing_with_orange_ball,playing_ball,plausible_sequence,medium,True,"[576, 816, 633, 866]","[578, 818, 631, 864]",13,10,Round orange object behaves like a ball or toy.
+L-R13-C11,loko,165,ACTIVITIES,playing_with_orange_ball,playing_ball,plausible_sequence,medium,True,"[649, 813, 713, 867]","[651, 815, 711, 865]",13,11,Round orange object behaves like a ball or toy.
+L-R13-C12,loko,166,ACTIVITIES,playing_with_orange_ball,playing_ball,plausible_sequence,medium,True,"[731, 815, 787, 866]","[733, 817, 785, 864]",13,12,Round orange object behaves like a ball or toy.
+L-R13-C13,loko,167,ACTIVITIES,playing_with_orange_ball,playing_ball,plausible_sequence,medium,True,"[802, 812, 854, 865]","[804, 814, 852, 863]",13,13,Round orange object behaves like a ball or toy.
+L-R14-C01,loko,168,ACTIVITIES,playing_with_orange_ball,playing_ball,plausible_sequence,medium,True,"[7, 880, 52, 930]","[9, 882, 50, 928]",14,1,Round orange object behaves like a ball or toy.
+L-R14-C02,loko,169,IDLE,front_idle_emotions,idle_emotions,isolated_variants,medium,False,"[65, 880, 109, 930]","[67, 882, 107, 928]",14,2,Neutral and subtle emotional poses.
+L-R14-C03,loko,170,IDLE,front_idle_emotions,idle_emotions,isolated_variants,medium,False,"[128, 880, 173, 930]","[130, 882, 171, 928]",14,3,Neutral and subtle emotional poses.
+L-R14-C04,loko,171,IDLE,front_idle_emotions,idle_emotions,isolated_variants,medium,False,"[189, 880, 235, 930]","[191, 882, 233, 928]",14,4,Neutral and subtle emotional poses.
+L-R14-C05,loko,172,IDLE,front_idle_emotions,idle_emotions,isolated_variants,medium,False,"[251, 883, 296, 930]","[253, 885, 294, 928]",14,5,Neutral and subtle emotional poses.
+L-R14-C06,loko,173,IDLE,front_idle_emotions,idle_emotions,isolated_variants,medium,False,"[311, 883, 356, 931]","[313, 885, 354, 929]",14,6,Neutral and subtle emotional poses.
+L-R14-C07,loko,174,IDLE,front_idle_emotions,idle_emotions,isolated_variants,medium,False,"[370, 883, 415, 931]","[372, 885, 413, 929]",14,7,Neutral and subtle emotional poses.
+L-R14-C08,loko,175,IDLE,front_idle_emotions,idle_emotions,isolated_variants,medium,False,"[428, 884, 474, 930]","[430, 886, 472, 928]",14,8,Neutral and subtle emotional poses.
+L-R14-C09,loko,176,IDLE,front_idle_emotions,idle_emotions,isolated_variants,medium,False,"[488, 885, 532, 930]","[490, 887, 530, 928]",14,9,Neutral and subtle emotional poses.
+L-R14-C10,loko,177,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[545, 885, 593, 930]","[547, 887, 591, 928]",14,10,Approach and rise behind a ledge.
+L-R14-C11,loko,178,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[610, 885, 658, 931]","[612, 887, 656, 929]",14,11,Approach and rise behind a ledge.
+L-R14-C12,loko,179,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[671, 885, 719, 931]","[673, 887, 717, 929]",14,12,Approach and rise behind a ledge.
+L-R15-C01,loko,180,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[4, 951, 57, 1001]","[6, 953, 55, 999]",15,1,Approach and rise behind a ledge.
+L-R15-C02,loko,181,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[63, 952, 117, 1001]","[65, 954, 115, 999]",15,2,Approach and rise behind a ledge.
+L-R15-C03,loko,182,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[123, 952, 178, 997]","[125, 954, 176, 995]",15,3,Approach and rise behind a ledge.
+L-R15-C04,loko,183,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[183, 952, 236, 997]","[185, 954, 234, 995]",15,4,Approach and rise behind a ledge.
+L-R15-C05,loko,184,ACTIVITIES,peeking_over_edge,peeking,plausible_sequence,high,True,"[241, 952, 294, 997]","[243, 954, 292, 995]",15,5,Approach and rise behind a ledge.
+L-R15-C06,loko,185,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[298, 951, 353, 996]","[300, 953, 351, 994]",15,6,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R15-C07,loko,186,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[357, 951, 415, 996]","[359, 953, 413, 994]",15,7,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R15-C08,loko,187,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[421, 951, 468, 996]","[423, 953, 466, 994]",15,8,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R15-C09,loko,188,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[471, 951, 521, 995]","[473, 953, 519, 993]",15,9,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R15-C10,loko,189,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[523, 952, 572, 995]","[525, 954, 570, 993]",15,10,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R15-C11,loko,190,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[575, 951, 628, 1007]","[577, 953, 626, 1005]",15,11,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R15-C12,loko,191,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[631, 952, 688, 995]","[633, 954, 686, 993]",15,12,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R15-C13,loko,192,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[691, 951, 750, 994]","[693, 953, 748, 992]",15,13,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R15-C14,loko,193,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[754, 952, 811, 992]","[756, 954, 809, 990]",15,14,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C01,loko,194,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[4, 1021, 61, 1063]","[6, 1023, 59, 1061]",16,1,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C02,loko,195,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[67, 1021, 121, 1063]","[69, 1023, 119, 1061]",16,2,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C03,loko,196,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[127, 1021, 178, 1064]","[129, 1023, 176, 1062]",16,3,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C04,loko,197,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[182, 1020, 236, 1064]","[184, 1022, 234, 1062]",16,4,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C05,loko,198,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[242, 1018, 294, 1064]","[244, 1020, 292, 1062]",16,5,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C06,loko,199,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[301, 1020, 350, 1066]","[303, 1022, 348, 1064]",16,6,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C07,loko,200,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[355, 1022, 407, 1065]","[357, 1024, 405, 1063]",16,7,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C08,loko,201,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[413, 1023, 465, 1066]","[415, 1025, 463, 1064]",16,8,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C09,loko,202,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[470, 1023, 525, 1066]","[472, 1025, 523, 1064]",16,9,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C10,loko,203,ACTIVITIES,ledge_furniture_interaction,peeking_furniture,uncertain_sequence,medium,False,"[531, 1024, 579, 1070]","[533, 1026, 577, 1068]",16,10,Extended ledge/furniture poses; likely several related sub-sequences.
+L-R16-C11,loko,204,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[589, 1024, 635, 1073]","[591, 1026, 633, 1071]",16,11,Neutral front-facing variants.
+L-R16-C12,loko,205,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[648, 1025, 693, 1073]","[650, 1027, 691, 1071]",16,12,Neutral front-facing variants.
+L-R17-C01,loko,206,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[8, 1078, 54, 1128]","[10, 1080, 52, 1126]",17,1,Neutral front-facing variants.
+L-R17-C02,loko,207,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[72, 1078, 118, 1128]","[74, 1080, 116, 1126]",17,2,Neutral front-facing variants.
+L-R17-C03,loko,208,IDLE,front_idle_variants,idle_front,isolated_variants,high,False,"[134, 1085, 181, 1128]","[136, 1087, 179, 1126]",17,3,Neutral front-facing variants.
+L-R17-C04,loko,209,SLEEP,drowsy_and_sleep,sleep_transition,plausible_sequence,high,True,"[200, 1087, 255, 1128]","[202, 1089, 253, 1126]",17,4,Drowsy lowering into sleep-symbol poses.
+L-R17-C05,loko,210,SLEEP,drowsy_and_sleep,sleep_transition,plausible_sequence,high,True,"[269, 1083, 329, 1128]","[271, 1085, 327, 1126]",17,5,Drowsy lowering into sleep-symbol poses.
+L-R17-C06,loko,211,SLEEP,drowsy_and_sleep,sleep_transition,plausible_sequence,high,True,"[339, 1080, 396, 1128]","[341, 1082, 394, 1126]",17,6,Drowsy lowering into sleep-symbol poses.
+L-R17-C07,loko,212,SLEEP,drowsy_and_sleep,sleep_transition,plausible_sequence,high,True,"[406, 1090, 462, 1128]","[408, 1092, 460, 1126]",17,7,Drowsy lowering into sleep-symbol poses.
+L-R17-C08,loko,213,SLEEP,drowsy_and_sleep,sleep_transition,plausible_sequence,high,True,"[475, 1091, 526, 1128]","[477, 1093, 524, 1126]",17,8,Drowsy lowering into sleep-symbol poses.
+L-R17-C09,loko,214,SLEEP,drowsy_and_sleep,sleep_transition,plausible_sequence,high,True,"[541, 1093, 590, 1128]","[543, 1095, 588, 1126]",17,9,Drowsy lowering into sleep-symbol poses.

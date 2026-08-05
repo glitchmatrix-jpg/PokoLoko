@@ -1,0 +1,97 @@
+{
+  "id": "poko_sleep_transition",
+  "character": "poko",
+  "category": "sleeping",
+  "state": "sleep_transition",
+  "direction": "none",
+  "source_frame_ids": [
+    "P-R16-C02",
+    "P-R16-C03",
+    "P-R16-C04",
+    "P-R16-C05",
+    "P-R16-C06",
+    "P-R16-C07",
+    "P-R16-C08",
+    "P-R16-C09"
+  ],
+  "frames": [
+    "frame_000.png",
+    "frame_001.png",
+    "frame_002.png",
+    "frame_003.png",
+    "frame_004.png",
+    "frame_005.png",
+    "frame_006.png",
+    "frame_007.png"
+  ],
+  "frame_count": 8,
+  "canvas_width": 62,
+  "canvas_height": 64,
+  "fps": 6,
+  "recommended_fps_range": [
+    5,
+    8
+  ],
+  "loop": false,
+  "playback": "forward",
+  "loop_validation": {
+    "final_to_first_distance": 35.46,
+    "median_internal_distance": 18.527,
+    "acceptable_for_forward_loop": null,
+    "assessment": "not_applicable_one_shot"
+  },
+  "anchor": {
+    "ground_x": 31,
+    "ground_y": 48,
+    "body_center_x": 31,
+    "body_center_y": 32
+  },
+  "movement": {
+    "moves_character": false,
+    "recommended_speed_css_px_per_second": 0,
+    "signed_speed_css_px_per_second": 0
+  },
+  "transition_from": [
+    "sit_idle",
+    "idle_front"
+  ],
+  "transition_to": [
+    "sleep_loop"
+  ],
+  "recommended_next_state": "sleep_loop",
+  "generated_by_mirroring": false,
+  "mirrored_from": null,
+  "confidence": "high",
+  "known_issues": [
+    "No fabricated or interpolated frames were inserted."
+  ],
+  "runtime_asset_format": "png_frames",
+  "preview_assets": {
+    "png": "preview.png",
+    "gif": "preview.gif",
+    "gif_runtime_asset": false
+  },
+  "technical_details": {
+    "normalization": null,
+    "scale_normalization": {
+      "canonical_body_width": 41,
+      "canonical_head_to_foot_height": 47,
+      "uniform_scale_factor": 1.0,
+      "resampling": "none",
+      "nearest_neighbor_used": false,
+      "decision": "Source character scale preserved. No frame in this sequence was resized because the ordinary upright source artwork is already consistent and deviations are pose-driven."
+    },
+    "per_frame_anchors": null,
+    "exact_duplicates": [],
+    "near_duplicates": [],
+    "abrupt_transitions": [],
+    "source_order_preserved": true,
+    "reordered": false,
+    "direction_audit": null,
+    "naming": {
+      "directory_style": "lowercase_snake_case",
+      "frame_pattern": "frame_%03d.png",
+      "zero_padded": true
+    }
+  }
+}

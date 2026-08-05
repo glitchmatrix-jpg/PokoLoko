@@ -1,0 +1,29 @@
+{
+  "step": "18",
+  "title": "Rich Activity Framework and Choreography",
+  "status": "STATIC_PASS_NATIVE_PENDING",
+  "checks": {
+    "activity_schema_and_registry": true,
+    "approved_activity_animations_covered": 13,
+    "character_activity_definitions": 12,
+    "lifecycle_phases_defined": true,
+    "seeded_duration_and_variation": true,
+    "no_activity_settimeout": true,
+    "prop_lifecycle_explicit": true,
+    "all_interruption_levels_supported": true,
+    "drag_and_character_switch_recovery": true,
+    "stale_generation_rejection": true,
+    "diagnostic_phase_and_prop_view": true,
+    "strict_typescript_package_compile": true,
+    "compiled_runtime_scenarios": true,
+    "previous_dependency_free_regressions": true,
+    "native_windows_visual_review": false
+  },
+  "native_pending": [
+    "Visual review of every complete activity chain in Electron",
+    "Prop-safe marker tuning against real frame playback",
+    "Fullscreen quieting during activities",
+    "Cross-monitor and display-loss interruption",
+    "CPU/memory behavior across long activity sessions"
+  ]
+}

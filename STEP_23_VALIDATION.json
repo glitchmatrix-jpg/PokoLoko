@@ -1,0 +1,94 @@
+{
+  "step": "23",
+  "status": "PASS_STATIC",
+  "checks": {
+    "central_tuning": true,
+    "six_ten_minute_simulations": true,
+    "sound_runtime": true,
+    "placeholder_audio_excluded": true,
+    "native_video_review_pending": true,
+    "native_audio_review_pending": true
+  },
+  "regressions": {
+    "validate-runtime-assets.mjs": {
+      "pass": true,
+      "stdout": "Runtime asset validation passed: 31 animations, 223 RGBA frames, 2 mirrored sequences.\n",
+      "stderr": ""
+    },
+    "validate-animation-runtime.mjs": {
+      "pass": true,
+      "stdout": "STEP 09 ANIMATION RUNTIME VALIDATION PASSED\nForward, reverse, ping-pong, looping, one-shot, pause/suspend, catch-up cap, and renderer integration verified statically.\n",
+      "stderr": ""
+    },
+    "validate-locomotion.mjs": {
+      "pass": true,
+      "stdout": "STEP 10 LOCOMOTION VALIDATION PASSED\n4 directional walk assets verified\nregular arrival ticks: 692\nirregular arrival ticks: 472\n",
+      "stderr": ""
+    },
+    "validate-direction-turning.mjs": {
+      "pass": true,
+      "stdout": "STEP 11 DIRECTION VALIDATION PASSED\nGait-boundary stop, neutral turn, Loko preparation, continuous retarget, and anchor parity verified.\n",
+      "stderr": ""
+    },
+    "validate-state-machine.mjs": {
+      "pass": true,
+      "stdout": "STEP 12 STATE MACHINE VALIDATION PASSED\n9 implementation/test/document files verified\n",
+      "stderr": ""
+    },
+    "validate-dragging.mjs": {
+      "pass": true,
+      "stdout": "STEP 13 DRAGGING VALIDATION PASSED\nAlpha-aware pointer capture, threshold classification, native drag, settlement, and recovery verified statically.\n",
+      "stderr": ""
+    },
+    "validate-behavior-planner.mjs": {
+      "pass": true,
+      "stdout": "Step 14 behavior planner validation passed\nHidden mind, profiles, memory, cooldowns, quiet/pause and seeded diagnostics verified\n",
+      "stderr": ""
+    },
+    "validate-sleep-wake.mjs": {
+      "pass": true,
+      "stdout": "Step 15 sleep/wake validation passed\n5 authoritative sleep assets verified\nentry completion, wake recovery, drag, and suspend paths present\n",
+      "stderr": ""
+    },
+    "validate-character-switching.mjs": {
+      "pass": true,
+      "stdout": "STEP 16 CHARACTER SWITCHING VALIDATION PASSED\nAtomic preload/commit, stale generation rejection, profile isolation, and persistence gating verified.\n",
+      "stderr": ""
+    },
+    "validate-context-sensing.mjs": {
+      "pass": true,
+      "stdout": "STEP 17 CONTEXT VALIDATION PASSED\nLocal optional content-blind context model verified\n",
+      "stderr": ""
+    },
+    "validate-activity-framework.mjs": {
+      "pass": true,
+      "stdout": "STEP 18 ACTIVITY VALIDATION PASSED\n12 character-specific activity definitions cover 13 approved activity animations.\nEntry/setup/loop/variation/exit/recovery, props, interruptions, cooldowns, and diagnostics verified.\n",
+      "stderr": ""
+    },
+    "validate-integrated-activities.mjs": {
+      "pass": true,
+      "stdout": "STEP 19 INTEGRATED ACTIVITY VALIDATION PASSED\n12 approved character/activity pairs and 13 activity animations integrated.\n5 ambient routines integrated without promoting unsupported archival poses.\nContext weighting, frequency caps, planner overlay, prop continuity, and strict typecheck verified.\n",
+      "stderr": ""
+    },
+    "validate-reactions.mjs": {
+      "pass": true,
+      "stdout": "STEP 20 REACTION VALIDATION PASSED\n9 reaction definitions across Poko and Loko verified.\nSleep routing, locked-state deferral, prop-safe activity exit, spam collapse, contextual sadness gating, and strict typecheck verified.\n",
+      "stderr": ""
+    },
+    "validate-living-runtime.mjs": {
+      "pass": true,
+      "stdout": "Step 20.5 living-runtime structural validation passed\n",
+      "stderr": ""
+    },
+    "validate-settings-experience.mjs": {
+      "pass": true,
+      "stdout": "STEP 21 SETTINGS VALIDATION PASSED\n10 required settings artifacts verified\n",
+      "stderr": ""
+    },
+    "validate-onboarding-and-tray.mjs": {
+      "pass": true,
+      "stdout": "STEP 22 VALIDATION PASSED\nSplash, onboarding, tray identity, persistence, privacy, and lifecycle contracts verified\n",
+      "stderr": ""
+    }
+  }
+}

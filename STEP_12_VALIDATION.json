@@ -1,0 +1,13 @@
+{
+  "step": "12",
+  "status": "PASS_STATIC",
+  "checks": {
+    "data_driven_state_definitions": true,
+    "one_shot_completion_driven": true,
+    "generation_stale_event_protection": true,
+    "prop_activity_exit_before_locomotion": true,
+    "renderer_does_not_own_domain_state": true,
+    "legal_and_illegal_tests_added": true,
+    "native_windows_runtime_pending_github_actions_exe": true
+  }
+}

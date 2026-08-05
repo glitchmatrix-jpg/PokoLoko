@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "activities": {
+    "poko_music": {
+      "props": [
+        "music_notes"
+      ],
+      "entry": "notes may appear only after activity start",
+      "loop": "notes may vary by frame",
+      "exit": "finish phrase, then clear notes before neutral idle",
+      "risk": "low"
+    },
+    "poko_drink": {
+      "props": [
+        "drink_container"
+      ],
+      "entry": "spawn with first hand-contact frame after low-posture setup",
+      "loop": "container remains present through sip phrase",
+      "exit": "use last container-safe frame, then remove",
+      "risk": "medium"
+    },
+    "poko_playing_ball": {
+      "props": [
+        "blue_ball",
+        "hearts_late"
+      ],
+      "entry": "ball must exist before Poko approaches",
+      "loop": "ball position changes are authored in frames",
+      "exit": "end at ball-rest frame, then remove or leave as world object consistently",
+      "risk": "high"
+    },
+    "poko_eat": {
+      "props": [
+        "food",
+        "container"
+      ],
+      "entry": "food appears only after seated/low setup",
+      "loop": "treat food and drink as sub-scenes",
+      "exit": "clear current prop at sub-scene boundary",
+      "risk": "high"
+    },
+    "poko_peeking": {
+      "props": [
+        "ledge"
+      ],
+      "entry": "window must be positioned so ledge aligns with desktop edge",
+      "loop": "ledge stays fixed while body rises",
+      "exit": "withdraw below edge before removing ledge context",
+      "risk": "high"
+    },
+    "poko_sad_to_crying": {
+      "props": [
+        "tears"
+      ],
+      "entry": "tears appear after sadness build",
+      "loop": "not looped",
+      "exit": "route through calm hold; clear tear effect",
+      "risk": "medium"
+    },
+    "poko_sleep_loop_01": {
+      "props": [
+        "sleep_symbols"
+      ],
+      "entry": "symbols appear only after sleep posture established",
+      "loop": "symbol variation allowed",
+      "exit": "clear before wake completes",
+      "risk": "low"
+    },
+    "loko_reading_01": {
+      "props": [
+        "green_book"
+      ],
+      "entry": "book appears after seated setup",
+      "loop": "book remains through reading loop",
+      "exit": "requires book-close/neutral hold; no authored close frame",
+      "risk": "medium"
+    },
+    "loko_laptop": {
+      "props": [
+        "laptop"
+      ],
+      "entry": "laptop setup must precede work loop",
+      "loop": "choose stable typing subset",
+      "exit": "requires explicit close/remove choreography",
+      "risk": "high"
+    },
+    "loko_music": {
+      "props": [
+        "music_notes",
+        "glowing_orb_late"
+      ],
+      "entry": "notes begin with activity",
+      "loop": "orb frames are a separate climax/variation",
+      "exit": "remove orb only after compatible final hold",
+      "risk": "high"
+    },
+    "loko_drink_02": {
+      "props": [
+        "green_drink_container"
+      ],
+      "entry": "after low/seated setup",
+      "loop": "container stays attached",
+      "exit": "remove at final hand-safe frame",
+      "risk": "medium"
+    },
+    "loko_playing_ball_01": {
+      "props": [
+        "orange_ball"
+      ],
+      "entry": "ball is present before first contact",
+      "loop": "one complete play phrase",
+      "exit": "ball rests before cleanup",
+      "risk": "medium"
+    },
+    "loko_eat": {
+      "props": [
+        "food",
+        "blue_container"
+      ],
+      "entry": "food scene first",
+      "loop": "do not ping-pong across consumption semantics",
+      "exit": "split and clear props at phase boundaries",
+      "risk": "high"
+    },
+    "loko_peeking_01": {
+      "props": [
+        "edge_or_floor_line"
+      ],
+      "entry": "align with desktop edge",
+      "loop": "fixed context line",
+      "exit": "withdraw before normal movement",
+      "risk": "medium"
+    },
+    "loko_peeking_02": {
+      "props": [
+        "ledge"
+      ],
+      "entry": "align with desktop edge",
+      "loop": "fixed ledge",
+      "exit": "lower/withdraw before cleanup",
+      "risk": "medium"
+    },
+    "loko_love_reaction": {
+      "props": [
+        "hearts"
+      ],
+      "entry": "after positive interaction cue",
+      "loop": "one-shot",
+      "exit": "hearts clear before neutral",
+      "risk": "low"
+    },
+    "loko_sleep_loop": {
+      "props": [
+        "sleep_symbols"
+      ],
+      "entry": "after lying posture",
+      "loop": "symbol variation",
+      "exit": "clear before wake",
+      "risk": "low"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "step": "21",
+  "title": "Settings, Privacy, and Personalization Experience",
+  "status": "STATIC_PASS_NATIVE_PENDING",
+  "checks": {
+    "branded_settings_ui": true,
+    "live_character_previews": true,
+    "versioned_settings_schema": true,
+    "legacy_settings_migration": true,
+    "immediate_authoritative_save": true,
+    "independent_activity_and_walking_controls": true,
+    "safe_integer_scaling": true,
+    "launch_at_startup_integration": true,
+    "reduced_motion_runtime_and_ui": true,
+    "fullscreen_behavior_controls": true,
+    "privacy_master_disablement": true,
+    "keyboard_and_focus_support": true,
+    "reset_defaults": true,
+    "per_character_behavior_reset": true,
+    "all_dependency_free_regressions": true,
+    "native_windows_visual_validation": false,
+    "packaged_login_item_validation": false
+  },
+  "remaining_gate": "Run npm install/ci, strict typecheck, Vitest, Vite/Electron build, and the Windows EXE UI matrix through GitHub Actions after Step 27."
+}
