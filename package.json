@@ -2,7 +2,7 @@
     "name":  "pokoloko-desktop",
     "version":  "1.0.0-rc.1",
     "private":  true,
-    "description":  "PokoLoko â€” a private, expressive Poko and Loko desktop companion for Windows.",
+    "description":  "PokoLoko Ã¢â‚¬â€ a private, expressive Poko and Loko desktop companion for Windows.",
     "author":  {
                    "name":  "Hasan Bukhari"
                },
@@ -63,7 +63,8 @@
                     "release:source-archive":  "node scripts/create-source-archive.mjs .",
                     "release:rollback":  "node scripts/create-rollback-archive.mjs .",
                     "release:assemble":  "npm run validate \u0026\u0026 npm run package:win \u0026\u0026 npm run release:validate \u0026\u0026 npm run release:hashes \u0026\u0026 npm run release:source-archive \u0026\u0026 npm run release:rollback \u0026\u0026 npm run release:hashes",
-                    "validate:release-candidate":  "node scripts/validate-release-candidate.mjs ."
+                    "validate:release-candidate":  "node scripts/validate-release-candidate.mjs .",
+                    "build:preload":  "esbuild electron/preload/preload.ts --bundle --platform=node --format=cjs --external:electron --outfile=dist-electron/electron/preload/preload.cjs"
                 },
     "dependencies":  {
                          "react":  "19.2.0",
@@ -91,7 +92,7 @@
     "build":  {
                   "appId":  "com.hasanbukhari.pokoloko",
                   "productName":  "PokoLoko",
-                  "copyright":  "Copyright Â© 2026 Hasan Bukhari",
+                  "copyright":  "Copyright Ã‚Â© 2026 Hasan Bukhari",
                   "artifactName":  "PokoLoko-${version}-${arch}-${os}.${ext}",
                   "asar":  true,
                   "asarUnpack":  [
