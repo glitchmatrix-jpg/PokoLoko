@@ -61,7 +61,7 @@ export function createPetWindow(alwaysOnTop: boolean): BrowserWindow {
   });
   window.setAlwaysOnTop(alwaysOnTop, 'floating');
   window.setVisibleOnAllWorkspaces(true, { visibleOnFullScreen: false });
-  window.setIgnoreMouseEvents(true, { forward: true });
+  window.setIgnoreMouseEvents(false);
   void loadSurface(window, 'pet', false);
   return window;
 }

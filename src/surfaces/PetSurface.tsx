@@ -136,10 +136,13 @@ export function PetSurface() {
   }, [frameUrl, presentation?.canvasSize]);
 
   async function updateHitTest(interactive: boolean): Promise<void> {
-    if (capturedPointerRef.current !== null && !interactive) return;
-    if (interactive === interactiveRef.current) return;
-    interactiveRef.current = interactive;
-    await window.pokoloko.sendWindowCommand({ type: 'set_pet_hit_test', interactive });
+    if (!interactive) return;
+    if (interactiveRef.current) return;
+    interactiveRef.current = true;
+    await window.pokoloko.sendWindowCommand({
+      type: 'set_pet_hit_test',
+      interactive: true,
+    });
   }
 
   function handlePointerMove(event: ReactPointerEvent<HTMLElement>): void {
@@ -195,6 +198,10 @@ export function PetSurface() {
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerCancel}
       onPointerLeave={handlePointerLeave}
+      onContextMenu={(event) => {
+        event.preventDefault();
+        void window.pokoloko.sendWindowCommand({ type: 'open_settings' });
+      }}
       data-animation-id={presentation.animationId}
       data-frame-index={frameIndex}
       data-animation-generation={presentation.animationGeneration}

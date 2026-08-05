@@ -83,7 +83,6 @@ jobs:
             release/*.zip
             release/*.txt
             release/*.json
-            release/win-unpacked/**
             RELEASE_NOTES.md
             THIRD_PARTY_NOTICES.md
             docs/qa/**
