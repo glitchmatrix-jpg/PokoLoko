@@ -1,4 +1,4 @@
-name: PokoLoko Release Candidate
+﻿name: PokoLoko Release Candidate
 
 on:
   workflow_dispatch:
@@ -47,7 +47,7 @@ jobs:
           npm pkg set version=$version
           "RELEASE_VERSION=$version" | Out-File -FilePath $env:GITHUB_ENV -Append
       - name: Install pinned dependencies
-        run: npm install --no-audit --no-fund
+        run: npm install --include=dev --no-audit --no-fund
       - name: Preserve generated dependency lock
         shell: pwsh
         run: Copy-Item package-lock.json package-lock.release.json
@@ -103,3 +103,4 @@ jobs:
             release/*.exe
             release/*.zip
             release/BUILD_HASHES.txt
+
