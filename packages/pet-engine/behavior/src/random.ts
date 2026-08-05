@@ -3,6 +3,7 @@ import type { RandomSource } from './types.js';
 export class SeededRandom implements RandomSource {
   private value: number;
   public constructor(seed: number) { this.value = (seed >>> 0) || 0x6d2b79f5; }
+  public next(): number { return this.nextFloat(); }
   public nextFloat(): number {
     let t = (this.value += 0x6d2b79f5);
     t = Math.imul(t ^ (t >>> 15), t | 1);

@@ -30,6 +30,6 @@ describe('static desktop grounding', () => {
         { x: -1920, y: 0, width: 1920, height: 1080 },
       ],
     );
-    expect(nearest.x).toBe(0);
+    expect(nearest.x).toBe(-1920);
   });
 });

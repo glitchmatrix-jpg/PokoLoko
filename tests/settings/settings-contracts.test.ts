@@ -7,6 +7,7 @@ describe('settings IPC contracts', () => {
       selectedCharacter: 'poko', sizeScale: 1, activityLevel: 'balanced', walkingSpeed: 'calm',
       paused: false, quietMode: false, alwaysOnTop: true, soundEnabled: false,
       launchAtStartup: true, reducedMotion: true, fullscreenBehavior: 'hide', diagnosticsEnabled: false,
+      onboardingComplete: false, splashEnabled: true,
       contextAwareness: { enabled: false, typingPresence: false, mouseActivity: true, systemIdle: true, timeOfDay: true, audioState: false, fullscreenState: true, lockAndResume: true, recentPetInteraction: true },
     });
     expect(value.fullscreenBehavior).toBe('hide');

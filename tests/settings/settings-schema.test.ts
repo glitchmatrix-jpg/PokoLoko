@@ -21,7 +21,7 @@ describe('settings schema and migrations', () => {
     expect(value.sizeScale).toBe(2);
     expect(value.walkingSpeed).toBe('lively');
     expect(value.alwaysOnTop).toBe(false);
-    expect(value.settingsVersion).toBe(2);
+    expect(value.settingsVersion).toBe(CURRENT_SETTINGS_VERSION);
   });
 
   it('rejects unsafe values', () => {
