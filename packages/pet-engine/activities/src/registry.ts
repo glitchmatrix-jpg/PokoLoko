@@ -1,4 +1,4 @@
-import type { ActivityDefinition, ActivityId, CharacterId, InterruptionLevel } from './types.js';
+﻿import type { ActivityDefinition, ActivityId, CharacterId, InterruptionLevel } from './types.js';
 
 const interruption = (
   loop: InterruptionLevel,
@@ -12,7 +12,7 @@ const interruption = (
 const base = {
   legalEntryStates: ['stable.idle_front', 'stable.sitting'],
   destination: { required: false, policy: 'stay_here' as const },
-  variations: [],
+  variations: [] as ActivityDefinition['variations'],
   cooldownMs: { min: 120_000, max: 360_000, categoryMin: 75_000 },
 };
 
@@ -152,3 +152,4 @@ export function getActivityDefinition(character: CharacterId, id: ActivityId): A
 export function getCharacterActivities(character: CharacterId): readonly ActivityDefinition[] {
   return ACTIVITY_REGISTRY.filter((item) => item.character === character);
 }
+
