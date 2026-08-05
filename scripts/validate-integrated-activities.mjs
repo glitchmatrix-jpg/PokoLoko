@@ -1,4 +1,4 @@
-import fs from 'node:fs';
+﻿import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 
@@ -56,8 +56,9 @@ for (const id of ['poko_drink','poko_eat','poko_music','poko_peeking','poko_play
   if (!ids.has(id)) failures.push(`Runtime manifest missing integrated asset ${id}`);
 }
 
-const typecheck = spawnSync('tsc', ['-p', path.join(root, 'tsconfig.step19.json')], { encoding: 'utf8' });
-if (typecheck.status !== 0) failures.push(`Step 19 strict typecheck failed:\n${typecheck.stdout}${typecheck.stderr}`);
+const tscPath = path.join(root, 'node_modules', 'typescript', 'bin', 'tsc');
+const typecheck = spawnSync(process.execPath, [tscPath, '-p', path.join(root, 'tsconfig.step19.json')], { encoding: 'utf8' });
+if (typecheck.status !== 0) failures.push(`Step 19 strict typecheck failed:\n${typecheck.stdout ?? ''}${typecheck.stderr ?? ''}${typecheck.error ? `\n${typecheck.error.message}` : ''}`);
 
 if (failures.length) {
   console.error('STEP 19 INTEGRATED ACTIVITY VALIDATION FAILED');
@@ -68,3 +69,4 @@ console.log('STEP 19 INTEGRATED ACTIVITY VALIDATION PASSED');
 console.log('12 approved character/activity pairs and 13 activity animations integrated.');
 console.log('5 ambient routines integrated without promoting unsupported archival poses.');
 console.log('Context weighting, frequency caps, planner overlay, prop continuity, and strict typecheck verified.');
+

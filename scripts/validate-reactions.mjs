@@ -1,4 +1,4 @@
-import fs from 'node:fs';
+﻿import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 
@@ -43,8 +43,9 @@ for (const forbidden of ['setTimeout(', 'Math.random(', 'clipboard', 'capturePag
 const crying = registry.match(/id: 'poko_contextual_cry'[\s\S]*?\n  }/m)?.[0] ?? '';
 if (!crying.includes("requiresContextReason: true") || !crying.includes("rare: true")) failures.push('Contextual crying is not explicitly rare and reason-gated.');
 
-const typecheck = spawnSync('tsc', ['-p', path.join(root, 'tsconfig.step20.json')], { encoding: 'utf8' });
-if (typecheck.status !== 0) failures.push(`Step 20 strict typecheck failed:\n${typecheck.stdout}${typecheck.stderr}`);
+const tscPath = path.join(root, 'node_modules', 'typescript', 'bin', 'tsc');
+const typecheck = spawnSync(process.execPath, [tscPath, '-p', path.join(root, 'tsconfig.step20.json')], { encoding: 'utf8' });
+if (typecheck.status !== 0) failures.push(`Step 20 strict typecheck failed:\n${typecheck.stdout ?? ''}${typecheck.stderr ?? ''}${typecheck.error ? `\n${typecheck.error.message}` : ''}`);
 
 if (failures.length) {
   console.error('STEP 20 REACTION VALIDATION FAILED');
@@ -54,3 +55,4 @@ if (failures.length) {
 console.log('STEP 20 REACTION VALIDATION PASSED');
 console.log('9 reaction definitions across Poko and Loko verified.');
 console.log('Sleep routing, locked-state deferral, prop-safe activity exit, spam collapse, contextual sadness gating, and strict typecheck verified.');
+
