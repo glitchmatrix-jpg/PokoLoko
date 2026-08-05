@@ -60,7 +60,7 @@ export function OnboardingSurface() {
         <p className="onboarding-kicker">Choose a rhythm</p><h1>How present should they feel?</h1>
         <div className="onboarding-options">
           {(['calm','balanced','lively'] as const).map((level) => <button key={level} className={activityLevel === level ? 'selected' : ''} onClick={() => setActivityLevel(level)}>
-            <strong>{level[0].toUpperCase()+level.slice(1)}</strong>
+            <strong>{level.charAt(0).toUpperCase() + level.slice(1)}</strong>
             <span>{level === 'calm' ? 'Long quiet spells and gentle movement.' : level === 'balanced' ? 'A natural mix of rest, wandering, and play.' : 'More spontaneous activity and curious interruptions.'}</span>
           </button>)}
         </div>
@@ -85,4 +85,5 @@ export function OnboardingSurface() {
     </footer>
   </main>;
 }
+
 

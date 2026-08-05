@@ -3,7 +3,7 @@ import manifestJson from '../../../public/assets/runtime/runtime_manifest.json';
 import { frameAtElapsed } from './player';
 import type { RuntimeManifest } from './types';
 
-const manifest = manifestJson as RuntimeManifest;
+const manifest = manifestJson as unknown as RuntimeManifest;
 export function TransparentPreview() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('animation') ?? 'poko_idle_blink';
@@ -16,4 +16,5 @@ export function TransparentPreview() {
   }, [animation]);
   return <main className="transparent-preview"><div className="preview-ground"/><div className="preview-sprite"><img src={animation.frames[frame]} alt="transparent animation preview" /></div><div className="preview-caption">{animation.id} Â· {frame+1}/{animation.frameCount}</div></main>;
 }
+
 

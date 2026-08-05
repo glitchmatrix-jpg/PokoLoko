@@ -6,7 +6,7 @@ import { buildPlaybackOrder, frameAtElapsed } from './player';
 import { createDefaultChain, reviewChain } from './transitionComposer';
 import type { AnimationMetrics, ChainSegment, CharacterId, PlaybackMode, RuntimeManifest } from './types';
 
-const manifest = manifestJson as RuntimeManifest;
+const manifest = manifestJson as unknown as RuntimeManifest;
 const metrics = metricsJson as Record<string, AnimationMetrics>;
 const animationMap = new Map(manifest.animations.map((animation) => [animation.id, animation]));
 
@@ -120,4 +120,5 @@ export function AnimationLab() {
     </section>
   </main>;
 }
+
 
