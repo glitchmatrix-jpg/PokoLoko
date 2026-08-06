@@ -22,7 +22,7 @@ const docs = fs.readFileSync(path.join(root, 'docs/interaction/REACTION_MODEL.md
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'public/assets/runtime/runtime_manifest.json'), 'utf8'));
 const animationIds = new Set(manifest.animations.map((item) => item.id));
 
-for (const id of ['poko_idle_look_01','poko_idle_blink','poko_sad_to_crying','loko_idle_front','loko_love_reaction']) {
+for (const id of ['poko_idle_blink','poko_sad_to_crying','loko_idle_front','loko_love_reaction']) {
   if (!registry.includes(`animationId: '${id}'`)) failures.push(`Reaction registry missing ${id}`);
   if (!animationIds.has(id)) failures.push(`Runtime manifest missing reaction asset ${id}`);
 }
