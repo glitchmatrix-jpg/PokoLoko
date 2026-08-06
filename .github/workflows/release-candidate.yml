@@ -74,22 +74,16 @@ jobs:
           $portable = Get-ChildItem release -Filter 'PokoLoko-Portable-*-x64.exe' -ErrorAction SilentlyContinue
           if (-not $installer) { throw 'NSIS installer was not produced.' }
           if (-not $portable) { throw 'Portable executable was not produced.' }
-      - name: Upload complete release candidate
+      - name: Upload Windows release bundle
         uses: actions/upload-artifact@v4
         with:
-          name: PokoLoko-Release-Candidate-${{ env.RELEASE_VERSION }}
+          name: PokoLoko-Windows-${{ env.RELEASE_VERSION }}
           path: |
-            release/*.exe
-            release/*.zip
-            release/*.txt
-            release/*.json
-            RELEASE_NOTES.md
-            THIRD_PARTY_NOTICES.md
-            docs/qa/**
-            reports/tests/**
-            package-lock.release.json
+            release/PokoLoko-*-x64-win.exe
+            release/BUILD_HASHES.txt
           if-no-files-found: error
           retention-days: 30
+          compression-level: 0
       - name: Create draft GitHub release
         if: ${{ github.event_name == 'push' || inputs.create_github_release }}
         uses: softprops/action-gh-release@v2
