@@ -4,7 +4,7 @@ import { REACTION_REGISTRY, reactionsFor } from '../../packages/pet-engine/react
 describe('reaction registry', () => {
   it('uses only authoritative runtime animations', () => {
     const ids = new Set(REACTION_REGISTRY.map((item) => item.animationId));
-    expect(ids).toEqual(new Set(['poko_idle_look_01', 'poko_idle_blink', 'poko_sad_to_crying', 'loko_idle_front', 'loko_love_reaction']));
+    expect(ids).toEqual(new Set(['poko_idle_blink', 'poko_sad_to_crying', 'loko_idle_front', 'loko_love_reaction']));
   });
 
   it('keeps sadness contextual and rare', () => {
