@@ -15,8 +15,8 @@ export const REACTION_REGISTRY: readonly ReactionDefinition[] = [
   },
   {
     id: 'poko_overstimulated', character: 'poko', triggers: ['excessive_poking'],
-    animationId: 'poko_idle_look_01', legalPostures: ['standing_front'], returnState: 'stable.idle_front',
-    durationMs: [900, 1300], cooldownMs: 16000, attentionEffect: -0.08, interruption: 'soft',
+    animationId: 'poko_idle_blink', legalPostures: ['standing_front'], returnState: 'stable.idle_front',
+    durationMs: [400, 700], cooldownMs: 16000, attentionEffect: -0.08, interruption: 'soft',
     emotionalMeaning: 'Brief overstimulation; input is then ignored during recovery.'
   },
   {

@@ -36,19 +36,52 @@ export function PetSurface() {
   const interactiveRef = useRef(false);
   const driverRef = useRef<BrowserAnimationDriver | null>(null);
   const capturedPointerRef = useRef<number | null>(null);
-  const pointerCommandChainRef = useRef<Promise<void>>(Promise.resolve());
+  const pendingPointerMoveRef = useRef<
+    Parameters<typeof window.pokoloko.sendWindowCommand>[0] | null
+  >(null);
+  const pointerMoveFrameRef = useRef<number | null>(null);
 
-  function enqueuePointerCommand(
+  function sendPointerCommand(
     command: Parameters<typeof window.pokoloko.sendWindowCommand>[0],
   ): void {
-    pointerCommandChainRef.current = pointerCommandChainRef.current
-      .catch((): void => undefined)
-      .then(async (): Promise<void> => {
-        await window.pokoloko.sendWindowCommand(command);
-      })
-      .catch((error: unknown): void => {
+    void window.pokoloko.sendWindowCommand(command).catch(
+      (error: unknown): void => {
         console.error('PokoLoko pointer command failed', error);
-      });
+      },
+    );
+  }
+
+  function flushPendingPointerMove(): void {
+    if (pointerMoveFrameRef.current !== null) {
+      cancelAnimationFrame(pointerMoveFrameRef.current);
+      pointerMoveFrameRef.current = null;
+    }
+
+    const command = pendingPointerMoveRef.current;
+    pendingPointerMoveRef.current = null;
+
+    if (command) {
+      sendPointerCommand(command);
+    }
+  }
+
+  function schedulePointerMove(
+    command: Parameters<typeof window.pokoloko.sendWindowCommand>[0],
+  ): void {
+    pendingPointerMoveRef.current = command;
+
+    if (pointerMoveFrameRef.current !== null) return;
+
+    pointerMoveFrameRef.current = requestAnimationFrame((): void => {
+      pointerMoveFrameRef.current = null;
+
+      const latestCommand = pendingPointerMoveRef.current;
+      pendingPointerMoveRef.current = null;
+
+      if (latestCommand) {
+        sendPointerCommand(latestCommand);
+      }
+    });
   }
 
   useEffect(() => {
@@ -162,7 +195,7 @@ export function PetSurface() {
   function handlePointerMove(event: ReactPointerEvent<HTMLElement>): void {
     if (!presentation) return;
     if (capturedPointerRef.current === event.pointerId) {
-      enqueuePointerCommand({ type: 'pet_pointer_move', ...pointerCommandBase(event) });
+      schedulePointerMove({ type: 'pet_pointer_move', ...pointerCommandBase(event) });
       return;
     }
     void updateHitTest(pointHitsVisiblePixel(event, presentation, alphaCanvasRef.current));
@@ -175,19 +208,22 @@ export function PetSurface() {
     event.currentTarget.setPointerCapture(event.pointerId);
     capturedPointerRef.current = event.pointerId;
     void updateHitTest(true);
-    enqueuePointerCommand({ type: 'pet_pointer_down', ...pointerCommandBase(event) });
+    flushPendingPointerMove();
+    sendPointerCommand({ type: 'pet_pointer_down', ...pointerCommandBase(event) });
   }
 
   function handlePointerUp(event: ReactPointerEvent<HTMLElement>): void {
     if (capturedPointerRef.current !== event.pointerId) return;
-    enqueuePointerCommand({ type: 'pet_pointer_up', ...pointerCommandBase(event) });
+    flushPendingPointerMove();
+    sendPointerCommand({ type: 'pet_pointer_up', ...pointerCommandBase(event) });
     capturedPointerRef.current = null;
     if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
   }
 
   function handlePointerCancel(event: ReactPointerEvent<HTMLElement>): void {
     if (capturedPointerRef.current !== event.pointerId) return;
-    enqueuePointerCommand({ type: 'pet_pointer_cancel', reason: 'renderer-pointer-cancel' });
+    flushPendingPointerMove();
+    sendPointerCommand({ type: 'pet_pointer_cancel', reason: 'renderer-pointer-cancel' });
     capturedPointerRef.current = null;
     void updateHitTest(false);
   }
@@ -216,7 +252,8 @@ export function PetSurface() {
       onPointerLeave={handlePointerLeave}
       onLostPointerCapture={(event) => {
         if (capturedPointerRef.current === event.pointerId) {
-          enqueuePointerCommand({ type: 'pet_pointer_cancel', reason: 'renderer-lost-pointer-capture' });
+          flushPendingPointerMove();
+          sendPointerCommand({ type: 'pet_pointer_cancel', reason: 'renderer-lost-pointer-capture' });
           capturedPointerRef.current = null;
         }
       }}
