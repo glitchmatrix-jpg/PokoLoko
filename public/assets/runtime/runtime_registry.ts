@@ -1,5 +1,5 @@
 /* AUTO-GENERATED from runtime_manifest.json by Step 3. */
-export const runtimeManifest = {
+export const runtimeManifest: Record<string, unknown> = {
   "$schema": "./runtime_manifest.schema.json",
   "manifestVersion": "1.0.0",
   "runtimeAssetVersion": "0.2.0-step03-connective",
