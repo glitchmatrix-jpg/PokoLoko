@@ -1,0 +1,47 @@
+name: Generate connective animation metrics
+
+on:
+  push:
+    branches:
+      - fix/drag-and-scroll
+    paths:
+      - scripts/generate-connective-animation-metrics.mjs
+      - .github/workflows/generate-connective-metrics.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/drag-and-scroll
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate missing metrics
+        run: node scripts/generate-connective-animation-metrics.mjs .
+
+      - name: Validate Animation Lab coverage
+        run: node scripts/validate-animation-lab.mjs .
+
+      - name: Commit generated registry
+        shell: bash
+        run: |
+          if git diff --quiet -- public/assets/diagnostics/animation_metrics.json; then
+            echo "No generated metrics changes were needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/diagnostics/animation_metrics.json
+          git commit -m "Generate Animation Lab metrics for connective sprites"
+          git push origin HEAD:fix/drag-and-scroll

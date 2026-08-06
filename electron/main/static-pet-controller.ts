@@ -557,7 +557,7 @@ export class StaticPetController {
         this.directionTurn.interrupt();
         this.movementState = 'idle';
         this.interactionPhase = 'dragged';
-        this.qaDragOrigin = { ...action.windowTopLeft };
+        this.qaDragOrigin = { ...action.session.windowOrigin };
         this.qaDragDistancePx = 0;
         this.activeDragSessionId = action.session.id;
         this.activePointerId = action.session.pointerId;

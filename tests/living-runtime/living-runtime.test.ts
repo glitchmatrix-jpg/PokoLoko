@@ -58,7 +58,8 @@ describe('living runtime interaction exclusion',()=>{
     await vi.runOnlyPendingTimersAsync();
     expect(runtime.snapshot().interaction.state).toBe('landing');
     await runtime.onDragEnded();
-    expect(runtime.snapshot().interaction.state).toBe('idle');
+    expect(runtime.snapshot().interaction.state).toBe('reacting');
+    expect(runtime.snapshot().mode).toBe('reaction');
     runtime.dispose();
   });
 });
