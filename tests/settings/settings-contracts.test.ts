@@ -4,7 +4,7 @@ import { publicSettingsSchema, windowCommandSchema } from '../../electron/preloa
 describe('settings IPC contracts', () => {
   it('accepts every product-facing setting', () => {
     const value = publicSettingsSchema.parse({
-      selectedCharacter: 'poko', sizeScale: 1, activityLevel: 'balanced', walkingSpeed: 'calm',
+      selectedCharacter: 'poko', sizeScale: 1, activityLevel: 'balanced', walkingSpeed: 'calm', animationSpeed: 0.8,
       paused: false, quietMode: false, alwaysOnTop: true, soundEnabled: false,
       launchAtStartup: true, reducedMotion: true, fullscreenBehavior: 'hide', diagnosticsEnabled: false,
       onboardingComplete: false, splashEnabled: true,

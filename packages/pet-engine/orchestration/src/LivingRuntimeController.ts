@@ -33,6 +33,8 @@ export class LivingRuntimeController {
   private lastDecisionReason: string | undefined;
   private spatial: LivingSpatialContext = { region: 'center', nearEdge: false };
   private contextInterruptionGeneration = 0;
+  private lastAcceptedSocialInputAtMs = Number.NEGATIVE_INFINITY;
+  private readonly socialInputCooldownMs = 2_500;
 
   public constructor(character: 'poko'|'loko', settings: LivingRuntimeSettings, private readonly port: LivingRuntimePort, seed = 0x504f4b4f) {
     this.character = character; this.settings = settings; this.diagnosticSeed = seed >>> 0;
@@ -89,7 +91,17 @@ export class LivingRuntimeController {
   public async onMovementFinished(): Promise<void> { if(this.mode!=='walking')return; this.memory=rememberActivity(this.memory,'walk',performance.now(),false); this.mode='idle';this.activeId=undefined;this.schedulePlan(1_000);this.publish(); }
   public async onDragStarted(): Promise<void> { this.invalidate('drag'); await this.port.stopMovement('drag'); this.mind=updateMind(this.mind,{type:'dragged'}); const session=this.activities.snapshot(); if(session) await this.executeActivityCommands(this.activities.handle({type:'INTERRUPT',reason:'drag',generation:session.generation,nowMs:performance.now()}).commands); this.mode='dragged'; this.activeId=undefined; this.publish(); }
   public async onDragEnded(): Promise<void> { this.mode='idle';this.activeId=undefined;this.memory=rememberDisturbance(this.memory,performance.now());this.schedulePlan(1_500);this.publish(); await this.handleSocial({type:'drag_release',nowMs:performance.now()}); }
-  public async onSocialInput(type:'click'|'double_click'): Promise<void> { this.mind=updateMind(this.mind,{type:'interaction',intensity:type==='double_click'?'high':'light'}); await this.handleSocial({type,nowMs:performance.now()}); }
+  public async onSocialInput(type:'click'|'double_click'): Promise<void> {
+    const nowMs = performance.now();
+    this.mind = updateMind(this.mind, { type:'interaction', intensity:type==='double_click'?'high':'light' });
+    if (this.mode === 'reaction' || nowMs - this.lastAcceptedSocialInputAtMs < this.socialInputCooldownMs) {
+      this.lastDecisionReason = 'Social input acknowledged without restarting the current reaction.';
+      this.publish();
+      return;
+    }
+    this.lastAcceptedSocialInputAtMs = nowMs;
+    await this.handleSocial({type,nowMs});
+  }
 
   public async onAnimationEvent(event:{type:'ANIMATION_COMPLETED'|'FRAME_CHANGED';animationId:string;generation:number;loopBoundary?:boolean}): Promise<void> {
     if(this.mode==='activity') {

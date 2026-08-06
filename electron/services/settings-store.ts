@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { z } from 'zod';
 
-export const CURRENT_SETTINGS_VERSION = 3 as const;
+export const CURRENT_SETTINGS_VERSION = 4 as const;
 
 const contextSchema = z.object({
   enabled: z.boolean().default(false),
@@ -23,6 +23,7 @@ export const settingsSchema = z.object({
   sizeScale: z.union([z.literal(1), z.literal(2), z.literal(3)]).default(1),
   activityLevel: z.enum(['calm', 'balanced', 'lively']).default('balanced'),
   walkingSpeed: z.enum(['calm', 'balanced', 'lively']).default('balanced'),
+  animationSpeed: z.number().min(0.5).max(1.5).default(1),
   paused: z.boolean().default(false),
   quietMode: z.boolean().default(false),
   alwaysOnTop: z.boolean().default(true),
@@ -55,11 +56,12 @@ export function defaultSettings(): AppSettings {
 export function migrateSettings(raw: unknown): AppSettings {
   const source = raw && typeof raw === 'object' ? raw as Record<string, unknown> : {};
   const version = typeof source.settingsVersion === 'number' ? source.settingsVersion : 1;
-  if (version <= 2) {
+  if (version <= 3) {
     return settingsSchema.parse({
       ...source,
       settingsVersion: CURRENT_SETTINGS_VERSION,
       walkingSpeed: source.walkingSpeed ?? source.activityLevel ?? 'balanced',
+      animationSpeed: source.animationSpeed ?? 1,
       launchAtStartup: source.launchAtStartup ?? false,
       reducedMotion: source.reducedMotion ?? false,
       fullscreenBehavior: source.fullscreenBehavior ?? 'quiet',

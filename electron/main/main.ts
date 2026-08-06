@@ -119,6 +119,12 @@ function applyWalkingSpeed(level: 'calm' | 'balanced' | 'lively'): void {
   createTray();
 }
 
+function applyAnimationSpeed(multiplier: number): void {
+  store.update({ animationSpeed: multiplier });
+  broadcastSettings();
+  staticPet?.setAnimationSpeed(multiplier);
+}
+
 function applyLaunchAtStartup(enabled: boolean): void {
   store.update({ launchAtStartup: enabled });
   app.setLoginItemSettings({ openAtLogin: enabled });
@@ -255,6 +261,7 @@ function registerIpc(): void {
     if (command.type === 'set_static_scale') applyScale(command.scale);
     if (command.type === 'set_locomotion_activity_level') applyLocomotionLevel(command.level);
     if (command.type === 'set_walking_speed') applyWalkingSpeed(command.level);
+    if (command.type === 'set_animation_speed') applyAnimationSpeed(command.multiplier);
     if (command.type === 'set_pet_paused') { store.update({ paused: command.paused }); broadcastSettings(); staticPet?.setPaused(command.paused); createTray(); }
     if (command.type === 'set_quiet_mode') { store.update({ quietMode: command.quiet }); broadcastSettings(); staticPet?.setQuietMode(command.quiet); createTray(); }
     if (command.type === 'set_always_on_top') { store.update({ alwaysOnTop: command.enabled }); broadcastSettings(); petWindow?.setAlwaysOnTop(command.enabled, 'floating'); createTray(); }
@@ -271,6 +278,7 @@ function registerIpc(): void {
       applyScale(defaults.sizeScale);
       applyLocomotionLevel(defaults.activityLevel);
       applyWalkingSpeed(defaults.walkingSpeed);
+      applyAnimationSpeed(defaults.animationSpeed);
       staticPet?.setPaused(defaults.paused);
       staticPet?.setQuietMode(defaults.quietMode);
       staticPet?.setReducedMotion(defaults.reducedMotion);
@@ -336,6 +344,7 @@ else {
     await staticPet.initialize();
     staticPet.setActivityLevel(settings.activityLevel);
     staticPet.setWalkingSpeed(settings.walkingSpeed);
+    staticPet.setAnimationSpeed(settings.animationSpeed);
     staticPet.setReducedMotion(settings.reducedMotion);
     app.setLoginItemSettings({ openAtLogin: settings.launchAtStartup });
     staticPet.setPaused(settings.paused);

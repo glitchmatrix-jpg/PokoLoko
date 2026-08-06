@@ -36,6 +36,18 @@ export function PetSurface() {
   const interactiveRef = useRef(false);
   const driverRef = useRef<BrowserAnimationDriver | null>(null);
   const capturedPointerRef = useRef<number | null>(null);
+  const pointerCommandChainRef = useRef<Promise<void>>(Promise.resolve());
+
+  function enqueuePointerCommand(
+    command: Parameters<typeof window.pokoloko.sendWindowCommand>[0],
+  ): void {
+    pointerCommandChainRef.current = pointerCommandChainRef.current
+      .catch(() => undefined)
+      .then(() => window.pokoloko.sendWindowCommand(command))
+      .catch((error: unknown) => {
+        console.error('PokoLoko pointer command failed', error);
+      });
+  }
 
   useEffect(() => {
     const driver = new BrowserAnimationDriver((event) => {
@@ -148,7 +160,7 @@ export function PetSurface() {
   function handlePointerMove(event: ReactPointerEvent<HTMLElement>): void {
     if (!presentation) return;
     if (capturedPointerRef.current === event.pointerId) {
-      void window.pokoloko.sendWindowCommand({ type: 'pet_pointer_move', ...pointerCommandBase(event) });
+      enqueuePointerCommand({ type: 'pet_pointer_move', ...pointerCommandBase(event) });
       return;
     }
     void updateHitTest(pointHitsVisiblePixel(event, presentation, alphaCanvasRef.current));
@@ -156,22 +168,24 @@ export function PetSurface() {
 
   function handlePointerDown(event: ReactPointerEvent<HTMLElement>): void {
     if (!presentation || event.button !== 0 || !pointHitsVisiblePixel(event, presentation, alphaCanvasRef.current)) return;
+    event.preventDefault();
+    event.stopPropagation();
     event.currentTarget.setPointerCapture(event.pointerId);
     capturedPointerRef.current = event.pointerId;
     void updateHitTest(true);
-    void window.pokoloko.sendWindowCommand({ type: 'pet_pointer_down', ...pointerCommandBase(event) });
+    enqueuePointerCommand({ type: 'pet_pointer_down', ...pointerCommandBase(event) });
   }
 
   function handlePointerUp(event: ReactPointerEvent<HTMLElement>): void {
     if (capturedPointerRef.current !== event.pointerId) return;
-    void window.pokoloko.sendWindowCommand({ type: 'pet_pointer_up', ...pointerCommandBase(event) });
-    if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
+    enqueuePointerCommand({ type: 'pet_pointer_up', ...pointerCommandBase(event) });
     capturedPointerRef.current = null;
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
   }
 
   function handlePointerCancel(event: ReactPointerEvent<HTMLElement>): void {
     if (capturedPointerRef.current !== event.pointerId) return;
-    void window.pokoloko.sendWindowCommand({ type: 'pet_pointer_cancel', reason: 'renderer-pointer-cancel' });
+    enqueuePointerCommand({ type: 'pet_pointer_cancel', reason: 'renderer-pointer-cancel' });
     capturedPointerRef.current = null;
     void updateHitTest(false);
   }
@@ -198,6 +212,12 @@ export function PetSurface() {
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerCancel}
       onPointerLeave={handlePointerLeave}
+      onLostPointerCapture={(event) => {
+        if (capturedPointerRef.current === event.pointerId) {
+          enqueuePointerCommand({ type: 'pet_pointer_cancel', reason: 'renderer-lost-pointer-capture' });
+          capturedPointerRef.current = null;
+        }
+      }}
       onContextMenu={(event) => {
         event.preventDefault();
         void window.pokoloko.sendWindowCommand({ type: 'open_settings' });

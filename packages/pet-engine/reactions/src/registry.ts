@@ -3,8 +3,8 @@ import type { CharacterId, ReactionDefinition, ReactionId, ReactionTrigger } fro
 export const REACTION_REGISTRY: readonly ReactionDefinition[] = [
   {
     id: 'poko_notice', character: 'poko', triggers: ['single_click', 'long_idle', 'surprise'],
-    animationId: 'poko_idle_look_01', legalPostures: ['standing_front'], returnState: 'stable.idle_front',
-    durationMs: [650, 1150], cooldownMs: 4200, attentionEffect: 0.12, interruption: 'soft',
+    animationId: 'poko_idle_blink', legalPostures: ['standing_front'], returnState: 'stable.idle_front',
+    durationMs: [450, 800], cooldownMs: 6500, attentionEffect: 0.12, interruption: 'soft',
     emotionalMeaning: 'Quick curious acknowledgement.'
   },
   {

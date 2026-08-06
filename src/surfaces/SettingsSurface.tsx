@@ -22,6 +22,12 @@ const rhythms: ReadonlyArray<{ id: LocomotionActivityLevel; label: string; descr
 const walkingSpeeds: ReadonlyArray<{ id: LocomotionActivityLevel; label: string }> = [
   { id: 'calm', label: 'Gentle' }, { id: 'balanced', label: 'Natural' }, { id: 'lively', label: 'Brisk' },
 ];
+const animationSpeeds = [
+  { multiplier: 0.6, label: '60%' },
+  { multiplier: 0.8, label: '80%' },
+  { multiplier: 1, label: '100%' },
+  { multiplier: 1.2, label: '120%' },
+] as const;
 const fullscreenOptions: ReadonlyArray<{ id: FullscreenBehavior; label: string; description: string }> = [
   { id: 'quiet', label: 'Settle down', description: 'Remain visible, but stop energetic behavior.' },
   { id: 'hide', label: 'Step away', description: 'Hide while fullscreen is active, then return.' },
@@ -130,6 +136,13 @@ export function SettingsSurface() {
         <div className="two-column-controls">
           <div className="control-card compact"><div><h3>Walking pace</h3><p>How quickly they travel, separate from how often they act.</p></div><div className="choice-pills compact" role="radiogroup" aria-label="Walking pace">{walkingSpeeds.map((item) => <button key={item.id} role="radio" aria-checked={settings.walkingSpeed === item.id} className={settings.walkingSpeed === item.id ? 'selected' : ''} onClick={() => void command({ type: 'set_walking_speed', level: item.id })}>{item.label}</button>)}</div></div>
           <div className="control-card compact"><div><h3>Pixel size</h3><p>Integer scales keep every edge crisp.</p></div><div className="choice-pills compact" role="radiogroup" aria-label="Pet size">{scales.map((scale) => <button key={scale} role="radio" aria-checked={settings.sizeScale === scale} className={settings.sizeScale === scale ? 'selected' : ''} onClick={() => void command({ type: 'set_static_scale', scale })}>{scale}×</button>)}</div></div>
+        </div>
+        <div className="control-card">
+          <div><h3>Animation speed</h3><p>Slow or accelerate every sprite animation while preserving each sequence’s authored timing.</p></div>
+          <div className="choice-pills" role="radiogroup" aria-label="Animation speed">
+            {animationSpeeds.map((item) => <button key={item.multiplier} role="radio" aria-checked={settings.animationSpeed === item.multiplier} className={settings.animationSpeed === item.multiplier ? 'selected' : ''} disabled={busy}
+              onClick={() => void command({ type: 'set_animation_speed', multiplier: item.multiplier })}>{item.label}</button>)}
+          </div>
         </div>
       </section>
 

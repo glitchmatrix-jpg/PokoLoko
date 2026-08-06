@@ -11,6 +11,7 @@ describe('settings schema and migrations', () => {
     expect(value.sizeScale).toBe(1);
     expect(value.activityLevel).toBe('balanced');
     expect(value.walkingSpeed).toBe('balanced');
+    expect(value.animationSpeed).toBe(1);
     expect(value.contextAwareness.enabled).toBe(false);
     expect(value.fullscreenBehavior).toBe('quiet');
   });
@@ -20,6 +21,7 @@ describe('settings schema and migrations', () => {
     expect(value.selectedCharacter).toBe('loko');
     expect(value.sizeScale).toBe(2);
     expect(value.walkingSpeed).toBe('lively');
+    expect(value.animationSpeed).toBe(1);
     expect(value.alwaysOnTop).toBe(false);
     expect(value.settingsVersion).toBe(CURRENT_SETTINGS_VERSION);
   });

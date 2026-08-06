@@ -72,6 +72,8 @@ export class StaticPetController {
   private activityLevel: ActivityLevel = 'balanced';
   private walkingSpeed: ActivityLevel = 'balanced';
   private reducedMotion = false;
+  private animationSpeed = 1;
+  private runtimeAnimationWatchdog: NodeJS.Timeout | null = null;
   private preferredGroundX: number | undefined;
   private activeDisplayId: number | undefined;
   private animationGeneration = 0;
@@ -132,7 +134,7 @@ export class StaticPetController {
   public async initialize(): Promise<void> {
     this.asset = await loadStaticPetAsset(this.character);
     this.reposition('initialize');
-    this.window.setIgnoreMouseEvents(true, { forward: true });
+    this.window.setIgnoreMouseEvents(false);
     this.stateMachine.request({
       requestId: 'initialize-idle',
       target: { kind: 'idle', orientation: 'front' },
@@ -184,7 +186,10 @@ export class StaticPetController {
           this.asset.authoredSpeedPxPerSecond,
         )
       : this.asset.fps;
-    const presentedFps = this.reducedMotion ? Math.min(fps, this.movementState === 'walking' ? 6 : 4) : fps;
+    const speedAdjustedFps = Math.max(1, fps * this.animationSpeed);
+    const presentedFps = this.reducedMotion
+      ? Math.min(speedAdjustedFps, this.movementState === 'walking' ? 6 : 4)
+      : speedAdjustedFps;
     return {
       character: this.character,
       animationId: this.asset.animationId,
@@ -274,6 +279,13 @@ export class StaticPetController {
 
   public setReducedMotion(enabled: boolean): void {
     this.reducedMotion = enabled;
+    this.animationGeneration += 1;
+    this.publish();
+  }
+
+  public setAnimationSpeed(multiplier: number): void {
+    this.animationSpeed = Math.max(0.5, Math.min(1.5, multiplier));
+    this.animationGeneration += 1;
     this.publish();
   }
 
@@ -295,8 +307,10 @@ export class StaticPetController {
     this.livingRuntime.updateSettings({ quietMode });
   }
 
-  public setInteractive(interactive: boolean): void {
-    this.window.setIgnoreMouseEvents(!interactive, { forward: true });
+  public setInteractive(_interactive: boolean): void {
+    // The compact pet window stays interactive so pointer capture and dragging
+    // remain reliable while the native window itself is moving.
+    this.window.setIgnoreMouseEvents(false);
   }
 
   public async moveToGroundX(destinationX: number): Promise<void> {
@@ -392,6 +406,7 @@ export class StaticPetController {
   public async handleAnimationEvent(event: RendererAnimationEvent): Promise<void> {
     this.lastAnimationEvent=event; this.recordDiagnostic('animation',event.type,event,'debug');
     if (event.generation !== this.animationGeneration || event.animationId !== this.asset.animationId) return;
+    if (event.type === 'ANIMATION_COMPLETED') this.clearRuntimeAnimationWatchdog();
     await this.livingRuntime.onAnimationEvent(event);
 
     if (event.type === 'FRAME_CHANGED' && event.loopBoundary) {
@@ -453,6 +468,7 @@ export class StaticPetController {
   }
 
   public dispose(): void {
+    this.clearRuntimeAnimationWatchdog();
     this.stopPerformanceSampling();
     this.livingRuntime.dispose();
     this.stopMovementClock();
@@ -853,6 +869,7 @@ export class StaticPetController {
     const visualGeneration = ++this.visualRequestGeneration;
     const asset = await loadStaticPetAsset(this.character);
     if (characterGeneration !== this.characterLoadGeneration || visualGeneration !== this.visualRequestGeneration) return;
+    this.clearRuntimeAnimationWatchdog();
     this.asset = asset;
     this.animationGeneration += 1;
     this.reposition(reason);
@@ -879,11 +896,43 @@ export class StaticPetController {
       return;
     }
     if (asset.character !== this.character) throw new Error(`Animation ${animationId} does not belong to ${this.character}.`);
+    this.clearRuntimeAnimationWatchdog();
     this.asset = { ...asset, ...(options?.loop !== undefined ? { loop: options.loop } : {}), ...(options?.playback ? { playback: options.playback } : {}) };
     this.animationGeneration += 1;
+    const animationGeneration = this.animationGeneration;
     this.movementState = 'idle';
     this.reposition(`runtime-animation:${animationId}`);
     this.publish();
+    if (!this.asset.loop) this.scheduleRuntimeAnimationWatchdog(animationGeneration);
+  }
+
+  private scheduleRuntimeAnimationWatchdog(generation: number): void {
+    this.clearRuntimeAnimationWatchdog();
+    const playbackFrames = this.asset.playback === 'ping_pong'
+      ? Math.max(1, this.asset.frames.length * 2 - 2)
+      : Math.max(1, this.asset.frames.length);
+    const effectiveFps = Math.max(1, this.asset.fps * this.animationSpeed);
+    const expectedDurationMs = (playbackFrames / effectiveFps) * 1_000;
+    const timeoutMs = Math.max(1_500, Math.ceil(expectedDurationMs + 1_250));
+    const animationId = this.asset.animationId;
+    this.runtimeAnimationWatchdog = setTimeout(() => {
+      this.runtimeAnimationWatchdog = null;
+      if (this.window.isDestroyed() || generation !== this.animationGeneration || animationId !== this.asset.animationId || this.asset.loop) return;
+      this.logger.warn('Animation completion watchdog fired', { animationId, generation, timeoutMs });
+      void this.handleAnimationEvent({
+        type: 'ANIMATION_COMPLETED',
+        animationId,
+        generation,
+        frameIndex: Math.max(0, this.asset.frames.length - 1),
+        elapsedMs: timeoutMs,
+      });
+    }, timeoutMs);
+    this.runtimeAnimationWatchdog.unref?.();
+  }
+
+  private clearRuntimeAnimationWatchdog(): void {
+    if (this.runtimeAnimationWatchdog) clearTimeout(this.runtimeAnimationWatchdog);
+    this.runtimeAnimationWatchdog = null;
   }
 
   private async walkToRegion(region: 'left' | 'center' | 'right'): Promise<void> {

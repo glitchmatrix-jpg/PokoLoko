@@ -31,7 +31,7 @@ const concepts = [
   [main, 'Move to this screen'], [main, 'Restart PokoLoko'], [main, 'Quit PokoLoko'],
   [main, "if (!tray || tray.isDestroyed())"], [main, 'screen.getCursorScreenPoint()'],
   [contracts, "z.literal('splash_complete')"], [contracts, "z.literal('complete_onboarding')"],
-  [settings, 'CURRENT_SETTINGS_VERSION = 3'], [settings, 'onboardingComplete'], [settings, 'splashEnabled'],
+  [settings, 'CURRENT_SETTINGS_VERSION = 4'], [settings, 'onboardingComplete'], [settings, 'splashEnabled'],
   [factory, "loadSurface(window, 'pet', false)"], [app, '<SplashSurface />'], [app, '<OnboardingSurface />'],
   [splash, '1900'], [splash, 'pokoloko_wordmark_stacked.png'],
   [onboarding, 'Context, never content.'], [onboarding, 'You can switch anytime'],

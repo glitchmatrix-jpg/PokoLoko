@@ -9,7 +9,7 @@ describe('Step 22 settings migration', () => {
     expect(value.sizeScale).toBe(2);
     expect(value.onboardingComplete).toBe(false);
     expect(value.splashEnabled).toBe(true);
-    expect(value.settingsVersion).toBe(3);
+    expect(value.settingsVersion).toBe(4);
   });
 
   it('preserves completed onboarding after restart', () => {
