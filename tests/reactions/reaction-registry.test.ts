@@ -15,7 +15,7 @@ describe('reaction registry', () => {
   });
 
   it('makes character responses visibly distinct', () => {
-    expect(reactionsFor('poko', 'single_click')[0]?.animationId).toBe('poko_idle_look_01');
+    expect(reactionsFor('poko', 'single_click')[0]?.animationId).toBe('poko_idle_blink');
     expect(reactionsFor('loko', 'affectionate_repeat_click')[0]?.animationId).toBe('loko_love_reaction');
   });
 });
