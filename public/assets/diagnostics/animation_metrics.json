@@ -2,7 +2,7 @@
   "loko_drink_02": {
     "animationId": "loko_drink_02",
     "loopSeamScore": 0.09284890426758939,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 1.5693080848107863,
     "maxAreaDeltaRatio": 0.03335354760460885,
     "verdict": "stable",
@@ -37,7 +37,7 @@
           "x": 64.2547051442911,
           "y": 92.5138017565872
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.9031487712191439,
         "visibleAreaDeltaRatio": 0.03335354760460885
       },
@@ -105,7 +105,7 @@
           "x": 63.93384074941452,
           "y": 91.94613583138174
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.9697426778630636,
         "visibleAreaDeltaRatio": 0.022754491017964073
       },
@@ -122,7 +122,7 @@
           "x": 62.50301568154403,
           "y": 91.3015681544029
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 1.5693080848107863,
         "visibleAreaDeltaRatio": 0.02927400468384075
       }
@@ -166,7 +166,7 @@
           "x": 62.49017405951712,
           "y": 90.5979786636721
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.8752768448185946,
         "visibleAreaDeltaRatio": 0.0011217049915872126
       },
@@ -200,7 +200,7 @@
           "x": 62.84907769703745,
           "y": 90.6618222470654
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.5064842999521396,
         "visibleAreaDeltaRatio": 0.002240896358543417
       },
@@ -251,7 +251,7 @@
           "x": 62.80872913992298,
           "y": 92.00834403080873
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.41913530666251403,
         "visibleAreaDeltaRatio": 0.0006422607578676942
       },
@@ -346,7 +346,7 @@
           "x": 61.18339100346021,
           "y": 93.459630911188
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.357921102543502,
         "visibleAreaDeltaRatio": 0.01309049516220831
       },
@@ -380,7 +380,7 @@
           "x": 61.839243498817964,
           "y": 93.73049645390071
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.47786612191419875,
         "visibleAreaDeltaRatio": 0.03644646924829157
       },
@@ -397,7 +397,7 @@
           "x": 64.1069306930693,
           "y": 92.51881188118811
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.5711057377558815,
         "visibleAreaDeltaRatio": 0.10460992907801418
       },
@@ -431,7 +431,7 @@
           "x": 61.23700120918984,
           "y": 93.67533252720678
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.3478650063339534,
         "visibleAreaDeltaRatio": 0.02188054405677114
       },
@@ -448,9 +448,9 @@
           "x": 61.23700120918984,
           "y": 94.46493349455865
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.7896009673518734,
-        "visibleAreaDeltaRatio": 0.0
+        "visibleAreaDeltaRatio": 0
       },
       {
         "frame": 9,
@@ -465,7 +465,7 @@
           "x": 61.12274368231047,
           "y": 93.83935018050542
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.6359318086638006,
         "visibleAreaDeltaRatio": 0.0048367593712212815
       },
@@ -499,7 +499,7 @@
           "x": 62.17230769230769,
           "y": 94.35015384615384
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.8999167030761617,
         "visibleAreaDeltaRatio": 0.01275820170109356
       }
@@ -543,7 +543,7 @@
           "x": 64.4937736870601,
           "y": 87.93340552246887
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.474964314326884,
         "visibleAreaDeltaRatio": 0.00431266846361186
       },
@@ -560,7 +560,7 @@
           "x": 64.29580573951435,
           "y": 86.71192052980132
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.2374234907934851,
         "visibleAreaDeltaRatio": 0.018949648077964266
       },
@@ -577,7 +577,7 @@
           "x": 62.689031505250874,
           "y": 88.59218203033839
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.4732785428040467,
         "visibleAreaDeltaRatio": 0.05408388520971302
       },
@@ -594,7 +594,7 @@
           "x": 61.8274244004171,
           "y": 87.00938477580813
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.8021137455911527,
         "visibleAreaDeltaRatio": 0.11901983663943991
       },
@@ -611,7 +611,7 @@
           "x": 61.679090029041625,
           "y": 86.01984511132623
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.0005957392045506,
         "visibleAreaDeltaRatio": 0.07716371220020855
       },
@@ -628,7 +628,7 @@
           "x": 63.694618272841055,
           "y": 88.00250312891114
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.8272401589265352,
         "visibleAreaDeltaRatio": 0.2265246853823814
       },
@@ -679,7 +679,7 @@
           "x": 64.2027972027972,
           "y": 87.23135198135198
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.391002761764076,
         "visibleAreaDeltaRatio": 0.030508474576271188
       },
@@ -696,7 +696,7 @@
           "x": 64.57755581668626,
           "y": 88.67743830787309
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.4938573166254434,
         "visibleAreaDeltaRatio": 0.008158508158508158
       }
@@ -740,7 +740,7 @@
           "x": 62.25639204545455,
           "y": 94.3018465909091
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.6286208365822896,
         "visibleAreaDeltaRatio": 0.002849002849002849
       },
@@ -757,7 +757,7 @@
           "x": 62.38231197771588,
           "y": 94.18871866295265
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.16927420779438407,
         "visibleAreaDeltaRatio": 0.019886363636363636
       }
@@ -766,7 +766,7 @@
   "loko_peeking_02": {
     "animationId": "loko_peeking_02",
     "loopSeamScore": 0.12203791469194313,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 2.476464328680151,
     "maxAreaDeltaRatio": 0.0904126213592233,
     "verdict": "stable",
@@ -835,7 +835,7 @@
           "x": 63.970509383378015,
           "y": 95.61193029490616
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 1.2938072553012772,
         "visibleAreaDeltaRatio": 0.004669779853235491
       },
@@ -852,7 +852,7 @@
           "x": 63.905559276624246,
           "y": 95.57937039517749
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.07265441099938111,
         "visibleAreaDeltaRatio": 0.0006702412868632708
       }
@@ -913,7 +913,7 @@
           "x": 60.308476394849784,
           "y": 91.26448497854078
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 3.052911655507517,
         "visibleAreaDeltaRatio": 0.009750812567713976
       },
@@ -964,7 +964,7 @@
           "x": 62.4835096453018,
           "y": 89.57809583074051
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 3.374107632413105,
         "visibleAreaDeltaRatio": 0.1528729573010016
       },
@@ -981,7 +981,7 @@
           "x": 61.98241500586167,
           "y": 89.63012895662368
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.5037889278902532,
         "visibleAreaDeltaRatio": 0.06160547604231487
       }
@@ -1042,7 +1042,7 @@
           "x": 63.002428658166366,
           "y": 92.12264723740134
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.8193198910479101,
         "visibleAreaDeltaRatio": 0.06526674233825198
       },
@@ -1059,7 +1059,7 @@
           "x": 63.016503667481665,
           "y": 91.66748166259168
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.45538314239663,
         "visibleAreaDeltaRatio": 0.006678809957498482
       },
@@ -1076,7 +1076,7 @@
           "x": 63.01618705035971,
           "y": 91.95323741007195
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.2857559228859614,
         "visibleAreaDeltaRatio": 0.019559902200488997
       }
@@ -1085,7 +1085,7 @@
   "loko_love_reaction": {
     "animationId": "loko_love_reaction",
     "loopSeamScore": 0.20683559222156747,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 4.500748552513911,
     "maxAreaDeltaRatio": 0.12169637369391519,
     "verdict": "stable",
@@ -1137,7 +1137,7 @@
           "x": 60.03337453646477,
           "y": 92.04697156983931
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 3.1067221151800664,
         "visibleAreaDeltaRatio": 0.019533711405166982
       },
@@ -1188,7 +1188,7 @@
           "x": 67.59741856177013,
           "y": 92.74861708666256
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 4.357288116111022,
         "visibleAreaDeltaRatio": 0.009738283627510651
       },
@@ -1205,7 +1205,7 @@
           "x": 63.13226032190343,
           "y": 93.31350594821554
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 4.500748552513911,
         "visibleAreaDeltaRatio": 0.12169637369391519
       },
@@ -1222,7 +1222,7 @@
           "x": 64.04589707927677,
           "y": 93.92837273991655
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 1.1012689480596347,
         "visibleAreaDeltaRatio": 0.006298110566829951
       }
@@ -1283,7 +1283,7 @@
           "x": 63.41396825396826,
           "y": 91.50539682539683
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.3422972977337772,
         "visibleAreaDeltaRatio": 0.002546148949713558
       },
@@ -1429,7 +1429,7 @@
           "x": 63.33667711598746,
           "y": 91.43699059561129
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.8906063138629131,
         "visibleAreaDeltaRatio": 0.007580543272267846
       }
@@ -1438,7 +1438,7 @@
   "loko_locomotion_side_02": {
     "animationId": "loko_locomotion_side_02",
     "loopSeamScore": 0.11892208553016989,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 1.277010502883332,
     "maxAreaDeltaRatio": 0.04419191919191919,
     "verdict": "stable",
@@ -1473,7 +1473,7 @@
           "x": 63.3125,
           "y": 91.17992424242425
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.0402145551068143,
         "visibleAreaDeltaRatio": 0.0031466331025802393
       },
@@ -1524,7 +1524,7 @@
           "x": 64.85406698564593,
           "y": 92.247009569378
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.3140216846138211,
         "visibleAreaDeltaRatio": 0.009052504526252263
       },
@@ -1558,7 +1558,7 @@
           "x": 64.14180024660912,
           "y": 92.04254007398274
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.2275561325003638,
         "visibleAreaDeltaRatio": 0.021712907117008445
       }
@@ -1567,7 +1567,7 @@
   "loko_walk_left": {
     "animationId": "loko_walk_left",
     "loopSeamScore": 0.11892208553016989,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 1.277010502883332,
     "maxAreaDeltaRatio": 0.04419191919191919,
     "verdict": "stable",
@@ -1602,7 +1602,7 @@
           "x": 63.6875,
           "y": 91.17992424242425
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.0402145551068143,
         "visibleAreaDeltaRatio": 0.0031466331025802393
       },
@@ -1653,7 +1653,7 @@
           "x": 62.145933014354064,
           "y": 92.247009569378
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.3140216846138211,
         "visibleAreaDeltaRatio": 0.009052504526252263
       },
@@ -1687,7 +1687,7 @@
           "x": 62.85819975339088,
           "y": 92.04254007398274
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.2275561325003638,
         "visibleAreaDeltaRatio": 0.021712907117008445
       }
@@ -1748,7 +1748,7 @@
           "x": 63.33667711598746,
           "y": 91.43699059561129
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.8906063138629131,
         "visibleAreaDeltaRatio": 0.007580543272267846
       }
@@ -1757,7 +1757,7 @@
   "loko_walk_right": {
     "animationId": "loko_walk_right",
     "loopSeamScore": 0.11892208553016989,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 1.277010502883332,
     "maxAreaDeltaRatio": 0.04419191919191919,
     "verdict": "stable",
@@ -1792,7 +1792,7 @@
           "x": 63.3125,
           "y": 91.17992424242425
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.0402145551068143,
         "visibleAreaDeltaRatio": 0.0031466331025802393
       },
@@ -1843,7 +1843,7 @@
           "x": 64.85406698564593,
           "y": 92.247009569378
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.3140216846138211,
         "visibleAreaDeltaRatio": 0.009052504526252263
       },
@@ -1877,7 +1877,7 @@
           "x": 64.14180024660912,
           "y": 92.04254007398274
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.2275561325003638,
         "visibleAreaDeltaRatio": 0.021712907117008445
       }
@@ -1947,7 +1947,7 @@
   "loko_sleep_transition": {
     "animationId": "loko_sleep_transition",
     "loopSeamScore": 0.26813040585495673,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 3.123229599425393,
     "maxAreaDeltaRatio": 0.11289031224979984,
     "verdict": "stable",
@@ -1982,7 +1982,7 @@
           "x": 64.31540504648075,
           "y": 96.44555112881807
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 3.123229599425393,
         "visibleAreaDeltaRatio": 0.007357859531772575
       },
@@ -1999,7 +1999,7 @@
           "x": 64.07948369565217,
           "y": 97.02717391304348
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.6276495414695255,
         "visibleAreaDeltaRatio": 0.02257636122177955
       },
@@ -2050,7 +2050,7 @@
           "x": 63.66064981949459,
           "y": 99.27436823104694
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 1.1016593020902983,
         "visibleAreaDeltaRatio": 0.11289031224979984
       }
@@ -2111,7 +2111,7 @@
           "x": 65.3179347826087,
           "y": 91.1508152173913
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.3999973477082126,
         "visibleAreaDeltaRatio": 0.08172177167810356
       },
@@ -2128,7 +2128,7 @@
           "x": 62.92448979591837,
           "y": 92.04353741496598
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.554512052497632,
         "visibleAreaDeltaRatio": 0.001358695652173913
       },
@@ -2145,7 +2145,7 @@
           "x": 62.466622162883844,
           "y": 92.24365821094793
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.4996910068883424,
         "visibleAreaDeltaRatio": 0.01904761904761905
       },
@@ -2205,7 +2205,7 @@
   "poko_eat": {
     "animationId": "poko_eat",
     "loopSeamScore": 0.11182294700058241,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 4.3408097539820485,
     "maxAreaDeltaRatio": 0.11844431349440189,
     "verdict": "stable",
@@ -2291,7 +2291,7 @@
           "x": 62.198019801980195,
           "y": 93.0970297029703
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.6934608873478113,
         "visibleAreaDeltaRatio": 0.01270053475935829
       },
@@ -2308,7 +2308,7 @@
           "x": 62.689180327868854,
           "y": 93.35868852459016
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.5565105579615887,
         "visibleAreaDeltaRatio": 0.006600660066006601
       },
@@ -2325,7 +2325,7 @@
           "x": 61.964450296247534,
           "y": 93.25082290980909
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.7327131837123847,
         "visibleAreaDeltaRatio": 0.003934426229508197
       },
@@ -2402,7 +2402,7 @@
   "poko_music": {
     "animationId": "poko_music",
     "loopSeamScore": 0.23855544252288913,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 4.831927712867481,
     "maxAreaDeltaRatio": 0.14350028137310072,
     "verdict": "stable",
@@ -2437,7 +2437,7 @@
           "x": 67.17573964497042,
           "y": 88.82840236686391
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.2614950074491516,
         "visibleAreaDeltaRatio": 0.04465799886941775
       },
@@ -2522,7 +2522,7 @@
           "x": 64.47878063359235,
           "y": 88.50806933652122
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.3848363812528146,
         "visibleAreaDeltaRatio": 0.009656004828002414
       },
@@ -2590,7 +2590,7 @@
           "x": 64.88770053475936,
           "y": 87.13666072489602
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 3.9120652995824945,
         "visibleAreaDeltaRatio": 0.10578186596583443
       },
@@ -2607,7 +2607,7 @@
           "x": 63.899645808736715,
           "y": 88.13695395513578
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 1.4060009559311066,
         "visibleAreaDeltaRatio": 0.006535947712418301
       }
@@ -2616,7 +2616,7 @@
   "poko_peeking": {
     "animationId": "poko_peeking",
     "loopSeamScore": 0.35510627268014516,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 8.023198819985293,
     "maxAreaDeltaRatio": 0.22403560830860533,
     "verdict": "stable",
@@ -2668,7 +2668,7 @@
           "x": 62.59621877110061,
           "y": 93.44226873733963
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.14727918239354867,
         "visibleAreaDeltaRatio": 0.009364548494983277
       },
@@ -2719,7 +2719,7 @@
           "x": 63.198237885462554,
           "y": 86.93245227606461
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 8.023198819985293,
         "visibleAreaDeltaRatio": 0.0333569907735983
       },
@@ -2736,7 +2736,7 @@
           "x": 63.47282608695652,
           "y": 85.9476902173913
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.022328221562034,
         "visibleAreaDeltaRatio": 0.08076358296622614
       },
@@ -2804,7 +2804,7 @@
           "x": 62.612017804154306,
           "y": 83.68694362017804
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 5.564037974828895,
         "visibleAreaDeltaRatio": 0.17954960438222764
       },
@@ -2821,7 +2821,7 @@
           "x": 64.39575757575757,
           "y": 87.88
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 4.556692811367128,
         "visibleAreaDeltaRatio": 0.22403560830860533
       }
@@ -2865,7 +2865,7 @@
           "x": 62.057642487046635,
           "y": 91.264896373057
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 10.54418608313821,
         "visibleAreaDeltaRatio": 0.21584560690705942
       },
@@ -2882,7 +2882,7 @@
           "x": 61.117141321869966,
           "y": 96.05588393336916
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 4.882428109533672,
         "visibleAreaDeltaRatio": 0.20531088082901555
       },
@@ -2933,7 +2933,7 @@
           "x": 63.48455598455598,
           "y": 84.16843629343629
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 5.478863699055225,
         "visibleAreaDeltaRatio": 0.36765676567656763
       },
@@ -3018,7 +3018,7 @@
           "x": 64.87896825396825,
           "y": 87.56051587301587
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 4.931581468801845,
         "visibleAreaDeltaRatio": 0.10756972111553785
       }
@@ -3027,7 +3027,7 @@
   "poko_sad_to_crying": {
     "animationId": "poko_sad_to_crying",
     "loopSeamScore": 0.15153337342152737,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 2.202463032148459,
     "maxAreaDeltaRatio": 0.07573726541554959,
     "verdict": "stable",
@@ -3062,7 +3062,7 @@
           "x": 63.797333333333334,
           "y": 91.12266666666666
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.4454562706346755,
         "visibleAreaDeltaRatio": 0.0013315579227696406
       },
@@ -3079,7 +3079,7 @@
           "x": 63.44868421052632,
           "y": 90.10526315789474
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.0754841284256678,
         "visibleAreaDeltaRatio": 0.013333333333333334
       },
@@ -3113,7 +3113,7 @@
           "x": 64.02943100065403,
           "y": 90.77043819489863
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.17224327299501357,
         "visibleAreaDeltaRatio": 0.024112525117213665
       },
@@ -3147,7 +3147,7 @@
           "x": 62.6006230529595,
           "y": 92.10155763239875
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.202463032148459,
         "visibleAreaDeltaRatio": 0.07573726541554959
       },
@@ -3164,7 +3164,7 @@
           "x": 62.166666666666664,
           "y": 90.78689567430025
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.3844328113981232,
         "visibleAreaDeltaRatio": 0.020560747663551402
       }
@@ -3208,7 +3208,7 @@
           "x": 62.23241954707986,
           "y": 89.29678188319429
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.534800427277454,
         "visibleAreaDeltaRatio": 0.004154302670623145
       }
@@ -3261,7 +3261,7 @@
   "poko_locomotion_side": {
     "animationId": "poko_locomotion_side",
     "loopSeamScore": 0.1681081081081081,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 2.1968180833456388,
     "maxAreaDeltaRatio": 0.0740514075887393,
     "verdict": "stable",
@@ -3296,7 +3296,7 @@
           "x": 63.31301289566237,
           "y": 89.33118405627198
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.6921484171975023,
         "visibleAreaDeltaRatio": 0.044063647490820076
       },
@@ -3330,7 +3330,7 @@
           "x": 63.18313953488372,
           "y": 88.88488372093023
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.6191514740209998,
         "visibleAreaDeltaRatio": 0.04878048780487805
       },
@@ -3364,7 +3364,7 @@
           "x": 63.87567567567567,
           "y": 89.13573573573574
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.32293184181663176,
         "visibleAreaDeltaRatio": 0.011543134872417983
       },
@@ -3381,7 +3381,7 @@
           "x": 63.20720188902007,
           "y": 87.043093270366
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 2.1968180833456388,
         "visibleAreaDeltaRatio": 0.017417417417417418
       },
@@ -3415,7 +3415,7 @@
           "x": 62.25185185185185,
           "y": 89.40512820512821
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.037034216439962,
         "visibleAreaDeltaRatio": 0.0740514075887393
       }
@@ -3424,7 +3424,7 @@
   "poko_walk_left": {
     "animationId": "poko_walk_left",
     "loopSeamScore": 0.1681081081081081,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 2.1968180833456388,
     "maxAreaDeltaRatio": 0.0740514075887393,
     "verdict": "stable",
@@ -3459,7 +3459,7 @@
           "x": 63.68698710433763,
           "y": 89.33118405627198
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.6921484171975023,
         "visibleAreaDeltaRatio": 0.044063647490820076
       },
@@ -3493,7 +3493,7 @@
           "x": 63.81686046511628,
           "y": 88.88488372093023
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.6191514740209998,
         "visibleAreaDeltaRatio": 0.04878048780487805
       },
@@ -3527,7 +3527,7 @@
           "x": 63.12432432432433,
           "y": 89.13573573573574
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.32293184181663176,
         "visibleAreaDeltaRatio": 0.011543134872417983
       },
@@ -3544,7 +3544,7 @@
           "x": 63.79279811097993,
           "y": 87.043093270366
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 2.1968180833456388,
         "visibleAreaDeltaRatio": 0.017417417417417418
       },
@@ -3578,7 +3578,7 @@
           "x": 64.74814814814815,
           "y": 89.40512820512821
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.037034216439962,
         "visibleAreaDeltaRatio": 0.0740514075887393
       }
@@ -3587,7 +3587,7 @@
   "poko_walk_right": {
     "animationId": "poko_walk_right",
     "loopSeamScore": 0.1681081081081081,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 2.1968180833456388,
     "maxAreaDeltaRatio": 0.0740514075887393,
     "verdict": "stable",
@@ -3622,7 +3622,7 @@
           "x": 63.31301289566237,
           "y": 89.33118405627198
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.6921484171975023,
         "visibleAreaDeltaRatio": 0.044063647490820076
       },
@@ -3656,7 +3656,7 @@
           "x": 63.18313953488372,
           "y": 88.88488372093023
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.6191514740209998,
         "visibleAreaDeltaRatio": 0.04878048780487805
       },
@@ -3690,7 +3690,7 @@
           "x": 63.87567567567567,
           "y": 89.13573573573574
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.32293184181663176,
         "visibleAreaDeltaRatio": 0.011543134872417983
       },
@@ -3707,7 +3707,7 @@
           "x": 63.20720188902007,
           "y": 87.043093270366
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 2.1968180833456388,
         "visibleAreaDeltaRatio": 0.017417417417417418
       },
@@ -3741,7 +3741,7 @@
           "x": 62.25185185185185,
           "y": 89.40512820512821
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 2.037034216439962,
         "visibleAreaDeltaRatio": 0.0740514075887393
       }
@@ -3785,7 +3785,7 @@
           "x": 64.07807417046195,
           "y": 96.63825634352635
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.7160235913793618,
         "visibleAreaDeltaRatio": 0.04415422885572139
       },
@@ -3802,7 +3802,7 @@
           "x": 63.9382183908046,
           "y": 97.80747126436782
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.1775496466059878,
         "visibleAreaDeltaRatio": 0.09433962264150944
       },
@@ -3853,7 +3853,7 @@
           "x": 61.72746185852982,
           "y": 95.56657420249654
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.3243764776653406,
         "visibleAreaDeltaRatio": 0.04341534008683068
       },
@@ -3914,7 +3914,7 @@
           "x": 62.591160220994475,
           "y": 97.95096685082873
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.35220149163912357,
         "visibleAreaDeltaRatio": 0.0104675505931612
       },
@@ -3931,7 +3931,7 @@
           "x": 62.82996515679442,
           "y": 97.70662020905924
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.3416622289724865,
         "visibleAreaDeltaRatio": 0.008977900552486187
       },
@@ -3948,7 +3948,7 @@
           "x": 62.718433490884536,
           "y": 98.40445644834571
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 0.706692811171957,
         "visibleAreaDeltaRatio": 0.03205574912891986
       }
@@ -3957,7 +3957,7 @@
   "poko_sleep_transition": {
     "animationId": "poko_sleep_transition",
     "loopSeamScore": 0.31201434548714885,
-    "maxGroundDelta": 1.0,
+    "maxGroundDelta": 1,
     "maxCentroidDelta": 3.516742106977652,
     "maxAreaDeltaRatio": 0.15038650737877723,
     "verdict": "stable",
@@ -4043,7 +4043,7 @@
           "x": 64.48692810457516,
           "y": 91.559477124183
         },
-        "groundDelta": 0.0,
+        "groundDelta": 0,
         "centroidDelta": 1.6209069899378628,
         "visibleAreaDeltaRatio": 0.023411371237458192
       },
@@ -4077,7 +4077,7 @@
           "x": 63.50597329585383,
           "y": 95.32044975404077
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 0.6956868014300005,
         "visibleAreaDeltaRatio": 0.06992481203007518
       },
@@ -4094,10 +4094,958 @@
           "x": 64.36807278742762,
           "y": 96.67576509511993
         },
-        "groundDelta": 1.0,
+        "groundDelta": 1,
         "centroidDelta": 1.6062674768345153,
         "visibleAreaDeltaRatio": 0.15038650737877723
       }
     ]
+  },
+  "poko_idle_breathe": {
+    "animationId": "poko_idle_breathe",
+    "loopSeamScore": 0,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_idle_ear_twitch": {
+    "animationId": "poko_idle_ear_twitch",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_idle_glance_left": {
+    "animationId": "poko_idle_glance_left",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_idle_glance_right": {
+    "animationId": "poko_idle_glance_right",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_turn_left": {
+    "animationId": "poko_turn_left",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_turn_right": {
+    "animationId": "poko_turn_right",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_walk_start": {
+    "animationId": "poko_walk_start",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_walk_stop": {
+    "animationId": "poko_walk_stop",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_pickup": {
+    "animationId": "poko_pickup",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_carried_loop": {
+    "animationId": "poko_carried_loop",
+    "loopSeamScore": 0,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
+  },
+  "poko_drop_land": {
+    "animationId": "poko_drop_land",
+    "loopSeamScore": null,
+    "maxGroundDelta": 0,
+    "maxCentroidDelta": 0,
+    "maxAreaDeltaRatio": 0,
+    "verdict": "stable",
+    "frames": [
+      {
+        "frame": 0,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 1,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "centroid": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "groundDelta": 0,
+        "centroidDelta": 0,
+        "visibleAreaDeltaRatio": 0
+      }
+    ],
+    "generatedFrom": "runtime_manifest_connective_sprite_metadata",
+    "provisional": true
   }
 }
