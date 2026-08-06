@@ -1,0 +1,29 @@
+/* Runtime reliability hotfixes.
+   Keep document scrolling enabled for full-window application surfaces while
+   preserving the fixed transparent pet surface. */
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  overflow: auto;
+}
+
+.settings-shell,
+.animation-lab,
+.diagnostics-shell,
+.utility,
+.fatal {
+  min-height: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+.static-pet-surface {
+  overflow: hidden;
+}
