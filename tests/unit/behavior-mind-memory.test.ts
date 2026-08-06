@@ -11,7 +11,7 @@ describe('behavior, mind, memory, seeded randomness',()=>{
   expect(mind.recentAttention).toBeLessThan(raised); for(const key of ['energy','boredom','curiosity','focus','playfulness','recentAttention','interruptionLoad'] as const) expect(mind[key]).toBeGreaterThanOrEqual(0);
  });
  it('bounds session history and disturbance window',()=>{
-  let memory=createSessionMemory(); for(let i=0;i<30;i+=1) memory=rememberActivity(memory,'walk',i); expect(memory.recentActivities).toHaveLength(12);
+  let memory=createSessionMemory(); for(let i=0;i<30;i+=1) memory=rememberActivity(memory,'walk',i); expect(memory.recentActivities).toHaveLength(24);
   for(let i=0;i<20;i+=1) memory=rememberRegion(memory,i%2?'left':'right'); expect(memory.recentRegions).toHaveLength(8);
   memory=rememberDisturbance(memory,0); memory=rememberDisturbance(memory,400000); expect(memory.disturbances).toEqual([400000]);
  });
