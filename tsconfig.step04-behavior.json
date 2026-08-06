@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["ES2023", "DOM"],
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": []
+  },
+  "files": [
+    "packages/pet-engine/behavior/src/types.ts",
+    "packages/pet-engine/behavior/src/random.ts",
+    "packages/pet-engine/behavior/src/profiles.ts",
+    "packages/pet-engine/behavior/src/mind.ts",
+    "packages/pet-engine/behavior/src/memory.ts",
+    "packages/pet-engine/behavior/src/planner.ts",
+    "packages/pet-engine/behavior/src/index.ts",
+    "packages/pet-engine/orchestration/src/InteractionLifecycle.ts",
+    "packages/pet-engine/orchestration/src/types.ts",
+    "packages/pet-engine/orchestration/src/LivingRuntimeController.ts",
+    "packages/pet-engine/orchestration/src/index.ts"
+  ]
+}

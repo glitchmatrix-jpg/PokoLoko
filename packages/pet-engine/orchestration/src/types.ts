@@ -1,3 +1,4 @@
+import type { InteractionLifecycleSnapshot } from './InteractionLifecycle.js';
 import type { PetContextSnapshot } from '../../context/src/index.js';
 import type { ActivityLevel, CharacterId, PetMind, SessionMemory } from '../../behavior/src/index.js';
 
@@ -11,6 +12,7 @@ export type LivingRuntimeSnapshot = Readonly<{
   memory: SessionMemory;
   context: PetContextSnapshot | null;
   generation: number;
+  interaction: InteractionLifecycleSnapshot;
   lastDecisionReason?: string;
   plannerCandidates?: readonly Readonly<{ key: string; score: number; reasons: readonly string[] }>[];
   nextPlanAtMonotonicMs?: number;

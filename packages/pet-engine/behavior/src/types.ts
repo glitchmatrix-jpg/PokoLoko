@@ -4,7 +4,15 @@ export type Mood = 'content' | 'curious' | 'playful' | 'focused' | 'sleepy' | 's
 export type StableDecisionState = 'stable.idle_front' | 'stable.idle_side' | 'stable.sitting' | 'stable.sleeping';
 export type ScreenRegion = 'left' | 'center' | 'right';
 export type ActivityId = 'drink' | 'eat' | 'laptop' | 'music' | 'peeking' | 'playing_ball' | 'reading';
-export type IntentionKind = 'remain_idle' | 'walk' | 'sleep' | 'wake' | 'activity' | 'social_reaction';
+export type AmbientPhraseId =
+  | 'poko_quiet_breathe'
+  | 'poko_notice_left'
+  | 'poko_notice_right'
+  | 'poko_ear_twitch'
+  | 'poko_inspect_desktop'
+  | 'loko_quiet_watch'
+  | 'loko_attentive_pause';
+export type IntentionKind = 'remain_idle' | 'ambient' | 'walk' | 'sleep' | 'wake' | 'activity' | 'social_reaction';
 
 export type PetMind = Readonly<{
   energy: number;
@@ -32,7 +40,8 @@ export type ContextSummary = Readonly<{
   enabled: boolean;
 }>;
 
-export type RecentActivity = Readonly<{ id: ActivityId | IntentionKind; completedAtMs: number; interrupted: boolean }>;
+export type RecentMemoryId = ActivityId | IntentionKind | AmbientPhraseId;
+export type RecentActivity = Readonly<{ id: RecentMemoryId; completedAtMs: number; interrupted: boolean }>;
 export type SessionMemory = Readonly<{
   recentActivities: readonly RecentActivity[];
   recentTransitions: readonly string[];
@@ -64,8 +73,11 @@ export type PlannerInput = Readonly<{
   activityDurationOverrides?: Readonly<Partial<Record<ActivityId, readonly [number, number]>>>;
 }>;
 
+export type AmbientStep = Readonly<{ animationId: string; durationMs: number; loop?: boolean }>;
+
 export type PetIntention =
   | Readonly<{ kind: 'remain_idle'; durationMs: number }>
+  | Readonly<{ kind: 'ambient'; phraseId: AmbientPhraseId; steps: readonly AmbientStep[]; durationMs: number }>
   | Readonly<{ kind: 'walk'; destinationRegion: ScreenRegion; durationMs: number }>
   | Readonly<{ kind: 'sleep'; durationMs: number }>
   | Readonly<{ kind: 'wake'; durationMs: number }>

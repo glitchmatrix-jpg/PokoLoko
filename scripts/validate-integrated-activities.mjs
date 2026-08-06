@@ -36,7 +36,7 @@ for (const unsupported of [
   "character: 'poko', activityId: 'reading', availability: 'unsupported_for_character'",
 ]) if (!integration.includes(unsupported)) failures.push(`Missing explicit unsupported decision: ${unsupported}`);
 
-for (const term of ['poko_idle_blink','poko_idle_look_01','loko_idle_front','buildPlannerOverlay','frequencyCap','nearScreenEdge']) {
+for (const term of ['poko_idle_blink','poko_idle_breathe','poko_idle_glance_left','poko_idle_glance_right','poko_idle_ear_twitch','loko_idle_front','buildPlannerOverlay','frequencyCap','nearScreenEdge']) {
   if (!integration.includes(term)) failures.push(`Integration layer missing ${term}`);
 }
 for (const term of ['activityScoreMultipliers','activityDurationOverrides','integrationMultiplier']) {
@@ -52,7 +52,7 @@ if (!weights.includes('unsupported') || !weights.includes('1.65') || !weights.in
 
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'public/assets/runtime/runtime_manifest.json'), 'utf8'));
 const ids = new Set(manifest.animations.map((item) => item.id));
-for (const id of ['poko_drink','poko_eat','poko_music','poko_peeking','poko_playing_ball','loko_drink_02','loko_eat','loko_laptop','loko_music','loko_peeking_01','loko_peeking_02','loko_playing_ball_01','loko_reading_01','poko_idle_blink','poko_idle_look_01','loko_idle_front']) {
+for (const id of ['poko_drink','poko_eat','poko_music','poko_peeking','poko_playing_ball','loko_drink_02','loko_eat','loko_laptop','loko_music','loko_peeking_01','loko_peeking_02','loko_playing_ball_01','loko_reading_01','poko_idle_blink','poko_idle_breathe','poko_idle_glance_left','poko_idle_glance_right','poko_idle_ear_twitch','loko_idle_front']) {
   if (!ids.has(id)) failures.push(`Runtime manifest missing integrated asset ${id}`);
 }
 

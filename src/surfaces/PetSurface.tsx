@@ -183,12 +183,11 @@ export function PetSurface() {
   }, [frameUrl, presentation?.canvasSize]);
 
   async function updateHitTest(interactive: boolean): Promise<void> {
-    if (!interactive) return;
-    if (interactiveRef.current) return;
-    interactiveRef.current = true;
+    if (interactiveRef.current === interactive) return;
+    interactiveRef.current = interactive;
     await window.pokoloko.sendWindowCommand({
       type: 'set_pet_hit_test',
-      interactive: true,
+      interactive,
     });
   }
 

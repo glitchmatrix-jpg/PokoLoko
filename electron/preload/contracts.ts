@@ -118,6 +118,13 @@ export const livingRuntimeSnapshotSchema = z.object({
   }),
   context: contextSnapshotSchema.nullable(),
   generation:z.number().int().nonnegative(),
+  interaction:z.object({
+    state:z.enum(['idle','pressed','dragging','carried','landing','reacting','walking','performing_activity','sleeping','waking','paused']),
+    previousState:z.enum(['idle','pressed','dragging','carried','landing','reacting','walking','performing_activity','sleeping','waking','paused']).optional(),
+    stateBeforePress:z.enum(['idle','pressed','dragging','carried','landing','reacting','walking','performing_activity','sleeping','waking','paused']).optional(),
+    generation:z.number().int().nonnegative(),
+    reason:z.string(),
+  }),
   lastDecisionReason:z.string().optional(),
   plannerCandidates:z.array(z.object({key:z.string(),score:z.number(),reasons:z.array(z.string())})).optional(),
   nextPlanAtMonotonicMs:z.number().nonnegative().optional(),
@@ -138,6 +145,12 @@ export const diagnosticCommandSchema = z.discriminatedUnion('type', [
   z.object({type:z.literal('move_to'),destinationX:z.number().finite()}),
   z.object({type:z.literal('stop_movement'),reason:z.string().optional()}),
   z.object({type:z.literal('complete_drag')}), z.object({type:z.literal('simulate_display_change')}),
+  z.object({type:z.literal('force_drag'),distancePx:z.number().positive().optional(),durationMs:z.number().positive().optional()}),
+  z.object({type:z.literal('force_pickup_landing')}),
+  z.object({type:z.literal('interrupt_activity')}),
+  z.object({type:z.literal('simulate_missed_completion')}),
+  z.object({type:z.literal('move_screen_edge'),edge:z.enum(['left','right'])}),
+  z.object({type:z.literal('relocate_display'),direction:z.enum(['next','previous']).optional()}),
   z.object({type:z.literal('set_character'),character:characterIdSchema}), z.object({type:z.literal('set_paused'),paused:z.boolean()}),
   z.object({type:z.literal('set_seed'),seed:z.number().int().nonnegative().max(0xffffffff)}),
   z.object({type:z.literal('set_context'),patch:z.object({typingActivity:z.enum(['none','light','sustained']).optional(),mouseActivity:z.enum(['none','light','busy']).optional(),systemIdle:z.boolean().optional(),audioActive:z.boolean().optional(),fullscreenActive:z.boolean().optional(),screenLocked:z.boolean().optional(),recentPetInteraction:z.enum(['none','light','high']).optional()})}),
@@ -146,7 +159,7 @@ export const diagnosticCommandSchema = z.discriminatedUnion('type', [
 export type DiagnosticCommand = z.infer<typeof diagnosticCommandSchema>;
 
 export const diagnosticEventSchema=z.object({sequence:z.number().int().positive(),monotonicMs:z.number().nonnegative(),category:z.enum(['state','planner','animation','locomotion','interaction','activity','sleep','reaction','context','system','diagnostic']),severity:z.enum(['debug','info','warn','error']),name:z.string(),details:z.unknown().optional(),replayCommand:diagnosticCommandSchema.optional()});
-export const diagnosticSnapshotSchema=z.object({capturedAtMonotonicMs:z.number().nonnegative(),seed:z.number().int().nonnegative(),runtime:livingRuntimeSnapshotSchema,stateMachine:z.object({character:characterIdSchema,state:z.string(),generation:z.number().int().nonnegative(),enteredAtMonotonicMs:z.number().nonnegative(),direction:z.enum(['left','right','front']),prop:z.object({kind:z.string(),propId:z.string().optional()}),route:z.array(z.string()),routeReason:z.string().optional()}),presentation:staticPetPresentationSchema,windowBounds:z.object({x:z.number(),y:z.number(),width:z.number(),height:z.number()}),display:z.object({id:z.string(),bounds:z.object({x:z.number(),y:z.number(),width:z.number(),height:z.number()}),workArea:z.object({x:z.number(),y:z.number(),width:z.number(),height:z.number()}),scaleFactor:z.number().positive()}),lastAnimationEvent:z.unknown().nullable(),trace:z.array(diagnosticEventSchema)});
+export const diagnosticSnapshotSchema=z.object({capturedAtMonotonicMs:z.number().nonnegative(),seed:z.number().int().nonnegative(),runtime:livingRuntimeSnapshotSchema,stateMachine:z.object({character:characterIdSchema,state:z.string(),generation:z.number().int().nonnegative(),enteredAtMonotonicMs:z.number().nonnegative(),direction:z.enum(['left','right','front']),prop:z.object({kind:z.string(),propId:z.string().optional()}),route:z.array(z.string()),routeReason:z.string().optional()}),presentation:staticPetPresentationSchema,windowBounds:z.object({x:z.number(),y:z.number(),width:z.number(),height:z.number()}),display:z.object({id:z.string(),bounds:z.object({x:z.number(),y:z.number(),width:z.number(),height:z.number()}),workArea:z.object({x:z.number(),y:z.number(),width:z.number(),height:z.number()}),scaleFactor:z.number().positive()}),lastAnimationEvent:z.unknown().nullable(),trace:z.array(diagnosticEventSchema),qa:z.object({pointerScreen:z.object({x:z.number(),y:z.number()}),windowTopLeft:z.object({x:z.number(),y:z.number()}),dragDistancePx:z.number().nonnegative(),dragPhase:z.string(),watchdog:z.object({active:z.boolean(),animationId:z.string().optional(),deadlineMonotonicMs:z.number().optional()}),lastCompletionEvent:z.string().optional(),activeActivity:z.string().optional(),behaviorDecisionReason:z.string().optional(),sessionStartedAtMonotonicMs:z.number().nonnegative(),anomalyCounts:z.object({watchdog:z.number().int().nonnegative(),stale:z.number().int().nonnegative(),freeze:z.number().int().nonnegative()})})});
 export type DiagnosticSnapshot=z.infer<typeof diagnosticSnapshotSchema>;
 
 export const publicSettingsSchema = z.object({

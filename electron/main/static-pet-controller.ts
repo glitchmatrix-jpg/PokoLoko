@@ -43,6 +43,8 @@ const BASE_MARGIN = 16;
 const BOTTOM_CLEARANCE = 2;
 const MOVEMENT_INTERVAL_MS = 16;
 const SETTLE_INTERVAL_MS = 16;
+const NATIVE_DRAG_POLL_INTERVAL_MS = 12;
+const NATIVE_DRAG_SAFETY_TIMEOUT_MS = 15_000;
 
 type RendererAnimationEvent =
   | Readonly<{
@@ -85,6 +87,11 @@ export class StaticPetController {
   private choreographyTimer: NodeJS.Timeout | null = null;
   private settleTimer: NodeJS.Timeout | null = null;
   private settlePlan: SettlePlan | null = null;
+  private nativeDragPollTimer: NodeJS.Timeout | null = null;
+  private nativeDragSafetyTimer: NodeJS.Timeout | null = null;
+  private nativeDragPollInFlight = false;
+  private connectiveTimer: NodeJS.Timeout | null = null;
+  private connectiveGeneration = 0;
   private locomotion = new LocomotionEngine();
   private directionTurn: DirectionTurnController;
   private readonly interaction = new InteractionController();
@@ -104,6 +111,15 @@ export class StaticPetController {
   private readonly performanceSampler = new PerformanceSampler();
   private performanceTimer: NodeJS.Timeout | null = null;
   private lastAnimationEvent: RendererAnimationEvent | null = null;
+  private qaSessionStartedAt = performance.now();
+  private qaDragOrigin: { x: number; y: number } | null = null;
+  private qaDragDistancePx = 0;
+  private qaWatchdogDeadline: number | undefined;
+  private qaWatchdogAnimationId: string | undefined;
+  private qaLastCompletionEvent: string | undefined;
+  private qaWatchdogCount = 0;
+  private qaStaleCount = 0;
+  private qaFreezeCount = 0;
 
   public constructor(
     private readonly window: BrowserWindow,
@@ -149,7 +165,8 @@ export class StaticPetController {
 
   public getDiagnosticSnapshot() {
     const presentation=this.getPresentation(); const bounds=this.window.getBounds(); const display=screen.getDisplayNearestPoint({x:bounds.x+bounds.width/2,y:bounds.y+bounds.height/2});
-    return { capturedAtMonotonicMs:performance.now(), seed:this.livingRuntime.diagnosticSeedValue(), runtime:this.livingRuntime.snapshot(), stateMachine:this.stateMachine.snapshot(), presentation, windowBounds:bounds, display:{id:String(display.id),bounds:display.bounds,workArea:display.workArea,scaleFactor:display.scaleFactor}, lastAnimationEvent:this.lastAnimationEvent, trace:this.diagnosticTrace.snapshot(), performance:this.performanceSampler.summarize() };
+    const cursor=screen.getCursorScreenPoint(); const runtime=this.livingRuntime.snapshot();
+    return { capturedAtMonotonicMs:performance.now(), seed:this.livingRuntime.diagnosticSeedValue(), runtime, stateMachine:this.stateMachine.snapshot(), presentation, windowBounds:bounds, display:{id:String(display.id),bounds:display.bounds,workArea:display.workArea,scaleFactor:display.scaleFactor}, lastAnimationEvent:this.lastAnimationEvent, trace:this.diagnosticTrace.snapshot(), performance:this.performanceSampler.summarize(), qa:{pointerScreen:cursor,windowTopLeft:{x:bounds.x,y:bounds.y},dragDistancePx:this.qaDragDistancePx,dragPhase:this.interactionPhase,watchdog:{active:this.runtimeAnimationWatchdog!==null,...(this.qaWatchdogAnimationId?{animationId:this.qaWatchdogAnimationId}:{}),...(this.qaWatchdogDeadline!==undefined?{deadlineMonotonicMs:this.qaWatchdogDeadline}:{})},...(this.qaLastCompletionEvent?{lastCompletionEvent:this.qaLastCompletionEvent}:{}),...(runtime.activity?{activeActivity:`${runtime.activity.id}/${runtime.activity.phase}`}:{ }),...(runtime.lastDecisionReason?{behaviorDecisionReason:runtime.lastDecisionReason}:{}),sessionStartedAtMonotonicMs:this.qaSessionStartedAt,anomalyCounts:{watchdog:this.qaWatchdogCount,stale:this.qaStaleCount,freeze:this.qaFreezeCount}} };
   }
   public exportDiagnosticTrace(): DiagnosticTrace { return this.diagnosticTrace.exportTrace(); }
   public async replayDiagnosticTrace(trace:DiagnosticTrace):Promise<number>{ this.recordDiagnostic('diagnostic','trace-replay-started',{events:trace.events.length}); this.livingRuntime.setDiagnosticSeed(trace.seed); return this.traceReplayer.replay(trace,(command)=>this.applyDiagnosticCommand(command),{timingScale:0,maximumEvents:200}); }
@@ -166,6 +183,12 @@ export class StaticPetController {
     if(command.type==='stop_movement') return this.stopMovement(command.reason??'diagnostic');
     if(command.type==='complete_drag') return this.cancelPointerInteraction('diagnostic-complete');
     if(command.type==='simulate_display_change') { this.handleDisplayTopologyChange('diagnostic-simulation'); return; }
+    if(command.type==='force_drag') { await this.runDiagnosticDrag(command.distancePx??240,command.durationMs??900); return; }
+    if(command.type==='force_pickup_landing') { await this.runDiagnosticPickupLanding(); return; }
+    if(command.type==='interrupt_activity') { await this.livingRuntime.onDragStarted(); await this.stopMovement('diagnostic-activity-interruption'); await this.restoreIdleAsset('diagnostic-activity-interruption'); await this.livingRuntime.onDragEnded(); return; }
+    if(command.type==='simulate_missed_completion') { await this.playRuntimeAnimation(this.asset.animationId,{loop:false,playback:'forward'}); this.recordDiagnostic('diagnostic','missed-completion-injected',{animationId:this.asset.animationId},'warn'); return; }
+    if(command.type==='move_screen_edge') { const d=this.selectDisplay(); const r=this.groundRange(d); await this.moveToGroundX(command.edge==='left'?r.minimumX:r.maximumX); return; }
+    if(command.type==='relocate_display') { this.relocateDiagnosticDisplay(command.direction??'next'); return; }
     if(command.type==='set_character') { await this.setCharacter(command.character); return; }
     if(command.type==='set_paused') { this.setPaused(command.paused); return; }
     if(command.type==='set_seed') { this.diagnosticTrace.setSeed(command.seed); this.livingRuntime.setDiagnosticSeed(command.seed); return; }
@@ -362,6 +385,10 @@ export class StaticPetController {
     this.interactionPhase = result.snapshot.phase === 'pressed' ? 'pressed' : this.interactionPhase;
     this.activePointerId = result.snapshot.activePointerId;
     await this.applyInteractionActions(result.actions);
+    if (result.snapshot.phase === 'pressed') {
+      this.livingRuntime.onPointerPressed();
+      this.startNativeDragPolling(input.pointerId);
+    }
     this.publish();
   }
 
@@ -372,7 +399,10 @@ export class StaticPetController {
   }
 
   public async handlePointerUp(input: PointerInput): Promise<void> {
+    this.stopNativeDragPolling();
+    const wasPressed = this.interactionPhase === 'pressed';
     const result = this.interaction.pointerUp(input, this.window.getBounds());
+    if (wasPressed) this.livingRuntime.onPointerReleasedWithoutDrag();
     await this.applyInteractionActions(result.actions);
     if (result.snapshot.phase === 'idle' && this.interactionPhase === 'pressed') {
       this.interactionPhase = 'idle';
@@ -382,6 +412,7 @@ export class StaticPetController {
   }
 
   public async cancelPointerInteraction(reason: string): Promise<void> {
+    this.stopNativeDragPolling();
     const wasDragged = this.interactionPhase === 'dragged';
     const result = this.interaction.cancel(reason);
     await this.applyInteractionActions(result.actions);
@@ -396,6 +427,7 @@ export class StaticPetController {
       return;
     }
     if (this.interactionPhase !== 'settling') {
+      if (this.interactionPhase === 'pressed') this.livingRuntime.onPointerReleasedWithoutDrag();
       this.interactionPhase = 'idle';
       this.activePointerId = undefined;
       this.activeDragSessionId = undefined;
@@ -404,7 +436,7 @@ export class StaticPetController {
   }
 
   public async handleAnimationEvent(event: RendererAnimationEvent): Promise<void> {
-    this.lastAnimationEvent=event; this.recordDiagnostic('animation',event.type,event,'debug');
+    this.lastAnimationEvent=event; if(event.type==='ANIMATION_COMPLETED') this.qaLastCompletionEvent=`${event.animationId}@${event.generation}`; this.recordDiagnostic('animation',event.type,event,'debug');
     if (event.generation !== this.animationGeneration || event.animationId !== this.asset.animationId) return;
     if (event.type === 'ANIMATION_COMPLETED') this.clearRuntimeAnimationWatchdog();
     await this.livingRuntime.onAnimationEvent(event);
@@ -474,7 +506,44 @@ export class StaticPetController {
     this.stopMovementClock();
     this.clearChoreographyTimer();
     this.stopSettling();
+    this.stopNativeDragPolling();
+    this.clearConnectiveTimer();
     this.interaction.cancel('dispose');
+  }
+
+  private startNativeDragPolling(pointerId: number): void {
+    this.stopNativeDragPolling();
+    this.nativeDragPollTimer = setInterval(() => {
+      if (this.nativeDragPollInFlight || this.window.isDestroyed()) return;
+      const phase = this.interaction.snapshot().phase;
+      if (phase !== 'pressed' && phase !== 'dragging') {
+        this.stopNativeDragPolling();
+        return;
+      }
+      this.nativeDragPollInFlight = true;
+      const cursor = screen.getCursorScreenPoint();
+      void this.handlePointerMove({
+        pointerId,
+        button: 0,
+        screen: cursor,
+        monotonicMs: performance.now(),
+      }).finally(() => {
+        this.nativeDragPollInFlight = false;
+      });
+    }, NATIVE_DRAG_POLL_INTERVAL_MS);
+    this.nativeDragPollTimer.unref?.();
+    this.nativeDragSafetyTimer = setTimeout(() => {
+      void this.cancelPointerInteraction('native-drag-safety-timeout');
+    }, NATIVE_DRAG_SAFETY_TIMEOUT_MS);
+    this.nativeDragSafetyTimer.unref?.();
+  }
+
+  private stopNativeDragPolling(): void {
+    if (this.nativeDragPollTimer) clearInterval(this.nativeDragPollTimer);
+    if (this.nativeDragSafetyTimer) clearTimeout(this.nativeDragSafetyTimer);
+    this.nativeDragPollTimer = null;
+    this.nativeDragSafetyTimer = null;
+    this.nativeDragPollInFlight = false;
   }
 
   private async applyInteractionActions(actions: readonly InteractionAction[]): Promise<void> {
@@ -488,6 +557,8 @@ export class StaticPetController {
         this.directionTurn.interrupt();
         this.movementState = 'idle';
         this.interactionPhase = 'dragged';
+        this.qaDragOrigin = { ...action.windowTopLeft };
+        this.qaDragDistancePx = 0;
         this.activeDragSessionId = action.session.id;
         this.activePointerId = action.session.pointerId;
         this.stateMachine.request({
@@ -497,11 +568,13 @@ export class StaticPetController {
           monotonicMs: performance.now(),
         });
         this.logger.debug('Drag started', { sessionId: action.session.id, pointerId: action.session.pointerId });
+        await this.beginDragVisualSequence();
         this.publish();
       }
 
       if (action.type === 'DRAG_MOVED') {
         if (action.session.id !== this.activeDragSessionId || this.interactionPhase !== 'dragged') continue;
+        if(this.qaDragOrigin){const dx=action.windowTopLeft.x-this.qaDragOrigin.x;const dy=action.windowTopLeft.y-this.qaDragOrigin.y;this.qaDragDistancePx=Math.max(this.qaDragDistancePx,Math.hypot(dx,dy));}
         this.applyDraggedWindowPosition(action.windowTopLeft);
       }
 
@@ -565,6 +638,8 @@ export class StaticPetController {
     );
     const generation = this.interaction.snapshot().generation;
     this.interactionPhase = 'settling';
+    this.livingRuntime.onLandingStarted();
+    void this.beginLandingVisual();
     this.activePointerId = undefined;
     this.settlePlan = createSettlePlan(
       generation,
@@ -594,16 +669,10 @@ export class StaticPetController {
     this.performanceSampler.noteWindowMove();
     this.window.setPosition(Math.round(plan.to.x), Math.round(plan.to.y), false);
     this.stopSettling();
-    this.interactionPhase = 'idle';
     this.activeDragSessionId = undefined;
     this.activePointerId = undefined;
-    this.stateMachine.complete({
-      type: 'RECOVERY_COMPLETED',
-      generation: this.stateMachine.snapshot().generation,
-      monotonicMs: performance.now(),
-    });
-    void this.restoreIdleAsset('drag-settled').then(() => this.livingRuntime.onDragEnded());
-    this.logger.debug('Drag settlement completed', { destination: plan.to });
+    this.logger.debug('Drag settlement position reached', { destination: plan.to });
+    this.scheduleConnective(360, () => void this.completeLandingVisual());
   }
 
   private stopSettling(): void {
@@ -695,6 +764,12 @@ export class StaticPetController {
     destinationX: number,
     requestGeneration: number,
   ): Promise<void> {
+    if (this.character === 'poko' && !this.reducedMotion) {
+      await this.playConnectiveOneShot(direction === 'left' ? 'poko_turn_left' : 'poko_turn_right', 280);
+      if (requestGeneration !== this.movementRequestGeneration) return;
+      await this.playConnectiveOneShot('poko_walk_start', 220);
+      if (requestGeneration !== this.movementRequestGeneration) return;
+    }
     const walkingAsset = await loadPetAsset(walkingAnimationId(this.character, direction));
     if (requestGeneration !== this.movementRequestGeneration) return;
     const display = this.selectDisplay();
@@ -859,6 +934,8 @@ export class StaticPetController {
     }
 
     this.directionTurn.markIdle();
+    this.movementState = 'stopping';
+    if (this.character === 'poko' && !this.reducedMotion) await this.playConnectiveOneShot('poko_walk_stop', 280);
     this.movementState = 'idle';
     await this.restoreIdleAsset();
     await this.livingRuntime.onMovementFinished();
@@ -915,9 +992,11 @@ export class StaticPetController {
     const expectedDurationMs = (playbackFrames / effectiveFps) * 1_000;
     const timeoutMs = Math.max(1_500, Math.ceil(expectedDurationMs + 1_250));
     const animationId = this.asset.animationId;
+    this.qaWatchdogAnimationId=animationId; this.qaWatchdogDeadline=performance.now()+timeoutMs;
     this.runtimeAnimationWatchdog = setTimeout(() => {
       this.runtimeAnimationWatchdog = null;
       if (this.window.isDestroyed() || generation !== this.animationGeneration || animationId !== this.asset.animationId || this.asset.loop) return;
+      this.qaWatchdogCount += 1;
       this.logger.warn('Animation completion watchdog fired', { animationId, generation, timeoutMs });
       void this.handleAnimationEvent({
         type: 'ANIMATION_COMPLETED',
@@ -933,6 +1012,7 @@ export class StaticPetController {
   private clearRuntimeAnimationWatchdog(): void {
     if (this.runtimeAnimationWatchdog) clearTimeout(this.runtimeAnimationWatchdog);
     this.runtimeAnimationWatchdog = null;
+    this.qaWatchdogDeadline=undefined; this.qaWatchdogAnimationId=undefined;
   }
 
   private async walkToRegion(region: 'left' | 'center' | 'right'): Promise<void> {
@@ -946,6 +1026,84 @@ export class StaticPetController {
     await this.moveToGroundX(destination);
   }
 
+
+  private clearConnectiveTimer(): void {
+    if (this.connectiveTimer) clearTimeout(this.connectiveTimer);
+    this.connectiveTimer = null;
+    this.connectiveGeneration += 1;
+  }
+
+  private scheduleConnective(delayMs: number, callback: () => void): void {
+    if (this.connectiveTimer) clearTimeout(this.connectiveTimer);
+    const generation = ++this.connectiveGeneration;
+    this.connectiveTimer = setTimeout(() => {
+      this.connectiveTimer = null;
+      if (generation !== this.connectiveGeneration || this.window.isDestroyed()) return;
+      callback();
+    }, delayMs);
+    this.connectiveTimer.unref?.();
+  }
+
+  private async playConnectiveOneShot(animationId: string, durationMs: number): Promise<void> {
+    const generation = ++this.connectiveGeneration;
+    await this.playRuntimeAnimation(animationId, { loop: false, playback: 'forward' });
+    await new Promise<void>((resolve) => {
+      this.connectiveTimer = setTimeout(() => {
+        this.connectiveTimer = null;
+        resolve();
+      }, durationMs);
+      this.connectiveTimer.unref?.();
+    });
+    if (generation !== this.connectiveGeneration) return;
+  }
+
+  private async beginDragVisualSequence(): Promise<void> {
+    this.clearConnectiveTimer();
+    if (this.character !== 'poko' || this.reducedMotion) return;
+    await this.playRuntimeAnimation('poko_pickup', { loop: false, playback: 'forward' });
+    this.scheduleConnective(250, () => {
+      if (this.interactionPhase !== 'dragged') return;
+      void this.playRuntimeAnimation('poko_carried_loop', { loop: true, playback: 'forward' });
+    });
+  }
+
+  private async beginLandingVisual(): Promise<void> {
+    this.clearConnectiveTimer();
+    if (this.character !== 'poko' || this.reducedMotion) return;
+    await this.playRuntimeAnimation('poko_drop_land', { loop: false, playback: 'forward' });
+  }
+
+  private async completeLandingVisual(): Promise<void> {
+    if (this.interactionPhase !== 'settling') return;
+    this.interactionPhase = 'idle';
+    this.stateMachine.complete({
+      type: 'RECOVERY_COMPLETED',
+      generation: this.stateMachine.snapshot().generation,
+      monotonicMs: performance.now(),
+    });
+    await this.restoreIdleAsset('drag-landed');
+    await this.livingRuntime.onDragEnded();
+    this.logger.debug('Drag landing animation completed');
+  }
+
+  private async runDiagnosticDrag(distancePx:number,durationMs:number):Promise<void>{
+    const bounds=this.window.getBounds(); const start={x:bounds.x+bounds.width/2,y:bounds.y+bounds.height/2}; const pointerId=99001;
+    await this.handlePointerDown({pointerId,button:0,screen:start,monotonicMs:performance.now()});
+    const steps=Math.max(4,Math.round(durationMs/40));
+    for(let i=1;i<=steps;i+=1){const point={x:start.x+(distancePx*i/steps),y:start.y};await this.handlePointerMove({pointerId,button:0,screen:point,monotonicMs:performance.now()});await new Promise(r=>setTimeout(r,Math.max(8,durationMs/steps)));}
+    await this.handlePointerUp({pointerId,button:0,screen:{x:start.x+distancePx,y:start.y},monotonicMs:performance.now()});
+  }
+
+  private async runDiagnosticPickupLanding():Promise<void>{
+    this.interactionPhase='dragged'; await this.livingRuntime.onDragStarted(); await this.beginDragVisualSequence();
+    await new Promise(r=>setTimeout(r,700)); this.interactionPhase='settling'; await this.beginLandingVisual(); await new Promise(r=>setTimeout(r,700)); await this.completeLandingVisual();
+  }
+
+  private relocateDiagnosticDisplay(direction:'next'|'previous'):void{
+    const displays=screen.getAllDisplays(); if(displays.length<2){this.recordDiagnostic('diagnostic','multi-monitor-unavailable',{},'warn');return;}
+    const current=displays.findIndex(d=>d.id===this.activeDisplayId); const delta=direction==='next'?1:-1; const target=displays[(Math.max(0,current)+delta+displays.length)%displays.length];
+    this.activeDisplayId=target.id; const range=this.groundRange(target); this.preferredGroundX=(range.minimumX+range.maximumX)/2; this.reposition('diagnostic-display-relocation'); this.publish();
+  }
 
   private updateLivingSpatialContext(display = this.selectDisplay()): void {
     const range = this.groundRange(display);

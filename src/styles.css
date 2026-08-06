@@ -198,3 +198,5 @@ button:hover { background: #49354e; }
 
 .static-pet-surface[data-interaction-phase='pressed'],
 .static-pet-surface[data-interaction-phase='dragged'] { cursor: grabbing; }
+
+.animation-force-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:7px;max-height:260px;overflow:auto}.animation-force-grid button{font-size:11px;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.qa-checklist{display:grid;gap:8px}.qa-checklist label{display:flex;gap:8px;align-items:flex-start}

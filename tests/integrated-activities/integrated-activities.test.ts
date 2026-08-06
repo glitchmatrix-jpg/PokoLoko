@@ -82,6 +82,8 @@ describe('integrated activity catalog', () => {
 
   it('defines ambient vocabulary for both characters', () => {
     expect(AMBIENT_ROUTINES.some((item) => item.character === 'poko' && item.animationId === 'poko_idle_blink')).toBe(true);
+    expect(AMBIENT_ROUTINES.some((item) => item.character === 'poko' && item.animationId === 'poko_idle_breathe')).toBe(true);
+    expect(AMBIENT_ROUTINES.some((item) => item.animationId === 'poko_idle_look_01')).toBe(false);
     expect(AMBIENT_ROUTINES.some((item) => item.character === 'loko' && item.animationId === 'loko_idle_front')).toBe(true);
   });
 

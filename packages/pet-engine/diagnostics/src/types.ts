@@ -11,6 +11,12 @@ export type DiagnosticCommand =
   | Readonly<{ type: 'stop_movement'; reason?: string }>
   | Readonly<{ type: 'complete_drag' }>
   | Readonly<{ type: 'simulate_display_change' }>
+  | Readonly<{ type: 'force_drag'; distancePx?: number; durationMs?: number }>
+  | Readonly<{ type: 'force_pickup_landing' }>
+  | Readonly<{ type: 'interrupt_activity' }>
+  | Readonly<{ type: 'simulate_missed_completion' }>
+  | Readonly<{ type: 'move_screen_edge'; edge: 'left'|'right' }>
+  | Readonly<{ type: 'relocate_display'; direction?: 'next'|'previous' }>
   | Readonly<{ type: 'set_character'; character: 'poko'|'loko' }>
   | Readonly<{ type: 'set_paused'; paused: boolean }>
   | Readonly<{ type: 'set_seed'; seed: number }>

@@ -38,3 +38,27 @@ describe('living runtime deterministic regression',()=>{
     runtime.dispose();
   });
 });
+
+describe('living runtime interaction exclusion',()=>{
+  beforeEach(()=>vi.useFakeTimers({now:1000}));
+  afterEach(()=>vi.useRealTimers());
+
+  it('suppresses clicks and stale activity completion throughout drag and landing',async()=>{
+    const port=new FakePort();
+    const runtime=new LivingRuntimeController('poko',{activityLevel:'balanced',paused:false,quietMode:false,contextualAwareness:false},port,77);
+    await runtime.forceIntention({kind:'activity',activityId:'drink',durationMs:10000});
+    runtime.onPointerPressed();
+    await runtime.onDragStarted();
+    expect(runtime.snapshot().interaction.state).toBe('carried');
+    const before=port.animations.length;
+    await runtime.onSocialInput('click');
+    expect(port.animations.length).toBe(before);
+    runtime.onLandingStarted();
+    expect(runtime.snapshot().interaction.state).toBe('landing');
+    await vi.runOnlyPendingTimersAsync();
+    expect(runtime.snapshot().interaction.state).toBe('landing');
+    await runtime.onDragEnded();
+    expect(runtime.snapshot().interaction.state).toBe('idle');
+    runtime.dispose();
+  });
+});

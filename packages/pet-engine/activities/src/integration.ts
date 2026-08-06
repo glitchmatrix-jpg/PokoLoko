@@ -32,7 +32,10 @@ export type ActivityHistoryItem = Readonly<{
 
 export type AmbientRoutineId =
   | 'poko_blink'
-  | 'poko_look'
+  | 'poko_glance_left'
+  | 'poko_glance_right'
+  | 'poko_ear_twitch'
+  | 'poko_quiet_breathe'
   | 'poko_calm_hold'
   | 'loko_calm_idle'
   | 'loko_attentive_hold';
@@ -60,10 +63,28 @@ export const AMBIENT_ROUTINES: readonly AmbientRoutine[] = [
     notes: ['Uses the approved two-frame blink loop as a brief phrase, never as an endless metronome.'],
   },
   {
-    id: 'poko_look', character: 'poko', animationId: 'poko_idle_look_01', category: 'ambient',
-    legalStates: ['stable.idle_front'], legalPostures: ['standing_front'], minIntervalMs: 10_000, maxIntervalMs: 28_000,
-    durationMs: [500, 1_100], interruption: 'soft', weight: 1.05,
-    notes: ['Curiosity-biased glance; may be skipped repeatedly to keep timing irregular.'],
+    id: 'poko_quiet_breathe', character: 'poko', animationId: 'poko_idle_breathe', category: 'ambient',
+    legalStates: ['stable.idle_front'], legalPostures: ['standing_front'], minIntervalMs: 4_000, maxIntervalMs: 12_000,
+    durationMs: [1_800, 3_400], interruption: 'soft', weight: 1.65,
+    notes: ['Primary neutral baseline. Quiet breathing is allowed to be the whole behavior.'],
+  },
+  {
+    id: 'poko_glance_left', character: 'poko', animationId: 'poko_idle_glance_left', category: 'ambient',
+    legalStates: ['stable.idle_front'], legalPostures: ['standing_front'], minIntervalMs: 16_000, maxIntervalMs: 38_000,
+    durationMs: [500, 900], interruption: 'soft', weight: .78,
+    notes: ['True directional glance replacing the quarantined head-shake-looking asset.'],
+  },
+  {
+    id: 'poko_glance_right', character: 'poko', animationId: 'poko_idle_glance_right', category: 'ambient',
+    legalStates: ['stable.idle_front'], legalPostures: ['standing_front'], minIntervalMs: 16_000, maxIntervalMs: 38_000,
+    durationMs: [500, 900], interruption: 'soft', weight: .78,
+    notes: ['Paired directional glance with recency memory to avoid repetition.'],
+  },
+  {
+    id: 'poko_ear_twitch', character: 'poko', animationId: 'poko_idle_ear_twitch', category: 'ambient',
+    legalStates: ['stable.idle_front'], legalPostures: ['standing_front'], minIntervalMs: 22_000, maxIntervalMs: 52_000,
+    durationMs: [550, 900], interruption: 'soft', weight: .62,
+    notes: ['Rare micro-motion; never repeated back-to-back.'],
   },
   {
     id: 'poko_calm_hold', character: 'poko', category: 'ambient',
