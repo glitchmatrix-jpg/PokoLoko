@@ -42,9 +42,11 @@ export function PetSurface() {
     command: Parameters<typeof window.pokoloko.sendWindowCommand>[0],
   ): void {
     pointerCommandChainRef.current = pointerCommandChainRef.current
-      .catch(() => undefined)
-      .then(() => window.pokoloko.sendWindowCommand(command))
-      .catch((error: unknown) => {
+      .catch((): void => undefined)
+      .then(async (): Promise<void> => {
+        await window.pokoloko.sendWindowCommand(command);
+      })
+      .catch((error: unknown): void => {
         console.error('PokoLoko pointer command failed', error);
       });
   }
